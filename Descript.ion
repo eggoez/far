@@ -1,0 +1,26 @@
+Far.ico FAR icon
+FarEng.hlf English help file
+FarEng.lng English messages file
+FarRus.hlf Russian help file
+FarRus.lng Russian messages file
+Plugins Plugin modules folder
+UnInstall.exe Uninstall program
+PluginSDK FAR plugin development documentation
+Descript.ion File descriptions
+ClearPluginsCache.bat Clear Plugins Cache
+Contacts.txt Distribution and author contacts
+REGISTER.FRM Registration form
+RestoreSettings.bat Restore FAR settings from FarSave1.reg and FarSave2.reg
+SaveSettings.bat Save FAR settings to FarSave1.reg and FarSave2.reg
+Addons Character tables, key macros, archiver commands, etc.
+UnInstall.log Uninstall log file
+File_id.diz Short version description
+Far.Site.txt Distribution sites list
+License.txt License for use and distribution
+License.xUSSR.txt License for ex-USSR users
+README.TXT Brief FAR overview
+FExcept FAR Exception handler
+Register.txt Registration instructions
+Far.exe FAR executable module
+far.map FAR executable module map file for debugging
+Documentation Documentation - TechInfo, What's new, etc.

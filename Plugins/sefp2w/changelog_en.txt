@@ -1,0 +1,19 @@
+v1.2.0.144 31.08.2010
+-DB3210 RED init bugfix
+
+v1.2.0.143 25.08.2010
+-DB3350 BROWN init bugfix
+
+v1.2.0.142 05.08.2010
+-DB3200 BROWN init bugfix
+
+v1.2.0.139 26.06.2010
+-DB3200, DB3210, DB3350 CID80/CID81 support added
+
+v1.2.0.135 18.03.2010
+-Fixed PNX5230 logic
+-Fixed new Far API compatability
+
+v1.2.0.132 16.03.2010
+-Fixed DB3200 identification
+-Fixed bugs on DB2010 FATv23 and DB2010 FATv26 ELLEN

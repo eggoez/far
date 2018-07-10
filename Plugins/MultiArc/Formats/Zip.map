@@ -1,0 +1,90 @@
+ Zip
+
+ Timestamp is 4b85b2ce (Thu Feb 25 00:14:22 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000030H .idata$5                CODE
+ 0001:00000030 00000358H .rdata                  CODE
+ 0001:00000390 0000095aH .text                   CODE
+ 0001:00000cec 00000028H .idata$2                CODE
+ 0001:00000d14 00000014H .idata$3                CODE
+ 0001:00000d28 00000030H .idata$4                CODE
+ 0001:00000d58 000000beH .idata$6                CODE
+ 0001:00000e20 000000cfH .edata                  CODE
+ 0002:00000000 00000084H .data                   DATA
+ 0002:00000084 00000028H .bss                    DATA
+ 0003:00000000 00000058H .rsrc$01                DATA
+ 0003:00000060 00000388H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __imp__SetFilePointer@16   10001000     kernel32:KERNEL32.dll
+ 0001:00000004       __imp__GetLastError@0      10001004     kernel32:KERNEL32.dll
+ 0001:00000008       __imp__ReadFile@20         10001008     kernel32:KERNEL32.dll
+ 0001:0000000c       __imp__GetFileSize@8       1000100c     kernel32:KERNEL32.dll
+ 0001:00000010       __imp__CreateFileA@28      10001010     kernel32:KERNEL32.dll
+ 0001:00000014       __imp__lstrcpyA@8          10001014     kernel32:KERNEL32.dll
+ 0001:00000018       __imp__LocalFileTimeToFileTime@8 10001018     kernel32:KERNEL32.dll
+ 0001:0000001c       __imp__DosDateTimeToFileTime@12 1000101c     kernel32:KERNEL32.dll
+ 0001:00000020       __imp__CloseHandle@4       10001020     kernel32:KERNEL32.dll
+ 0001:00000024       \177KERNEL32_NULL_THUNK_DATA 10001024     kernel32:KERNEL32.dll
+ 0001:00000028       __imp__CharToOemA@8        10001028     user32:USER32.dll
+ 0001:0000002c       \177USER32_NULL_THUNK_DATA 1000102c     user32:USER32.dll
+ 0001:00000030       ??_C@_03CAJNCLOD@DOS?$AA@  10001030     Zip.obj
+ 0001:00000034       ??_C@_05JMMLALKD@Amiga?$AA@ 10001034     Zip.obj
+ 0001:0000003c       ??_C@_07EPBGNGCP@VAX?1VMS?$AA@ 1000103c     Zip.obj
+ 0001:00000044       ??_C@_04LCDHMLDI@Unix?$AA@ 10001044     Zip.obj
+ 0001:0000004c       ??_C@_06LCLELKLM@VM?1CMS?$AA@ 1000104c     Zip.obj
+ 0001:00000054       ??_C@_08BHBDDKFP@Atari?5ST?$AA@ 10001054     Zip.obj
+ 0001:00000060       ??_C@_04OEKHDCJK@OS?12?$AA@ 10001060     Zip.obj
+ 0001:00000068       ??_C@_06OCHNFGND@Mac?9OS?$AA@ 10001068     Zip.obj
+ 0001:00000070       ??_C@_08GGIJEJOI@Z?9System?$AA@ 10001070     Zip.obj
+ 0001:0000007c       ??_C@_04JLEFBFEM@CP?1M?$AA@ 1000107c     Zip.obj
+ 0001:00000084       ??_C@_07CADOBFDI@TOPS?920?$AA@ 10001084     Zip.obj
+ 0001:0000008c       ??_C@_05NLDAPMKH@Win32?$AA@ 1000108c     Zip.obj
+ 0001:00000094       ??_C@_08PPCDOIGM@SMS?1QDOS?$AA@ 10001094     Zip.obj
+ 0001:000000a0       ??_C@_0O@OJCHHPIB@Acorn?5RISC?5OS?$AA@ 100010a0     Zip.obj
+ 0001:000000b0       ??_C@_0L@OJBPFEMG@Win32?5VFAT?$AA@ 100010b0     Zip.obj
+ 0001:000000bc       ??_C@_03EOGCPMJG@MVS?$AA@  100010bc     Zip.obj
+ 0001:000000c0       ??_C@_04PNEGMAJA@BeOS?$AA@ 100010c0     Zip.obj
+ 0001:000000c8       ??_C@_06HKKIIEID@Tandem?$AA@ 100010c8     Zip.obj
+ 0001:000000d0       ??_C@_03LCAAOJEC@zip?$AA@  100010d0     Zip.obj
+ 0001:000000d4       ??_C@_03LPPLCEDO@ZIP?$AA@  100010d4     Zip.obj
+ 0001:000000d8       ??_C@_0FA@OIGOBFGA@pkzipc?5?9ext?5?9dir?5?9over?$DNall?5?9nozi@ 100010d8     Zip.obj
+ 0001:00000128       ??_C@_0EL@PPFOPGPF@pkzipc?5?9ext?5?9over?$DNall?5?9nozip?5?9ma@ 10001128     Zip.obj
+ 0001:00000174       ??_C@_0CI@FGJEEOMH@pkzipc?5?9test?$DNall?5?9nozip?5?$HL?9pass?$DN?$CF@ 10001174     Zip.obj
+ 0001:0000019c       ??_C@_0CO@OPECOHM@pkzipc?5?9delete?5?9nozip?5?$HL?9temp?$DN?$CF?$CFW@ 1000119c     Zip.obj
+ 0001:000001cc       ??_C@_0CD@JCFIKNGI@pkzipc?5?9hea?5?9nozip?5?$HL?9temp?$DN?$CF?$CFW?$HN?5?$CF@ 100011cc     Zip.obj
+ 0001:000001f0       ??_C@_0CH@BBNHJPML@pkzipc?5?9com?$DNall?5?9nozip?5?$HL?9temp?$DN?$CF?$CF@ 100011f0     Zip.obj
+ 0001:00000218       ??_C@_0BH@BKPBJDD@pkzipc?5?9sfx?5?9nozip?5?$CF?$CFA?$AA@ 10001218     Zip.obj
+ 0001:0000022f       ??_C@_00CNPNBAHC@?$AA@     1000122f     Zip.obj
+ 0001:00000230       ??_C@_0CK@LFIBCGOA@?$CFcomspec?$CF?5?1c?5echo?4?$HMpkzipc?5?9fix?5?9@ 10001230     Zip.obj
+ 0001:00000260       ??_C@_0EB@ILCGIMBM@pkzipc?5?9add?5?9attr?$DNall?5?9nozip?5?$HL?9p@ 10001260     Zip.obj
+ 0001:000002a8       ??_C@_0EH@MCGCEMJH@pkzipc?5?9add?5?9move?5?9attr?$DNall?5?9noz@ 100012a8     Zip.obj
+ 0001:000002f0       ??_C@_0EG@JEHOCFCO@pkzipc?5?9add?5?9attr?$DNall?5?9dir?5?9nozi@ 100012f0     Zip.obj
+ 0001:00000338       ??_C@_0EM@HCCNJLPL@pkzipc?5?9add?5?9move?5?9attr?$DNall?5?9dir@ 10001338     Zip.obj
+ 0001:00000384       ??_C@_03EMIMMIHL@?$CK?4?$CK?$AA@ 10001384     Zip.obj
+ 0001:00000390       __alloca_probe             10001390     chkstk.obj
+ 0001:00000390       __chkstk                   10001390 f   chkstk.obj
+ 0001:000003bb       ?IsValidHeader@@YIHPBE0@Z  100013bb f i Zip.obj
+ 0001:00000401       ?GetFilePosition@@YI_KPAX@Z 10001401 f   Zip.obj
+ 0001:00000421       _IsArchive@12              10001421 f   Zip.obj
+ 0001:000004a1       _OpenArchive@8             100014a1 f   Zip.obj
+ 0001:0000063b       _GetArcItem@8              1000163b f   Zip.obj
+ 0001:00000c20       _CloseArchive@4            10001c20 f   Zip.obj
+ 0001:00000c48       _GetSFXPos@0               10001c48 f   Zip.obj
+ 0001:00000c4e       _GetFormatName@12          10001c4e f   Zip.obj
+ 0001:00000c7d       _GetDefaultCommands@12     10001c7d f   Zip.obj
+ 0001:00000cb0       _memset                    10001cb0 f   libCRT:memset.obj
+ 0001:00000cec       __IMPORT_DESCRIPTOR_KERNEL32 10001cec     kernel32:KERNEL32.dll
+ 0001:00000d00       __IMPORT_DESCRIPTOR_USER32 10001d00     user32:USER32.dll
+ 0001:00000d14       __NULL_IMPORT_DESCRIPTOR   10001d14     kernel32:KERNEL32.dll
+
+ entry point at        0000:00000000
+
+ Static symbols
+

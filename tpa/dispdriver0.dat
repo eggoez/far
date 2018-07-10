@@ -1,0 +1,45 @@
+version=200603140;
+interface=pdi;
+{
+#Doris setupfile;
+name=R64500;
+cap_resx=80;
+cap_resy=A0;
+cap_bpp=10;
+cap_bpppd=3;
+cap_noofpd=1;
+cap_freepdvert=0;
+cap_pdlines=0;
+cap_nonpdcolor=0;
+cap_width=8822;
+cap_height=AA28;
+cap_led=;
+cap_scroll=;
+cap_offset=00 00;
+cap_offset_pd=00 00;
+pd_rectangle=;
+init=%d $00 00 00 00$ 01 01 $00 03$ 26 78 $00 0C$ 00 00 $00 04$ 04 00 $00 23$ 00 45 $00 24$ 00 36 %w32 %d $00 40$ 12 00 %w32 %d $00 42$ 01 27 %w32 %d $00 40$ 12 01 %w32 %d $00 42$ 01 28 %w32 %d $00 01$ 23 13 $00 05$ 00 30 $00 0B$ 00 00 $00 14$ 9F 00 $00 16$ 7F 00 $00 17$ 9F 00 $00 29$ 02 00 $00 2B$ 03 01 $00 2C$ 02 0F $00 30$ 03 02 $00 31$ 06 05 $00 32$ 09 08 $00 33$ 0C 0B $00 34$ 0F 0E $00 35$ 13 11 $00 36$ 16 14 $00 37$ 19 18 $00 38$ 1C 1B $00 39$ 1F 1E $00 3A$ 23 21 $00 3B$ 26 24 $00 3C$ 29 28 $00 3D$ 2D 2B $00 3E$ 30 2E $00 3F$ 34 31 $00 21$ 00 00;
+power_on=%d $00 00 00 00$ 01 01 $00 02$ 00 0C $00 03$ 2E 78 %wc8 %d $00 07$ 00 03;
+reinit=;
+reinit_pd=;
+swreset=;
+power_off=%d $00 00 00 00$ 01 01 $00 07$ 00 00 %w66 %d $00 02$ 00 04 $00 03$ 26 70;
+normal_pd=%d $00 00 00 00$ 01 01 $00 07$ 00 00 $00 03$ 2E 78 $00 04$ 04 00 $00 02$ 00 0C %w64 %d $00 30$ 03 00 $00 0B$ 00 00 $00 07$ 00 01 $00 14$ 9F 00 $00 16$ 7F 00 $00 17$ 9F 00 $00 07$ 00 03;
+pd_normal=%d $00 00 00 00$ 01 01 $00 07$ 00 00 $00 03$ 2E 78 $00 04$ 04 00 $00 02$ 00 0C %w64 %d $00 30$ 03 02 $00 0B$ 00 00 $00 07$ 00 01 $00 14$ 9F 00 $00 16$ 7F 00 $00 17$ 9F 00 $00 07$ 00 03;
+pdidataareadmaupdate=%d $00 21$ %y 00 $00 22$ ;
+pdidisplayreg=;
+pdipgmwrite=1F 18 00 00 1F 20 90 99 1F 28 9C 99 17 98 %cnt_lo %cnt_hi 17 05 15 05 15 05 17 F8 1F 00 1F 08;
+pdipgmdmaupdate=1F 18 00 00 1F 20 90 99 1F 28 9C 99 17 98 06 00 17 05 15 05 17 F8 17 80 %update_cnt1_lo %update_cnt1_hi 17 88 %update_cnt2_lo %update_cnt2_hi 17 60 17 01 15 00 17 E0 17 E8 1F 00 1F 08;
+pdipgmwritespeed=4;
+pdipgmgcspeed=4;
+pdirs=1;
+pdinibbleswap=0;
+pdidisplaycolour1=130F0E0D;
+pdidisplaycolour2=17161514;
+pdidisplaycolour3=06050403;
+pdidisplaycolour4=0C0B0A07;
+pdidisplaycolour5=00000000;
+pdidisplaycolour6=00000000;
+}
+;
+}

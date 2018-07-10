@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization xmlns:scs="http://scs.sonyericsson.net/xsd/CDAGInput.xsd">
+  <info>
+    <pcr-created>2006-09-19T13:41:01</pcr-created>
+    <created-by>bGz</created-by>
+    <pcr-id>54859</pcr-id>
+    <pcr-revision>RA1</pcr-revision>
+    <cda-number>CDA102737/4</cda-number>
+    <cda-revision>R1A</cda-revision>
+    <model>W200i LE</model>
+    <country>Indonesia</country>
+    <operator>Sony Ericsson</operator>
+    <language-variant-name>MEDITERR</language-variant-name>
+    <allowed-language>en</allowed-language>
+    <allowed-language>id</allowed-language>
+  </info>
+  <clock>
+    <date>2007-09-11</date>
+  </clock>
+  <wap>
+    <bookmark name="Sony Ericsson">http://wap.sonyericsson.com</bookmark>
+  </wap>
+  <mmi>
+    <settings>
+      <home-network-specific>
+        <allow-ciphering-indication>true</allow-ciphering-indication>
+      </home-network-specific>
+    </settings>
+  </mmi>
+</customization>

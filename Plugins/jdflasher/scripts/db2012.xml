@@ -1,0 +1,75 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="db2012">
+  <cid num="49" color="brown">
+    <bflash>
+      <ldr>signed setool PRODUCTIONLOADER_R1A002.DB2012_CID49_BROWN</ldr>
+      <ldr>2010_f_p5g</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>signed setool PRODUCTIONLOADER_R1A002.DB2012_CID49_BROWN</ldr>
+      <ldr>2010_cs_R3A005</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="50" color="red">
+    <oflash>
+      <ldr>060712 1520 DB2012_FLASHLOADER_R1A002.2012_50_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>060712 1520 DB2012_FLASHLOADER_R1A002.2012_50_RED</ldr>
+      <activateloader/>
+      <ldr>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_50_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="51" color="red">
+    <oflash>
+      <ldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_51_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_51_RED</ldr>
+      <activateloader/>
+      <ldr>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_51_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="51" color="brown">
+    <bflash>
+      <ldr>signed setool PRODUCTIONLOADER_R1A002.DB2012_CID51_BROWN</ldr>
+      <ldr>2010_f_p5g</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>signed setool PRODUCTIONLOADER_R1A002.DB2012_CID51_BROWN</ldr>
+      <ldr>2010_cs_R3A005</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="52" color="red">
+    <oflash>
+      <ldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_52_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_52_RED</ldr>
+      <activateloader/>
+      <ldr>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_52_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="53" color="red">
+    <oflash>
+      <ldr>071219 1257 DB2012_FLASHLOADER_R2B017.2012_53_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>071219 1257 DB2012_FLASHLOADER_R2B017.2012_53_RED</ldr>
+      <activateloader/>
+      <ldr>070904 1147 COMPACT_SEMC_CS_LOADER_1_R3B014.2012_53_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+</device>

@@ -1,0 +1,297 @@
+ Custom
+
+ Timestamp is 4b85b2c0 (Thu Feb 25 00:14:08 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000a8H .idata$5                CODE
+ 0001:000000a8 00000a85H .rdata                  CODE
+ 0001:00000b30 0000697aH .text                   CODE
+ 0001:000074ac 00000028H .idata$2                CODE
+ 0001:000074d4 00000014H .idata$3                CODE
+ 0001:000074e8 000000a8H .idata$4                CODE
+ 0001:00007590 000002e6H .idata$6                CODE
+ 0001:00007880 00000102H .edata                  CODE
+ 0002:00000000 00000570H .data                   DATA
+ 0002:00000570 00000444H .bss                    DATA
+ 0003:00000000 00000058H .rsrc$01                DATA
+ 0003:00000060 00000398H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __imp__HeapFree@12         10001000     kernel32:KERNEL32.dll
+ 0001:00000004       __imp__GetProcessHeap@0    10001004     kernel32:KERNEL32.dll
+ 0001:00000008       __imp__HeapAlloc@12        10001008     kernel32:KERNEL32.dll
+ 0001:0000000c       __imp__SetFileApisToOEM@0  1000100c     kernel32:KERNEL32.dll
+ 0001:00000010       __imp__lstrcpyA@8          10001010     kernel32:KERNEL32.dll
+ 0001:00000014       __imp__GetShortPathNameA@12 10001014     kernel32:KERNEL32.dll
+ 0001:00000018       __imp__SetFileApisToANSI@0 10001018     kernel32:KERNEL32.dll
+ 0001:0000001c       __imp__AreFileApisANSI@0   1000101c     kernel32:KERNEL32.dll
+ 0001:00000020       __imp__lstrcpynA@12        10001020     kernel32:KERNEL32.dll
+ 0001:00000024       __imp__lstrcatA@8          10001024     kernel32:KERNEL32.dll
+ 0001:00000028       __imp__GlobalFree@4        10001028     kernel32:KERNEL32.dll
+ 0001:0000002c       __imp__lstrlenA@4          1000102c     kernel32:KERNEL32.dll
+ 0001:00000030       __imp__GetPrivateProfileSectionA@16 10001030     kernel32:KERNEL32.dll
+ 0001:00000034       __imp__GetPrivateProfileSectionNamesA@12 10001034     kernel32:KERNEL32.dll
+ 0001:00000038       __imp__GetPrivateProfileStringA@24 10001038     kernel32:KERNEL32.dll
+ 0001:0000003c       __imp__GetPrivateProfileIntA@16 1000103c     kernel32:KERNEL32.dll
+ 0001:00000040       __imp__LocalFileTimeToFileTime@8 10001040     kernel32:KERNEL32.dll
+ 0001:00000044       __imp__SystemTimeToFileTime@8 10001044     kernel32:KERNEL32.dll
+ 0001:00000048       __imp__GetSystemTime@4     10001048     kernel32:KERNEL32.dll
+ 0001:0000004c       __imp__GetExitCodeProcess@8 1000104c     kernel32:KERNEL32.dll
+ 0001:00000050       __imp__WaitForSingleObject@8 10001050     kernel32:KERNEL32.dll
+ 0001:00000054       __imp__ReadFile@20         10001054     kernel32:KERNEL32.dll
+ 0001:00000058       __imp__GlobalReAlloc@12    10001058     kernel32:KERNEL32.dll
+ 0001:0000005c       __imp__GlobalAlloc@8       1000105c     kernel32:KERNEL32.dll
+ 0001:00000060       __imp__CloseHandle@4       10001060     kernel32:KERNEL32.dll
+ 0001:00000064       __imp__CreateProcessA@40   10001064     kernel32:KERNEL32.dll
+ 0001:00000068       __imp__ExpandEnvironmentStringsA@12 10001068     kernel32:KERNEL32.dll
+ 0001:0000006c       __imp__SetConsoleTitleA@4  1000106c     kernel32:KERNEL32.dll
+ 0001:00000070       __imp__GetConsoleTitleA@8  10001070     kernel32:KERNEL32.dll
+ 0001:00000074       __imp__SetConsoleMode@8    10001074     kernel32:KERNEL32.dll
+ 0001:00000078       __imp__GetConsoleMode@8    10001078     kernel32:KERNEL32.dll
+ 0001:0000007c       __imp__SetStdHandle@8      1000107c     kernel32:KERNEL32.dll
+ 0001:00000080       __imp__CreatePipe@16       10001080     kernel32:KERNEL32.dll
+ 0001:00000084       __imp__GetStdHandle@4      10001084     kernel32:KERNEL32.dll
+ 0001:00000088       __imp__SetFilePointer@16   10001088     kernel32:KERNEL32.dll
+ 0001:0000008c       __imp__GetFileSize@8       1000108c     kernel32:KERNEL32.dll
+ 0001:00000090       __imp__CreateFileA@28      10001090     kernel32:KERNEL32.dll
+ 0001:00000094       __imp__lstrcmpA@8          10001094     kernel32:KERNEL32.dll
+ 0001:00000098       \177KERNEL32_NULL_THUNK_DATA 10001098     kernel32:KERNEL32.dll
+ 0001:0000009c       __imp__OemToCharA@8        1000109c     user32:USER32.dll
+ 0001:000000a0       __imp__CharToOemA@8        100010a0     user32:USER32.dll
+ 0001:000000a4       \177USER32_NULL_THUNK_DATA 100010a4     user32:USER32.dll
+ 0001:000000b4       ??_7MetaReplacer@@6B@      100010b4     Custom.obj
+ 0001:000000b8       ??_C@_01CLKCMJKC@?5?$AA@   100010b8     Custom.obj
+ 0001:000000bc       ??_C@_01BJJEKLCA@?$CC?$AA@ 100010bc     Custom.obj
+ 0001:000000c0       ??_C@_09JNEMIKAF@_user?4ini?$AA@ 100010c0     Custom.obj
+ 0001:000000cc       ??_C@_0L@KLCHKPCM@custom?4ini?$AA@ 100010cc     Custom.obj
+ 0001:000000d8       ??_C@_03ODHGDBCI@CRC?$AA@  100010d8     Custom.obj
+ 0001:000000dc       ??_C@_04DODLJEJM@cSec?$AA@ 100010dc     Custom.obj
+ 0001:000000e4       ??_C@_04DCEJDDBJ@cMin?$AA@ 100010e4     Custom.obj
+ 0001:000000ec       ??_C@_05IEKIGGLK@cHour?$AA@ 100010ec     Custom.obj
+ 0001:000000f4       ??_C@_05KNLKDDEA@cYear?$AA@ 100010f4     Custom.obj
+ 0001:000000fc       ??_C@_06FFEMCOME@cMonth?$AA@ 100010fc     Custom.obj
+ 0001:00000104       ??_C@_04EENBKJLN@cDay?$AA@ 10001104     Custom.obj
+ 0001:0000010c       ??_C@_04EEPLMHPM@aSec?$AA@ 1000110c     Custom.obj
+ 0001:00000114       ??_C@_04EIIJGAHJ@aMin?$AA@ 10001114     Custom.obj
+ 0001:0000011c       ??_C@_05MJGAMHLB@aHour?$AA@ 1000111c     Custom.obj
+ 0001:00000124       ??_C@_05OAHCJCEL@aYear?$AA@ 10001124     Custom.obj
+ 0001:0000012c       ??_C@_06MCNDDPON@aMonth?$AA@ 1000112c     Custom.obj
+ 0001:00000134       ??_C@_04DOBBPKNN@aDay?$AA@ 10001134     Custom.obj
+ 0001:0000013c       ??_C@_04IBALCKPN@mSec?$AA@ 1000113c     Custom.obj
+ 0001:00000144       ??_C@_04INHJINHI@mMin?$AA@ 10001144     Custom.obj
+ 0001:0000014c       ??_C@_05NPNBKMDJ@mAMPM?$AA@ 1000114c     Custom.obj
+ 0001:00000154       ??_C@_05LOKCAHMK@mHour?$AA@ 10001154     Custom.obj
+ 0001:0000015c       ??_C@_07GALECGPB@mMonthA?$AA@ 1000115c     Custom.obj
+ 0001:00000164       ??_C@_06FHDFFJJ@mMonth?$AA@ 10001164     Custom.obj
+ 0001:0000016c       ??_C@_04PLOBBHNM@mDay?$AA@ 1000116c     Custom.obj
+ 0001:00000174       ??_C@_05JHLAFCDA@mYear?$AA@ 10001174     Custom.obj
+ 0001:0000017c       ??_C@_04DHCDLKCM@attr?$AA@ 1000117c     Custom.obj
+ 0001:00000184       ??_C@_0L@IOIKCDNK@packedSize?$AA@ 10001184     Custom.obj
+ 0001:00000190       ??_C@_04IAGNFIBA@size?$AA@ 10001190     Custom.obj
+ 0001:00000198       ??_C@_0M@PPJNHBMP@description?$AA@ 10001198     Custom.obj
+ 0001:000001a4       ??_C@_04MEMAJGDJ@name?$AA@ 100011a4     Custom.obj
+ 0001:000001ac       ??_C@_03JIHJHPIE@Jan?$AA@  100011ac     Custom.obj
+ 0001:000001b0       ??_C@_03HJBDCHOM@Feb?$AA@  100011b0     Custom.obj
+ 0001:000001b4       ??_C@_03ODNJBKGA@Mar?$AA@  100011b4     Custom.obj
+ 0001:000001b8       ??_C@_03LEOLGMJP@Apr?$AA@  100011b8     Custom.obj
+ 0001:000001bc       ??_C@_03CNMDKL@May?$AA@    100011bc     Custom.obj
+ 0001:000001c0       ??_C@_03IDFGHECI@Jun?$AA@  100011c0     Custom.obj
+ 0001:000001c4       ??_C@_03LBGABGKK@Jul?$AA@  100011c4     Custom.obj
+ 0001:000001c8       ??_C@_03IFJFEIGA@Aug?$AA@  100011c8     Custom.obj
+ 0001:000001cc       ??_C@_03GGCAPAJC@Sep?$AA@  100011cc     Custom.obj
+ 0001:000001d0       ??_C@_03BMAOKBAD@Oct?$AA@  100011d0     Custom.obj
+ 0001:000001d4       ??_C@_03JPJOFNIA@Nov?$AA@  100011d4     Custom.obj
+ 0001:000001d8       ??_C@_03MKABNOCG@Dec?$AA@  100011d8     Custom.obj
+ 0001:000001dc       ??_C@_01LFCBOECM@?4?$AA@   100011dc     Custom.obj
+ 0001:000001e0       ??_C@_0BE@PPEECFMO@?$FO?2?1?$CI?4?$CK?$CJ?2?1?$CI?$FLixms?$FN?$CK?$CJ$?$AA@ 100011e0     Custom.obj
+ 0001:000001f4       ??_C@_00CNPNBAHC@?$AA@     100011f4     Custom.obj
+ 0001:000001f8       ??_C@_09KMFOEAAA@Extension?$AA@ 100011f8     Custom.obj
+ 0001:00000204       ??_C@_06JJKDOHAC@IDOnly?$AA@ 10001204     Custom.obj
+ 0001:0000020c       ??_C@_05EHINFCPL@IDPos?$AA@ 1000120c     Custom.obj
+ 0001:00000214       ??_C@_02OLOABKKD@ID?$AA@   10001214     Custom.obj
+ 0001:00000218       ??_C@_07LFNONHMG@Extract?$AA@ 10001218     Custom.obj
+ 0001:00000220       ??_C@_0BD@KPBMFBMJ@ExtractWithoutPath?$AA@ 10001220     Custom.obj
+ 0001:00000234       ??_C@_04OFFCAMCD@Test?$AA@ 10001234     Custom.obj
+ 0001:0000023c       ??_C@_06JBKGCNBB@Delete?$AA@ 1000123c     Custom.obj
+ 0001:00000244       ??_C@_07JABLCLAF@Comment?$AA@ 10001244     Custom.obj
+ 0001:0000024c       ??_C@_0N@KIDMPGMM@CommentFiles?$AA@ 1000124c     Custom.obj
+ 0001:0000025c       ??_C@_03BHGKGIB@SFX?$AA@   1000125c     Custom.obj
+ 0001:00000260       ??_C@_04LADJNOK@Lock?$AA@  10001260     Custom.obj
+ 0001:00000268       ??_C@_07EMMGCHGI@Protect?$AA@ 10001268     Custom.obj
+ 0001:00000270       ??_C@_07NMBDMHPI@Recover?$AA@ 10001270     Custom.obj
+ 0001:00000278       ??_C@_03LDFMNCOE@Add?$AA@  10001278     Custom.obj
+ 0001:0000027c       ??_C@_04LCANPIEP@Move?$AA@ 1000127c     Custom.obj
+ 0001:00000284       ??_C@_0L@KEOJFINA@AddRecurse?$AA@ 10001284     Custom.obj
+ 0001:00000290       ??_C@_0M@PKLNHIAK@MoveRecurse?$AA@ 10001290     Custom.obj
+ 0001:0000029c       ??_C@_0N@KEFJFFBP@AllFilesMask?$AA@ 1000129c     Custom.obj
+ 0001:000002ac       ??_C@_0P@MKMLOFAF@IgnoreString?$CFd?$AA@ 100012ac     Custom.obj
+ 0001:000002bc       ??_C@_08NDALNND@Format?$CFd?$AA@ 100012bc     Custom.obj
+ 0001:000002c8       ??_C@_03DBKJMAGF@End?$AA@  100012c8     Custom.obj
+ 0001:000002cc       ??_C@_05FHMJPCKA@Start?$AA@ 100012cc     Custom.obj
+ 0001:000002d4       ??_C@_0L@IKFGNDGB@Errorlevel?$AA@ 100012d4     Custom.obj
+ 0001:000002e0       ??_C@_04PPBEGPNI@List?$AA@ 100012e0     Custom.obj
+ 0001:000002e8       ??_C@_03JJBBPPCD@FAR?$AA@  100012e8     Custom.obj
+ 0001:000002ec       ??_C@_0N@BBKADEBD@IgnoreErrors?$AA@ 100012ec     Custom.obj
+ 0001:000002fc       ??_C@_06BAPHGFFK@xdigit?$AA@ 100012fc     pcre:pcre.obj
+ 0001:00000304       ??_C@_04EHIOMBPF@word?$AA@ 10001304     pcre:pcre.obj
+ 0001:0000030c       ??_C@_05OLNILLAB@space?$AA@ 1000130c     pcre:pcre.obj
+ 0001:00000314       ??_C@_05KOBGHFJJ@punct?$AA@ 10001314     pcre:pcre.obj
+ 0001:0000031c       ??_C@_05IJDJACGD@print?$AA@ 1000131c     pcre:pcre.obj
+ 0001:00000324       ??_C@_05KCJBMLII@graph?$AA@ 10001324     pcre:pcre.obj
+ 0001:0000032c       ??_C@_05ODNOIFML@digit?$AA@ 1000132c     pcre:pcre.obj
+ 0001:00000334       ??_C@_05JMDPEFNK@cntrl?$AA@ 10001334     pcre:pcre.obj
+ 0001:0000033c       ??_C@_05BABJKOGB@blank?$AA@ 1000133c     pcre:pcre.obj
+ 0001:00000344       ??_C@_05OJENGABA@ascii?$AA@ 10001344     pcre:pcre.obj
+ 0001:0000034c       ??_C@_05IIMHCHIO@alnum?$AA@ 1000134c     pcre:pcre.obj
+ 0001:00000354       ??_C@_05NECKJAMC@upper?$AA@ 10001354     pcre:pcre.obj
+ 0001:0000035c       ??_C@_05IPJEPLHL@lower?$AA@ 1000135c     pcre:pcre.obj
+ 0001:00000364       ??_C@_05IAEKHIAN@alpha?$AA@ 10001364     pcre:pcre.obj
+ 0001:000005d0       ??_C@_0BF@FIOFLDLD@?2c?5at?5end?5of?5pattern?$AA@ 100015d0     pcre:pcre.obj
+ 0001:000005e8       ??_C@_0CB@OCNPHLON@unrecognized?5character?5follows?5?2@ 100015e8     pcre:pcre.obj
+ 0001:0000060c       ??_C@_0DI@HJOPBOJM@PCRE?5does?5not?5support?5?2L?0?5?2l?0?5?2N@ 1000160c     pcre:pcre.obj
+ 0001:00000644       ??_C@_0BE@BIJPDEGK@?2?5at?5end?5of?5pattern?$AA@ 10001644     pcre:pcre.obj
+ 0001:00000658       ??_C@_0CA@OEAENGBN@number?5too?5big?5in?5?$HL?$HN?5quantifier?$AA@ 10001658     pcre:pcre.obj
+ 0001:00000678       ??_C@_0CG@GLALLEMH@numbers?5out?5of?5order?5in?5?$HL?$HN?5quant@ 10001678     pcre:pcre.obj
+ 0001:000006a0       ??_C@_0CC@LMODKJON@internal?5error?3?5unexpected?5repea@ 100016a0     pcre:pcre.obj
+ 0001:000006c4       ??_C@_0BC@IOBPIKM@nothing?5to?5repeat?$AA@ 100016c4     pcre:pcre.obj
+ 0001:000006d8       ??_C@_0CG@DNDLHDCL@range?5out?5of?5order?5in?5character?5@ 100016d8     pcre:pcre.obj
+ 0001:00000700       ??_C@_0CL@ICNCANL@invalid?5escape?5sequence?5in?5chara@ 10001700     pcre:pcre.obj
+ 0001:0000072c       ??_C@_0BJ@GHBOKNLB@unknown?5POSIX?5class?5name?$AA@ 1000172c     pcre:pcre.obj
+ 0001:00000748       ??_C@_0CL@NDODPGFN@POSIX?5collating?5elements?5are?5not@ 10001748     pcre:pcre.obj
+ 0001:00000774       ??_C@_0DG@OMEJDLJD@POSIX?5named?5classes?5are?5supporte@ 10001774     pcre:pcre.obj
+ 0001:000007ac       ??_C@_0DC@GEOOFAJD@conditional?5group?5contains?5more?5@ 100017ac     pcre:pcre.obj
+ 0001:000007e0       ??_C@_0BK@HOKNKLFH@number?5after?5?$CI?$DPC?5is?5?$DO?5255?$AA@ 100017e0     pcre:pcre.obj
+ 0001:000007fc       ??_C@_0CH@ONMFGMEF@recursive?5call?5could?5loop?5indefi@ 100017fc     pcre:pcre.obj
+ 0001:00000824       ??_C@_0CF@LLDBIFKH@reference?5to?5non?9existent?5subpat@ 10001824     pcre:pcre.obj
+ 0001:0000084c       ??_C@_0CE@OHEDBGCJ@two?5named?5groups?5have?5the?5same?5n@ 1000184c     pcre:pcre.obj
+ 0001:00000870       ??_C@_0BI@MOLLPMEK@invalid?5condition?5?$CI?$DP?$CI0?$CJ?$AA@ 10001870     pcre:pcre.obj
+ 0001:00000888       ??_C@_09OEPAPCHM@missing?5?$CJ?$AA@ 10001888     pcre:pcre.obj
+ 0001:00000894       ??_C@_0CJ@OOFPBMOK@lookbehind?5assertion?5is?5not?5fixe@ 10001894     pcre:pcre.obj
+ 0001:000008c0       ??_C@_0CH@KPALHCPA@?2C?5not?5allowed?5in?5lookbehind?5ass@ 100018c0     pcre:pcre.obj
+ 0001:000008e8       ??_C@_0BO@MBAEMNKH@internal?5error?3?5code?5overflow?$AA@ 100018e8     pcre:pcre.obj
+ 0001:00000908       ??_C@_0BG@JHBAGBAB@unmatched?5parentheses?$AA@ 10001908     pcre:pcre.obj
+ 0001:00000920       ??_C@_0BF@MNBKDEO@failed?5to?5get?5memory?$AA@ 10001920     pcre:pcre.obj
+ 0001:00000938       ??_C@_0CK@MOMBEPNC@missing?5terminating?5?$FN?5for?5charac@ 10001938     pcre:pcre.obj
+ 0001:00000964       ??_C@_0BO@OJEGLFLD@parentheses?5nested?5too?5deeply?$AA@ 10001964     pcre:pcre.obj
+ 0001:00000984       ??_C@_0CA@GONFLKHC@unrecognized?5character?5after?5?$CI?$DP?$AA@ 10001984     pcre:pcre.obj
+ 0001:000009a4       ??_C@_0BL@ONFKCMMC@closing?5?$CJ?5for?5?$CI?$DPC?5expected?$AA@ 100019a4     pcre:pcre.obj
+ 0001:000009c0       ??_C@_0CB@ENOJIPO@unrecognized?5character?5after?5?$CI?$DPP@ 100019c0     pcre:pcre.obj
+ 0001:000009e4       ??_C@_0CG@PGODGPGA@?$CI?$DPR?5or?5?$CI?$DPdigits?5must?5be?5followed@ 100019e4     pcre:pcre.obj
+ 0001:00000a0c       ??_C@_0CB@MNJGLMFF@unrecognized?5character?5after?5?$CI?$DP?$DM@ 10001a0c     pcre:pcre.obj
+ 0001:00000a30       ??_C@_0BN@JJAGFGMA@regular?5expression?5too?5large?$AA@ 10001a30     pcre:pcre.obj
+ 0001:00000a50       ??_C@_0BH@NDNDENPI@syntax?5error?5after?5?$CI?$DPP?$AA@ 10001a50     pcre:pcre.obj
+ 0001:00000a68       ??_C@_0BI@NLAKJLPB@missing?5?$CJ?5after?5comment?$AA@ 10001a68     pcre:pcre.obj
+ 0001:00000a80       ??_C@_0BN@GHDJANOK@assertion?5expected?5after?5?$CI?$DP?$CI?$AA@ 10001a80     pcre:pcre.obj
+ 0001:00000aa0       ??_C@_0BL@ODNOOPKA@malformed?5number?5after?5?$CI?$DP?$CI?$AA@ 10001aa0     pcre:pcre.obj
+ 0001:00000abc       ??_C@_0BK@NJIPCDKO@unknown?5option?5bit?$CIs?$CJ?5set?$AA@ 10001abc     pcre:pcre.obj
+ 0001:00000ad8       ??_C@_0DM@DMMANFHL@this?5version?5of?5PCRE?5is?5not?5comp@ 10001ad8     pcre:pcre.obj
+ 0001:00000b14       ??_C@_0BJ@GOONFFAE@erroffset?5passed?5as?5NULL?$AA@ 10001b14     pcre:pcre.obj
+ 0001:00000b30       __alloca_probe             10001b30     chkstk.obj
+ 0001:00000b30       __chkstk                   10001b30 f   chkstk.obj
+ 0001:00000b5b       _isxdigit                  10001b5b f i Custom.obj
+ 0001:00000b78       ??0Match@PCRE@@AAE@PBUreal_pcre@@PBD@Z 10001b78 f i Custom.obj
+ 0001:00000bf0       ??0Match@PCRE@@QAE@ABV01@@Z 10001bf0 f i Custom.obj
+ 0001:00000c60       ??AMatch@PCRE@@QAEPBDPBD@Z 10001c60 f i Custom.obj
+ 0001:00000c97       ??AMatch@PCRE@@QAEPBDH@Z   10001c97 f i Custom.obj
+ 0001:00000cc8       ?compile@RegExp@PCRE@@QAE_NPBD0@Z 10001cc8 f i Custom.obj
+ 0001:00000d34       ??1StringList@@QAE@XZ      10001d34 f i Custom.obj
+ 0001:00000d58       ??_GStringList@@QAEPAXI@Z  10001d58 f i Custom.obj
+ 0001:00000d7d       ??0Meta@MetaReplacer@@QAE@PBD@Z 10001d7d f i Custom.obj
+ 0001:00000e20       ?convertNameToShort@MetaReplacer@@CIXPBDPAD@Z 10001e20 f i Custom.obj
+ 0001:00000e9d       ??0MetaReplacer@@QAE@PBD0@Z 10001e9d f i Custom.obj
+ 0001:00000edc       ?replaceTo@MetaReplacer@@QAEXPAD@Z 10001edc f i Custom.obj
+ 0001:00000fff       ??_GMetaReplacer@@UAEPAXI@Z 10001fff f i Custom.obj
+ 0001:00000fff       ??_EMetaReplacer@@UAEPAXI@Z 10001fff f i Custom.obj
+ 0001:00001025       _SetFarInfo@4              10002025 f   Custom.obj
+ 0001:00001079       _LoadFormatModule@4        10002079 f   Custom.obj
+ 0001:000010c2       _GetSFXPos@0               100020c2 f   Custom.obj
+ 0001:000010c5       _CloseArchive@4            100020c5 f   Custom.obj
+ 0001:0000112b       ?HexCharToNum@@YIHH@Z      1000212b f   Custom.obj
+ 0001:0000114d       ?GetSectionName@@YIHHPADH@Z 1000214d f   Custom.obj
+ 0001:0000120d       ?GetIniString@@YIKPBD00PADK@Z 1000220d f   Custom.obj
+ 0001:00001248       ?GetIniInt@@YIIPBD0H@Z     10002248 f   Custom.obj
+ 0001:00001272       ?GetString@@YIHPADH@Z      10002272 f   Custom.obj
+ 0001:000012f1       ?MakeFiletime@@YIXU_SYSTEMTIME@@0PAU_FILETIME@@@Z 100022f1 f   Custom.obj
+ 0001:0000136e       ?StringToInt@@YIHPBD@Z     1000236e f   Custom.obj
+ 0001:00001394       ?StringToInt64@@YI_JPBD@Z  10002394 f   Custom.obj
+ 0001:000013e4       ?StringToIntHex@@YIHPBD@Z  100023e4 f   Custom.obj
+ 0001:0000142a       ?ParseListingItemRegExp@@YIXVMatch@PCRE@@PAUPluginPanelItem@@PAUArcItemInfo@@AAU_SYSTEMTIME@@33@Z 1000242a f   Custom.obj
+ 0001:0000177a       ?ParseListingItemPlain@@YIXPBD0PAUPluginPanelItem@@PAUArcItemInfo@@AAU_SYSTEMTIME@@33@Z 1000277a f   Custom.obj
+ 0001:00001dfa       ??0RegExp@PCRE@@QAE@PBD0@Z 10002dfa f i Custom.obj
+ 0001:00001e1a       ?compile@RegExp@PCRE@@QAE_NPBD@Z 10002e1a f i Custom.obj
+ 0001:00001edd       ?Add@StringList@@QAEPAV1@XZ 10002edd f i Custom.obj
+ 0001:00001f1f       _IsArchive@12              10002f1f f   Custom.obj
+ 0001:000020e3       _GetArcItem@8              100030e3 f   Custom.obj
+ 0001:00002483       _GetFormatName@12          10003483 f   Custom.obj
+ 0001:000024e5       _GetDefaultCommands@12     100034e5 f   Custom.obj
+ 0001:0000255c       ?FillFormat@@YIXPBD@Z      1000355c f   Custom.obj
+ 0001:000026c1       ?OpenArchivePipe@@YGHPBDPAH@Z 100036c1 f   Custom.obj
+ 0001:0000297e       _OpenArchive@8             1000397e f   Custom.obj
+ 0001:00002c2f       @pcre_fullinfo@16          10003c2f f   pcre:pcre.obj
+ 0001:00004a7d       @pcre_compile@20           10005a7d f   pcre:pcre.obj
+ 0001:00006cb3       @pcre_exec@32              10007cb3 f   pcre:pcre.obj
+ 0001:000070dd       @pcre_get_stringnumber@8   100080dd f   pcre:get.obj
+ 0001:0000717b       @pcre_copy_substring@24    1000817b f   pcre:get.obj
+ 0001:000071c5       @pcre_copy_named_substring@28 100081c5 f   pcre:get.obj
+ 0001:000071f0       _strchr                    100081f0 f   libCRT:strchr.obj
+ 0001:00007210       _strrchr                   10008210 f   libCRT:strrchr.obj
+ 0001:00007240       _strstr                    10008240 f   libCRT:strstr.obj
+ 0001:000072a0       _strdup                    100082a0 f   libCRT:strdup.obj
+ 0001:000072d0       _free                      100082d0 f   libCRT:free.obj
+ 0001:000072f0       ??3@YAXPAX@Z               100082f0 f   libCRT:delete.obj
+ 0001:00007300       __allmul                   10008300 f   libCRT:vc_llmul.obj
+ 0001:00007340       _strncat                   10008340 f   libCRT:strncat.obj
+ 0001:00007380       _strncmp                   10008380 f   libCRT:strncmp.obj
+ 0001:000073c0       _memset                    100083c0 f   libCRT:memset.obj
+ 0001:00007400       _malloc                    10008400 f   libCRT:malloc.obj
+ 0001:00007420       _memmove                   10008420 f   libCRT:memmove.obj
+ 0001:00007480       _memcpy                    10008480 f   libCRT:memcpy.obj
+ 0001:000074ac       __IMPORT_DESCRIPTOR_KERNEL32 100084ac     kernel32:KERNEL32.dll
+ 0001:000074c0       __IMPORT_DESCRIPTOR_USER32 100084c0     user32:USER32.dll
+ 0001:000074d4       __NULL_IMPORT_DESCRIPTOR   100084d4     kernel32:KERNEL32.dll
+ 0002:00000128       _pcre_malloc               10009128     pcre:pcre.obj
+ 0002:0000012c       _pcre_free                 1000912c     pcre:pcre.obj
+ 0002:00000570       ?EndText@@3PADA            10009570     Custom.obj
+ 0002:00000670       ?FormatFileName@@3PADA     10009670     Custom.obj
+ 0002:00000774       ?SPrintf@@3P6AHPADPBDZZA   10009774     Custom.obj
+ 0002:00000778       ?OutData@@3PADA            10009778     Custom.obj
+ 0002:0000077c       ?CurType@@3HA              1000977c     Custom.obj
+ 0002:00000780       ?OutDataPos@@3KA           10009780     Custom.obj
+ 0002:00000784       ?LStrnicmp@@3P6GHPBD0H@ZA  10009784     Custom.obj
+ 0002:00000788       ?OutDataSize@@3KA          10009788     Custom.obj
+ 0002:0000078c       ?LUpper@@3P6GII@ZA         1000978c     Custom.obj
+ 0002:00000790       ?IgnoreErrors@@3HA         10009790     Custom.obj
+ 0002:00000794       ?ArcChapters@@3HA          10009794     Custom.obj
+ 0002:00000798       ?MkTemp@@3P6GPADPADPBD@ZA  10009798     Custom.obj
+ 0002:0000079c       ?LStricmp@@3P6GHPBD0@ZA    1000979c     Custom.obj
+ 0002:000007a0       ?UserFormatFileName@@3PADA 100097a0     Custom.obj
+ 0002:000008a8       ?StartText@@3PADA          100098a8     Custom.obj
+ 0002:000009a8       ?Format@@3PAVStringList@@A 100099a8     Custom.obj
+ 0002:000009ac       ?IgnoreStrings@@3PAVStringList@@A 100099ac     Custom.obj
+ 0002:000009b0       _pcre_callout              100099b0     pcre:pcre.obj
+
+ entry point at        0000:00000000
+
+ Static symbols
+
+ 0001:00002d2b       @check_escape@20           10003d2b f   pcre:pcre.obj
+ 0001:00002eb7       @is_counted_repeat@4       10003eb7 f   pcre:pcre.obj
+ 0001:00002f15       @read_repeat_counts@16     10003f15 f   pcre:pcre.obj
+ 0001:00002f8c       @first_significant_code@12 10003f8c f   pcre:pcre.obj
+ 0001:00002ffe       @find_fixedlength@8        10003ffe f   pcre:pcre.obj
+ 0001:00003183       @find_bracket@12           10004183 f   pcre:pcre.obj
+ 0001:000031d8       @could_be_empty_branch@12  100041d8 f   pcre:pcre.obj
+ 0001:000032e4       @check_posix_syntax@12     100042e4 f   pcre:pcre.obj
+ 0001:0000331d       @check_posix_name@8        1000431d f   pcre:pcre.obj
+ 0001:0000335d       @compile_branch@36         1000435d f   pcre:pcre.obj
+ 0001:0000469d       @compile_regex@48          1000569d f   pcre:pcre.obj
+ 0001:00004888       @is_anchored@16            10005888 f   pcre:pcre.obj
+ 0001:0000493e       @is_startline@12           1000593e f   pcre:pcre.obj
+ 0001:000049d2       @find_firstassertedchar@12 100059d2 f   pcre:pcre.obj
+ 0001:00005597       @match_ref@20              10006597 f   pcre:pcre.obj
+ 0001:000055f7       @match@28                  100065f7 f   pcre:pcre.obj

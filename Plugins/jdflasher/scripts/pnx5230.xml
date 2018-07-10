@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="pnx5230">
+  <cid num="51" color="red">
+    <oflash>
+      <ldr>071213 1552 R2A022_PNX5230_FLASHLOADER.PNX5230_51_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>071213 1552 R2A022_PNX5230_FLASHLOADER.PNX5230_51_RED</ldr>
+      <ldr>070904 1356 R3A016_PNX5230_CSLOADER.PNX5230_51_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="52" color="red">
+    <oflash>
+      <ldr>071213 1552 R2A022_PNX5230_FLASHLOADER.PNX5230_52_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>071213 1552 R2A022_PNX5230_FLASHLOADER.PNX5230_52_RED</ldr>
+      <ldr>070904 1356 R3A016_PNX5230_CSLOADER.PNX5230_52_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="53" color="red">
+    <oflash>
+      <ldr>071213 1552 R2A022_PNX5230_FLASHLOADER.PNX5230_53_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>071213 1552 R2A022_PNX5230_FLASHLOADER.PNX5230_53_RED</ldr>
+      <ldr>070904 1356 R3A016_PNX5230_CSLOADER.PNX5230_53_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+</device>

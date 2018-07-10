@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<layout version="1.0">
+
+<object name="CallStatusText">
+<!-- Settings for main display -->
+  <settings display="0">
+    <sett name="FontType" value="FontE_14B"/>
+    <sett name="RowHeight" value="17"/>
+    <sett name="TopOffset" value="2"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="254"/>
+    <sett name="Height" value="37"/> 
+    <sett name="YRelatively" value="2"/>
+  </settings>
+  <attributes count="3" display="0">
+    <attr index="0" value="1"/> <!-- Background handling (Transparent=0/Image=1/Solid=2)-->
+    <attr index="1" value="2"/> <!-- xOffset (from left)-->
+    <attr index="2" value="0"/> <!-- yOffset (from bottom) -->	
+  </attributes>
+
+<!-- Settings for second display -->
+  <settings display="1">
+    <sett name="FontType" value="FontE_14B"/>
+    <sett name="RowHeight" value="16"/>
+    <sett name="TopOffset" value="2"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="254"/>
+    <sett name="Height" value="40"/> 
+    <sett name="YRelatively" value="2"/>
+  </settings>
+  <attributes count="3" display="1">
+    <attr index="0" value="0"/> <!-- Background handling (Transparent=0/Image=1/Solid=2)-->
+    <attr index="1" value="2"/> <!-- xOffset (from left)-->
+    <attr index="2" value="0"/> <!-- yOffset (from bottom) -->	
+  </attributes>
+
+</object>
+
+</layout>

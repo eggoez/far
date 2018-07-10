@@ -1,0 +1,72 @@
+ Ace
+
+ Timestamp is 4b85b2c1 (Thu Feb 25 00:14:09 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000030H .idata$5                CODE
+ 0001:00000030 0000025cH .rdata                  CODE
+ 0001:00000290 0000049aH .text                   CODE
+ 0001:0000072c 00000014H .idata$2                CODE
+ 0001:00000740 00000014H .idata$3                CODE
+ 0001:00000754 00000030H .idata$4                CODE
+ 0001:00000784 000000beH .idata$6                CODE
+ 0001:00000850 000000cfH .edata                  CODE
+ 0002:00000000 000000fcH .data                   DATA
+ 0002:000000fc 00000038H .bss                    DATA
+ 0003:00000000 00000058H .rsrc$01                DATA
+ 0003:00000060 00000388H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __imp__CloseHandle@4       10001000     kernel32:KERNEL32.dll
+ 0001:00000004       __imp__ReadFile@20         10001004     kernel32:KERNEL32.dll
+ 0001:00000008       __imp__SetFilePointer@16   10001008     kernel32:KERNEL32.dll
+ 0001:0000000c       __imp__GetFileSize@8       1000100c     kernel32:KERNEL32.dll
+ 0001:00000010       __imp__CreateFileA@28      10001010     kernel32:KERNEL32.dll
+ 0001:00000014       __imp__lstrcpyA@8          10001014     kernel32:KERNEL32.dll
+ 0001:00000018       __imp__LocalFileTimeToFileTime@8 10001018     kernel32:KERNEL32.dll
+ 0001:0000001c       __imp__DosDateTimeToFileTime@12 1000101c     kernel32:KERNEL32.dll
+ 0001:00000020       __imp__HeapFree@12         10001020     kernel32:KERNEL32.dll
+ 0001:00000024       __imp__HeapAlloc@12        10001024     kernel32:KERNEL32.dll
+ 0001:00000028       __imp__GetProcessHeap@0    10001028     kernel32:KERNEL32.dll
+ 0001:0000002c       \177KERNEL32_NULL_THUNK_DATA 1000102c     kernel32:KERNEL32.dll
+ 0001:00000030       ??_C@_03PDKFKBO@ace?$AA@   10001030     Ace.obj
+ 0001:00000034       ??_C@_03CMBJHGC@ACE?$AA@   10001034     Ace.obj
+ 0001:00000038       ??_C@_0CM@KOGMOGAM@ace32?5x?5?$HL?9p?$CF?$CFP?$HN?5?9y?5?9c?9?5?9std?5?$HL?$CF?$CFS@ 10001038     Ace.obj
+ 0001:00000064       ??_C@_0DB@GOAJJLPD@ace32?5e?5?9av?9?5?$HL?9p?$CF?$CFP?$HN?5?9y?5?9c?9?5?9std@ 10001064     Ace.obj
+ 0001:00000098       ??_C@_0CG@NCJFB@ace32?5t?5?9y?5?$HL?9p?$CF?$CFP?$HN?5?9c?9?5?9std?5?$HL?$CF?$CFS@ 10001098     Ace.obj
+ 0001:000000c0       ??_C@_0CI@MHNMPFML@ace32?5d?5?9y?5?9std?5?$HL?9t?$CF?$CFW?$HN?5?$HL?$CF?$CFS?$HN?5?$CF?$CF@ 100010c0     Ace.obj
+ 0001:000000e8       ??_C@_0CD@FKNILPJK@ace32?5cm?5?9y?5?9std?5?$HL?9t?$CF?$CFW?$HN?5?$HL?$CF?$CFS?$HN?5?$CF@ 100010e8     Ace.obj
+ 0001:0000010c       ??_C@_0CL@KICEBKJB@ace32?5cf?5?9y?5?9std?5?$HL?9t?$CF?$CFW?$HN?5?$HL?$CF?$CFS?$HN?5?$CF@ 1000110c     Ace.obj
+ 0001:00000138       ??_C@_0BK@IDCKKLKJ@ace32?5s?5?9y?5?9std?5?$HL?$CF?$CFS?$HN?5?$CF?$CFA?$AA@ 10001138     Ace.obj
+ 0001:00000154       ??_C@_0BK@PODHNGDO@ace32?5k?5?9y?5?9std?5?$HL?$CF?$CFS?$HN?5?$CF?$CFA?$AA@ 10001154     Ace.obj
+ 0001:00000170       ??_C@_0BL@PDBDFNPE@ace32?5rr?5?9y?5?9std?5?$HL?$CF?$CFS?$HN?5?$CF?$CFA?$AA@ 10001170     Ace.obj
+ 0001:0000018c       ??_C@_0BK@OGENJAOP@ace32?5r?5?9y?5?9std?5?$HL?$CF?$CFS?$HN?5?$CF?$CFA?$AA@ 1000118c     Ace.obj
+ 0001:000001a8       ??_C@_0DE@DOGKKMGA@ace32?5a?5?9c2?5?9y?5?9std?5?$HL?9p?$CF?$CFP?$HN?5?$HL?9t?$CF@ 100011a8     Ace.obj
+ 0001:000001dc       ??_C@_0DE@FCJDBEHH@ace32?5m?5?9c2?5?9y?5?9std?5?$HL?9p?$CF?$CFP?$HN?5?$HL?9t?$CF@ 100011dc     Ace.obj
+ 0001:00000210       ??_C@_0DK@HJOBHBBK@ace32?5a?5?9y?5?9c2?5?9r?5?9f?5?9std?5?$HL?9p?$CF?$CFP@ 10001210     Ace.obj
+ 0001:0000024c       ??_C@_0DK@PNCGGLIF@ace32?5m?5?9y?5?9c2?5?9r?5?9f?5?9std?5?$HL?9p?$CF?$CFP@ 1000124c     Ace.obj
+ 0001:00000288       ??_C@_03EMIMMIHL@?$CK?4?$CK?$AA@ 10001288     Ace.obj
+ 0001:00000290       __chkstk                   10001290 f   chkstk.obj
+ 0001:00000290       __alloca_probe             10001290     chkstk.obj
+ 0001:000002bb       _IsArchive@12              100012bb f   Ace.obj
+ 0001:00000322       _OpenArchive@8             10001322 f   Ace.obj
+ 0001:00000415       _GetArcItem@8              10001415 f   Ace.obj
+ 0001:0000062c       _CloseArchive@4            1000162c f   Ace.obj
+ 0001:00000693       _GetSFXPos@0               10001693 f   Ace.obj
+ 0001:00000699       _GetFormatName@12          10001699 f   Ace.obj
+ 0001:000006c8       _GetDefaultCommands@12     100016c8 f   Ace.obj
+ 0001:00000700       _memcpy                    10001700 f   libCRT:memcpy.obj
+ 0001:0000072c       __IMPORT_DESCRIPTOR_KERNEL32 1000172c     kernel32:KERNEL32.dll
+ 0001:00000740       __NULL_IMPORT_DESCRIPTOR   10001740     kernel32:KERNEL32.dll
+ 0002:0000012c       ?HostOS@@3HA               1000212c     Ace.obj
+ 0002:00000130       ?UnpVer@@3HA               10002130     Ace.obj
+
+ entry point at        0000:00000000
+
+ Static symbols
+

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization>
+  <info>
+   <language-variant-name>C_ASIA</language-variant-name>
+    <allowed-language>en</allowed-language>
+    <allowed-language>ar</allowed-language>
+    <allowed-language>id</allowed-language>
+  </info>
+   <internet>
+    <account modifiable="true" account-type="ps">
+      <name>Telkomsel</name>
+      <username>wap</username>
+      <password>wap123</password>
+      <prompt-password>true</prompt-password>
+      <apn>telkomsel</apn>
+      <service-mode>automatic</service-mode>
+      <authentication>none</authentication>
+      <data-compression>false</data-compression>
+      <header-compression>false</header-compression>
+      <always-connected>false</always-connected>
+      <quality-of-service>
+        <guaranteed-uplink-bitrate min="0" requested="0">
+        </guaranteed-uplink-bitrate>
+        <guaranteed-downlink-bitrate min="0" requested="0">
+        </guaranteed-downlink-bitrate>
+      </quality-of-service>
+    </account>
+    <account modifiable="true" account-type="ps">
+      <name>Telkomsel Mms</name>
+      <username>wap</username>
+      <password>wap123</password>
+      <prompt-password>true</prompt-password>
+      <apn>mms</apn>
+      <service-mode>automatic</service-mode>
+      <authentication>none</authentication>
+      <data-compression>false</data-compression>
+      <header-compression>false</header-compression>
+      <always-connected>false</always-connected>
+      <quality-of-service>
+        <guaranteed-uplink-bitrate min="0" requested="0">
+        </guaranteed-uplink-bitrate>
+        <guaranteed-downlink-bitrate min="0" requested="0">
+        </guaranteed-downlink-bitrate>
+      </quality-of-service>
+    </account>
+    <account modifiable="true" account-type="ps">
+      <name>XL Axiata</name>
+      <username>xlgprs</username>
+      <password>proxl</password>
+      <prompt-password>true</prompt-password>
+      <apn>www.xlgprs.net</apn>
+      <service-mode>automatic</service-mode>
+      <authentication>none</authentication>
+      <data-compression>false</data-compression>
+      <header-compression>false</header-compression>
+      <always-connected>false</always-connected>
+      <quality-of-service>
+        <guaranteed-uplink-bitrate min="0" requested="0">
+        </guaranteed-uplink-bitrate>
+        <guaranteed-downlink-bitrate min="0" requested="0">
+        </guaranteed-downlink-bitrate>
+      </quality-of-service>
+    </account>
+    <account modifiable="true" account-type="ps">
+      <name>XL Mms</name>
+      <username>xlgprs</username>
+      <password>proxl</password>
+      <prompt-password>true</prompt-password>
+      <apn>www.xlmms.net</apn>
+      <service-mode>automatic</service-mode>
+      <authentication>none</authentication>
+      <data-compression>false</data-compression>
+      <header-compression>false</header-compression>
+      <always-connected>false</always-connected>
+      <quality-of-service>
+        <guaranteed-uplink-bitrate min="0" requested="0">
+        </guaranteed-uplink-bitrate>
+        <guaranteed-downlink-bitrate min="0" requested="0">
+        </guaranteed-downlink-bitrate>
+      </quality-of-service>
+    </account>
+    <account modifiable="true" account-type="ps">
+      <name>Indosat</name>
+      <username>satmms</username>
+      <password>satmms</password>
+      <prompt-password>true</prompt-password>
+      <apn>mms.satelindogprs.com</apn>
+      <service-mode>automatic</service-mode>
+      <authentication>none</authentication>
+      <data-compression>false</data-compression>
+      <header-compression>false</header-compression>
+      <always-connected>false</always-connected>
+      <quality-of-service>
+        <guaranteed-uplink-bitrate min="0" requested="0">
+        </guaranteed-uplink-bitrate>
+        <guaranteed-downlink-bitrate min="0" requested="0">
+        </guaranteed-downlink-bitrate>
+      </quality-of-service>
+    </account>
+    <account modifiable="true" account-type="ps">
+      <name>Indosat Mms</name>
+      <password>satmms</password>
+      <prompt-password>true</prompt-password>
+      <apn>mms.satelindogprs.com</apn>
+      <service-mode>automatic</service-mode>
+      <authentication>none</authentication>
+      <data-compression>false</data-compression>
+      <header-compression>false</header-compression>
+      <always-connected>false</always-connected>
+      <quality-of-service>
+        <guaranteed-uplink-bitrate min="0" requested="0">
+        </guaranteed-uplink-bitrate>
+        <guaranteed-downlink-bitrate min="0" requested="0">
+        </guaranteed-downlink-bitrate>
+      </quality-of-service>
+    </account>
+  </internet>
+  <wap>
+    <bookmark name="Sony Ericsson">http://wap.sonyericsson.com</bookmark>
+  </wap>
+  <mms>
+  </mms>
+  <mmi>
+    <profile id="0">
+    </profile>
+    <settings>
+    </settings>
+  </mmi>
+  <drm>
+    <licenses>
+    </licenses>
+    <settings>
+      <low-count-value>4</low-count-value>
+      <push-wait-time>25</push-wait-time>
+      <enable-imsi-lock>false</enable-imsi-lock>
+      <enable-mediaplayer-mp3>true</enable-mediaplayer-mp3>
+      <enable-mediaplayer-mp3-drm>true</enable-mediaplayer-mp3-drm>
+      <enable-mediaplayer-mp3-drmdm>true</enable-mediaplayer-mp3-drmdm>
+      <enable-ringtoneplayer-mp3>true</enable-ringtoneplayer-mp3>
+      <enable-ringtoneplayer-mp3-drm>true</enable-ringtoneplayer-mp3-drm>
+      <enable-ringtoneplayer-mp3-drmdm>true</enable-ringtoneplayer-mp3-drmdm>
+      <enable-mediaplayer-aac>true</enable-mediaplayer-aac>
+      <enable-mediaplayer-aac-drm>true</enable-mediaplayer-aac-drm>
+      <enable-mediaplayer-aac-drmdm>true</enable-mediaplayer-aac-drmdm>
+      <enable-ringtoneplayer-aac>true</enable-ringtoneplayer-aac>
+      <enable-ringtoneplayer-aac-drm>true</enable-ringtoneplayer-aac-drm>
+      <enable-ringtoneplayer-aac-drmdm>true</enable-ringtoneplayer-aac-drmdm>
+    </settings>
+  </drm>
+</customization>

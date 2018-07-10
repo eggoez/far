@@ -1,0 +1,1625 @@
+//======================================================================================
+//                  **MiniSuperMode™ Cyber-shot™ VGA CAM Final for MT9V112/MT9M112**
+//                    Sony Ericsson MiniSuperMode™ VGA CamDriver Version Final 
+//                    Optimized for the Sony Ericsson ** Works MT9V112/MT9M112 **
+//======================================================================================
+//----------------------------
+// DO NOT EDIT anything below
+//----------------------------
+//=========================================================
+//Information section
+//=========================================================
+
+info_name=MT9V112;
+info_vendor=BrAzzUkA´s BZK®;//MiniSuperMode™Cyber-shot™VGA CAM Final for MT9V112/MT9M112
+info_major_ver=2;
+info_minor_ver=0;
+
+//Camera characteristics section:
+
+//=========================================================
+//Power on sequence
+//=========================================================
+
+cam_power_on_0 = 5, 0, 0, 1, 64;        // Pull RST pin and wait 100 ms
+cam_power_on_1 = 5, 1, 12, 1, 0;        // Set GPIO 12 as output (VDD_SA, VDD_IO 2.7V; VDD_AF 2.7V)
+cam_power_on_2 = 5, 2, 12, 0, 5;        // Set GPIO 12 low and wait 5 ms
+cam_power_on_3 = 5, 3, 0, 5DC0, 5;     // Turn on 24 MHz clock and wait 5 ms
+cam_power_on_4 = 5, 0, 0, 0, 64;        // Release RST pin and wait 100 ms
+
+//=========================================================
+//Power off sequence
+//=========================================================
+
+cam_power_off_0= 5, 1, 12, 1, 0;        // Set GPIO 12 as output 
+cam_power_off_1= 5, 2, 12, 1, 5;        // Set GPIO 12 high 
+cam_power_off_2= 5, 3, 1, 1, 0;         // Turn off 13 MHz clock 
+cam_power_off_3= 5, 2, 12, 0, 0;        // Standby low
+
+//=============================
+// Master Clock™ MT9V112
+//=============================
+//Frequency of Master Clock = 2*Frequency of Pixel Clock
+
+cam_i2c_address=5D;         //Micro Sensor
+cam_i2c_clock_freq=2;       //100Khz           Master Clock™ 
+cam_vf_clock_freq=0,6978;   //27MHz            Master Clock™ 
+cam_ss_clock_freq=0,32C8;   //13MHz            Master Clock™ 
+cam_ss_clock_freq_d=0,5DC0; //24 MHz yuv-mode  Master Clock™
+cam_init_result=;
+cam_vf_format=B100;
+cam_ss_format=B100; 
+cam_ss_sync=5; 
+cam_vf_sync=5; 
+cam_ss_retries=3; 
+
+//-- JPEG buffer sizes  (only used for ITP) 
+cam_ss_jpeg_buf_size_4=56EC;	//  22KB buffer for     100x60 snap
+cam_ss_jpeg_buf_size_3=7800;	//  32KB buffer for    160x120 snap
+cam_ss_jpeg_buf_size_2=9600;	//  38KB buffer for   320x240 snap
+cam_ss_jpeg_buf_size_5=1E000;	//  122KB buffer for   640x480 snap
+cam_ss_jpeg_buf_size_6=80D40;	//  530KB buffer for  1280x960 snap
+
+// ==================== Version ====================
+// Major version stored in internal register 2
+// Minor version stored in internal register .0
+//==================================================
+
+seq_get_prop_0 = $s1 04 $s0 00;      // Version: 2.0
+
+//=========================================================
+//Support resolution
+//=========================================================
+
+sup_sizes=
+                    // CAPTURE MODE
+  1[280,1E0,0],             // SS 640 x 480 VGA
+  2[140,F0,0],              // SS 320 x 240 QVGA 
+  3[A0,78,0],               // SS 160 x 120 QVGA 
+  4[64,3C,0],               // SS 100 x 60
+  5[280,1E0,0],             // SS 640 x 480 Snapshot VGA in UYV422
+  6[500,3C0,0],             // SS 1280x 960 Snapshot™ interpol 1,2MB Mode Expanded
+  7[280,1E0,0],             // SS 640 x 480 Snapshot VGA in UYV422
+
+                    // VF MODE DRAFT MODE
+                    
+  20[80,60,5DC],            // VF 128x96  
+  22[80,60,5DC],            // VF 128x96 
+  23[B0,90,03E8],           // VF 176x144
+  24[B0,90,02EE],           // VF 176x144 
+  25[80,66,05DC],           // VF 128x102
+  26[80,60,05DC],           // VF 128x96 
+  27[80,60,05DC],           // VF 128x96 
+  21[80,A0,5DC],            // VF 128x160 
+  30[50,3C,5DC],            // VF 80x60   
+  31[50,65,5DC],            // VF 80x101 
+
+
+                    // VR MODE
+                   
+
+  41[80,60,3E8],            //  128 x 96   Normal mode Viewfinder  Video record SQCIF 25fps
+  42[B0,90,3E8],            //  176 x 144  Normal mode Viewfinder  Video record QCIF  25fps
+  43[80,60,2EE],            //  128 x 96   Nigth  mode Viewfinder  Video record SQCIF 10fps
+  44[B0,90,2EE],            //  176 x 144  Nigth  mode Viewfinder  Video record QCIF  10fps
+
+    ;
+
+//=========================================================
+// Support Properties:
+//=========================================================
+
+//=========================================================
+//Properties: 
+//            0 = Exposure                           Implemented
+//            1 = White balance                      Implemented 
+//            2 = Flicker                            Implemented
+//	      3 = Vertical mirror                    Implemented
+//            4 = Horisontal mirror                  Implemented
+//            5 = JPEG Compression level             Implemented
+//            6 = Zoom                               Implemented
+//	      7 = Night mode                         Implemented  
+//            8 = Effect                             Implemented
+//            9 = Focus mode                         Not valid for w200 MT9V112
+//            a = Focus operation                    Not valid for w200 MT9V112
+//            b = Exif (Read only)                   Implemented
+//            c = Qtable info (Read only)            Implemented
+//            d = LED support                        Not valid for w200 
+//            e = Flash support                      Implemented for w200
+//            f = Power save mode                    Implemented
+//           10 = Scene                              Not valid for w200 MT9V112
+//           11 = ISO                                Implemented
+//           12 = Auto exposure                      Implemented
+//           13 = Brightness                         Implemented
+//           14 = Contrast                           Implemented
+//           15 = Sharpening                         Implemented
+//           16 = ITP focus test                     Not valid for w200 MT9V112
+//           17 = Spot                               Implemented
+//           18 = Image Stable                       Implemented 
+//           19 = Half release                       Not valid for w200 MT9V112
+//           20 = Snapshot operation interpol 1,2MB  Implemented
+//           21 = Snapshot with Flash                Implemented
+
+sup_properties =0[0,15,9],1[0, F,9],2[0, 4,0],3[0, 3,0],   
+                4[0, 1,0],5[0, 1,0],6[a,28,a],7[0, 1,0],
+                8[0, 4,0],9[0,4,0],a[0, 2,0],b[0,4,0],
+		c[0,ff,0],d[0,1,0],e[0,2,0],f[0,1,0],
+		10[0,7,0],11[0,d,0],12[0,ff,0],13[0,15,7],
+		14[0,16,8],15[0,16,8],18[0,7,0],1e[0,1F,0];
+
+//=========================================================
+// MACROS to write registers of MT9V112
+//=========================================================
+
+
+
+WRITE_SENSOR  = $a5d F0 00 00 $f !0 $f;
+READ_SENSOR   = $a5d F0 00 00 $f !0 $f;
+WRITE_IFP     = $a5d F0 00 01 $f !0 $f;
+READ_IFP      = $a5d F0 00 01 $f !0 $f;
+WRITE_CONTROL = $a5d F0 00 02 $f !0 $f;
+READ_CONTROL  = $a5d F0 00 02 $f !0 $f;
+
+
+
+REGISTER_READ   =  !0 $r2 0 1 $f;   
+
+REGISTER_MODIFY =
+  !0 $r2 0 1 $f   
+  !1              
+  $f !0 $w0 $w1 $f
+  ;
+
+seq_ping        = #SET_PAGE_SENSOR #REGISTER_READ(00);  
+cam_ping_result = 12, 29;
+
+// Init sequence 
+seq_init=           $c9 01 
+$s9 01
+$cl
+$s9 00 
+$cx                            
+          $s8 00                        
+                 
+                    #WRITE_IFP(A5 4000)
+
+                    #WRITE_IFP(A8 4000) 
+
+                    #WRITE_IFP(AF 0000)
+ 
+                    #LENS_CORRECTION_NORMAL
+
+                    #COLOR_CORRECTION
+                    
+                    #FRAME_RATE_AUTO  
+
+                    #WRITE_CONTROL (24 6018)	
+                    #WRITE_CONTROL (22 B078)
+                    #WRITE_CONTROL (23 9058)
+
+                    $sB 00
+                    
+                    #seq_get_prop_c              
+
+                    #LUMA_SET_SS
+                    
+                    #WRITE_IFP(#REGISTER_MODIFY(E2,$b1 00 0 3)) 
+
+		    #WRITE_CONTROL(2E 0244)
+		    $sA 04 #WRITE_IFP(05 000C)  		      
+		    #WRITE_IFP(25 0015)					
+		    #seq_set_prop_1_0
+
+                    #ROW_NOISE_REDUCTION
+
+                    #PIXEL_NOISE_REDUCTION
+                  
+                    #WRITE_SENSOR(#REGISTER_MODIFY(20,$b1 00 0 1))
+
+
+                    ;
+//===============================================================
+//  SEQUENCE 
+//===============================================================
+
+READ_AF_STATUS=05 01 00 03 03 $f$r4 4 4 4 5
+$c5 E6 $cl $d0005 05 01 00 03 03 $f$r4 4 4 4 5               
+$c5 E6 $cl $d0005 05 01 00 03 03 $f$r4 4 4 4 5
+$c5 E6 $cl $d0005 05 01 00 03 03 $f$r4 4 4 4 5
+$c5 E6 $cl $d0005 05 01 00 03 03 $f$r4 4 4 4 5
+$c5 E6 $cl $d0005 05 01 00 03 03 $f$r4 4 4 4 5
+$c5 E6 $cl $d0005 05 01 00 03 03 $f$r4 4 4 4 5
+$c5 E6 $cl $s4 01
+
+$cx$cx$cx$cx$cx$cx$cx;
+
+READ_JPEG_STATUS=05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $s4 01  
+$cx $cx $cx $cx $cx $cx $cx;
+
+                
+WAIT_FOR_POWER_SAVE_LEAVE=05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ec $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ec $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ec $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ec $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ec $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ec $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ec $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ec $cl $d0040 05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ec $cl $d0040 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ec $cl $d0040 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ec $cl $d0040 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ec $cl $d0040 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ec $cl $d0064 05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ec $cl $d0064 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ec $cl $d0064 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ec $cl $d0064 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ec $cl $d0100 05 01 00 03 03 $f$r4 1 1 2 3                                         
+$c3 ec $cl $d0100 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ec $cl $d0100 05 01 00 03 03 $f$r4 1 1 2 3                                        
+$c3 ec $cl $d0200 05 01 00 03 03 $f$r4 1 1 2 3
+
+$cx$cx$cx$cx$cx$cx$cx$cx$cx$cx$
+$cx$cx$cx$cx$cx$cx$cx$cx$cx$cx;
+
+                                     
+                                     
+WAIT_FOR_POWER_SAVE_ENTER=05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ed $cl $d0010 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0010 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0010 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0010 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0010 05 01 00 03 03 $f$r4 1 1 2 3 
+$c3 ed $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0020 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0040 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0040 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0040 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0040 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0040 05 01 00 03 03 $f$r4 1 1 2 3
+$c3 ed $cl $d0064 05 01 00 03 03 $f$r4 1 1 2 3 
+                                      
+$cx$cx$cx$cx$cx$cx$cx$cx$cx$cx$
+$cx$cx$cx$cx$cx$cx$cx$cx$cx$cx;   
+//==========================================================================================
+//*** Camera Control Registers Initial Sequence ***
+//==========================================================================================
+
+
+//CCM Doris 10.04.06 
+COLOR_CORRECTION=
+#WRITE_CONTROL(02 00AE) //BASE_MATRIX_SIGNS 
+#WRITE_CONTROL(09 00B1) //BASE_MATRIX_COEF_K1 
+#WRITE_CONTROL(0A 0091) //BASE_MATRIX_COEF_K2 
+#WRITE_CONTROL(0B 005B) //BASE_MATRIX_COEF_K3 
+#WRITE_CONTROL(0C 005F) //BASE_MATRIX_COEF_K4 
+#WRITE_CONTROL(0D 00DA) //BASE_MATRIX_COEF_K5 
+#WRITE_CONTROL(0E 0029) //BASE_MATRIX_COEF_K6 
+#WRITE_CONTROL(0F 0010) //BASE_MATRIX_COEF_K7 
+#WRITE_CONTROL(10 006D) //BASE_MATRIX_COEF_K8 
+#WRITE_CONTROL(11 00DF) //BASE_MATRIX_COEF_K9 
+#WRITE_CONTROL(15 0000) //DELTA_COEF_SIGNS 
+#WRITE_CONTROL(16 0000) //DELTA_MATRIX_COEF_D1 
+#WRITE_CONTROL(17 0000) //DELTA_MATRIX_COEF_D2 
+#WRITE_CONTROL(18 0000) //DELTA_MATRIX_COEF_D3 
+#WRITE_CONTROL(19 0000) //DELTA_MATRIX_COEF_D4 
+#WRITE_CONTROL(1A 0000) //DELTA_MATRIX_COEF_D5 
+#WRITE_CONTROL(1B 0000) //DELTA_MATRIX_COEF_D6 
+#WRITE_CONTROL(1C 0000) //DELTA_MATRIX_COEF_D7 
+#WRITE_CONTROL(1D 0000) //DELTA_MATRIX_COEF_D8 
+#WRITE_CONTROL(1E 0000) //DELTA_MATRIX_COEF_D9 
+#WRITE_CONTROL(5E 5F49) //RATIO_BASE_REG 
+#WRITE_CONTROL(5F 3A22) //RATIO_DELTA_REG 
+#WRITE_CONTROL(60 0002) //SIGNS_DELTA_REG 
+#WRITE_CONTROL(03 3923) //BASE_MATRIX_SCALE_K1_K5 
+#WRITE_CONTROL(04 0724) //BASE_MATRIX_SCALE_K6_K9 
+#WRITE_CONTROL(22 A078) // AWB_RED_LIMIT 
+#WRITE_CONTROL(23 A078) // AWB_BLUE_LIMIT
+#WRITE_IFP(06 $f $r2 0 1 $b0 01 7 1 06 $w0 $w1)    //enable Manual White Balance
+$d01F4                                          //Wait500 ms delay for both Colour correction and ROW_NOISE_REDUCTION
+#WRITE_IFP(06 $f $r2 0 1 $b0 00 7 1 06 $w0 $w1)    //Disable the Manual White Balance
+                                                                            //the toggle of the Manual White Balance is done to force loading the new tabl
+
+;
+
+                // Set Color Correction Registers for sepia output.
+COLOR_CORRECTION_SEPIA =;
+
+
+                //LC Doris 10.04.06 
+LENS_CORRECTION_NORMAL= 
+#WRITE_IFP(80 0003) //LENS_CORRECT_CONTROL 
+#WRITE_IFP(81 D606) //LENS_ADJ_VERT_RED_0 
+#WRITE_IFP(82 EFF2) //LENS_ADJ_VERT_RED_1_2 
+#WRITE_IFP(83 02FA) //LENS_ADJ_VERT_RED_3_4 
+#WRITE_IFP(84 E804) //LENS_ADJ_VERT_GREEN_0 
+#WRITE_IFP(85 F4F5) //LENS_ADJ_VERT_GREEN_1_2 
+#WRITE_IFP(86 03FC) //LENS_ADJ_VERT_GREEN_3_4 
+#WRITE_IFP(87 E303) //LENS_ADJ_VERT_BLUE_0 
+#WRITE_IFP(88 F7F6) //LENS_ADJ_VERT_BLUE_1_2 
+#WRITE_IFP(89 03FE) //LENS_ADJ_VERT_BLUE_3_4 
+#WRITE_IFP(8A D70A) //LENS_ADJ_HORIZ_RED_0 
+#WRITE_IFP(8B E8E1) //LENS_ADJ_HORIZ_RED_1_2 
+#WRITE_IFP(8C FCF5) //LENS_ADJ_HORIZ_RED_3_4 
+#WRITE_IFP(8D 0002) //LENS_ADJ_HORIZ_RED_5 
+#WRITE_IFP(8E E207) //LENS_ADJ_HORIZ_GREEN_0 
+#WRITE_IFP(8F EDE8) //LENS_ADJ_HORIZ_GREEN_1_2 
+#WRITE_IFP(90 FDF8) //LENS_ADJ_HORIZ_GREEN_3_4 
+#WRITE_IFP(91 0002) //LENS_ADJ_HORIZ_GREEN_5 
+#WRITE_IFP(92 DD07) //LENS_ADJ_HORIZ_BLUE_0 
+#WRITE_IFP(93 EEE9) //LENS_ADJ_HORIZ_BLUE_1_2 
+#WRITE_IFP(94 FFF9) //LENS_ADJ_HORIZ_BLUE_3_4 
+#WRITE_IFP(95 0000) //LENS_ADJ_HORIZ_BLUE_5 
+#WRITE_IFP(B6 140B) //LENS_ADJ_VERT_RED_5_6 
+#WRITE_IFP(B7 4A19) //LENS_ADJ_VERT_RED_7_8 
+#WRITE_IFP(B8 100A) //LENS_ADJ_VERT_GREEN_5_6 
+#WRITE_IFP(B9 7F12) //LENS_ADJ_VERT_GREEN_7_8 
+#WRITE_IFP(BA 130C) //LENS_ADJ_VERT_BLUE_5_6 
+#WRITE_IFP(BB 2D1A) //LENS_ADJ_VERT_BLUE_7_8 
+#WRITE_IFP(BC 1310) //LENS_ADJ_HORIZ_RED_6_7 
+#WRITE_IFP(BD 1B1F) //LENS_ADJ_HORIZ_RED_8_9 
+#WRITE_IFP(BE 0023) //LENS_ADJ_HORIZ_RED_10 
+#WRITE_IFP(BF 0F0C) //LENS_ADJ_HORIZ_GREEN_6_7 
+#WRITE_IFP(C0 1217) //LENS_ADJ_HORIZ_GREEN_8_9 
+#WRITE_IFP(C1 0013) //LENS_ADJ_HORIZ_GREEN_10 
+#WRITE_IFP(C2 0E0C) //LENS_ADJ_HORIZ_BLUE_6_7 
+#WRITE_IFP(C3 1712) //LENS_ADJ_HORIZ_BLUE_8_9 
+#WRITE_IFP(C4 0013) //LENS_ADJ_HORIZ_BLUE_10 
+#WRITE_IFP(06 $f $r2 0 1 $b0 01 2 1 06 $w0 $w1) //enable the lens correction       
+;
+
+ROW_NOISE_REDUCTION =
+                        #WRITE_CONTROL(3D 17DD)
+                        #WRITE_SENSOR(5F 3630)
+                        #WRITE_SENSOR(30 043E)
+                        #WRITE_IFP(3B 043E)
+                        #WRITE_CONTROL(2E 0000)
+                        $d0064//delay 100 ms
+                        #WRITE_CONTROL(2E 0C4A)        
+;
+
+PIXEL_NOISE_REDUCTION =
+                        #WRITE_SENSOR(34 C019)
+                        #WRITE_SENSOR(40 1800)
+                        #WRITE_SENSOR(76 7358)
+                        #WRITE_SENSOR(04 0282)
+                        #WRITE_SENSOR(03 01E2)
+                        #WRITE_IFP(A0 0282)
+                        #WRITE_IFP(A3 01E2)
+                        #WRITE_IFP(A6 0282)
+                        #WRITE_IFP(A9 01E2)
+;
+
+LUMA_SET_SS =
+$cB 00
+	#WRITE_IFP(34 0000)     
+	#WRITE_IFP(35 FF00)     
+	#WRITE_CONTROL(2E 0240)
+        #WRITE_IFP(53 1306)     
+	#WRITE_IFP(54 4B28)     
+	#WRITE_IFP(55 A077)     
+	#WRITE_IFP(56 CAB8)     
+	#WRITE_IFP(57 E2D6)     
+	#WRITE_IFP(58 0000)     
+	#WRITE_IFP(DC 1306)     
+	#WRITE_IFP(DD 4B28)     
+	#WRITE_IFP(DE A077)     
+	#WRITE_IFP(DF CAB8)      
+	#WRITE_IFP(E0 E2D6)     
+	#WRITE_IFP(E1 0000)     
+$cl
+	#WRITE_IFP(34 0000)     
+	#WRITE_IFP(35 FF00)     
+ 	#WRITE_CONTROL(2E 0234)                       
+	#WRITE_IFP(53 1809)     
+	#WRITE_IFP(54 5630)     
+	#WRITE_IFP(55 B48A)    
+	#WRITE_IFP(56 E2CE)    
+	#WRITE_IFP(57 FFF1)    
+	#WRITE_IFP(58 0000)     
+	#WRITE_IFP(DC 1809)     
+	#WRITE_IFP(DD 5630)     
+	#WRITE_IFP(DE B48A)     
+	#WRITE_IFP(DF E2CE)     
+	#WRITE_IFP(E0 FFF1)     
+	#WRITE_IFP(E1 0000) 
+$cx
+;
+                        
+//Black 5, Gamma 0.50, Contrast 1.25 
+
+#WRITE_IFP(53 1C0A)     //(2) GAMMA_A_Y1_Y2 
+#WRITE_IFP(54 5434)     //(2) GAMMA_A_Y3_Y4 
+#WRITE_IFP(55 AB86)     //(2) GAMMA_A_Y5_Y6 
+#WRITE_IFP(56 DDC6)     //(2) GAMMA_A_Y7_Y8 
+#WRITE_IFP(57 FFEF)     //(2) GAMMA_A_Y9_Y10 
+#WRITE_IFP(58 0000)     //(1) GAMMA_A_Y0 
+#WRITE_IFP(DC 1C0A)     //(16) GAMMA_B_Y1_Y2 
+#WRITE_IFP(DD 5434)     //(16) GAMMA_B_Y3_Y4 
+#WRITE_IFP(DE AB86)     //(16) GAMMA_B_Y5_Y6 
+#WRITE_IFP(DF DDC6)     //(16) GAMMA_B_Y7_Y8 
+#WRITE_IFP(E0 FFEF)     //(16) GAMMA_B_Y9_Y10 
+#WRITE_IFP(E1 0000)     //(8) GAMMA_B_Y0 
+                  ;                          
+
+	#WRITE_IFP(53 1306)     //(2) GAMMA_A_Y1_Y2 
+	#WRITE_IFP(54 4B28)     //(2) GAMMA_A_Y3_Y4 
+	#WRITE_IFP(55 A077)     //(2) GAMMA_A_Y5_Y6 
+	#WRITE_IFP(56 CAB8)     //(2) GAMMA_A_Y7_Y8 
+	#WRITE_IFP(57 E2D6)     //(2) GAMMA_A_Y9_Y10 
+	#WRITE_IFP(58 0000)     //(1) GAMMA_A_Y0 
+	#WRITE_IFP(DC 1306)     //(16) GAMMA_B_Y1_Y2 
+	#WRITE_IFP(DD 4B28)     //(16) GAMMA_B_Y3_Y4 
+	#WRITE_IFP(DE A077)     //(16) GAMMA_B_Y5_Y6 
+	#WRITE_IFP(DF CAB8)     //(16) GAMMA_B_Y7_Y8 
+	#WRITE_IFP(E0 E2D6)     //(16) GAMMA_B_Y9_Y10 
+	#WRITE_IFP(E1 0000)     //(8) GAMMA_B_Y0 
+$cl
+	#WRITE_IFP(34 0000)     // LUMA_OFFSET
+	#WRITE_IFP(35 FF00)     // CLIPPING_LIM_OUT_LUMA
+ 	#WRITE_CONTROL(2E 0234)
+                        
+
+
+	#WRITE_IFP(53 1809)     //(2) GAMMA_A_Y1_Y2 
+	#WRITE_IFP(54 5630)     //(2) GAMMA_A_Y3_Y4 
+	#WRITE_IFP(55 B48A)     //(2) GAMMA_A_Y5_Y6 
+	#WRITE_IFP(56 E2CE)     //(2) GAMMA_A_Y7_Y8 
+	#WRITE_IFP(57 FFF1)     //(2) GAMMA_A_Y9_Y10 
+	#WRITE_IFP(58 0000)     //(1) GAMMA_A_Y0 
+	#WRITE_IFP(DC 1809)     //(16) GAMMA_B_Y1_Y2 
+	#WRITE_IFP(DD 5630)     //(16) GAMMA_B_Y3_Y4 
+	#WRITE_IFP(DE B48A)     //(16) GAMMA_B_Y5_Y6 
+	#WRITE_IFP(DF E2CE)     //(16) GAMMA_B_Y7_Y8 
+	#WRITE_IFP(E0 FFF1)     //(16) GAMMA_B_Y9_Y10 
+	#WRITE_IFP(E1 0000)     //(8) GAMMA_B_Y0 
+$cx
+;   
+
+
+//==========================================================================================
+//  Initial Sequence Video Recording
+//==========================================================================================
+
+FRAME_RATE_7_5 =    
+#WRITE_SENSOR(05 00EE)     // Context B (full-res) Horizontal Blank 
+#WRITE_SENSOR(06 01EA)     // Context B (full-res) Vertical Blank 
+#WRITE_SENSOR(07 00EE)     // Context A (preview) Horizontal Blank 
+#WRITE_SENSOR(08 01EA)     // Context A (preview) Vertical Blank 
+#WRITE_SENSOR(20 0700)     // Read Mode Context B 
+#WRITE_SENSOR(21 0400)     // Read Mode Context A 
+#WRITE_CONTROL(39 0376)     // AE Line size Context A 
+#WRITE_CONTROL(3A 0376)     // AE Line size Context B 
+#WRITE_CONTROL(3B 055B)     // AE shutter delay limit Context A 
+#WRITE_CONTROL(3C 055B)     // AE shutter delay limit Context B 
+#WRITE_CONTROL(57 00F4)     // Context A Flicker full frame time (60Hz) 
+#WRITE_CONTROL(58 0125)     // Context A Flicker full frame time (50Hz) 
+#WRITE_CONTROL(59 00F4)     // Context B Flicker full frame time (60Hz) 
+#WRITE_CONTROL(5A 0125)     // Context B Flicker full frame time (50Hz) 
+#WRITE_CONTROL(5C 0905)     // 60Hz Flicker Search Range 
+#WRITE_CONTROL(5D 0C08)     // 50Hz Flicker Search Range 
+#WRITE_CONTROL(64 5E1C)     // Flicker parameter
+#WRITE_CONTROL(37 0200)
+#WRITE_IFP(05 000C)       // APERTURE_GAIN (sharpness adjusting)
+; 
+
+FRAME_RATE_10 =     
+#WRITE_SENSOR(05 0289)     // Context B (full-res) Horizontal Blank 
+#WRITE_SENSOR(06 000D)     // Context B (full-res) Vertical Blank 
+#WRITE_SENSOR(07 0289)     // Context A (preview) Horizontal Blank 
+#WRITE_SENSOR(08 000D)     // Context A (preview) Vertical Blank 
+#WRITE_SENSOR(20 0700)     // Read Mode Context B 
+#WRITE_SENSOR(21 0400)     // Read Mode Context A 
+#WRITE_CONTROL(39 0511)     // AE Line size Context A 
+#WRITE_CONTROL(3A 0511)     // AE Line size Context B 
+#WRITE_CONTROL(3B 055B)     // AE shutter delay limit Context A 
+#WRITE_CONTROL(3C 055B)     // AE shutter delay limit Context B 
+#WRITE_CONTROL(57 00A7)     // Context A Flicker full frame time (60Hz) 
+#WRITE_CONTROL(58 00C8)     // Context A Flicker full frame time (50Hz) 
+#WRITE_CONTROL(59 00A7)     // Context B Flicker full frame time (60Hz) 
+#WRITE_CONTROL(5A 00C8)     // Context B Flicker full frame time (50Hz) 
+#WRITE_CONTROL(5C 0602)     // 60Hz Flicker Search Range 
+#WRITE_CONTROL(5D 0905)     // 50Hz Flicker Search Range 
+#WRITE_CONTROL(64 5E1C)     // Flicker parameter
+#WRITE_CONTROL(37 0180)
+#WRITE_IFP(05 000C)       // APERTURE_GAIN (sharpness adjusting)
+;
+
+FRAME_RATE_14 =
+#WRITE_SENSOR(05 00A3)     // Context B (full-res) Horizontal Blank 
+#WRITE_SENSOR(06 0054)     // Context B (full-res) Vertical Blank 
+#WRITE_SENSOR(07 00A3)     // Context A (preview) Horizontal Blank 
+#WRITE_SENSOR(08 000D)     // Context A (preview) Vertical Blank 
+#WRITE_SENSOR(20 0700)     // Read Mode Context B 
+#WRITE_SENSOR(21 0400)     // Read Mode Context A 
+#WRITE_CONTROL(39 032B)     // AE Line size Context A 
+#WRITE_CONTROL(3A 032B)     // AE Line size Context B 
+#WRITE_CONTROL(3B 055B)     // AE shutter delay limit Context A 
+#WRITE_CONTROL(3C 055B)     // AE shutter delay limit Context B 
+#WRITE_CONTROL(57 010B)     // Context A Flicker full frame time (60Hz) 
+#WRITE_CONTROL(58 0140)     // Context A Flicker full frame time (50Hz) 
+#WRITE_CONTROL(59 010B)     // Context B Flicker full frame time (60Hz) 
+#WRITE_CONTROL(5A 0140)     // Context B Flicker full frame time (50Hz) 
+#WRITE_CONTROL(5C 0905)     // 60Hz Flicker Search Range 
+#WRITE_CONTROL(5D 0D09)     // 50Hz Flicker Search Range 
+#WRITE_CONTROL(64 5E1C)     // Flicker parameter 
+#WRITE_CONTROL(CD 2185)     //snapshot config (CD 2187)
+#WRITE_IFP(05 000C)       // APERTURE_GAIN (sharpness adjusting)
+;
+
+//14 fps, 13MHz
+
+FRAME_RATE_AUTO =
+#WRITE_SENSOR(05 00A3)     // Context B (full-res) Horizontal Blank 
+#WRITE_SENSOR(06 0054)     // Context B (full-res) Vertical Blank 
+#WRITE_SENSOR(07 00A3)     // Context A (preview) Horizontal Blank 
+#WRITE_SENSOR(08 000D)     // Context A (preview) Vertical Blank 
+#WRITE_SENSOR(20 0700)     // Read Mode Context B 
+#WRITE_SENSOR(21 0400)     // Read Mode Context A 
+#WRITE_CONTROL(39 032B)     // AE Line size Context A 
+#WRITE_CONTROL(3A 032B)     // AE Line size Context B 
+#WRITE_CONTROL(3B 055B)     // AE shutter delay limit Context A 
+#WRITE_CONTROL(3C 055B)     // AE shutter delay limit Context B 
+#WRITE_CONTROL(57 010B)     // Context A Flicker full frame time (60Hz) 
+#WRITE_CONTROL(58 0140)     // Context A Flicker full frame time (50Hz) 
+#WRITE_CONTROL(59 010B)     // Context B Flicker full frame time (60Hz) 
+#WRITE_CONTROL(5A 0140)     // Context B Flicker full frame time (50Hz) 
+#WRITE_CONTROL(5C 0905)     // 60Hz Flicker Search Range 
+#WRITE_CONTROL(5D 0D09)     // 50Hz Flicker Search Range 
+#WRITE_CONTROL(64 5E1C)     // Flicker parameter 
+#WRITE_CONTROL(CD 2185)     //snapshot config (CD 2187)
+#WRITE_IFP(05 000C)       // APERTURE_GAIN (sharpness adjusting)
+;
+
+// Set framerate (fixed 15 fps) used for Xenon Flash.
+
+SEQ_SET_AUTO_FRAMERATE_FLASH=
+                       #WRITE_SENSOR(05 0118)   //Context B (full-res) Horizontal Blank
+                       #WRITE_SENSOR(06 000D)   //Context B (full-res) Vertical Blank
+                       #WRITE_SENSOR(07 00C0)   //Context A (preview) Horizontal Blank
+                       #WRITE_SENSOR(08 01B0)   //Context A (preview) Vertical Blank
+                       #WRITE_SENSOR(20 0100)   //Read Mode Context B
+                       #WRITE_SENSOR(21 8400)   //Read Mode Context A
+                       #WRITE_SENSOR(22 0D0F)   //Dark col / rows
+                       #WRITE_SENSOR(24 8000)   //Extra Reset
+                       #WRITE_CONTROL(39 0690)  //AE Line Size Context A
+                       #WRITE_CONTROL(3A 0626)  //AE Line Size Context B          
+                       #WRITE_CONTROL(3B 03DE)  //AE shutter delay limit Context A
+                       #WRITE_CONTROL(3C 04CA)  //AE shutter delay limit Context B
+                       #WRITE_CONTROL(57 010C)  //Context A Flicker full frame rate (60Hz)
+                       #WRITE_CONTROL(58 0142)  //Context A Flicker full frame rate (50Hz)
+                       #WRITE_CONTROL(59 020B)  //Context B Flicker full frame rate (60Hz)
+                       #WRITE_CONTROL(5A 0274)  //Context B Flicker full frame rate (50Hz)
+                       #WRITE_CONTROL(5C 130E)  //60Hz Flicker Search Range
+                       #WRITE_CONTROL(5D 1712)  //50Hz Flicker Search Range
+                       #WRITE_CONTROL(64 1E1C)  //Flicker parameter            
+                       #WRITE_CONTROL(37 8100)  //(7) SHUTTER_WIDTH_LIM_AE
+                       #WRITE_IFP(05 000C)
+;
+
+
+// Set Auto framerate 15
+SEQ_SET_AUTO_FRAMERATE_15=#WRITE_SENSOR(05 00FC)   //Context B (full-res) Horizontal Blank
+                           #WRITE_SENSOR(06 0007)   //Context B (full-res) Vertical Blank
+                           #WRITE_SENSOR(07 00B4)   //Context A (preview) Horizontal Blank
+                           #WRITE_SENSOR(08 0011)   //Context A (preview) Vertical Blank                      
+                           #WRITE_SENSOR(20 0100)   //Read Mode Context B
+                           #WRITE_SENSOR(21 8400)   //Read Mode Context A
+                           #WRITE_SENSOR(22 0509)   //Dark col / rows
+                           #WRITE_SENSOR(24 0000)   //Extra Reset
+                           #WRITE_CONTROL(39 0678)  //AE Line Size Context A                          
+                           #WRITE_CONTROL(3A 0604)  //AE Line Size Context B
+                           #WRITE_CONTROL(3B 0423)  //AE shutter delay limit Context A                      
+                           #WRITE_CONTROL(3C 0555)  //AE shutter delay limit Context B
+                           #WRITE_CONTROL(57 01E3)  //Context A Flicker full frame rate (60Hz)
+                           #WRITE_CONTROL(58 0243)  //Context A Flicker full frame rate (50Hz)
+                           #WRITE_CONTROL(59 0103)  //Context B Flicker full frame rate (60Hz)
+                           #WRITE_CONTROL(5A 0137)  //Context B Flicker full frame rate (50Hz)
+                           #WRITE_CONTROL(5C 110C)  //60Hz Flicker Search Range
+                           #WRITE_CONTROL(5D 1510)  //50Hz Flicker Search Range
+                           #WRITE_CONTROL(64 5E1C)  //Flicker parameter
+                           #WRITE_CONTROL(37 0400)  //(7) SHUTTER_WIDTH_LIM_AE
+                           #WRITE_IFP(05 000C)
+                          ;
+
+// Set framerate to 24 fps
+SEQ_SET_FRAMERATE_24=
+		       #WRITE_SENSOR(05 0118)   //Context B (full-res) Horizontal Blank
+                       #WRITE_SENSOR(06 000D)   //Context B (full-res) Vertical Blank
+                       #WRITE_SENSOR(07 00C0)   //Context A (preview) Horizontal Blank
+                       #WRITE_SENSOR(08 0012)   //Context A (preview) Vertical Blank
+                       #WRITE_SENSOR(20 0100)   //Read Mode Context B
+                       #WRITE_SENSOR(21 8400)   //Read Mode Context A
+                       #WRITE_SENSOR(22 0D0F)   //Dark col / rows
+                       #WRITE_SENSOR(24 8000)   //Extra Reset
+                       #WRITE_CONTROL(39 0690)  //AE Line Size Context A
+                       #WRITE_CONTROL(3A 0626)  //AE Line Size Context B           
+                       #WRITE_CONTROL(3B 03DE)  //AE shutter delay limit Context A
+                       #WRITE_CONTROL(3C 04CA)  //AE shutter delay limit Context B
+                       #WRITE_CONTROL(57 010C)  //Context A Flicker full frame rate (60Hz)
+                       #WRITE_CONTROL(58 0142)  //Context A Flicker full frame rate (50Hz)
+                       #WRITE_CONTROL(59 020B)  //Context B Flicker full frame rate (60Hz)
+                       #WRITE_CONTROL(5A 0274)  //Context B Flicker full frame rate (50Hz)
+                       #WRITE_CONTROL(5C 130E)  //60Hz Flicker Search Range
+                       #WRITE_CONTROL(5D 1712)  //50Hz Flicker Search Range
+                       #WRITE_CONTROL(64 1E1C)  //Flicker parameter
+                       #WRITE_CONTROL(37 0100)  //(7) SHUTTER_WIDTH_LIM_AE                 
+                       #WRITE_CONTROL(37 8100)//(7) SHUTTER_WIDTH_LIM_AE
+                       #WRITE_IFP(05 000C)
+	;
+
+
+// Set framerate to 24 fps
+SEQ_SET_FRAMERATE_24=
+                      #WRITE_SENSOR(05 0700)   //Context B (full-res) Horizontal Blank
+                      #WRITE_SENSOR(06 0007)   //Context B (full-res) Vertical Blank
+                      #WRITE_SENSOR(07 0954)   //Context A (preview) Horizontal Blank
+                      #WRITE_SENSOR(08 0007)   //Context A (preview) Vertical Blank
+                      #WRITE_SENSOR(20 0100)   //Read Mode Context B
+                      #WRITE_SENSOR(21 8400)   //Read Mode Context A
+                      #WRITE_SENSOR(22 0509)   //Dark col / rows
+                      #WRITE_SENSOR(24 0000)   //Extra Reset
+                      #WRITE_CONTROL(39 17B8)  //AE Line Size Context A
+                      #WRITE_CONTROL(3A 0C08)  //AE Line Size Context B
+                      #WRITE_CONTROL(3B 0423)  //AE shutter delay limit Context A
+                      #WRITE_CONTROL(3C 0555)  //AE shutter delay limit Context B
+                      #WRITE_CONTROL(57 0083)  //Context A Flicker full frame rate (60Hz)
+                      #WRITE_CONTROL(58 009E)  //Context A Flicker full frame rate (50Hz)
+                      #WRITE_CONTROL(59 0103)  //Context B Flicker full frame rate (60Hz)
+                      #WRITE_CONTROL(5A 0137)  //Context B Flicker full frame rate (50Hz)
+                      #WRITE_CONTROL(5C 0905)  //60Hz Flicker Search Range
+                      #WRITE_CONTROL(5D 0D09)  //50Hz Flicker Search Range
+                      #WRITE_CONTROL(64 1E1C)  //Flicker parameter
+                      #WRITE_CONTROL(37 0200)  //(5) SHUTTER_WIDTH_LIM_AE
+                      #WRITE_IFP(05 000C)
+                     
+		              ;
+
+//30 fps, 20MHz
+
+FRAME_RATE_30 =
+#WRITE_SENSOR(05 00A3)     // Context B (full-res) Horizontal Blank 
+#WRITE_SENSOR(06 0054)     // Context B (full-res) Vertical Blank 
+#WRITE_SENSOR(07 00A3)     // Context A (preview) Horizontal Blank 
+#WRITE_SENSOR(08 000D)     // Context A (preview) Vertical Blank 
+#WRITE_SENSOR(20 0700)     // Read Mode Context B 
+#WRITE_SENSOR(21 0400)     // Read Mode Context A 
+#WRITE_CONTROL(39 032B)     // AE Line size Context A 
+#WRITE_CONTROL(3A 032B)     // AE Line size Context B 
+#WRITE_CONTROL(3B 055B)     // AE shutter delay limit Context A 
+#WRITE_CONTROL(3C 055B)     // AE shutter delay limit Context B 
+#WRITE_CONTROL(57 010B)     // Context A Flicker full frame time (60Hz) 
+#WRITE_CONTROL(58 0140)     // Context A Flicker full frame time (50Hz) 
+#WRITE_CONTROL(59 010B)     // Context B Flicker full frame time (60Hz) 
+#WRITE_CONTROL(5A 0140)     // Context B Flicker full frame time (50Hz) 
+#WRITE_CONTROL(5C 0905)     // 60Hz Flicker Search Range 
+#WRITE_CONTROL(5D 0D09)     // 50Hz Flicker Search Range 
+#WRITE_CONTROL(64 5E1C)     // Flicker parameter 
+#WRITE_CONTROL(CD 2185)     //snapshot config (CD 2187)
+#WRITE_CONTROL(37 8100)     //(7) SHUTTER_WIDTH_LIM_AE
+#WRITE_IFP(05 000C)       // APERTURE_GAIN (sharpness adjusting)
+;
+
+//==========================================================================================
+//  End Sequence Video Recording
+//==========================================================================================
+
+
+COMPARE_TWO_BYTE_NUMBERS =              // Compare a with b, where a and b are 1 byte long. Result passed in register 0.
+                                        // Result: a<b => output 1, a=b => output 2, a>b => output 3
+                        $-5 r6          // Subtract register 6 from register 5
+                                        // If the result is negative, then register 0 will contain a very large number
+                                        // since the registers are 32-bit unsigned. Thus, if the second byte is a FF, then 
+                                        // b is larger than a, otherwise a is larger than b. If the result is 0, then
+                                        // a is equal to b.
+                        $c5 00          // IF register 5 is 0 THEN
+                          $s7 02        //   a=b: pass result 02 in register 0.
+                        $cl             // ELSE
+                          $>5 8         //   Shift one byte to the right
+                          $c5 FF        //   IF register 5 is FF THEN
+                            $s7 01      //     a<b: pass result 01 in register 7.
+                          $cl           //   ELSE
+                            $s7 03      //     a>b: pass result 03 in register 7.
+                          $cx           //   ENDIF
+                        $cx             // ENDIF
+                        ;
+
+IS_A_LARGER_THAN_B =                        // Compare a with b, where a and b are 2 bytes long each. Result passed in register 0.
+                                            // a=r2r1 and b=r4r3, where rx refers to the byte sized register x
+                                            // Result: a<b => output 1, a=b => output 2, a>b => output 3
+                    $m5 2 $m6 4             // Copy MSB of a and b to register 5 and 6
+                    #COMPARE_TWO_BYTE_NUMBERS // First compare MSB of the two numbers
+                    $c7 02                  // IF MSB a = MSB b: LSB needs to be compared also.
+                      $m5 1 $m6 3           // Copy LSB of a and b to register 5 and 6
+                      #COMPARE_TWO_BYTE_NUMBERS // Compare LSB of the two numbers stored in !
+                      $c7 02                // IF LSB a = LSB b THEN
+                        $s0 02              // a=b: pass result 02 in register 0
+                      $cl                   // ELSE
+                        $c7 01              // IF LSB a < LSB b THEN
+                          $s0 01            // a<b: pass result 01 in register 0
+                        $cl                 // ELSE
+                          $s0 03            // only possibility is that a>b: pass result 03 in register 0
+                        $cx
+                      $cx
+                    $cl                     // ELSE find out if a<b or b>a
+                      $c7 01                //   IF MSB a< MSB b THEN
+                        $s0 01              //     a<b: pass result 01 in register 0.
+                      $cl                   //   ELSE
+                        $s0 03              //     Only possibility is that a>b: pass result 03 in register 0.
+                      $cx                   //   ENDIF
+                    $cx                     // ENDIF
+                    ;
+
+
+// Set a flag if luma is below 40 => flash will be fired
+SEQ_FLASH_LIMIT=    $c9 01 $"DORIS_flash_attached_intreg_9_%9" //Is the flash attached
+                      #WRITE_CONTROL(CC 0004)
+                      #WRITE_CONTROL(CB 0001)
+                      #READ_CONTROL(4D $f $r2 2 1) $"DORIS_Status_reg_4D_%2_%1" //Store the Time averaged luma value in r1 and r2
+                      $s4 00 $s3 30 $"DORIS_Status_int_reg_4_3_%4_%3" // Luma limit for flash
+                      #IS_A_LARGER_THAN_B $"DORIS_Status_int_reg_0_%0"
+                      $c0 01
+                        $s8 01 $"DORIS_Flash_will_be_fired" // Flash will be fired
+                      $cl
+                        $s8 00 $"DORIS_Flash_will_not_be_fired_9_1" // Flash will not be fired
+                      $cx
+                    
+                    $cl
+                      $s8 00 $"DORIS_Flash_will_not_be_fired_9_0" // Flash will not flash (flash not attached)
+                    $cx 
+                    $"DORIS_Status_int_reg_8_%8"
+                    ;
+
+// adjustings for xenon flash
+SEQ_SET_FLASH=	
+	#WRITE_CONTROL(37 0120) //fixed upperlower 13.3 fps
+	#WRITE_CONTROL(2E 0000) //target 0 
+	$d064 //pause 100 ms 
+	#WRITE_CONTROL(2E 0C4A)
+
+//	 #WRITE_SENSOR(23 0008) //Turn off Fire flash every frame          
+	#WRITE_CONTROL(D4 5469)
+	//$d00C0   //default: C0
+	#WRITE_CONTROL(F6 0020)
+	#WRITE_CONTROL(FF 8080) //Xenon RB gain
+	//#WRITE_CONTROL(37 0100)
+            
+;
+
+//======================================================================================
+// Properties:!!!!!!!!!!!!!!!!!!!!!!!!!DO NOT EDIT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//======================================================================================
+//************************************************************************************** 
+//		              Mini SuperMode MT9V112/MT9M112    
+//**************************************************************************************
+seq_set_prop_0_0 = $cC 00 #WRITE_CONTROL(2E 0108) $cx; 
+seq_set_prop_0_1 = $cC 00 #WRITE_CONTROL(2E 010A) $cx; 
+seq_set_prop_0_2 = $cC 00 #WRITE_CONTROL(2E 010E) $cx; 
+seq_set_prop_0_3 = $cC 00 #WRITE_CONTROL(2E 0110)$cx   
+                   $cC 01 #WRITE_CONTROL (24 6018) 
+                          #WRITE_CONTROL (22 B078)
+                          #WRITE_CONTROL (23 EE78)
+	                  #WRITE_CONTROL(F6 0020)
+           	          #WRITE_CONTROL(FF 8080)
+              	          #WRITE_CONTROL(D4 5469)
+                          #WRITE_IFP(25 0015)$cx
+                   $cC 02 #WRITE_IFP(#REGISTER_MODIFY(E2,$b1 00 0 3))$cx
+                   $cC 03 #WRITE_IFP(53 1C0A)
+                          #WRITE_IFP(54 5434) 
+                          #WRITE_IFP(55 AB86)
+                          #WRITE_IFP(56 DDC6)
+                          #WRITE_IFP(57 FFEF)
+                          #WRITE_IFP(58 0000)
+                          #WRITE_IFP(DC 1C0A)
+                          #WRITE_IFP(DD 5434)
+                          #WRITE_IFP(DE AB86)
+                          #WRITE_IFP(DF DDC6)
+                          #WRITE_IFP(E0 FFEF)
+                          #WRITE_IFP(E1 0000)
+                          #WRITE_IFP(35 F00A)
+                          $cx
+                   $cC 04 #WRITE_IFP(05 0003) $cx;
+seq_set_prop_0_4 = $cC 00 #WRITE_CONTROL(2E 0116)$cx   
+                   $cC 01 #WRITE_CONTROL (24 6018) 
+                          #WRITE_CONTROL (22 B078)
+                          #WRITE_CONTROL (23 C768)
+	                  #WRITE_CONTROL(F6 0020)
+           	          #WRITE_CONTROL(FF 8080)
+              	          #WRITE_CONTROL(D4 5469)
+                          #WRITE_IFP(25 0015)$cx
+                   $cC 02 #WRITE_IFP(#REGISTER_MODIFY(E2,$b1 00 0 3))$cx
+                   $cC 03 #WRITE_IFP(53 0C04)
+                          #WRITE_IFP(54 4421) 
+                          #WRITE_IFP(55 8F6F)
+                          #WRITE_IFP(56 C2AA)
+                          #WRITE_IFP(57 ECD8)
+                          #WRITE_IFP(58 0000)
+                          #WRITE_IFP(DC 1C0A)
+                          #WRITE_IFP(DD 5434)
+                          #WRITE_IFP(DE AB86)
+                          #WRITE_IFP(DF DDC6)
+                          #WRITE_IFP(E0 FFEF)
+                          #WRITE_IFP(E1 0000)
+                          #WRITE_IFP(35 F010)
+                          $cx
+                   $cC 04 #WRITE_IFP(05 000C) $cx;
+seq_set_prop_0_5 = $cC 00 #WRITE_CONTROL(2E 011A)$cx  
+                   $cC 01 #WRITE_CONTROL (24 6018) 
+                          #WRITE_CONTROL (22 6258)
+                          #WRITE_CONTROL (23 A058)
+	                  #WRITE_CONTROL(F6 0020)
+           	          #WRITE_CONTROL(FF 8080)
+              	          #WRITE_CONTROL(D4 5469)
+                          #WRITE_IFP(25 0015)$cx
+                   $cC 02 #WRITE_IFP(#REGISTER_MODIFY(E2,$b1 03 0 3))$cx 
+                   $cC 03 #WRITE_IFP(53 0C04)
+                          #WRITE_IFP(54 4421) 
+                          #WRITE_IFP(55 8F6F)
+                          #WRITE_IFP(56 C2AA)
+                          #WRITE_IFP(57 ECD8)
+                          #WRITE_IFP(58 0000)
+                          #WRITE_IFP(DC 1C0A)
+                          #WRITE_IFP(DD 5434)
+                          #WRITE_IFP(DE AB86)
+                          #WRITE_IFP(DF DDC6)
+                          #WRITE_IFP(E0 FFEF)
+                          #WRITE_IFP(E1 0000)
+                          #WRITE_IFP(35 F01A)
+                          $cx
+                   $cC 04 #WRITE_IFP(05 0005) $cx;
+seq_set_prop_0_6 = $cC 00 #WRITE_CONTROL(2E 0120)$cx 
+                   $cC 01 #WRITE_CONTROL (24 6018)  
+                          #WRITE_CONTROL (22 8968)
+                          #WRITE_CONTROL (23 A058)
+	                  #WRITE_CONTROL(F6 0020)
+           	          #WRITE_CONTROL(FF 8080)
+              	          #WRITE_CONTROL(D4 5469)
+                          #WRITE_IFP(25 0015)$cx 
+                   $cC 02 #WRITE_IFP(E2 8004)$cx 
+                   $cC 03 #WRITE_IFP(53 0C04)
+                          #WRITE_IFP(54 4421) 
+                          #WRITE_IFP(55 8F6F)
+                          #WRITE_IFP(56 C2AA)
+                          #WRITE_IFP(57 ECD8)
+                          #WRITE_IFP(58 0000)
+                          #WRITE_IFP(DC 1C0A)
+                          #WRITE_IFP(DD 5434)
+                          #WRITE_IFP(DE AB86)
+                          #WRITE_IFP(DF DDC6)
+                          #WRITE_IFP(E0 FFEF)
+                          #WRITE_IFP(E1 0000)
+                          #WRITE_IFP(35 F024)
+                          $cx
+                   $cC 04 #WRITE_IFP(05 0006) $cx;
+seq_set_prop_0_7 = $cC 00 #WRITE_CONTROL(2E 0128)$cx  
+                   $cC 01 #WRITE_CONTROL (24 AE38)   
+                          #WRITE_CONTROL (22 B078)
+                          #WRITE_CONTROL (23 A058)
+	                  #WRITE_CONTROL(F6 0020)
+           	          #WRITE_CONTROL(FF 8080)
+              	          #WRITE_CONTROL(D4 5469)
+                          #WRITE_IFP(25 0015)$cx 
+                   $cC 02 #WRITE_IFP(#REGISTER_MODIFY(E2,$b1 02 0 3) E3 b0 23)$cx 
+                   $cC 03 #WRITE_IFP(53 0C04)
+                          #WRITE_IFP(54 4421) 
+                          #WRITE_IFP(55 8F6F)
+                          #WRITE_IFP(56 C2AA)
+                          #WRITE_IFP(57 ECD8)
+                          #WRITE_IFP(58 0000)
+                          #WRITE_IFP(DC 1C0A)
+                          #WRITE_IFP(DD 5434)
+                          #WRITE_IFP(DE AB86)
+                          #WRITE_IFP(DF DDC6)
+                          #WRITE_IFP(E0 FFEF)
+                          #WRITE_IFP(E1 0000)
+                          #WRITE_IFP(35 F02E)
+                          $cx
+                   $cC 04 #WRITE_IFP(05 0007) $cx;
+seq_set_prop_0_8 = $cC 00 #WRITE_CONTROL(2E 0138)$cx  
+                   $cC 01 #WRITE_CONTROL (24 8728)   
+                          #WRITE_CONTROL (22 B078)
+                          #WRITE_CONTROL (23 9058)
+	                  #WRITE_CONTROL(F6 0020)
+           	          #WRITE_CONTROL(FF 8080)
+              	          #WRITE_CONTROL(D4 5469)
+                          #WRITE_IFP(25 0015)$cx	                      
+                   $cC 02 #WRITE_IFP(E2 7001)$cx 
+                   $cC 03 #WRITE_IFP(53 0C04)
+                          #WRITE_IFP(54 4421) 
+                          #WRITE_IFP(55 8F6F)
+                          #WRITE_IFP(56 C2AA)
+                          #WRITE_IFP(57 ECD8)
+                          #WRITE_IFP(58 0000)
+                          #WRITE_IFP(DC 1C0A)
+                          #WRITE_IFP(DD 5434)
+                          #WRITE_IFP(DE AB86)
+                          #WRITE_IFP(DF DDC6)
+                          #WRITE_IFP(E0 FFEF)
+                          #WRITE_IFP(E1 0000)
+                          #WRITE_IFP(35 F038)
+                          $cx
+                   $cC 04 #WRITE_IFP(05 0008) $cx;
+seq_set_prop_0_9 = $cC 00 $cB 00 #WRITE_CONTROL(2E 0240)
+                          $cl $d0010 #WRITE_CONTROL(2E 0244) $cx$cx
+                   $cC 01 #WRITE_CONTROL (24 6018)	
+                          #WRITE_CONTROL (22 B078)
+                          #WRITE_CONTROL (23 9058)
+	                  #WRITE_CONTROL(F6 0000)
+           	          #WRITE_CONTROL(FF 0000)
+              	          #WRITE_CONTROL(D4 0000)
+                          $sB 00
+                          #LUMA_SET_SS
+                          $"DORIS_setuptest_WB Auto"$cx
+                   $cC 02 #WRITE_IFP(#REGISTER_MODIFY(E2,$b1 00 0 3))#WRITE_IFP(25 0015)$cx$cx 
+                   $cC 03 #WRITE_IFP(34 0000)$cl#WRITE_IFP(35 F000)$cx$cx
+                   $cC 04 #WRITE_CONTROL(37 0300)$cl#FRAME_RATE_AUTO$cx$cx;          
+seq_set_prop_0_a = $cC 00 #WRITE_CONTROL(2E 0250)$cx
+                   $cC 01 #WRITE_CONTROL (24 6018)   
+                          #WRITE_CONTROL (22 B078)
+                          #WRITE_CONTROL (23 A058)
+                          #WRITE_IFP(25 0015)$cx
+                   $cC 02 #WRITE_IFP(25 001D)$cx
+                   $cC 03 #WRITE_IFP(34 0014)$cx
+                   $cC 04 $s0 32
+                          #WRITE_CONTROL(37 0120)$cl#WRITE_CONTROL(3B 055B)$cl#WRITE_CONTROL(3C 055B)$cl#WRITE_CONTROL(0C 0004)$cl#WRITE_CONTROL(09 01FC)$cx$cx$cx$cx$cx;
+seq_set_prop_0_b = $cC 00 #WRITE_CONTROL(2E 0270)$cx 
+                   $cC 01 #WRITE_CONTROL (24 1818)   
+                          #WRITE_CONTROL (22 8878)
+                          #WRITE_CONTROL (23 9888)
+                          #WRITE_IFP(25 0015)$cx
+                   $cC 02 #WRITE_IFP(25 0015)$cx 
+                   $cC 03 #WRITE_IFP(34 001A)$cx
+                   $cC 04 $s0 2F
+                          #WRITE_CONTROL(37 0180)$cl#WRITE_CONTROL(3B 0448)$cl#WRITE_CONTROL(3C 0448)$cl#WRITE_CONTROL(0C 0004)$cl#WRITE_CONTROL(09 0261)$cx$cx$cx$cx$cx;
+seq_set_prop_0_c = $cC 00 #WRITE_CONTROL(2E 1088)$cx
+                   $cC 01 #WRITE_CONTROL (24 4848)   
+                          #WRITE_CONTROL (22 8878)
+                          #WRITE_CONTROL (23 A898)
+                          #WRITE_IFP(25 0015)$cx
+                   $cC 02 #WRITE_IFP(25 000D)$cx
+                   $cC 03 #WRITE_IFP(34 0024)$cx
+                   $cC 04 $s0 2B
+                          #WRITE_CONTROL(37 0200)$cl#WRITE_CONTROL(3B 036E)$cl#WRITE_CONTROL(3C 036E)$cl#WRITE_CONTROL(0C 0004)$cl#WRITE_CONTROL(09 02DA)$cx$cx$cx$cx$cx;
+seq_set_prop_0_d = $cC 00 #WRITE_CONTROL(2E 10A8)$cx 
+                   $cC 01 #WRITE_CONTROL (24 5050)   
+                          #WRITE_CONTROL (22 8878)
+                          #WRITE_CONTROL (23 7868)
+                          #WRITE_IFP(25 0015)$cx
+                   $cC 02 #WRITE_IFP(25 000F)$cx
+                   $cC 03 #WRITE_IFP(34 002B)$cx
+                   $cC 04 $s0 28
+                          #WRITE_CONTROL(37 0300)$cl#WRITE_CONTROL(3B 02BE)$cl#WRITE_CONTROL(3C 02BE)$cl#WRITE_CONTROL(0C 0010)$cl#WRITE_CONTROL(09 036C)$cx$cx$cx$cx$cx;
+seq_set_prop_0_e = $cC 00 #WRITE_CONTROL(2E 10C0)$cx 
+                   $cC 01 #WRITE_CONTROL (24 6060)   
+                          #WRITE_CONTROL (22 8878)
+                          #WRITE_CONTROL (23 8878)
+                          #WRITE_IFP(25 0015)$cx
+                   $cC 02 #WRITE_IFP(25 0005)$cx 
+                   $cC 03 #WRITE_IFP(34 002E)$cx
+                   $cC 04 $s0 21
+                          #WRITE_CONTROL(37 0400)$cl#WRITE_CONTROL(3B 0231)$cl#WRITE_CONTROL(3C 0231)$cl#WRITE_CONTROL(0C 0014)$cl#WRITE_CONTROL(09 041B)$cl#WRITE_CONTROL(00 002B)$cx$cx$cx$cx$cx;
+seq_set_prop_0_f = $cC 00 #WRITE_CONTROL(2E 10D8)$cx 
+                   $cC 01 #WRITE_CONTROL(24 4CE0)
+                          #WRITE_CONTROL(22 8301)
+                          #WRITE_CONTROL(23 B71C)
+                          #WRITE_IFP(25 0015)$cx
+                   $cC 02 #WRITE_IFP(25 002D)$cx  
+                   $cC 03 #WRITE_IFP(34 0038)$cx
+                   $cC 04 $s0 1B
+                          #WRITE_CONTROL(37 0500)$cl#WRITE_CONTROL(3B 01C0)$cl#WRITE_CONTROL(3C 01C0)$cl#WRITE_CONTROL(0C 0078)$cl#WRITE_CONTROL(09 041B)$cx$cx$cx$cx$cx;
+
+
+seq_set_prop_8_0 = $sC 00;	
+seq_set_prop_8_4 = $sC 01;
+seq_set_prop_8_1 = $sC 02;
+seq_set_prop_8_2 = $sC 03;
+seq_set_prop_8_3 = $sC 04; 
+seq_set_prop_2_0 = #WRITE_CONTROL(5B 00 00);
+seq_set_prop_2_1 = #WRITE_CONTROL(5B 00 01);
+seq_set_prop_2_2 = #WRITE_CONTROL(5B 00 03);
+seq_set_prop_3_0 = #WRITE_IFP(#REGISTER_MODIFY(20,$b1 01 0 1));
+seq_set_prop_3_1 = #WRITE_IFP(#REGISTER_MODIFY(20,$b1 00 0 1));
+seq_set_prop_4_0 = #WRITE_IFP(#REGISTER_MODIFY(20,$b1 00 1 1));
+seq_set_prop_4_1 = #WRITE_IFP(#REGISTER_MODIFY(20,$b1 01 1 1));
+seq_get_prop_5   = #READ_ISP(0B $r2 4 3)   #READ_ISP(0A $f $r2 1 0);
+seq_set_prop_5_0 =#WRITE_ISP(10 8004) #WRITE_ISP(80 0010)
+                  #WRITE_ISP(10 8005) #WRITE_ISP(80 0007) 
+                  #WRITE_ISP(10 8006) #WRITE_ISP(80 0007);
+seq_set_prop_5_1 =#WRITE_ISP(10 8004) #WRITE_ISP(80 0018)
+                  #WRITE_ISP(10 8005) #WRITE_ISP(80 000f) 
+                  #WRITE_ISP(10 8006) #WRITE_ISP(80 000f);
+
+seq_get_prop_c = $s0 32;
+
+seq_set_prop_6 = $"DORIS_zoom"
+                    $z0
+                    $s2 %0
+                    $w2 $"DORIS_zoom_number_$w2_%2"
+                $c2 0A
+                        $c0 41
+                            #WRITE_IFP(A5 4000)
+                            #WRITE_IFP(A7 0080)
+                            #WRITE_IFP(A8 4000)
+                            #WRITE_IFP(AA 0060
+
+                            #WRITE_IFP(A6 0280)
+                            #WRITE_IFP(A9 01E0)
+                        $cl
+                            $c0 42
+                                #WRITE_IFP(A5 4000)
+                                #WRITE_IFP(A7 00B0)
+                                #WRITE_IFP(A8 4000) 
+                                #WRITE_IFP(AA 0090)
+
+                                #WRITE_IFP(A6 024A)
+                                #WRITE_IFP(A9 01E0)
+                                
+                            $cl 
+                              $c0 44
+                                #WRITE_IFP(A5 4000)
+                                #WRITE_IFP(A7 00B0)
+                                #WRITE_IFP(A8 4000) 
+                                #WRITE_IFP(AA 0090)
+
+                                #WRITE_IFP(A6 024A)
+                                #WRITE_IFP(A9 01E0)
+                                $cl                             
+                                #WRITE_IFP(A5 4000)
+                                #WRITE_IFP(A7 0080)
+                                #WRITE_IFP(A8 4000)
+                                #WRITE_IFP(AA 0060)
+                                
+                                #WRITE_IFP(A6 0280)
+                                #WRITE_IFP(A9 01E0)
+ $cx                           
+                            $cx
+                       
+                        $cx
+                        $"DORISsetuptest_zoom_mode_1x"      
+                        
+                    $cl
+                        $w2
+                        $c2 14 
+
+                            $c0 41
+                                #WRITE_IFP(A5 4000)
+                                #WRITE_IFP(A7 0080)
+                                #WRITE_IFP(A8 4000)
+                                #WRITE_IFP(AA 0060)
+
+                                #WRITE_IFP(A6 0140)
+                                #WRITE_IFP(A9 00F0)
+                            $cl
+                                $c0 42
+                                    #WRITE_IFP(A5 4000)
+                                    #WRITE_IFP(A7 00B0)
+                                    #WRITE_IFP(A8 4000)
+                                    #WRITE_IFP(AA 0090)
+                               
+                                    #WRITE_IFP(A6 0125)
+                                    #WRITE_IFP(A9 00F0)
+                    
+                                $cl
+                                $c0 44
+                                    #WRITE_IFP(A5 4000)
+                                    #WRITE_IFP(A7 00B0)
+                                    #WRITE_IFP(A8 4000)
+                                    #WRITE_IFP(AA 0090)
+                               
+                                    #WRITE_IFP(A6 0125)
+                                    #WRITE_IFP(A9 00F0)
+                                    $cl
+                    #WRITE_IFP(A5 4000)
+                                    #WRITE_IFP(A7 0080)
+                                    #WRITE_IFP(A8 4000)
+                                    #WRITE_IFP(AA 0060)
+
+                                    #WRITE_IFP(A6 0140) 
+                                    #WRITE_IFP(A9 00F0)
+                                    $cx
+                                $cx
+                    
+                            $cx
+                            $"DORISsetuptest_zoom_mode_2x"
+                        $cl
+                                $"DORISsetuptest_zoom_mode_4x"
+                                $c0 41
+                                    #WRITE_IFP(A5 4000)
+                                    #WRITE_IFP(A7 0080)
+                                    #WRITE_IFP(A8 4000)
+                                    #WRITE_IFP(AA 0060)
+
+                                    #WRITE_IFP(A6 00A0)
+                                    #WRITE_IFP(A9 0078)
+                                $cl
+                                    $c0 42
+                                        #WRITE_IFP(A5 4000)
+                                        #WRITE_IFP(A7 00B0)
+                                        #WRITE_IFP(A8 4000)
+                                        #WRITE_IFP(AA 0090)
+                               
+                                        #WRITE_IFP(A6 0092)
+                                        #WRITE_IFP(A9 0078)
+                    
+                                    $cl
+                                    $c0 44
+                                        #WRITE_IFP(A5 4000)
+                                        #WRITE_IFP(A7 00B0)
+                                        #WRITE_IFP(A8 4000)
+                                        #WRITE_IFP(AA 0090)
+                               
+                                        #WRITE_IFP(A6 00A0)
+                                        #WRITE_IFP(A9 0078)
+                                        $cl
+                                        #WRITE_IFP(A5 4000)
+                                        #WRITE_IFP(A7 0080)
+                                        #WRITE_IFP(A8 4000)
+                                        #WRITE_IFP(AA 0060)
+
+                                        #WRITE_IFP(A6 00A0) 
+                                        #WRITE_IFP(A9 0078)
+                                        $cx
+                                    $cx
+                    
+                                $cx     
+                            
+                        $cx
+                    $cx  
+                    ;
+                       
+                        
+seq_set_prop_7_0 =
+#WRITE_IFP(25 0015)     
+#WRITE_CONTROL(37 0300)    
+;
+
+seq_set_prop_7_1 = 
+#FRAME_RATE_7_5
+#WRITE_IFP(25 0005)
+#WRITE_CONTROL(37 0200)
+#WRITE_CONTROL(24 4CE0)
+#WRITE_CONTROL(22 8301)
+#WRITE_CONTROL(23 B71C)
+#LUMA_SET_SS    
+;
+
+seq_set_prop_1_0 = ;
+seq_set_prop_1_1 = ;
+seq_set_prop_1_3 = ;
+seq_set_prop_1_2 = ;
+seq_set_prop_1_4 = ;
+
+
+seq_set_prop_a_0 =
+                    #WRITE_CONTROL(37 0200)
+                    #WRITE_CONTROL(2E 0000) 
+           	    $d0064//pause 100 ms (Old 1000)
+           	    #WRITE_CONTROL(2E 0C4A) 
+                    $s9 00 
+                    ;
+
+seq_set_prop_a_1 =  
+            //#WRITE_CONTROL(37 0200) 
+            //#WRITE_CONTROL(2E 0000) 
+            //$d03E8 
+            //#WRITE_CONTROL(2E 0C4A)
+            $s9 01 
+                    ;
+
+seq_set_prop_a_2 =  
+		    #WRITE_IFP(A1 0064) 
+                    #WRITE_IFP(A4 003C)
+                    #WRITE_IFP(AE C009)
+		    #WRITE_CONTROL(CC 0002)
+		    #WRITE_CONTROL(CB 0001)
+                    $s9 01 
+                    ;
+
+seq_set_prop_1e = #WRITE_IFP(#REGISTER_MODIFY(48, $b1 %0 0 3))
+  $s0 %0
+      $c0 00 #WRITE_IFP(06 64 8E)
+  $cl        #WRITE_IFP(06 b0 1e)
+             #WRITE_CONTROL(62 10 10)
+             #WRITE_IFP(09 02 19)
+  $cx;
+
+               
+ 
+
+// For viewfind turn off JPEG and set input size to 128x96
+seq_vf_config_20=   #WRITE_IFP(A6 0280) 
+                    #WRITE_IFP(A9 01E0) 
+                    #WRITE_IFP(A7 0080) // Set Horizontal Output Size to 0x80 = 128
+                    #WRITE_IFP(AA 0060) // Set Vertical Output Size A to 0x60 = 96
+                    #WRITE_IFP(AE 0C09)
+                    #WRITE_SENSOR(0D 00 08)               
+                    #FRAME_RATE_AUTO
+                    $c9 01
+                    #WRITE_CONTROL(37 0120) //15 fps 
+                    #WRITE_CONTROL(2E 0000) //target 0 
+                    $d0064//pause 100 ms ms (Old 1000) 
+                    #WRITE_CONTROL(2E 0C4A)
+                    $cl    
+                    $cx
+                    $"DORISsetuptest_VF32"    
+                    ;
+
+// For viewfinder and set input size to 128x160
+seq_vf_config_21=   #WRITE_IFP(A6 0280)  
+                    #WRITE_IFP(A9 01E0) 
+                    #WRITE_IFP(A7 0080) // Set Horizontal Output Size to 0x80 = 128
+                    #WRITE_IFP(AA 00A0)
+                    #WRITE_IFP(AE 0C09)
+                    #FRAME_RATE_AUTO
+                    $c9 01
+                    #WRITE_CONTROL(37 0120) //15 fps 
+                    #WRITE_CONTROL(2E 0000) //target 0 
+                    $d0064//pause 100 ms (Old 1000 ms) 
+                    #WRITE_CONTROL(2E 0C4A)
+                   $cl    
+                    
+                   $cx
+                    ;
+
+// For viewfind turn off JPEG and set input size to 128x96
+seq_vf_config_22=   #WRITE_IFP(A6 0280) 
+                    #WRITE_IFP(A9 01E0) 
+                    #WRITE_IFP(A7 0080) // Set Horizontal Output Size to 0x80 = 128
+                    #WRITE_IFP(AA 0060)// Set Vertical Output Size A to 0x60 = 96
+                    #WRITE_IFP(AE 0C09)
+                    #WRITE_SENSOR(0D 00 08)               
+                    #FRAME_RATE_AUTO
+                    $c9 01
+                    #WRITE_CONTROL(37 0120) //15 fps 
+                    #WRITE_CONTROL(2E 0000) //target 0 
+                    $d0064//pause 100 ms ms (Old 1000) 
+                    #WRITE_CONTROL(2E 0C4A)
+                    $cl    
+                    $cx
+                    $"DORISsetuptest_VF32"    
+                    ;
+
+// For viewfind turn off JPEG and set input size to 176x144 locked at 24fps
+seq_vf_config_23 = #WRITE_IFP(A7 00B0)   
+                  #WRITE_IFP(AA 0090)   
+                  #WRITE_IFP(AE 0B09)                   // Aspect ratio 11:9
+                  #WRITE_SENSOR(0D 00 08)
+                  #WRITE_CONTROL(37 0120) //15 fps 
+                  #WRITE_CONTROL(2E 0000) //target 0 
+                  $d0064//pause 100 ms ms (Old 1000) 
+                  #WRITE_CONTROL(2E 0C4A)
+                  $cl    
+                  $cx
+                  ;
+
+// For viewfind turn off JPEG and set input size to 176x144 locked at 20fps
+seq_vf_config_24 = #WRITE_IFP(A7 00B0)   
+                  #WRITE_IFP(AA 0090)   
+                  #WRITE_IFP(AE 0B09)                   // Aspect ratio 11:9
+                  #WRITE_SENSOR(0D 00 08)
+                  #WRITE_CONTROL(37 0120) //15 fps 
+                  #WRITE_CONTROL(2E 0000) //target 0 
+                  $d0064//pause 100 ms (Old 1000 ms) 
+                  #WRITE_CONTROL(2E 0C4A)
+                  $cl    
+                  $cx
+                  ; 
+// For viewfind turn off JPEG and set input size to 128x102
+seq_vf_config_25 = //#WRITE_CONTROL(37 $f $r2 0 1 $b0 01 7 1 37 $w0 $w1)  //Force Auto Exposure Settings Reevaluation
+
+                  #WRITE_IFP(A7 0080)   
+                  #WRITE_IFP(AA 0066)   
+                  #WRITE_IFP(AE 4033)                   // Aspect ratio 64:51 (close to 5:4)  
+                  #WRITE_SENSOR(0D 00 08)
+                  $c9 01
+                  #WRITE_CONTROL(37 0120) //15 fps 
+                  #WRITE_CONTROL(2E 0000) //target 0 
+                  $d0064//pause 100 ms ms (Old 1000) 
+                  #WRITE_CONTROL(2E 0C4A) 
+                  $cl    
+		  ;
+
+// For viewfind turn off JPEG and set input size to 128x96 
+seq_vf_config_26 = #WRITE_IFP(A7 0080)   
+                  #WRITE_IFP(AA 0060)   
+                  #WRITE_IFP(AE 0C09)                   // Aspect ratio 4:3 
+                  #WRITE_SENSOR(0D 00 08)
+                  $c9 01
+                  #WRITE_CONTROL(37 0120) //15 fps 
+                  #WRITE_CONTROL(2E 0000) //target 0 
+                  $d0064//pause 100 ms ms (Old 1000) 
+                  #WRITE_CONTROL(2E 0C4A)                 
+                  $cl    
+                  $cx
+         	      	;
+
+// For viewfind turn off JPEG and set input size to 128x96 
+seq_vf_config_27 = #WRITE_IFP(A7 0080)   
+                  #WRITE_IFP(AA 0060)   
+                  #WRITE_IFP(AE 0C09)                   // Aspect ratio 4:3 
+                  #WRITE_SENSOR(0D 00 08)
+                  $c9 01
+                  #WRITE_CONTROL(37 0120) //15 fps 
+                  #WRITE_CONTROL(2E 0000) //target 0 
+                  $d0064//pause 100 ms ms (Old 1000) 
+                  #WRITE_CONTROL(2E 0C4A)                  
+                  $cl    
+                  $cx	  
+    		      		
+		  ;
+// For viewfinder and set input size to 80x60
+seq_vf_config_30=   #WRITE_IFP(A6 0280)  
+                    #WRITE_IFP(A9 01E0) 
+                    #WRITE_IFP(A7 0050) 
+                    #WRITE_IFP(AA 003C)//15fps
+                    #WRITE_IFP(AE 0C09)
+                    #FRAME_RATE_AUTO
+                    $c9 01
+                    #WRITE_CONTROL(37 0100) //15 fps 
+                    #WRITE_CONTROL(2E 0000) //target 0 
+                    $d0064//pause 100 ms (Old 1000  ms)
+                    #WRITE_CONTROL(2E 0C4A)
+                    $cl    
+                    
+                    $cx
+                    ;
+
+// For viewfinder and set input size to 80x60
+seq_vf_config_31=   #WRITE_IFP(A6 0280)  
+                    #WRITE_IFP(A9 01E0) 
+                    #WRITE_IFP(A7 0050) 
+                    #WRITE_IFP(AA 0065)
+                    #WRITE_IFP(AE 0C09)
+                    #FRAME_RATE_AUTO
+                    $c9 01
+                    #WRITE_CONTROL(37 0100) //15 fps 
+                    #WRITE_CONTROL(2E 0000) //target 0 
+                    $d0064//pause 100 ms (Old 1000 ms) 
+                    #WRITE_CONTROL(2E 0C4A)
+                    $cl    
+                    
+                  $cx
+                    ;
+
+
+
+seq_vf_config_41=   #WRITE_IFP(A6 0280) 
+                    #WRITE_IFP(A9 01E0)   
+                    #WRITE_IFP(A7 0080) 
+                    #WRITE_IFP(AA 0060)
+                    #WRITE_IFP(AE 0C09)
+                    #SEQ_SET_AUTO_FRAMERATE_15
+                    ;
+                    
+seq_vf_config_42=   #WRITE_IFP(A6 024A) 
+                    #WRITE_IFP(A9 01E0)   
+                    #WRITE_IFP(A7 00B0) 
+                    #WRITE_IFP(AA 0090)
+                    #WRITE_IFP(AE 0B09)
+                    #SEQ_SET_AUTO_FRAMERATE_15
+                    ;
+                                     
+seq_vf_config_43=   #WRITE_IFP(A6 0280) 
+            #WRITE_IFP(A9 01E0)   
+                    #WRITE_IFP(A7 0080) 
+                    #WRITE_IFP(AA 0060)
+                    #WRITE_IFP(AE 0C09)
+                    #FRAME_RATE_10
+                    ;
+                    
+seq_vf_config_44=   #WRITE_IFP(A6 024A) 
+            #WRITE_IFP(A9 01E0)  
+                    #WRITE_IFP(A7 00B0) 
+                    #WRITE_IFP(AA 0090)
+                    #WRITE_IFP(AE 0B09)
+                    #FRAME_RATE_10
+                    ;
+
+
+
+// Form YUV-SS turn off JPEG and set size to 640x480
+seq_ss_config_1=   
+                    #WRITE_IFP(A1 0280) 
+                    #WRITE_IFP(A4 01e0)
+                    #WRITE_IFP(AE C009)
+                    #WRITE_SENSOR(0D 0008)               // Normal operation (Chip enable)
+                    ;
+// For JPEG-SS turn on JPEG and set input size to QVGA 
+seq_ss_config_2=    
+                    #WRITE_IFP(A1 0140) 
+                    #WRITE_IFP(A4 00F0)
+                    #WRITE_IFP(AE C009)
+                    #WRITE_SENSOR(0D 0008)               // Normal operation (Chip enable)
+                    ;
+// For JPEG-SS turn on JPEG and set input size to QQVGA
+seq_ss_config_3=   
+                    #WRITE_IFP(A1 00A0) 
+                    #WRITE_IFP(A4 0078)
+                    #WRITE_IFP(AE C009)
+                    #WRITE_SENSOR(0D 0008)               // Normal operation (Chip enable)
+                    ;          
+
+//For JPEG-SS turn on JPEG and set input size to 100 x  60                    ;
+seq_ss_config_4=   
+                    #WRITE_IFP(A1 0064) 
+                    #WRITE_IFP(A4 003C)
+                    #WRITE_IFP(AE C009)
+                    #WRITE_SENSOR(0D 0008)               // Normal operation (Chip enable)
+                    ; 
+
+//For JPEG-SS turn on JPEG and set input size to 640 x 480   Snapshot VGA in UYV422
+seq_ss_config_5=    
+                    #WRITE_IFP(A1 0280) 
+                    #WRITE_IFP(A4 01e0)
+                    #WRITE_IFP(AE C009)
+                    #WRITE_SENSOR(0D 0008)               // Normal operation (Chip enable)
+                    ; 
+
+//For JPEG-SS turn on JPEG and set input size to 1280x960    Snapshot™ interpol 1,2MB Mode Expanded
+seq_ss_config_6 =
+                    #WRITE_IFP(A1 0500) 
+                    #WRITE_IFP(A4 03C0)		
+                    #WRITE_IFP(AE C009)                    //Fix BrAzUkA´s          	
+                    #WRITE_SENSOR(0D 0008)               // Normal operation (Chip enable)
+		    ;
+                     	    
+
+// For JPEG-SS turn on JPEG and set input size to VGA
+seq_ss_config_7 = #WRITE_IFP(A1 0280)                 
+                   #WRITE_IFP(A4 01E0)                  
+                   #WRITE_IFP(AE 0C09)                  
+                   #WRITE_SENSOR(0D 0008)             // Normal operation (Chip enable)          
+                   #SET_JPEG_ON(0280,01E0,095F)         
+                   ;
+
+// Switch state 00 = VF 84 = SS
+seq_vf_start= 
+
+$"DORISsetuptest_VF_start"
+;
+
+seq_vf_stop=
+$"DORISsetuptest_VF_stop"
+;
+
+seq_ss_start=;
+
+seq_ss_take=                  
+            #SEQ_FLASH_LIMIT $"DORIS_SEQ_FLASH_LIMIT"
+            $"DORIS_Status_int_reg_2check_8_%8"
+            $c8 01 //01 Should the flash be fired?
+            #SEQ_SET_FLASH $"DORIS Flash fired"  //Set flash properties
+	    #WRITE_CONTROL(CC 0002)
+	    #WRITE_CONTROL(CB 0001)
+	    $d0020 //Pause: 0x40/2
+ 	    $cl 
+	    #WRITE_CONTROL(CC 0000)
+	    #WRITE_CONTROL(CB 0001)
+      	    $d007F                        //Pause : 0xFF/2 for 13MHz
+  	    $cx
+	    ;
+
+seq_ss_stop=
+#WRITE_CONTROL(CC 0004)
+#WRITE_CONTROL(CB 0001)
+;
+
+
+
+jpeg_qtable_selector_0=$p2 05 $*2 02        $s0 01 $s1 00;
+jpeg_qtable_selector_1=$p2 05 $*2 02 $+2 01 $s0 01 $s1 00;
+
+//Quality normal (Q-table 11)
+jpeg_qtable_0=	08 06 06 07 06 05 08 07 
+                07 07 09 09 08 0a 0c 14
+                0d 0c 0b 0b 0c 19 12 13 
+                0f 14 1d 1a 1f 1e 1d 1a
+                1c 1c 20 24 2e 27 20 22 
+                2c 23 1c 1c 28 37 29 2c
+                30 31 34 34 34 1f 27 39 
+                3d 38 32 3c 2e 33 34 32
+				;
+
+jpeg_qtable_1=  09 09 09 0c 0b 0c 18 0d 
+                0d 18 32 21 1c 21 32 32
+                32 32 32 32 32 32 32 32 
+                32 32 32 32 32 32 32 32
+                32 32 32 32 32 32 32 32 
+                32 32 32 32 32 32 32 32
+                32 32 32 32 32 32 32 32 
+                32 32 32 32 32 32 32 32
+				; 
+
+//Quality fine (Q-table 13)
+jpeg_qtable_2=  04 03 03 04 03 03 04 04 
+                03 04 05 04 04 05 06 0a
+                07 06 06 06 06 0c 09 09 
+                07 0a 0f 0d 0f 0f 0e 0d
+                0e 0e 10 12 17 14 10 11 
+                16 11 0e 0e 14 1b 14 16
+                18 19 1a 1a 1a 10 13 1c 
+                1e 1c 19 1e 17 19 1a 19
+                ;
+
+jpeg_qtable_3=  04 05 05 06 05 06 0c 07 
+                07 0c 19 11 0e 11 19 19
+                19 19 19 19 19 19 19 19 
+                19 19 19 19 19 19 19 19
+                19 19 19 19 19 19 19 19 
+                19 19 19 19 19 19 19 19
+                19 19 19 19 19 19 19 19 
+                19 19 19 19 19 19 19 19
+				;
+               
+           
+
+
+jpeg_header = FF D8 
+ FF DB 00 43 
+ 00 $qt0 
+ FF DB 00 43 
+ 01 $qt1 
+ FF C4 00 1F 
+ 00 
+ 00 01 05 01 01 01 01 01 01 00 00 00 00 00 00 
+ 00 00 01 02 03 04 05 06 07 08 09 0A 0B 
+ FF C4 00 B5 
+ 10 
+ 00 02 01 03 03 02 04 03 05 05 04 04 00 00 
+ 01 7D 01 02 03 00 04 11 05 12 21 31 41 06 13 51 
+ 61 07 22 71 14 32 81 91 A1 08 23 42 B1 C1 15 52 
+ D1 F0 24 33 62 72 82 09 0A 16 17 18 19 1A 25 26 
+ 27 28 29 2A 34 35 36 37 38 39 3A 43 44 45 46 47 
+ 48 49 4A 53 54 55 56 57 58 59 5A 63 64 65 66 67 
+ 68 69 6A 73 74 75 76 77 78 79 7A 83 84 85 86 87 
+ 88 89 8A 92 93 94 95 96 97 98 99 9A A2 A3 A4 A5 
+ A6 A7 A8 A9 AA B2 B3 B4 B5 B6 B7 B8 B9 BA C2 C3 
+ C4 C5 C6 C7 C8 C9 CA D2 D3 D4 D5 D6 D7 D8 D9 DA 
+ E1 E2 E3 E4 E5 E6 E7 E8 E9 EA F1 F2 F3 F4 F5 F6 
+ F7 F8 F9 FA 
+
+ FF C4 00 1F 
+ 01 
+ 00 03 01 01 01 01 01 
+ 01 01 01 01 00 00 00 00 00 00 01 02 03 04 05 06 
+ 07 08 09 0A 0B 
+
+ FF C4 00 B5 
+ 11 
+ 00 02 01 02 04 04 
+ 03 04 07 05 04 04 00 01 02 77 00 01 02 03 11 04 
+ 05 21 31 06 12 41 51 07 61 71 13 22 32 81 08 14 
+ 42 91 A1 B1 C1 09 23 33 52 F0 15 62 72 D1 0A 16 
+ 24 34 E1 25 F1 17 18 19 1A 26 27 28 29 2A 35 36 
+ 37 38 39 3A 43 44 45 46 47 48 49 4A 53 54 55 56 
+ 57 58 59 5A 63 64 65 66 67 68 69 6A 73 74 75 76 
+ 77 78 79 7A 82 83 84 85 86 87 88 89 8A 92 93 94 
+ 95 96 97 98 99 9A A2 A3 A4 A5 A6 A7 A8 A9 AA B2 
+ B3 B4 B5 B6 B7 B8 B9 BA C2 C3 C4 C5 C6 C7 C8 C9 
+ CA D2 D3 D4 D5 D6 D7 D8 D9 DA E2 E3 E4 E5 E6 E7 
+ E8 E9 EA F2 F3 F4 F5 F6 F7 F8 F9 FA 
+
+ FF C0 00 11 
+ 08 $h $w 03 01 21 00 02 11 01 03 11 01 
+ FF DA 00 0C  
+ 03 
+ 01 00 
+ 02 11 
+ 03 11 
+ 00 3F 00;
+
+jpeg_trailer = FF D9;

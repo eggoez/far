@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- quick access -->
+<device name="db2020">
+  <cid num="49" color="brown">
+    <bflash>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>signed setool PRODLOADER_SETOOL2.2020_49_BROWN</ldr>
+      <ldr>2020_f_R2A005</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>signed setool PRODLOADER_SETOOL2.2020_49_BROWN</ldr>
+      <ldr>2020_cs_R3A006</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="52" color="red">
+    <bflash>
+      <qhtry>2020_prologue</qhtry>
+      <run/>
+      <ldr>2020_f_R2A005</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <qhtry>2020_prologue</qhtry>
+      <run/>
+      <ldr>2020_cs_R3A006</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="53" color="red">
+    <bflash>
+      <qhtry>2020_prologue</qhtry>
+      <run/>
+      <cmd3c>2020_f_R2A005</cmd3c>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <qhtry>2020_prologue</qhtry>
+      <run/>
+      <cmd3c>2020_cs_R3A006</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+</device>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<layout version="1.0">
+
+<object name="CallStatusMain">
+
+<!-- Settings for main display -->
+  <settings display="0">
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>		<!-- No title -->
+    <sett name="OverlayStyle" value="2"/> 	<!-- Fullscreen -->
+    <sett name="YPos" value="254"/>
+    <sett name="YRelatively" value="2"/>
+  </settings>
+  <attributes count="20" display="0">
+    <attr index="0" value="1"/> 	    <!-- Background icon - show-->
+    <attr index="1" value="0"/> 	    <!-- Background image - show -->
+    <attr index="2" value="1"/>         <!-- Foreground icon - show -->
+    <attr index="3" value="1"/>         <!-- ImageCLI - show -->
+    <attr index="4" value="FontE_14B"/> <!-- Time field - Font -->
+    <attr index="5" value="2"/> 	    <!-- Time field - Background mode (Transparent=0/Opaque=1/Outline=2)-->
+    <attr index="6" value="62"/> 	    <!-- Time field - Row width  -->
+    <attr index="7" value="14"/> 	    <!-- Time field - Row height-->
+    <attr index="8" value="0"/> 	    <!-- Time field - Top offset-->
+    <attr index="9" value="2"/> 	    <!-- Time field - X-offset (from left) -->
+    <attr index="10" value="3"/> 	    <!-- Time field - Y-offset (from bottom) -->
+    <attr index="11" value="1"/> 	    <!-- Time - show -->
+    <attr index="12" value="0"/> 	    <!-- Time - alignment (Left=0/Right=1/Center=2) -->
+    <attr index="13" value="1"/> 	    <!-- Time - row nr -->
+    <attr index="14" value="1"/> 	    <!-- CallTime - show -->
+    <attr index="15" value="1"/> 	    <!-- CallTime - alignment -->
+    <attr index="16" value="1"/> 	    <!-- CallTime - row nr -->
+    <attr index="17" value="0"/> 	    <!-- Date - show -->
+    <attr index="18" value="0"/> 	    <!-- Date - alignment -->
+    <attr index="19" value="0"/> 	    <!-- Date - row nr -->
+  </attributes>
+
+<!-- Settings for second display -->
+  <settings display="1">
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>		<!-- No title -->
+    <sett name="OverlayStyle" value="2"/> 	<!-- Fullscreen -->
+    <sett name="YPos" value="254"/>
+    <sett name="YRelatively" value="2"/>
+  </settings>
+  <attributes count="20" display="1">
+    <attr index="0" value="0"/> 	    <!-- Background icon - show-->
+    <attr index="1" value="0"/> 	    <!-- Background image - show -->
+    <attr index="2" value="0"/>         <!-- Foreground icon - show -->  
+    <attr index="3" value="0"/>         <!-- ImageCLI - show -->
+    <attr index="4" value="FontE_14B"/>  <!-- Time field - Font -->
+    <attr index="5" value="2"/> 	    <!-- Time field - Background mode (Transparent=0/Opaque=1/Outline=2)-->
+    <attr index="6" value="60"/> 	    <!-- Time field - Row width  -->
+    <attr index="7" value="14"/> 	    <!-- Time field - Row height-->
+    <attr index="8" value="0"/> 	    <!-- Time field - Top offset-->
+    <attr index="9" value="2"/> 	    <!-- Time field - X-offset (from left) -->
+    <attr index="10" value="2"/> 	    <!-- Time field - Y-offset (from bottom) -->
+    <attr index="11" value="0"/> 	    <!-- Time - show -->
+    <attr index="12" value="0"/> 	    <!-- Time - alignment (Left=0/Right=1/Center=2) -->
+    <attr index="13" value="0"/> 	    <!-- Time - row nr -->
+    <attr index="14" value="1"/> 	    <!-- CallTime - show -->
+    <attr index="15" value="2"/> 	    <!-- CallTime - alignment -->
+    <attr index="16" value="1"/> 	    <!-- CallTime - row nr -->
+    <attr index="17" value="0"/> 	    <!-- Date - show -->
+    <attr index="18" value="0"/> 	    <!-- Date - alignment -->
+    <attr index="19" value="0"/> 	    <!-- Date - row nr -->
+  </attributes>
+
+</object>
+
+</layout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="k750/w800/w700">
+  <cid num="36" color="red">
+    <bflash>
+      <ldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</ldr>
+      <ldr>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</ldr>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <ldr>2010_f_p5g</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</ldr>
+      <ldr>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</ldr>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <ldr>db2010_cid49brown_cs_V23.bin</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="36" color="brown">
+    <bflash>
+      <ldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</ldr>
+      <ldr>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</ldr>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <ldr>2010_f_p5g</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</ldr>
+      <ldr>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</ldr>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <ldr>db2010_cid49brown_cs_V23.bin</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="49" color="red">
+    <oflash>
+      <ldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</ldr>
+      <ldr>060718 0842 DB2010_FLASHLOADER_R2A003.2010_49_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <bflash break="2010_49" writeboot="4402_p3k.boot" ose="K750.ose">
+      <qhtry>2010_header_p3l</qhtry>
+      <run/>
+      <ldr>2010_f_p5g</ldr>
+      <activateloader/>
+    </bflash>
+    <ofs>
+      <ldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</ldr>
+      <ldr>070417 1739 COMPACT_SEMC_CS_LOADER__P3T.2010_49_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+    <bfs break="2010_49" writeboot="4402_p3k.boot" ose="K750.ose">
+      <qhtry>2010_header_p3l</qhtry>
+      <run/>
+      <ldr>db2010_cid49brown_cs_V23.bin</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="49" color="brown">
+    <oflash>
+      <ldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</ldr>
+      <ldr>060316 1339 DB2010_FLASHLOADER_R5A.2010_49_BROWN</ldr>
+      <activateloader/>
+    </oflash>
+    <bflash break="2010_49" writeboot="4402_p3k.boot" ose="K750.ose">
+      <qhtry>2010_header_p3l</qhtry>
+      <run/>
+      <ldr>2010_f_p5g</ldr>
+      <activateloader/>
+    </bflash>
+    <ofs>
+      <ldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</ldr>
+      <ldr>db2010_cid49brown_cs_V23.bin</ldr>
+      <activatecsloader/>
+    </ofs>
+    <bfs>
+      <ldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</ldr>
+      <ldr>db2010_cid49brown_cs_V23.bin</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+
+</device>

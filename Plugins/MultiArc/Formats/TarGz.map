@@ -1,0 +1,107 @@
+ TarGz
+
+ Timestamp is 4b85b2cc (Thu Feb 25 00:14:20 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000038H .idata$5                CODE
+ 0001:00000038 0000022cH .rdata                  CODE
+ 0001:00000270 00000cf5H .text                   CODE
+ 0001:00000f68 00000014H .idata$2                CODE
+ 0001:00000f7c 00000014H .idata$3                CODE
+ 0001:00000f90 00000038H .idata$4                CODE
+ 0001:00000fc8 000000c0H .idata$6                CODE
+ 0001:00001090 000000e6H .edata                  CODE
+ 0002:00000000 000000f0H .data                   DATA
+ 0002:000000f0 00000134H .bss                    DATA
+ 0003:00000000 00000058H .rsrc$01                DATA
+ 0003:00000060 00000390H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       __imp__GetFileSize@8       10001000     kernel32:KERNEL32.dll
+ 0001:00000004       __imp__CreateFileA@28      10001004     kernel32:KERNEL32.dll
+ 0001:00000008       __imp__SetFilePointer@16   10001008     kernel32:KERNEL32.dll
+ 0001:0000000c       __imp__lstrcpyA@8          1000100c     kernel32:KERNEL32.dll
+ 0001:00000010       __imp__ReadFile@20         10001010     kernel32:KERNEL32.dll
+ 0001:00000014       __imp__CloseHandle@4       10001014     kernel32:KERNEL32.dll
+ 0001:00000018       __imp__HeapFree@12         10001018     kernel32:KERNEL32.dll
+ 0001:0000001c       __imp__HeapAlloc@12        1000101c     kernel32:KERNEL32.dll
+ 0001:00000020       __imp__GetProcessHeap@0    10001020     kernel32:KERNEL32.dll
+ 0001:00000024       __imp__lstrcpynA@12        10001024     kernel32:KERNEL32.dll
+ 0001:00000028       __imp__lstrlenA@4          10001028     kernel32:KERNEL32.dll
+ 0001:0000002c       __imp__GetLastError@0      1000102c     kernel32:KERNEL32.dll
+ 0001:00000030       __imp__lstrcmpA@8          10001030     kernel32:KERNEL32.dll
+ 0001:00000034       \177KERNEL32_NULL_THUNK_DATA 10001034     kernel32:KERNEL32.dll
+ 0001:00000058       ??_C@_03GDABGADH@TAR?$AA@  10001058     TarGz.obj
+ 0001:0000005c       ??_C@_03GOPKKNEL@tar?$AA@  1000105c     TarGz.obj
+ 0001:00000060       ??_C@_04BPIHOKCE@GZip?$AA@ 10001060     TarGz.obj
+ 0001:00000068       ??_C@_02JIPGGKDE@gz?$AA@   10001068     TarGz.obj
+ 0001:0000006c       ??_C@_07IAKCPGIB@Z?$CIUnix?$CJ?$AA@ 1000106c     TarGz.obj
+ 0001:00000074       ??_C@_01GLPGHMHM@z?$AA@    10001074     TarGz.obj
+ 0001:00000078       ??_C@_04NHGHGFFE@BZip?$AA@ 10001078     TarGz.obj
+ 0001:00000080       ??_C@_03PLICKGJM@bz2?$AA@  10001080     TarGz.obj
+ 0001:00000084       ??_C@_0CF@PLMOEJFD@tar?5?9?9force?9local?5?9xf?5?$CF?$CFA?5?$CF?$CFFSq3@ 10001084     TarGz.obj
+ 0001:000000ac       ??_C@_0DI@CPJCIK@?$CFcomspec?$CF?5?1c?5tar?5?9?9force?9local?5?9@ 100010ac     TarGz.obj
+ 0001:000000e4       ??_C@_00CNPNBAHC@?$AA@     100010e4     TarGz.obj
+ 0001:000000e8       ??_C@_0CN@PAPIGGGO@tar?5?9?9delete?5?9?9force?9local?5?9f?5?$CF?$CF@ 100010e8     TarGz.obj
+ 0001:00000118       ??_C@_0CF@OJELIMNM@tar?5?9?9force?9local?5?9rf?5?$CF?$CFA?5?$CF?$CFFSq3@ 10001118     TarGz.obj
+ 0001:00000140       ??_C@_0DE@BLBBIPAG@tar?5?9?9force?9local?5?9?9remove?9files@ 10001140     TarGz.obj
+ 0001:00000174       ??_C@_01NBENCBCI@?$CK?$AA@ 10001174     TarGz.obj
+ 0001:00000178       ??_C@_0CA@DOEJFAOO@?$CFCOMSPEC?$CF?5?1c?5gzip?5?9cd?5?$CF?$CFA?5?$DO?$CF?$CFfq?$AA@ 10001178     TarGz.obj
+ 0001:00000198       ??_C@_0M@FPFKKFJF@gzip?5?9t?5?$CF?$CFA?$AA@ 10001198     TarGz.obj
+ 0001:000001a4       ??_C@_0BP@FFCJAHFN@?$CFCOMSPEC?$CF?5?1c?5gzip?5?9c?5?$CF?$CFfq?5?$DO?$CF?$CFA?$AA@ 100011a4     TarGz.obj
+ 0001:000001c4       ??_C@_09IKBAKPBL@gzip?5?$CF?$CFfq?$AA@ 100011c4     TarGz.obj
+ 0001:000001d0       ??_C@_0CB@KBDONEPC@?$CFCOMSPEC?$CF?5?1c?5bzip2?5?9cd?5?$CF?$CFA?5?$DO?$CF?$CFfq@ 100011d0     TarGz.obj
+ 0001:000001f4       ??_C@_0CA@BCADNEAN@?$CFCOMSPEC?$CF?5?1c?5bzip2?5?9cd?5?$CF?$CFA?5?$DOnul?$AA@ 100011f4     TarGz.obj
+ 0001:00000214       ??_C@_0CA@JNEJLOBL@?$CFCOMSPEC?$CF?5?1c?5bzip2?5?9c?5?$CF?$CFfq?5?$DO?$CF?$CFA?$AA@ 10001214     TarGz.obj
+ 0001:00000234       ??_C@_0L@PNNIGDME@bzip2?5?$CF?$CFfq?$AA@ 10001234     TarGz.obj
+ 0001:00000240       ??_C@_02PIIINENL@V7?$AA@   10001240     TarGz.obj
+ 0001:00000244       ??_C@_05EMIBFIGM@POSIX?$AA@ 10001244     TarGz.obj
+ 0001:0000024c       ??_C@_07PLPDGOKL@ustar?5?5?$AA@ 1000124c     TarGz.obj
+ 0001:00000254       ??_C@_05BLOBNFJJ@ustar?$AA@ 10001254     TarGz.obj
+ 0001:0000025c       ??_C@_03KGCDCHED@taz?$AA@  1000125c     TarGz.obj
+ 0001:00000260       ??_C@_03KCKOFLPB@tgz?$AA@  10001260     TarGz.obj
+ 0001:00000270       __alloca_probe             10001270     chkstk.obj
+ 0001:00000270       __chkstk                   10001270 f   chkstk.obj
+ 0001:0000029b       _SetFarInfo@4              1000129b f   TarGz.obj
+ 0001:000002c7       ?UnixTimeToFileTime@@YGXKPAU_FILETIME@@@Z 100012c7 f   TarGz.obj
+ 0001:000002ef       _OpenArchive@8             100012ef f   TarGz.obj
+ 0001:0000034f       _GetSFXPos@0               1000134f f   TarGz.obj
+ 0001:00000355       ?GetArcItemGZIP@@YIHPAUPluginPanelItem@@PAUArcItemInfo@@@Z 10001355 f   TarGz.obj
+ 0001:000004bc       _CloseArchive@4            100014bc f   TarGz.obj
+ 0001:000004cb       _GetFormatName@12          100014cb f   TarGz.obj
+ 0001:00000509       _GetDefaultCommands@12     10001509 f   TarGz.obj
+ 0001:0000053b       ?AdjustTARFileName@@YIPADPAD@Z 1000153b f   TarGz.obj
+ 0001:000007e3       __strtoi64                 100017e3 f   TarGz.obj
+ 0001:000007fa       ?GetOctal@@YI_JPBD@Z       100017fa f   TarGz.obj
+ 0001:0000080c       ?GetArcItemTAR@@YIHPAUPluginPanelItem@@PAUArcItemInfo@@@Z 1000180c f   TarGz.obj
+ 0001:00000bc0       ?IsTarHeader@@YIHPBEH@Z    10001bc0 f   TarGz.obj
+ 0001:00000cc2       _IsArchive@12              10001cc2 f   TarGz.obj
+ 0001:00000dc5       _GetArcItem@8              10001dc5 f   TarGz.obj
+ 0001:00000e50       _strrchr                   10001e50 f   libCRT:strrchr.obj
+ 0001:00000e80       __allmul                   10001e80 f   libCRT:vc_llmul.obj
+ 0001:00000ec0       __allshr                   10001ec0 f   libCRT:vc_llshr.obj
+ 0001:00000ef0       __aullrem                  10001ef0 f   libCRT:vc_ullrem.obj
+ 0001:00000f68       __IMPORT_DESCRIPTOR_KERNEL32 10001f68     kernel32:KERNEL32.dll
+ 0001:00000f7c       __NULL_IMPORT_DESCRIPTOR   10001f7c     kernel32:KERNEL32.dll
+ 0002:000000f0       ?NextPosition@@3TFAR_INT64@@A 100030f0     TarGz.obj
+ 0002:000000f8       ?ArcHandle@@3PAXA          100030f8     TarGz.obj
+ 0002:000000fc       ?ArcType@@3HA              100030fc     TarGz.obj
+ 0002:00000100       ?FileSize@@3TFAR_INT64@@A  10003100     TarGz.obj
+ 0002:00000108       ?MA_malloc@@3P6APAXI@ZA    10003108     TarGz.obj
+ 0002:0000010c       ?SFXSize@@3KA              1000310c     TarGz.obj
+ 0002:00000110       ?LStricmp@@3P6GHPBD0@ZA    10003110     TarGz.obj
+ 0002:00000114       ?TarArchiveFormat@@3W4archive_format@@A 10003114     TarGz.obj
+ 0002:00000118       ?MA_free@@3P6AXPAX@ZA      10003118     TarGz.obj
+ 0002:00000120       ?ZipName@@3PADA            10003120     TarGz.obj
+
+ entry point at        0000:00000000
+
+ Static symbols
+
+ 0001:00000553       ?Oct2Size@@YI_JPBDI@Z      10001553 f   TarGz.obj
+ 0001:000005ec       ?_strtoxq@@YA_KPBDPAPBDHH@Z 100015ec f   TarGz.obj

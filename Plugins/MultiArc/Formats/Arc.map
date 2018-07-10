@@ -1,0 +1,60 @@
+ Arc
+
+ Timestamp is 4b85b2c3 (Thu Feb 25 00:14:11 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000028H .idata$5                CODE
+ 0001:00000028 000000c0H .rdata                  CODE
+ 0001:000000f0 00000333H .text                   CODE
+ 0001:00000424 00000014H .idata$2                CODE
+ 0001:00000438 00000014H .idata$3                CODE
+ 0001:0000044c 00000028H .idata$4                CODE
+ 0001:00000474 000000a0H .idata$6                CODE
+ 0001:00000520 000000cfH .edata                  CODE
+ 0002:00000000 0000003cH .data                   DATA
+ 0002:0000003c 0000001cH .bss                    DATA
+ 0003:00000000 00000058H .rsrc$01                DATA
+ 0003:00000060 00000388H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __imp__GetFileSize@8       10001000     kernel32:KERNEL32.dll
+ 0001:00000004       __imp__CreateFileA@28      10001004     kernel32:KERNEL32.dll
+ 0001:00000008       __imp__LocalFileTimeToFileTime@8 10001008     kernel32:KERNEL32.dll
+ 0001:0000000c       __imp__DosDateTimeToFileTime@12 1000100c     kernel32:KERNEL32.dll
+ 0001:00000010       __imp__lstrcpynA@12        10001010     kernel32:KERNEL32.dll
+ 0001:00000014       __imp__ReadFile@20         10001014     kernel32:KERNEL32.dll
+ 0001:00000018       __imp__SetFilePointer@16   10001018     kernel32:KERNEL32.dll
+ 0001:0000001c       __imp__CloseHandle@4       1000101c     kernel32:KERNEL32.dll
+ 0001:00000020       __imp__lstrcpyA@8          10001020     kernel32:KERNEL32.dll
+ 0001:00000024       \177KERNEL32_NULL_THUNK_DATA 10001024     kernel32:KERNEL32.dll
+ 0001:00000028       ??_C@_03EEIEDENP@arc?$AA@  10001028     Arc.obj
+ 0001:0000002c       ??_C@_03EJHPPJKD@ARC?$AA@  1000102c     Arc.obj
+ 0001:00000030       ??_C@_0BO@IKDPGLCH@arc32?5xo?$HL?$CF?$CFS?$HN?$HLg?$CF?$CFP?$HN?5?$CF?$CFa?5?$CF?$CFFMQ?$AA@ 10001030     Arc.obj
+ 0001:00000050       ??_C@_0BO@MPHKNDNM@arc32?5eo?$HL?$CF?$CFS?$HN?$HLg?$CF?$CFP?$HN?5?$CF?$CFa?5?$CF?$CFFMQ?$AA@ 10001050     Arc.obj
+ 0001:00000070       ??_C@_0BI@LNDCNDIB@arc32?5t?$HLg?$CF?$CFP?$HN?5?$CF?$CFa?5?$CF?$CFFMQ?$AA@ 10001070     Arc.obj
+ 0001:00000088       ??_C@_0BI@JDJBIPJJ@arc32?5d?$HLg?$CF?$CFP?$HN?5?$CF?$CFa?5?$CF?$CFFMQ?$AA@ 10001088     Arc.obj
+ 0001:000000a0       ??_C@_00CNPNBAHC@?$AA@     100010a0     Arc.obj
+ 0001:000000a4       ??_C@_0BN@MIEOBINL@arc32?5a?$HL?$CF?$CFS?$HN?$HLg?$CF?$CFP?$HN?5?$CF?$CFa?5?$CF?$CFFMQ?$AA@ 100010a4     Arc.obj
+ 0001:000000c4       ??_C@_0BN@MIKLPKGO@arc32?5m?$HL?$CF?$CFS?$HN?$HLg?$CF?$CFP?$HN?5?$CF?$CFa?5?$CF?$CFFMQ?$AA@ 100010c4     Arc.obj
+ 0001:000000e4       ??_C@_03EMIMMIHL@?$CK?4?$CK?$AA@ 100010e4     Arc.obj
+ 0001:000000f0       __chkstk                   100010f0 f   chkstk.obj
+ 0001:000000f0       __alloca_probe             100010f0     chkstk.obj
+ 0001:0000011b       _IsArchive@12              1000111b f   Arc.obj
+ 0001:00000155       _GetSFXPos@0               10001155 f   Arc.obj
+ 0001:0000015b       _OpenArchive@8             1000115b f   Arc.obj
+ 0001:000001c0       _GetArcItem@8              100011c0 f   Arc.obj
+ 0001:000003ad       _CloseArchive@4            100013ad f   Arc.obj
+ 0001:000003c9       _GetFormatName@12          100013c9 f   Arc.obj
+ 0001:000003f8       _GetDefaultCommands@12     100013f8 f   Arc.obj
+ 0001:00000424       __IMPORT_DESCRIPTOR_KERNEL32 10001424     kernel32:KERNEL32.dll
+ 0001:00000438       __NULL_IMPORT_DESCRIPTOR   10001438     kernel32:KERNEL32.dll
+
+ entry point at        0000:00000000
+
+ Static symbols
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="w300">
+  <cid num="49" color="red">
+    <oflash>
+      <ldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</ldr>
+      <ldr>061204 1528 DB2010_FLASHLOADER_R2A007.2010_49_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <bflash break="2010_49" writeboot="4414_p3k.boot" ose="W300.ose">
+      <qhtry>2010_header_p3l</qhtry>
+      <run/>
+      <ldr>2010_f_p5g</ldr>
+      <activateloader/>
+    </bflash>
+    <ofs>
+      <ldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</ldr>
+      <ldr>070524 1030 COMPACT_SEMC_CS_LOADER__R3A010.2010_49_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+    <bfs break="2010_49" writeboot="4414_p3k.boot" ose="W300.ose">
+      <qhtry>2010_header_p3l</qhtry>
+      <run/>
+      <ldr>2010_cs_R3A005</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="49" color="brown">
+    <bflash>
+      <ldr>signed setool PRODUCTIONLOADER_R1A002.DB2010_CID49_BROWN</ldr>
+      <ldr>2010_f_p5g</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>signed setool PRODUCTIONLOADER_R1A002.DB2010_CID49_BROWN</ldr>
+      <ldr>2010_cs_R3A005</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="51" color="red">
+    <oflash>
+      <ldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_51_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>070129 1112 DB2010_PRODUCTIONIDLOADER_P4D.2012_0_BLUE</ldr>
+      <ldr>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_51_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="52" color="red">
+    <oflash>
+      <ldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_52_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>070129 1112 DB2010_PRODUCTIONIDLOADER_P4D.2012_0_BLUE</ldr>
+      <ldr>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_52_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+
+</device>

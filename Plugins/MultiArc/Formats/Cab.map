@@ -1,0 +1,68 @@
+ Cab
+
+ Timestamp is 4b85b2c5 (Thu Feb 25 00:14:13 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000038H .idata$5                CODE
+ 0001:00000038 000001b2H .rdata                  CODE
+ 0001:000001f0 000004a0H .text                   CODE
+ 0001:00000690 00000028H .idata$2                CODE
+ 0001:000006b8 00000014H .idata$3                CODE
+ 0001:000006cc 00000038H .idata$4                CODE
+ 0001:00000704 000000e6H .idata$6                CODE
+ 0001:000007f0 000000cfH .edata                  CODE
+ 0002:00000000 0000003cH .data                   DATA
+ 0002:0000003c 00000010H .bss                    DATA
+ 0003:00000000 00000058H .rsrc$01                DATA
+ 0003:00000060 00000388H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __imp__UnmapViewOfFile@4   10001000     kernel32:KERNEL32.dll
+ 0001:00000004       __imp__CloseHandle@4       10001004     kernel32:KERNEL32.dll
+ 0001:00000008       __imp__MapViewOfFile@20    10001008     kernel32:KERNEL32.dll
+ 0001:0000000c       __imp__CreateFileMappingA@24 1000100c     kernel32:KERNEL32.dll
+ 0001:00000010       __imp__GetFileSize@8       10001010     kernel32:KERNEL32.dll
+ 0001:00000014       __imp__ReadFile@20         10001014     kernel32:KERNEL32.dll
+ 0001:00000018       __imp__SetFilePointer@16   10001018     kernel32:KERNEL32.dll
+ 0001:0000001c       __imp__CreateFileA@28      1000101c     kernel32:KERNEL32.dll
+ 0001:00000020       __imp__LocalFileTimeToFileTime@8 10001020     kernel32:KERNEL32.dll
+ 0001:00000024       __imp__DosDateTimeToFileTime@12 10001024     kernel32:KERNEL32.dll
+ 0001:00000028       __imp__lstrcpyA@8          10001028     kernel32:KERNEL32.dll
+ 0001:0000002c       \177KERNEL32_NULL_THUNK_DATA 1000102c     kernel32:KERNEL32.dll
+ 0001:00000030       __imp__CharToOemA@8        10001030     user32:USER32.dll
+ 0001:00000034       \177USER32_NULL_THUNK_DATA 10001034     user32:USER32.dll
+ 0001:00000038       ??_C@_03OJPGNADM@cab?$AA@  10001038     Cab.obj
+ 0001:0000003c       ??_C@_03OEANBNEA@CAB?$AA@  1000103c     Cab.obj
+ 0001:00000040       ??_C@_0DD@PNFOMCDI@MsCab?5?9i0?5?9FAR?5?$HL?9ap?$CF?$CFR?$HN?5?$HL?9p?$CF?$CFP?$HN?5@ 10001040     Cab.obj
+ 0001:00000074       ??_C@_0CK@LOJCALDA@MsCab?5?9i0?5?9FAR?5?$HL?9p?$CF?$CFP?$HN?5?$HL?$CF?$CFS?$HN?5e?5?$CF@ 10001074     Cab.obj
+ 0001:000000a0       ??_C@_0BO@NFMLODDJ@MsCab?5?9i0?5?$HL?9p?$CF?$CFP?$HN?5?$HL?$CF?$CFS?$HN?5t?5?$CF?$CFA?$AA@ 100010a0     Cab.obj
+ 0001:000000c0       ??_C@_0CK@GDAENCLF@MsCab?5?9i0?5?9FAR?5?$HL?9p?$CF?$CFP?$HN?5?$HL?$CF?$CFS?$HN?5d?5?$CF@ 100010c0     Cab.obj
+ 0001:000000ea       ??_C@_00CNPNBAHC@?$AA@     100010ea     Cab.obj
+ 0001:000000ec       ??_C@_0BC@HAHNDNAB@MsCab?5?$HL?$CF?$CFS?$HN?5s?5?$CF?$CFA?$AA@ 100010ec     Cab.obj
+ 0001:00000100       ??_C@_0DF@KBDBLBLG@MsCab?5?9i0?5?9dirs?5?$HL?9ap?$CF?$CFR?$HN?5?$HL?9p?$CF?$CFP?$HN@ 10001100     Cab.obj
+ 0001:00000138       ??_C@_0DF@ILMECAJL@MsCab?5?9i0?5?9dirs?5?$HL?9ap?$CF?$CFR?$HN?5?$HL?9p?$CF?$CFP?$HN@ 10001138     Cab.obj
+ 0001:00000170       ??_C@_0DJ@NJOMAIKP@MsCab?5?9r0?5?9i0?5?9dirs?5?$HL?9ap?$CF?$CFR?$HN?5?$HL?9p@ 10001170     Cab.obj
+ 0001:000001ac       ??_C@_0DJ@PDBJJJIC@MsCab?5?9r0?5?9i0?5?9dirs?5?$HL?9ap?$CF?$CFR?$HN?5?$HL?9p@ 100011ac     Cab.obj
+ 0001:000001e8       ??_C@_01NBENCBCI@?$CK?$AA@ 100011e8     Cab.obj
+ 0001:000001f0       __alloca_probe             100011f0     chkstk.obj
+ 0001:000001f0       __chkstk                   100011f0 f   chkstk.obj
+ 0001:0000021b       _IsArchive@12              1000121b f   Cab.obj
+ 0001:00000285       _OpenArchive@8             10001285 f   Cab.obj
+ 0001:000004cd       _GetArcItem@8              100014cd f   Cab.obj
+ 0001:00000615       _CloseArchive@4            10001615 f   Cab.obj
+ 0001:00000630       _GetSFXPos@0               10001630 f   Cab.obj
+ 0001:00000636       _GetFormatName@12          10001636 f   Cab.obj
+ 0001:00000665       _GetDefaultCommands@12     10001665 f   Cab.obj
+ 0001:00000690       __IMPORT_DESCRIPTOR_KERNEL32 10001690     kernel32:KERNEL32.dll
+ 0001:000006a4       __IMPORT_DESCRIPTOR_USER32 100016a4     user32:USER32.dll
+ 0001:000006b8       __NULL_IMPORT_DESCRIPTOR   100016b8     kernel32:KERNEL32.dll
+
+ entry point at        0000:00000000
+
+ Static symbols
+

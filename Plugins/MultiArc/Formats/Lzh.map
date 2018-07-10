@@ -1,0 +1,68 @@
+ Lzh
+
+ Timestamp is 4b85b2c9 (Thu Feb 25 00:14:17 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000002cH .idata$5                CODE
+ 0001:0000002c 00000124H .rdata                  CODE
+ 0001:00000150 00000644H .text                   CODE
+ 0001:00000794 00000014H .idata$2                CODE
+ 0001:000007a8 00000014H .idata$3                CODE
+ 0001:000007bc 0000002cH .idata$4                CODE
+ 0001:000007e8 000000acH .idata$6                CODE
+ 0001:000008a0 000000e4H .edata                  CODE
+ 0002:00000000 00000150H .data                   DATA
+ 0002:00000150 00000010H .bss                    DATA
+ 0003:00000000 00000058H .rsrc$01                DATA
+ 0003:00000060 00000388H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __imp__GetFileSize@8       10001000     kernel32:KERNEL32.dll
+ 0001:00000004       __imp__CreateFileA@28      10001004     kernel32:KERNEL32.dll
+ 0001:00000008       __imp__LocalFileTimeToFileTime@8 10001008     kernel32:KERNEL32.dll
+ 0001:0000000c       __imp__DosDateTimeToFileTime@12 1000100c     kernel32:KERNEL32.dll
+ 0001:00000010       __imp__lstrcpyA@8          10001010     kernel32:KERNEL32.dll
+ 0001:00000014       __imp__lstrcatA@8          10001014     kernel32:KERNEL32.dll
+ 0001:00000018       __imp__lstrlenA@4          10001018     kernel32:KERNEL32.dll
+ 0001:0000001c       __imp__ReadFile@20         1000101c     kernel32:KERNEL32.dll
+ 0001:00000020       __imp__SetFilePointer@16   10001020     kernel32:KERNEL32.dll
+ 0001:00000024       __imp__CloseHandle@4       10001024     kernel32:KERNEL32.dll
+ 0001:00000028       \177KERNEL32_NULL_THUNK_DATA 10001028     kernel32:KERNEL32.dll
+ 0001:0000002c       ??_C@_01KICIPPFI@?2?$AA@   1000102c     Lzh.obj
+ 0001:00000030       ??_C@_03FLAJGEHB@lzh?$AA@  10001030     Lzh.obj
+ 0001:00000034       ??_C@_03FGPCKJAN@LZH?$AA@  10001034     Lzh.obj
+ 0001:00000038       ??_C@_0CE@IELCOMOG@lha?5x?5?9a?5?9c?5?9d?5?9m?5?$HL?9w?$CF?$CFW?$HN?5?$CF?$CFa?5?$EA?$CF@ 10001038     Lzh.obj
+ 0001:0000005c       ??_C@_0CB@FMMEOJC@lha?5e?5?9a?5?9c?5?9m?5?$HL?9w?$CF?$CFW?$HN?5?$CF?$CFa?5?$EA?$CF?$CFlM@ 1000105c     Lzh.obj
+ 0001:00000080       ??_C@_0BM@CFIJDJG@lha?5t?5?9r2?5?9a?5?9m?5?$HL?9w?$CF?$CFW?$HN?5?$CF?$CFa?$AA@ 10001080     Lzh.obj
+ 0001:0000009c       ??_C@_0CC@HKHKKIDL@lha?5d?5?9r2?5?9a?5?9m?5?$HL?9w?$CF?$CFW?$HN?5?$CF?$CFa?5?$EA?$CF?$CFl@ 1000109c     Lzh.obj
+ 0001:000000be       ??_C@_00CNPNBAHC@?$AA@     100010be     Lzh.obj
+ 0001:000000c0       ??_C@_0BM@FNNPOBCA@lha?5s?5?9x1?5?9a?5?9m?5?$HL?9w?$CF?$CFW?$HN?5?$CF?$CFa?$AA@ 100010c0     Lzh.obj
+ 0001:000000dc       ??_C@_0BO@NMJAMAIF@lha?5a?5?9a?5?9m?5?$HL?9w?$CF?$CFW?$HN?5?$CF?$CFa?5?$EA?$CF?$CFlM?$AA@ 100010dc     Lzh.obj
+ 0001:000000fc       ??_C@_0BO@KDCNHLOH@lha?5m?5?9a?5?9m?5?$HL?9w?$CF?$CFW?$HN?5?$CF?$CFa?5?$EA?$CF?$CFlM?$AA@ 100010fc     Lzh.obj
+ 0001:0000011c       ??_C@_0CN@PGJPIAO@lha?5a?5?9a?5?9r?5?9x?5?9p?5?9m?5?$HL?9w?$CF?$CFW?$HN?5?$HL?$CF?$CF@ 1000111c     Lzh.obj
+ 0001:0000014c       ??_C@_03EMIMMIHL@?$CK?4?$CK?$AA@ 1000114c     Lzh.obj
+ 0001:00000150       __chkstk                   10001150 f   chkstk.obj
+ 0001:00000150       __alloca_probe             10001150     chkstk.obj
+ 0001:0000017b       ?UnixTimeToFileTime@@YGXKPAU_FILETIME@@@Z 1000117b f   Lzh.obj
+ 0001:000001a3       _SetFarInfo@4              100011a3 f   Lzh.obj
+ 0001:000001a6       ?CheckLZHHeader@@YIHPAULZH_Level0@@@Z 100011a6 f   Lzh.obj
+ 0001:000001e3       _IsArchive@12              100011e3 f   Lzh.obj
+ 0001:0000024a       _OpenArchive@8             1000124a f   Lzh.obj
+ 0001:00000299       _GetArcItem@8              10001299 f   Lzh.obj
+ 0001:000006d7       _CloseArchive@4            100016d7 f   Lzh.obj
+ 0001:000006f6       _GetSFXPos@0               100016f6 f   Lzh.obj
+ 0001:000006fc       _GetFormatName@12          100016fc f   Lzh.obj
+ 0001:0000072b       _GetDefaultCommands@12     1000172b f   Lzh.obj
+ 0001:00000760       __allmul                   10001760 f   libCRT:vc_llmul.obj
+ 0001:00000794       __IMPORT_DESCRIPTOR_KERNEL32 10001794     kernel32:KERNEL32.dll
+ 0001:000007a8       __NULL_IMPORT_DESCRIPTOR   100017a8     kernel32:KERNEL32.dll
+
+ entry point at        0000:00000000
+
+ Static symbols
+

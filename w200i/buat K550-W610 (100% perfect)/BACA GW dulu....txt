@@ -1,0 +1,22 @@
+Acoustic Driver ini untuk DB2020
+gw mix khusus untuk ponsel K550/W610 dg optimalisasi hardware & software
+(tidak menutup kemungkinan digunakan untuk ponsel DB2020 yg lainnya)
+
+Basic dari driver ini adalah Peter v2[Ultrabass], gw mix dengan 
+menggunakan farfield_*.zapf original dari driver acoustic original W850,
+dan menggunakan *_call.zapf dari dmitogor 1.2_com_radio_toshara 1.6
+
+gw dah coba pelbagai driver acoustic baik yg original maupun yg telah dimodding, 
+and kombinasi ini yg menurut gw paling BAIK dg balance Bass and Treble yg BAGUS bgt.
+
+mungkin sebagian orang kecewa dg suara via speakerphone yg kurang garang, 
+hal ini dikarenakan masalah hardware K550/W610 yg kurang mendukung, 
+jd gw mix biar suara by speakerphone ga terlalu samber...
+
+
+Thanx 4 attention..
+Best Regard..
+
+
+  djvu3vo a.k.a DjVu
+

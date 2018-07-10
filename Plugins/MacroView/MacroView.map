@@ -1,0 +1,311 @@
+ MacroView
+
+ Timestamp is 4b85b0ed (Thu Feb 25 00:06:21 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000d0H .idata$5                CODE
+ 0001:000000d0 000008b1H .rdata                  CODE
+ 0001:00000990 000091c5H .text                   CODE
+ 0001:00009b58 0000003cH .idata$2                CODE
+ 0001:00009b94 00000014H .idata$3                CODE
+ 0001:00009ba8 000000d0H .idata$4                CODE
+ 0001:00009c78 00000382H .idata$6                CODE
+ 0001:0000a000 000000daH .edata                  CODE
+ 0002:00000000 00000098H .data                   DATA
+ 0002:00000098 00000ec4H .bss                    DATA
+ 0003:00000000 00000058H .rsrc$01                DATA
+ 0003:00000060 00000380H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       __imp__RegEnumValueW@32    10001000     advapi32:ADVAPI32.dll
+ 0001:00000004       __imp__RegEnumKeyExW@32    10001004     advapi32:ADVAPI32.dll
+ 0001:00000008       __imp__RegQueryInfoKeyW@48 10001008     advapi32:ADVAPI32.dll
+ 0001:0000000c       __imp__RegDeleteValueW@8   1000100c     advapi32:ADVAPI32.dll
+ 0001:00000010       __imp__RegOpenKeyExW@20    10001010     advapi32:ADVAPI32.dll
+ 0001:00000014       __imp__RegCreateKeyExW@36  10001014     advapi32:ADVAPI32.dll
+ 0001:00000018       __imp__RegCloseKey@4       10001018     advapi32:ADVAPI32.dll
+ 0001:0000001c       __imp__RegSetValueExW@24   1000101c     advapi32:ADVAPI32.dll
+ 0001:00000020       __imp__RegDeleteKeyW@8     10001020     advapi32:ADVAPI32.dll
+ 0001:00000024       __imp__RegQueryValueExW@24 10001024     advapi32:ADVAPI32.dll
+ 0001:00000028       \177ADVAPI32_NULL_THUNK_DATA 10001028     advapi32:ADVAPI32.dll
+ 0001:0000002c       __imp__ReadConsoleOutputW@20 1000102c     kernel32:KERNEL32.dll
+ 0001:00000030       __imp__GetConsoleScreenBufferInfo@8 10001030     kernel32:KERNEL32.dll
+ 0001:00000034       __imp__GetLastError@0      10001034     kernel32:KERNEL32.dll
+ 0001:00000038       __imp__CreateDirectoryW@8  10001038     kernel32:KERNEL32.dll
+ 0001:0000003c       __imp__DeleteFileW@4       1000103c     kernel32:KERNEL32.dll
+ 0001:00000040       __imp__ReadFile@20         10001040     kernel32:KERNEL32.dll
+ 0001:00000044       __imp__SetFilePointer@16   10001044     kernel32:KERNEL32.dll
+ 0001:00000048       __imp__MultiByteToWideChar@24 10001048     kernel32:KERNEL32.dll
+ 0001:0000004c       __imp__lstrcpyA@8          1000104c     kernel32:KERNEL32.dll
+ 0001:00000050       __imp__CreateFileW@28      10001050     kernel32:KERNEL32.dll
+ 0001:00000054       __imp__CloseHandle@4       10001054     kernel32:KERNEL32.dll
+ 0001:00000058       __imp__GetExitCodeProcess@8 10001058     kernel32:KERNEL32.dll
+ 0001:0000005c       __imp__WaitForSingleObject@8 1000105c     kernel32:KERNEL32.dll
+ 0001:00000060       __imp__WriteConsoleOutputW@20 10001060     kernel32:KERNEL32.dll
+ 0001:00000064       __imp__FindClose@4         10001064     kernel32:KERNEL32.dll
+ 0001:00000068       __imp__FileTimeToSystemTime@8 10001068     kernel32:KERNEL32.dll
+ 0001:0000006c       __imp__FileTimeToLocalFileTime@8 1000106c     kernel32:KERNEL32.dll
+ 0001:00000070       __imp__FindFirstFileW@8    10001070     kernel32:KERNEL32.dll
+ 0001:00000074       __imp__GetVersionExW@4     10001074     kernel32:KERNEL32.dll
+ 0001:00000078       __imp__GetModuleHandleW@4  10001078     kernel32:KERNEL32.dll
+ 0001:0000007c       __imp__SetConsoleCursorInfo@8 1000107c     kernel32:KERNEL32.dll
+ 0001:00000080       __imp__GetConsoleCursorInfo@8 10001080     kernel32:KERNEL32.dll
+ 0001:00000084       __imp__GetStdHandle@4      10001084     kernel32:KERNEL32.dll
+ 0001:00000088       __imp__GetConsoleTitleW@8  10001088     kernel32:KERNEL32.dll
+ 0001:0000008c       __imp__HeapFree@12         1000108c     kernel32:KERNEL32.dll
+ 0001:00000090       __imp__GetProcessHeap@0    10001090     kernel32:KERNEL32.dll
+ 0001:00000094       __imp__HeapAlloc@12        10001094     kernel32:KERNEL32.dll
+ 0001:00000098       __imp__FlushConsoleInputBuffer@4 10001098     kernel32:KERNEL32.dll
+ 0001:0000009c       __imp__lstrcatW@8          1000109c     kernel32:KERNEL32.dll
+ 0001:000000a0       __imp__lstrcpyW@8          100010a0     kernel32:KERNEL32.dll
+ 0001:000000a4       __imp__lstrlenW@4          100010a4     kernel32:KERNEL32.dll
+ 0001:000000a8       __imp__lstrcpynW@12        100010a8     kernel32:KERNEL32.dll
+ 0001:000000ac       __imp__CompareStringW@24   100010ac     kernel32:KERNEL32.dll
+ 0001:000000b0       __imp__IsBadReadPtr@8      100010b0     kernel32:KERNEL32.dll
+ 0001:000000b4       __imp__lstrcmpA@8          100010b4     kernel32:KERNEL32.dll
+ 0001:000000b8       __imp__IsBadWritePtr@8     100010b8     kernel32:KERNEL32.dll
+ 0001:000000bc       __imp__CreateProcessW@40   100010bc     kernel32:KERNEL32.dll
+ 0001:000000c0       __imp__VirtualProtect@16   100010c0     kernel32:KERNEL32.dll
+ 0001:000000c4       \177KERNEL32_NULL_THUNK_DATA 100010c4     kernel32:KERNEL32.dll
+ 0001:000000c8       __imp__wsprintfW           100010c8     user32:USER32.dll
+ 0001:000000cc       \177USER32_NULL_THUNK_DATA 100010cc     user32:USER32.dll
+ 0001:000000d0       ??_C@_1BC@EDMBJIKC@?$AAU?$AAs?$AAe?$AAr?$AAM?$AAe?$AAn?$AAu?$AA?$AA@ 100010d0     MacroView.obj
+ 0001:000000e4       ??_C@_1BG@MOIPMCBH@?$AAF?$AAi?$AAn?$AAd?$AAF?$AAo?$AAl?$AAd?$AAe?$AAr?$AA?$AA@ 100010e4     MacroView.obj
+ 0001:000000fc       ??_C@_1O@EPGKAHO@?$AAC?$AAo?$AAm?$AAm?$AAo?$AAn?$AA?$AA@ 100010fc     MacroView.obj
+ 0001:0000010c       ??_C@_1M@KDHOHJAD@?$AAO?$AAt?$AAh?$AAe?$AAr?$AA?$AA@ 1000110c     MacroView.obj
+ 0001:00000118       ??_C@_1O@EMCCPBMJ@?$AAV?$AAi?$AAe?$AAw?$AAe?$AAr?$AA?$AA@ 10001118     MacroView.obj
+ 0001:00000128       ??_C@_19BGDOLOIO@?$AAT?$AAr?$AAe?$AAe?$AA?$AA@ 10001128     MacroView.obj
+ 0001:00000134       ??_C@_1M@JLDCNMKN@?$AAS?$AAh?$AAe?$AAl?$AAl?$AA?$AA@ 10001134     MacroView.obj
+ 0001:00000140       ??_C@_1O@GFHNCINN@?$AAS?$AAe?$AAa?$AAr?$AAc?$AAh?$AA?$AA@ 10001140     MacroView.obj
+ 0001:00000150       ??_C@_1M@PGILGEKA@?$AAQ?$AAV?$AAi?$AAe?$AAw?$AA?$AA@ 10001150     MacroView.obj
+ 0001:0000015c       ??_C@_19IBCFILMC@?$AAM?$AAe?$AAn?$AAu?$AA?$AA@ 1000115c     MacroView.obj
+ 0001:00000168       ??_C@_1BC@DIFDEABL@?$AAM?$AAa?$AAi?$AAn?$AAM?$AAe?$AAn?$AAu?$AA?$AA@ 10001168     MacroView.obj
+ 0001:0000017c       ??_C@_19GFDACHI@?$AAI?$AAn?$AAf?$AAo?$AA?$AA@ 1000117c     MacroView.obj
+ 0001:00000188       ??_C@_19BNBKBBLP@?$AAH?$AAe?$AAl?$AAp?$AA?$AA@ 10001188     MacroView.obj
+ 0001:00000194       ??_C@_1O@PNHGCNJL@?$AAE?$AAd?$AAi?$AAt?$AAo?$AAr?$AA?$AA@ 10001194     MacroView.obj
+ 0001:000001a4       ??_C@_1M@KDNLPMDN@?$AAD?$AAi?$AAs?$AAk?$AAs?$AA?$AA@ 100011a4     MacroView.obj
+ 0001:000001b0       ??_C@_1O@CFJIAAME@?$AAD?$AAi?$AAa?$AAl?$AAo?$AAg?$AA?$AA@ 100011b0     MacroView.obj
+ 0001:000001c0       ??_C@_1CK@GPFJAPPC@?$AA?2?$AAS?$AAo?$AAf?$AAt?$AAw?$AAa?$AAr?$AAe?$AA?2?$AAF?$AAa?$AAr?$AA2?$AA?2?$AAU?$AAs?$AAe?$AAr?$AAs?$AA?$AA@ 100011c0     MacroView.obj
+ 0001:000001ec       ??_C@_1BO@OPHDBPMO@?$AA?2?$AAS?$AAo?$AAf?$AAt?$AAw?$AAa?$AAr?$AAe?$AA?2?$AAF?$AAa?$AAr?$AA2?$AA?$AA@ 100011ec     MacroView.obj
+ 0001:0000020c       ??_C@_1BC@HFEAIAIF@?$AA?2?$AAP?$AAl?$AAu?$AAg?$AAi?$AAn?$AAs?$AA?$AA@ 1000120c     MacroView.obj
+ 0001:00000220       ??_C@_1BE@OPCLEKMP@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAV?$AAi?$AAe?$AAw?$AA?$AA@ 10001220     MacroView.obj
+ 0001:00000234       ??_C@_1BE@OHLFHHMC@?$AAK?$AAe?$AAy?$AAM?$AAa?$AAc?$AAr?$AAo?$AAs?$AA?$AA@ 10001234     MacroView.obj
+ 0001:00000248       ??_C@_1CE@HLHNCBPM@?$AAH?$AAK?$AAE?$AAY?$AA_?$AAC?$AAU?$AAR?$AAR?$AAE?$AAN?$AAT?$AA_?$AAU?$AAS?$AAE?$AAR?$AA?$AA@ 10001248     MacroView.obj
+ 0001:0000026c       ??_C@_13NEIAEHFG@?$AA?$CC?$AA?$AA@ 1000126c     MacroView.obj
+ 0001:00000270       ??_C@_17LGLPFNOI@?$AA?2?$AA?$CF?$AAs?$AA?$AA@ 10001270     MacroView.obj
+ 0001:00000278       ??_C@_17LGKOMLJ@?$AA?4?$AA?4?$AA?4?$AA?$AA@ 10001278     MacroView.obj
+ 0001:00000280       ??_C@_1M@DFKENGJN@?$AA?$CF?$AAs?$AA?2?$AA?$CF?$AAs?$AA?$AA@ 10001280     MacroView.obj
+ 0001:0000028c       ??_C@_11LOCGONAA@?$AA?$AA@ 1000128c     MacroView.obj
+ 0001:00000290       ??_C@_13GGAHEHIG@?$AA?$AB?$AA?$AA@ 10001290     MacroView.obj
+ 0001:00000294       ??_C@_1CA@GLADGDBI@?$AA?$CF?$AAs?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?2?$AA?$CF?$AAs?$AA?$CC?$AA?$AA@ 10001294     MacroView.obj
+ 0001:000002b4       ??_C@_1BG@ECEHMOLL@?$AAr?$AAe?$AAg?$AAe?$AAd?$AAi?$AAt?$AA?5?$AA?9?$AAe?$AA?$AA@ 100012b4     MacroView.obj
+ 0001:000002cc       ??_C@_1BC@GLIGFLDD@?$AA?$CF?$AAs?$AA?2?$AA?$CF?$AAs?$AA?2?$AA?$CF?$AAs?$AA?$AA@ 100012cc     MacroView.obj
+ 0001:000002e0       ??_C@_13FFFLPHEM@?$AA?$HO?$AA?$AA@ 100012e0     MacroView.obj
+ 0001:000002e4       ??_C@_17FAKJCLIO@?$AAm?$AAv?$AAu?$AA?$AA@ 100012e4     MacroView.obj
+ 0001:000002ec       ??_C@_1CC@OFOCFONJ@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAE?$AAx?$AAp?$AAo?$AAr?$AAt?$AAE?$AAx?$AAi?$AAs?$AAt?$AA?$AA@ 100012ec     MacroView.obj
+ 0001:00000310       ??_C@_1FK@KOPEDNEP@?$AA?5?$AA?5?$AA?$CF?$AA?9?$AA?$CK?$AAs?$AA?5?$AA?$CF?$AA1?$AA0?$AAl?$AAu?$AA?5?$AA?$CF?$AA0?$AA2?$AAu?$AA?4?$AA?$CF?$AA0?$AA2?$AAu?$AA?4?$AA?$CF?$AA0?$AA2?$AAu?$AA?5?$AA?$CF?$AA0?$AA2?$AAu@ 10001310     MacroView.obj
+ 0001:0000036c       ??_C@_1BC@BKKMBPCA@?$AA?$CF?$AAs?$AA?$CF?$AAx?$AA?4?$AAt?$AAm?$AAp?$AA?$AA@ 1000136c     MacroView.obj
+ 0001:00000380       ??_C@_1BI@BMNFHPJC@?$AA?$CF?$AAs?$AA?2?$AA?$CF?$AAs?$AA?$CF?$AAx?$AA?4?$AAt?$AAm?$AAp?$AA?$AA@ 10001380     MacroView.obj
+ 0001:00000398       ??_C@_1BI@FEOGLHNB@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAE?$AAx?$AAp?$AAo?$AAr?$AAt?$AA?$AA@ 10001398     MacroView.obj
+ 0001:000003b0       ??_C@_1O@HFHODHFE@?$AA?$CF?$AAs?$AA?4?$AAr?$AAe?$AAg?$AA?$AA@ 100013b0     MacroView.obj
+ 0001:000003c0       ??_C@_1BO@INFMGOP@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAE?$AAx?$AAp?$AAo?$AAr?$AAt?$AAA?$AAl?$AAl?$AA?$AA@ 100013c0     MacroView.obj
+ 0001:000003e0       ??_C@_1BM@IAJGMDDL@?$AAK?$AAe?$AAy?$AAM?$AAa?$AAc?$AAr?$AAo?$AAs?$AA?4?$AAr?$AAe?$AAg?$AA?$AA@ 100013e0     MacroView.obj
+ 0001:000003fc       ??_C@_1O@JMBLCINJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?$AA@ 100013fc     MacroView.obj
+ 0001:0000040c       ??_C@_17HIJMLLPP@?$AA?$AB?$AA?$CF?$AAs?$AA?$AA@ 1000140c     MacroView.obj
+ 0001:00000414       ??_C@_1BG@GDLKCJII@?$AAV?$AAi?$AAe?$AAw?$AAE?$AAd?$AAi?$AAt?$AAo?$AAr?$AA?$AA@ 10001414     MacroView.obj
+ 0001:0000042c       ??_C@_1BG@NCOOPFNK@?$AAV?$AAi?$AAe?$AAw?$AAV?$AAi?$AAe?$AAw?$AAe?$AAr?$AA?$AA@ 1000142c     MacroView.obj
+ 0001:00000444       ??_C@_1BE@GNFNIOAA@?$AAV?$AAi?$AAe?$AAw?$AAS?$AAh?$AAe?$AAl?$AAl?$AA?$AA@ 10001444     MacroView.obj
+ 0001:00000458       ??_C@_1BI@KNNNHOLC@?$AAS?$AAa?$AAv?$AAe?$AAO?$AAn?$AAS?$AAt?$AAa?$AAr?$AAt?$AA?$AA@ 10001458     MacroView.obj
+ 0001:00000470       ??_C@_1BK@HCNEMFBL@?$AAG?$AAr?$AAo?$AAu?$AAp?$AAD?$AAi?$AAv?$AAi?$AAd?$AAe?$AAr?$AA?$AA@ 10001470     MacroView.obj
+ 0001:0000048c       ??_C@_1BC@BAMNBGKM@?$AAD?$AAb?$AAl?$AAC?$AAl?$AAi?$AAc?$AAk?$AA?$AA@ 1000148c     MacroView.obj
+ 0001:000004a0       ??_C@_1BE@GHLGGJGA@?$AAM?$AAe?$AAn?$AAu?$AAC?$AAy?$AAc?$AAl?$AAe?$AA?$AA@ 100014a0     MacroView.obj
+ 0001:000004b4       ??_C@_1BO@MNBGOAEO@?$AAL?$AAo?$AAn?$AAg?$AAG?$AAr?$AAo?$AAu?$AAp?$AAN?$AAa?$AAm?$AAe?$AAs?$AA?$AA@ 100014b4     MacroView.obj
+ 0001:000004d4       ??_C@_1CG@HPMPPLPD@?$AAS?$AAt?$AAa?$AAr?$AAt?$AAD?$AAe?$AAp?$AAe?$AAn?$AAd?$AAe?$AAn?$AAt?$AAS?$AAo?$AAr?$AAt?$AA?$AA@ 100014d4     MacroView.obj
+ 0001:000004fc       ??_C@_1BK@BDJMIGFI@?$AAU?$AAs?$AAe?$AAH?$AAi?$AAg?$AAh?$AAl?$AAi?$AAg?$AAh?$AAt?$AA?$AA@ 100014fc     MacroView.obj
+ 0001:00000518       ??_C@_1BM@BHIAAPIM@?$AAA?$AAu?$AAt?$AAo?$AAm?$AAa?$AAt?$AAi?$AAc?$AAS?$AAa?$AAv?$AAe?$AA?$AA@ 10001518     MacroView.obj
+ 0001:00000534       ??_C@_1BO@IACIGABH@?$AAA?$AAd?$AAd?$AAD?$AAe?$AAs?$AAc?$AAr?$AAi?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 10001534     MacroView.obj
+ 0001:00000554       ??_C@_1O@BJPKKLLM@?$AAC?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$AA@ 10001554     MacroView.obj
+ 0001:00000564       ??_C@_1M@MOFLFCEC@?$AA?$CF?$AAs?$AA?5?$AA?$CF?$AAs?$AA?$AA@ 10001564     MacroView.obj
+ 0001:00000570       ??_C@_13HOIJIPNN@?$AA?5?$AA?$AA@ 10001570     MacroView.obj
+ 0001:00000574       ??_C@_1BC@HNGOOHNM@?$CF?0?$CF?$AC?$CF?$AC?$CF?$AC?$CF?$AC?$CF?$AC?$CF?$AC?$CF4?$AA?$AA@ 10001574     MacroView.obj
+ 0001:00000588       ??_C@_17EAFLNLFC@?$CF?$AC?$CF?$AC?$CF4?$AA?$AA@ 10001588     MacroView.obj
+ 0001:00000590       ??_C@_1BE@KDMDINMC@?$AA?$CF?$AAs?$AA?2?$AA?$CF?$AAs?$AA?2?$AA?$HO?$AA?$CF?$AAs?$AA?$AA@ 10001590     MacroView.obj
+ 0001:000005a4       ??_C@_1BE@BJAMPBPK@?$AA?$CF?$AA?9?$AA?$CK?$AAs?$AA?5?$CF?$AC?$AA?5?$AA?$CF?$AAs?$AA?$AA@ 100015a4     MacroView.obj
+ 0001:000005b8       ??_C@_17PEPGGFIG@?$AA?$CF?$AA?$CK?$AAs?$AA?$AA@ 100015b8     MacroView.obj
+ 0001:000005c0       ??_C@_1BA@JABNLBEH@?$AA?$CF?$AA?$CK?$AAs?$CF?$AC?$AA?$CF?$AA?$CK?$AAs?$AA?$AA@ 100015c0     MacroView.obj
+ 0001:000005d0       ??_C@_1BG@CJOGADML@?$AA?$CF?$AA?9?$AA?$CK?$AAs?$AA?5?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?$AA@ 100015d0     MacroView.obj
+ 0001:000005e8       ??_C@_13EBCNDICG@?$AA?3?$AA?$AA@ 100015e8     MacroView.obj
+ 0001:000005ec       ??_C@_1BI@DLMANABL@?$AAD?$AAe?$AAs?$AAc?$AAr?$AAi?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 100015ec     MacroView.obj
+ 0001:00000604       ??_C@_1CI@OLPGMIKE@?$AAN?$AAo?$AAS?$AAe?$AAn?$AAd?$AAK?$AAe?$AAy?$AAs?$AAT?$AAo?$AAP?$AAl?$AAu?$AAg?$AAi?$AAn?$AAs?$AA?$AA@ 10001604     MacroView.obj
+ 0001:0000062c       ??_C@_1BG@JGEFGKOJ@?$AAP?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 1000162c     MacroView.obj
+ 0001:00000644       ??_C@_1BK@ELCPNBD@?$AAN?$AAo?$AAP?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 10001644     MacroView.obj
+ 0001:00000660       ??_C@_1BC@PPLPGKLO@?$AAN?$AAo?$AAP?$AAF?$AAi?$AAl?$AAe?$AAs?$AA?$AA@ 10001660     MacroView.obj
+ 0001:00000674       ??_C@_1BG@GEAGJBDJ@?$AAN?$AAo?$AAP?$AAF?$AAo?$AAl?$AAd?$AAe?$AAr?$AAs?$AA?$AA@ 10001674     MacroView.obj
+ 0001:0000068c       ??_C@_1BM@FEGCOOEJ@?$AAN?$AAo?$AAF?$AAi?$AAl?$AAe?$AAP?$AAP?$AAa?$AAn?$AAe?$AAl?$AAs?$AA?$AA@ 1000168c     MacroView.obj
+ 0001:000006a8       ??_C@_1CA@EDDMEAKG@?$AAN?$AAo?$AAP?$AAl?$AAu?$AAg?$AAi?$AAn?$AAP?$AAP?$AAa?$AAn?$AAe?$AAl?$AAs?$AA?$AA@ 100016a8     MacroView.obj
+ 0001:000006c8       ??_C@_1BE@FCAACJAC@?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 100016c8     MacroView.obj
+ 0001:000006dc       ??_C@_1BI@CELDEFLA@?$AAN?$AAo?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 100016dc     MacroView.obj
+ 0001:000006f4       ??_C@_1BA@JDKKJGOB@?$AAN?$AAo?$AAF?$AAi?$AAl?$AAe?$AAs?$AA?$AA@ 100016f4     MacroView.obj
+ 0001:00000704       ??_C@_1BE@DIAHMPBO@?$AAN?$AAo?$AAF?$AAo?$AAl?$AAd?$AAe?$AAr?$AAs?$AA?$AA@ 10001704     MacroView.obj
+ 0001:00000718       ??_C@_1BK@NHGJONDF@?$AAN?$AAo?$AAF?$AAi?$AAl?$AAe?$AAP?$AAa?$AAn?$AAe?$AAl?$AAs?$AA?$AA@ 10001718     MacroView.obj
+ 0001:00000734       ??_C@_1BO@KEGAEGDD@?$AAN?$AAo?$AAP?$AAl?$AAu?$AAg?$AAi?$AAn?$AAP?$AAa?$AAn?$AAe?$AAl?$AAs?$AA?$AA@ 10001734     MacroView.obj
+ 0001:00000754       ??_C@_1BI@CBKDEKGE@?$AAE?$AAV?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 10001754     MacroView.obj
+ 0001:0000076c       ??_C@_1BM@KBJLNHED@?$AAN?$AAo?$AAE?$AAV?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 1000176c     MacroView.obj
+ 0001:00000788       ??_C@_1CC@MNDJHGGA@?$AAE?$AAm?$AAp?$AAt?$AAy?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AAL?$AAi?$AAn?$AAe?$AA?$AA@ 10001788     MacroView.obj
+ 0001:000007ac       ??_C@_1CI@HGKAJJPI@?$AAN?$AAo?$AAt?$AAE?$AAm?$AAp?$AAt?$AAy?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AAL?$AAi?$AAn?$AAe?$AA?$AA@ 100017ac     MacroView.obj
+ 0001:000007d4       ??_C@_1BM@FNPOKNPH@?$AAD?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AAO?$AAu?$AAt?$AAp?$AAu?$AAt?$AA?$AA@ 100017d4     MacroView.obj
+ 0001:000007f0       ??_C@_1CC@PMAMIPNC@?$AAR?$AAu?$AAn?$AAA?$AAf?$AAt?$AAe?$AAr?$AAF?$AAA?$AAR?$AAS?$AAt?$AAa?$AAr?$AAt?$AA?$AA@ 100017f0     MacroView.obj
+ 0001:00000814       ??_C@_1BC@BOOKDCJG@?$AAS?$AAe?$AAq?$AAu?$AAe?$AAn?$AAc?$AAe?$AA?$AA@ 10001814     MacroView.obj
+ 0001:00000828       ??_C@_1BC@NKNEGDAO@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAD?$AAe?$AAl?$AA?$AA@ 10001828     MacroView.obj
+ 0001:0000083c       ??_C@_1BC@LMEGHKKJ@?$AA?$CC?$AA?$CF?$AAs?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?$CC?$AA?$AA@ 1000183c     MacroView.obj
+ 0001:00000850       ??_C@_1BI@FJGOHIEF@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAP?$AAa?$AAr?$AAa?$AAm?$AAs?$AA?$AA@ 10001850     MacroView.obj
+ 0001:00000868       ??_C@_1BI@LEHOPFCJ@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAG?$AAr?$AAo?$AAu?$AAp?$AAs?$AA?$AA@ 10001868     MacroView.obj
+ 0001:00000880       ??_C@_1BM@FAMONHEO@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAD?$AAe?$AAl?$AAE?$AAm?$AAp?$AAt?$AAy?$AA?$AA@ 10001880     MacroView.obj
+ 0001:0000089c       ??_C@_1BE@FLAHONPP@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAC?$AAo?$AAp?$AAy?$AA?$AA@ 1000189c     MacroView.obj
+ 0001:000008b0       ??_C@_1BC@LDPJJKPC@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAE?$AAx?$AAp?$AA?$AA@ 100018b0     MacroView.obj
+ 0001:000008c4       ??_C@_1BG@MDNBAPPP@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAD?$AAe?$AAs?$AAc?$AAr?$AA?$AA@ 100018c4     MacroView.obj
+ 0001:000008dc       ??_C@_1BC@GEDDNGAP@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAK?$AAe?$AAy?$AA?$AA@ 100018dc     MacroView.obj
+ 0001:000008f0       ??_C@_1BC@PJPGMAJF@?$AAM?$AAa?$AAc?$AAr?$AAo?$AAC?$AAm?$AAd?$AA?$AA@ 100018f0     MacroView.obj
+ 0001:00000904       ??_C@_1M@HOLNMHIJ@?$AAM?$AAA?$AAC?$AAR?$AAO?$AA?$AA@ 10001904     MacroView.obj
+ 0001:00000910       ??_C@_1BC@ENICKDH@?$AAC?$AAo?$AAn?$AAt?$AAe?$AAn?$AAt?$AAs?$AA?$AA@ 10001910     MacroView.obj
+ 0001:00000924       ??_C@_0BC@EEHCEAN@PeekConsoleInputW?$AA@ 10001924     MacroView.obj
+ 0001:00000938       ??_C@_0BC@BINPJBNK@PeekConsoleInputA?$AA@ 10001938     MacroView.obj
+ 0001:0000094c       ??_C@_0BC@IBCKMAJE@ReadConsoleInputW?$AA@ 1000194c     MacroView.obj
+ 0001:00000960       ??_C@_0BC@JNLCHFED@ReadConsoleInputA?$AA@ 10001960     MacroView.obj
+ 0001:00000974       ??_C@_0N@MDJJJHMB@kernel32?4dll?$AA@ 10001974     MacroView.obj
+ 0001:00000990       __alloca_probe             10001990     chkstk.obj
+ 0001:00000990       __chkstk                   10001990 f   chkstk.obj
+ 0001:000009bb       _wmemmove                  100019bb f i MacroView.obj
+ 0001:000009d3       ?InterceptDllCall@@YIHPAUHINSTANCE__@@PBD1PAXPAPAX@Z 100019d3 f   MacroView.obj
+ 0001:00000b6a       ?CmpStr@@YIHPB_W0HH@Z      10001b6a f   MacroView.obj
+ 0001:00000b93       ?AllTrim@@YIPA_WPA_W@Z     10001b93 f   MacroView.obj
+ 0001:00000bea       ?QuoteText@@YIPA_WPA_WH@Z  10001bea f   MacroView.obj
+ 0001:00000c90       ?CheckFirstBackSlash@@YIPA_WPA_WH@Z 10001c90 f   MacroView.obj
+ 0001:00000cf9       ?CheckRLen@@YIPA_WPA_WIH@Z 10001cf9 f   MacroView.obj
+ 0001:00000d7f       ?CheckLen@@YIPA_WPA_WIH@Z  10001d7f f   MacroView.obj
+ 0001:00000dcc       ?GetMsg@@YIPA_WH@Z         10001dcc f   MacroView.obj
+ 0001:00000dda       ?FlushInputBuffer@@YIXXZ   10001dda f   MacroView.obj
+ 0001:00000dec       ?DeleteList@TStrList@@AAEXXZ 10001dec f   MacroView.obj
+ 0001:00000e1e       ?Insert@TStrList@@QAIHPB_WH@Z 10001e1e f   MacroView.obj
+ 0001:00000ece       ?SetText@TStrList@@QAIHPB_WH@Z 10001ece f   MacroView.obj
+ 0001:00000f4e       ?GetText@TStrList@@QAIPA_WPA_WH@Z 10001f4e f   MacroView.obj
+ 0001:00000f7a       ?GetText@TStrList@@QAIPA_WH@Z 10001f7a f   MacroView.obj
+ 0001:00000f92       ?Sort@TStrList@@QAIXHH@Z   10001f92 f   MacroView.obj
+ 0001:00001042       ?RegDataToDataType@@YIKW4TRegDataType@@@Z 10002042 f   MacroView.obj
+ 0001:00001068       ?DataTypeToRegData@@YI?AW4TRegDataType@@K@Z 10002068 f   MacroView.obj
+ 0001:00001090       ?CloseKey@TReg@@QAEXXZ     10002090 f   MacroView.obj
+ 0001:000010ac       ?SetRootKey@TReg@@QAIXPAUHKEY__@@@Z 100020ac f   MacroView.obj
+ 0001:000010da       ?ChangeKey@TReg@@AAIXPAUHKEY__@@PB_W@Z 100020da f   MacroView.obj
+ 0001:00001109       ?GetBaseKey@TReg@@AAIPAUHKEY__@@H@Z 10002109 f   MacroView.obj
+ 0001:00001117       ?CreateKey@TReg@@QAIHPB_W@Z 10002117 f   MacroView.obj
+ 0001:000011a8       ?OpenKey@TReg@@QAIHPB_WH@Z 100021a8 f   MacroView.obj
+ 0001:00001295       ?GetKeyInfo@TReg@@QAEHAAUTRegKeyInfo@@@Z 10002295 f   MacroView.obj
+ 0001:000012d0       ?GetKeyNames@TReg@@QAEHAAPAVTStrList@@@Z 100022d0 f   MacroView.obj
+ 0001:0000133d       ?GetValueNames@TReg@@QAEHAAPAVTStrList@@@Z 1000233d f   MacroView.obj
+ 0001:000013aa       ?GetDataInfo@TReg@@QAEHPB_WAAUTRegDataInfo@@@Z 100023aa f   MacroView.obj
+ 0001:000013e9       ?GetDataSize@TReg@@QAIHPB_W@Z 100023e9 f   MacroView.obj
+ 0001:00001406       ?PutData@TReg@@QAEHPB_WPBEKW4TRegDataType@@@Z 10002406 f   MacroView.obj
+ 0001:00001431       ?GetData@TReg@@QAEHPB_WPAXKAAW4TRegDataType@@@Z 10002431 f   MacroView.obj
+ 0001:00001471       ?HasSubKeys@TReg@@QAEHXZ   10002471 f   MacroView.obj
+ 0001:00001493       ?GetKey@TReg@@AAIPAUHKEY__@@PB_W@Z 10002493 f   MacroView.obj
+ 0001:00001507       ?KeyExists@TReg@@QAIHPB_W@Z 10002507 f   MacroView.obj
+ 0001:00001523       ?MoveValue@TReg@@AAIXPAUHKEY__@@0PB_W@Z 10002523 f   MacroView.obj
+ 0001:0000159c       ?CopyValues@TReg@@AAIXPAUHKEY__@@0@Z 1000259c f   MacroView.obj
+ 0001:00001629       ?CopyKeys@TReg@@AAIXPAUHKEY__@@0@Z 10002629 f   MacroView.obj
+ 0001:00001706       ?DefKeyDialogProc@@YGJPAXHHJ@Z 10002706 f   MacroView.obj
+ 0001:0000182e       ?CopyDialogProc@@YGJPAXHHJ@Z 1000282e f   MacroView.obj
+ 0001:000018f3       ?myReadConsoleInputA@@YGHPAXPAU_INPUT_RECORD@@KPAK@Z 100028f3 f   MacroView.obj
+ 0001:00001901       ?myReadConsoleInputW@@YGHPAXPAU_INPUT_RECORD@@KPAK@Z 10002901 f   MacroView.obj
+ 0001:0000190f       ??1TMacroView@@QAE@XZ      1000290f f   MacroView.obj
+ 0001:00001928       ?InitMacroAreas@TMacroView@@AAIXXZ 10002928 f   MacroView.obj
+ 0001:000019fc       ?WriteKeyBar@TMacroView@@AAIXH@Z 100029fc f   MacroView.obj
+ 0001:00001e27       ?CreateDirs@TMacroView@@AAIHPA_W@Z 10002e27 f   MacroView.obj
+ 0001:0000200a       ?ConvertGroupName@TMacroView@@AAEPA_WPA_WH@Z 1000300a f   MacroView.obj
+ 0001:000020de       ?InitDialogItems@TMacroView@@AAEXPAUInitDialogItem@@PAUFarDialogItem@@H@Z 100030de f   MacroView.obj
+ 0001:00002156       ?InsertMacroToEditor@TMacroView@@AAIXH@Z 10003156 f   MacroView.obj
+ 0001:00002690       ?ExportMacroToFile@TMacroView@@AAIXH@Z 10003690 f   MacroView.obj
+ 0001:00002f11       ?MoveTildeInKey@TMacroView@@AAEXAAPAVTStrList@@H@Z 10003f11 f   MacroView.obj
+ 0001:00002fc5       ?PrepareDependentSort@TMacroView@@AAEXAAPAVTStrList@@H@Z 10003fc5 f   MacroView.obj
+ 0001:000030b4       ?ExportMacro@TMacroView@@AAIXH@Z 100040b4 f   MacroView.obj
+ 0001:00003238       _GetMinFarVersionW@0       10004238 f   MacroView.obj
+ 0001:0000323e       _SetStartupInfoW@4         1000423e f   MacroView.obj
+ 0001:00003377       _GetPluginInfoW@4          10004377 f   MacroView.obj
+ 0001:000033d7       ?DeleteKey@TReg@@QAIHPB_W@Z 100043d7 f   MacroView.obj
+ 0001:000034be       ?WriteString@TReg@@QAIHPB_W0@Z 100044be f   MacroView.obj
+ 0001:000034e6       ?ReadString@TReg@@QAIPA_WPB_WPA_WH@Z 100044e6 f   MacroView.obj
+ 0001:00003532       ?ReadInteger@TReg@@QAIHPB_W@Z 10004532 f   MacroView.obj
+ 0001:0000355c       ?MoveKey@TReg@@QAIXPB_W0H@Z 1000455c f   MacroView.obj
+ 0001:000035eb       ?ReadConfig@TMacroView@@QAIXXZ 100045eb f   MacroView.obj
+ 0001:0000385a       ?Configure@TMacroView@@QAIHXZ 1000485a f   MacroView.obj
+ 0001:00004194       ?MacroDialogProc@@YGJPAXHHJ@Z 10005194 f   MacroView.obj
+ 0001:00004655       ?ProcessPeekKey@@YIHPAU_INPUT_RECORD@@@Z 10005655 f   MacroView.obj
+ 0001:00004a93       ?InitDialogs@TMacroView@@AAIXXZ 10005a93 f   MacroView.obj
+ 0001:0000566d       ?InitData@TMacroView@@AAIXXZ 1000666d f   MacroView.obj
+ 0001:000057a8       ?SwitchOver@TMacroView@@AAEXPB_W0@Z 100067a8 f   MacroView.obj
+ 0001:000058b8       ?DeletingMacro@TMacroView@@AAEHPAPB_WHPB_W@Z 100068b8 f   MacroView.obj
+ 0001:00005a2b       ?FillMenu@TMacroView@@AAIXPAXH@Z 10006a2b f   MacroView.obj
+ 0001:0000656f       ?WriteRegValues@TMacroView@@AAEXPAUFarDialogItem@@PAX@Z 1000756f f   MacroView.obj
+ 0001:00006b9e       ?DeleteMacro@TMacroView@@AAIHXZ 10007b9e f   MacroView.obj
+ 0001:00006d01       ?InsertMacro@TMacroView@@AAIHXZ 10007d01 f   MacroView.obj
+ 0001:00007293       ?EditMacro@TMacroView@@AAIHXZ 10008293 f   MacroView.obj
+ 0001:000081a0       _ExitFARW@0                100091a0 f   MacroView.obj
+ 0001:000081e1       ?myPeekConsoleInputA@@YGHPAXPAU_INPUT_RECORD@@KPAK@Z 100091e1 f   MacroView.obj
+ 0001:00008231       ?myPeekConsoleInputW@@YGHPAXPAU_INPUT_RECORD@@KPAK@Z 10009231 f   MacroView.obj
+ 0001:00008281       ??0TMacroView@@QAE@XZ      10009281 f   MacroView.obj
+ 0001:00008310       ?CopyMoveMacro@TMacroView@@AAIHH@Z 10009310 f   MacroView.obj
+ 0001:00008f9c       ?CopyMacro@TMacroView@@AAIHH@Z 10009f9c f   MacroView.obj
+ 0001:00008fcc       _ClosePluginW@4            10009fcc f   MacroView.obj
+ 0001:0000900f       _ConfigureW@4              1000a00f f   MacroView.obj
+ 0001:00009086       ?MenuDialogProc@@YGJPAXHHJ@Z 1000a086 f   MacroView.obj
+ 0001:00009664       ?MacroList@TMacroView@@QAEHXZ 1000a664 f   MacroView.obj
+ 0001:000098f4       _OpenPluginW@8             1000a8f4 f   MacroView.obj
+ 0001:00009980       _wcschr                    1000a980 f   libCRT:strchr.obj
+ 0001:000099b0       _wcsrchr                   1000a9b0 f   libCRT:strrchr.obj
+ 0001:000099e0       _wcsstr                    1000a9e0 f   libCRT:strstr.obj
+ 0001:00009a40       _memmove                   1000aa40 f   libCRT:memmove.obj
+ 0001:00009aa0       ??_V@YAXPAX@Z              1000aaa0 f   libCRT:delete_array.obj
+ 0001:00009ab0       ??_U@YAPAXI@Z              1000aab0 f   libCRT:new_array.obj
+ 0001:00009ac0       _memset                    1000aac0 f   libCRT:memset.obj
+ 0001:00009b00       ??3@YAXPAX@Z               1000ab00 f   libCRT:delete.obj
+ 0001:00009b10       ??2@YAPAXI@Z               1000ab10 f   libCRT:new.obj
+ 0001:00009b20       _free                      1000ab20 f   libCRT:free.obj
+ 0001:00009b40       _malloc                    1000ab40 f   libCRT:malloc.obj
+ 0001:00009b58       __IMPORT_DESCRIPTOR_KERNEL32 1000ab58     kernel32:KERNEL32.dll
+ 0001:00009b6c       __IMPORT_DESCRIPTOR_USER32 1000ab6c     user32:USER32.dll
+ 0001:00009b80       __IMPORT_DESCRIPTOR_ADVAPI32 1000ab80     advapi32:ADVAPI32.dll
+ 0001:00009b94       __NULL_IMPORT_DESCRIPTOR   1000ab94     kernel32:KERNEL32.dll
+ 0002:00000000       ?HKCU@@3PB_WB              1000c000     MacroView.obj
+ 0002:00000004       ?KeyMacros_KEY@@3PB_WB     1000c004     MacroView.obj
+ 0002:00000008       ?Module_KEY@@3PB_WB        1000c008     MacroView.obj
+ 0002:0000000c       ?Plugins_KEY@@3PB_WB       1000c00c     MacroView.obj
+ 0002:00000010       ?Default_KEY@@3PB_WB       1000c010     MacroView.obj
+ 0002:00000014       ?Users_KEY@@3PB_WB         1000c014     MacroView.obj
+ 0002:00000018       ?MacroGroupShort@@3PAPB_WA 1000c018     MacroView.obj
+ 0002:00000058       ?GroupIndex@@3PAHA         1000c058     MacroView.obj
+ 0002:00000098       ?FarFullName@@3PA_WA       1000c098     MacroView.obj
+ 0002:00000498       ?FarUserName@@3PA_WA       1000c498     MacroView.obj
+ 0002:00000898       ?hInstance@@3PAUHINSTANCE__@@A 1000c898     MacroView.obj
+ 0002:0000089c       ?OpenFrom@@3HA             1000c89c     MacroView.obj
+ 0002:000008a0       ?Info@@3UPluginStartupInfo@@A 1000c8a0     MacroView.obj
+ 0002:00000924       ?p_fnPeekConsoleInputOrgW@@3P6GHPAXPAU_INPUT_RECORD@@KPAK@ZA 1000c924     MacroView.obj
+ 0002:00000928       ?KeyMacros@@3PA_WA         1000c928     MacroView.obj
+ 0002:00000a28       ?p_fnReadConsoleInputOrgW@@3P6GHPAXPAU_INPUT_RECORD@@KPAK@ZA 1000ca28     MacroView.obj
+ 0002:00000a2c       ?p_fnReadConsoleInputOrgA@@3P6GHPAXPAU_INPUT_RECORD@@KPAK@ZA 1000ca2c     MacroView.obj
+ 0002:00000a30       ?FarUsersKey@@3PA_WA       1000ca30     MacroView.obj
+ 0002:00000b30       ?p_fnPeekConsoleInputOrgA@@3P6GHPAXPAU_INPUT_RECORD@@KPAK@ZA 1000cb30     MacroView.obj
+ 0002:00000b38       ?PluginRootKey@@3PA_WA     1000cb38     MacroView.obj
+ 0002:00000c38       ?vi@@3U_OSVERSIONINFOW@@A  1000cc38     MacroView.obj
+ 0002:00000d50       ?FarKey@@3PA_WA            1000cd50     MacroView.obj
+ 0002:00000e50       ?FSF@@3UFarStandardFunctions@@A 1000ce50     MacroView.obj
+ 0002:00000f40       ?Reg@@3PAVTReg@@A          1000cf40     MacroView.obj
+ 0002:00000f44       ?Macro@@3PAVTMacroView@@A  1000cf44     MacroView.obj
+
+ entry point at        0000:00000000
+
+ Static symbols
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- supercid -->
+<device name="db2020">
+  <cid num="49" color="red">
+    <bflash>
+      <ldr>2020_pi_P3M</ldr>
+      <ldr>2020_f_R2A005</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>2020_pi_P3M</ldr>
+      <ldr>2020_cs_R3A006</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="51" color="red">
+    <bflash>
+      <ldr>2020_pi_P3M</ldr>
+      <ldr>2020_f_R2A005</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>2020_pi_P3M</ldr>
+      <ldr>2020_cs_R3A006</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="52" color="red">
+    <bflash>
+      <ldr>2020_pi_P3M</ldr>
+      <ldr>2020_f_R2A005</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>2020_pi_P3M</ldr>
+      <ldr>2020_cs_R3A006</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="53" color="red">
+    <bflash>
+      <ldr>2020_pi_P3M</ldr>
+      <ldr>2020_f_R2A005</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>2020_pi_P3M</ldr>
+      <ldr>2020_cs_R3A006</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+</device>

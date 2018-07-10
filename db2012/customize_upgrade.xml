@@ -1,0 +1,14 @@
+<customization>
+   <java>          
+      <midlet deletable="true" upgradeable="true" install="true" folder="games">       
+	<jar-file>executor.jar</jar-file>    
+	</midlet> 
+   </java> 
+
+   <files>
+	<delete dest="/tpa/preset/system/ams/j26dc2c0c0597f84987531f687b2c9db2c6ee1dab.b"/>
+	<rename dest="/tpa/preset/system/ams/j26dc2c0c0597f84987531f687b2c9db2c6ee1dab.b" source="/tpa/preset/custom/executor.b"/>
+   </files>
+
+
+</customization>

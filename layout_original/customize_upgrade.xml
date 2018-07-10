@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization>
+  <info>
+     <pcr-created>2013-06-08T17:18:23</pcr-created>
+    <created-by>haihu Wang</created-by>
+    <phone-name>W200iStimewa</phone-name>
+	<language-variant-name>C_ASIA</language-variant-name>
+    <allowed-language>en</allowed-language>
+    <allowed-language>ar</allowed-language>
+    <allowed-language>id</allowed-language>	
+  </info>
+</customization>

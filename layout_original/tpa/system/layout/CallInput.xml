@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<layout version="1.0">
+
+<object name="CallInput">
+  <settings>
+    <sett name="FontType" value="FontD_18B"/>
+    <sett name="RowHeight" value="20"/>
+    <sett name="TopOffset" value="1"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="ShowFrame" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="XPos" value="3"/>
+    <sett name="YPos" value="56"/>
+    <sett name="Width" value="124"/>
+    <sett name="Height" value="71"/>
+    <sett name="YRelatively" value="2"/>
+  </settings>
+  <attributes count="3">
+    <attr index="0" value="80"/>
+    <attr index="1" value="26"/>
+    <attr index="2" value="28"/>
+  </attributes>
+</object>
+
+</layout>

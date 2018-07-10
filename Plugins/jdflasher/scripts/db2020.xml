@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="db2020" prodidldr="071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE">
+  <cid num="49" color="red">
+    <oflash>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>061201 1314 DB2020_FLASHLOADER_R2A005.2020_49_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>070904 1245 DB2020_CSLOADER_R3A013.2020_49_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="49" color="brown">
+    <bflash>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>signed setool PRODLOADER_SETOOL2.2020_49_BROWN</ldr>
+      <ldr>2020_f_R2A005</ldr>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>signed setool PRODLOADER_SETOOL2.2020_49_BROWN</ldr>
+      <ldr>2020_cs_R3A006</ldr>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="51" color="red">
+    <oflash>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>061201 1314 DB2020_FLASHLOADER_R2A005.2020_51_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>070904 1245 DB2020_CSLOADER_R3A013.2020_51_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="52" color="red">
+    <bflash break="2020_52">
+      <qhtry>2020_prologue</qhtry>
+      <run/>
+      <ldr>2020_f_R2A005</ldr>
+      <activateloader/>
+    </bflash>
+    <oflash>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>061201 1314 DB2020_FLASHLOADER_R2A005.2020_52_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>070904 1245 DB2020_CSLOADER_R3A013.2020_52_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="53" color="red">
+    <oflash>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>080108 1810 DB2020_FLASHLOADER_R2A015.2020_53_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <ldr>071130 1150 NPACXC1250330_DB2020_PRODUCTIONIDLOADER_P3M.2020_1_BLUE</ldr>
+      <ldr>070904 1245 DB2020_CSLOADER_R3A013.2020_53_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+</device>

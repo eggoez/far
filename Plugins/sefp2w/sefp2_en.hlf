@@ -1,0 +1,198 @@
+.Language=English,English
+.PluginContents=SEFP2
+
+
+@Contents
+$ #SEFP2 version 1.2.0.144#
+System requirements: Win2K+ / FAR 2.0.1420+
+
+  ~What is SEFP2~@hcWhatIs@
+
+  ~Configure plugin~@hcConfigure@
+
+  ~Supported Phones~@hcSupportedPhones@
+
+  ~Connecting a phone~@hcConnect@
+
+  ~Working with a phone~@hcWork@
+
+
+Visit us: #www.davinciteam.com#
+
+@hcWhatIs
+$ #SEFP2 - What is PhoneFS#
+  #SEFP2# brings all the power of #Far  Manager#  to  SEMC mobile phone's
+internal filesystem. SEFP2 uses native SEMC protocol to access files. You can work with folders
+as easy as with single file. SEFP2 recursively process all files insidea folder. 
+On a progress screen during the process You can see:
+
+
+   -#Source and Destanation filenames#
+
+   -#Current file progress bar#
+
+   -#Total files size information#
+
+   -#Total progress bar#
+
+   -#Number of files processed/total#
+
+   -#Time elapsed and estimate#
+
+   -#Current transfer speed#
+
+
+
+
+  ~Go to main screen~@Contents@
+
+@hcConfigure
+$ #SEFP2 - Configure plugin#
+  Before the beginning of work with SEFP2, You need to adjust  some
+parameters. To enter in the configuration menu, choose #SEFP2# from
+the Far menu #Options#/#Plugins configuration#:
+
+
+   #Add to Plugins menu#         - leave checked if You want to  see 
+PhoneFS in Plugins dialog #F11#
+
+   #Add to Disks menu#           - leave checked to be able to select
+PhoneFS from Disks menu #Alt+F1/Alt+F2#
+
+   #Disks menu hotkey ('1'-'9')# - set desired hotkey for Disks menu.
+Leave blank for autoassign
+
+
+
+ 
+  ~Go to main screen~@Contents@
+
+@hcSupportedPhones
+$ #SEFP2 - Supported phones#
+  #SEFP2# working with next models: 
+
+ ~SEMC A1~
+ #DB2010 CID36/49 RED/BROWN:#
+ D750,K310,K510,K750,K758,W300,W550,W600,W700,W800,
+ W810,Z520,Z525,Z530,Z550,Z558
+ #DB2012 CID50/53 RED/BROWN:#
+ K310,K320,K510,W200,W300,W810,Z550
+ #DB2020 CID49/51/52/53 RED/BROWN:#
+ K530,K550,K610,K618,K770,K790,K800,K810,S500,T650,V630,
+W580,W610,W660,W710,W830,W850,W880,Z610,Z710
+ #PNX5230 CID49/51/52/53 RED/BROWN:#
+ W350,W380,Z310,Z555
+
+ ~SEMC A2~
+ #DB3150 CID49/51/52 RED/BROWN/BLUE:#
+ C702,C902,G502,K630,K660,K850,K858,T700,TM506,V640,W595,
+W760,W890,W902,W908,W910,W980,Z750,Z770,Z780
+ #DB3200 CID49/51/52/53/80/81 RED/BROWN/BLUE:#
+ F100,J105,T707,TM717,W508,W518
+ #DB3210 CID49/51/52/53/80/81 RED/BROWN/BLUE:#
+ C510,C901,C903,C905,G705,TM715,W705,W715,W995
+ #DB3350 CID49/51/52/53/80/81 RED/BROWN/BLUE:#
+ J10,J20,U10,U100,W20,X5
+
+
+
+  ~Go to main screen~@Contents@
+
+@hcSupportedActions
+$ #SEFP2 - Actions available table#
+
+ ------------------------------------------------------------------
+ Domain |        RED            |       BROWN            | SUPERCID
+ ------------------------------------------------------------------
+ CID    |36 49 50 51 52 53 80 81| 36 49 50 51 52 53 80 81|   ANY
+ ------------------------------------------------------------------
+ DB2010 |WO WO -- -- -- -- -- --| RW RW -- -- -- -- -- --|   RW
+ DB2012 |-- -- WO WO WO WO -- --| -- -- RW RW -- -- -- --|   RW
+ DB2020 |-- WO -- WO WO WO -- --| RW RW -- -- -- -- -- --|   RW
+ PNX5230|-- -- -- WO WO WO -- --| -- RW -- RW RW -- -- --|   --
+ DB3150 |-- RW -- RW RW -- -- --| -- RW -- RW RW -- -- --|   RW
+ DB3200 |-- RW -- RW RW WO WO WO| -- RW -- RW RW RW RW RW|   RW
+ DB3210 |-- RW -- RW RW WO WO WO| -- RW -- RW RW RW RW RW|   RW
+ DB3350 |-- RW -- RW RW WO WO WO| -- RW -- RW RW RW RW RW|   RW
+-------------------------------------------------------------------
+
+ RW - Reading and writing available
+ WO - Writing only available
+ -- - Not exists / not supported
+ Files and folders delete supported in any CID/Color combination
+
+ RED      - Retail product (PRODUCT)
+ BROWN    - Developer device (R&D)
+ BLUE     - Factory device (FACTORY)
+ SUPERCID - Security disabled device. Any color
+
+
+
+  ~Go to main screen~@Contents@
+
+@hcWork
+$ #SEFP2 - Working with a phone#
+  SEFP2 allows You to work with a phone filesystem absolutely the same way
+as You doing it with a local drive:
+
+
+  #F5#/#F6#          - Copy/move a file/folder from/to the local disk.
+
+  #F7#             - Create a new folder on a phone.
+
+  #F8#             - Delete file/folder from a phone.
+
+  #Alt+F7#         - Find files
+
+
+
+
+  ~Go to main screen~@Contents@
+
+@hcConnect
+$ #SEFP2 - Connecting a phone#
+   You can open SEFP2 from Disks Menu #Alt+F1#/#Alt+F2# or from Plugins
+Dialog #F11#. No additional software (PC Suite etc.) required for SEFP2 
+to work. You need to have USB flashing cable drivers only.
+
+
+  ~SonyEricsson~
+
+   Before connect the phone You need to make sure battery is fully charged, 
+otherwise You can lose some data.
+Phone can be connected by USB cable. #DCU-60# / #DCU-65# is the cable that comes 
+with phone in a box. Drivers You can find in Download Area at #www.davinciteam.com# 
+To connect a phone You need:
+-Power OFF the phone and reinsert battery
+-Open SEFP2 start dialog and press Connect
+-Connect USB cable holding #C# button
+
+
+
+
+
+
+  ~Go to main screen~@Contents@
+@hcCopy
+$ #SEFP2 - Copy#
+   Specify destenation path for files to place
+
+
+
+  ~Go to main screen~@Contents@
+
+@hcMakeDirectory
+$ #SEFP2 - Make Directory#
+   Specify the new folder name
+
+
+
+  ~Go to main screen~@Contents@
+
+@hcDelete
+$ #SEFP2 - Delete#
+   Confirm files delete from a phone
+
+
+
+  ~Go to main screen~@Contents@

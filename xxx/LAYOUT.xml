@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<layout version="1.0">
+
+<!-- Default settings must be first in file -->
+<object name="default">
+  <settings>
+    <sett name="FontType"       value="FontE_14R"/>
+    <sett name="RowHeight"      value="255"/>
+    <sett name="TopOffset"      value="255"/>
+    <sett name="TitleFontType"  value="FontE_14R"/>
+    <sett name="TitleHeight"    value="255"/>
+    <sett name="TitleTopOffset" value="255"/>
+    <sett name="TitleMode"      value="2"/>
+    <sett name="ScrollBarMode"  value="0"/>
+    <sett name="ShowFrame"      value="0"/>
+    <sett name="OverlayStyle"   value="2"/>
+    <sett name="XPos"           value="0"/>
+    <sett name="YPos"           value="14"/>
+    <sett name="Width"          value="128"/>
+    <sett name="Height"         value="128"/>
+    <sett name="YRelatively"    value="1"/>
+    <sett name="Backlight"      value="4"/>
+  </settings>
+</object>
+
+<object name="ListObject">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="ScrollBarMode" value="0"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <settings layout="1">
+    <sett name="FontType" value="FontE_14I"/>
+  </settings>
+  <attributes count="6">
+    <attr index="0" value="FontE_14R"/>
+    <attr index="1" value="FontE_14R"/>
+    <attr index="2" value="FontE_14R"/>
+    <attr index="3" value="80"/> <!-- FirstRowSecondTextStartPosition -->
+    <attr index="4" value="41"/> <!-- FirstRowSecondTextWidth -->
+	<attr index="5" value="20"/> <!-- SecondRowStartPostition -->
+  </attributes>
+  <attributes count="6" layout="1">
+    <attr index="0" value="FontE_14R"/>
+    <attr index="1" value="FontE_14R"/>
+    <attr index="2" value="FontE_14R"/>
+    <attr index="3" value="80"/> <!-- FirstRowSecondTextStartPosition -->
+    <attr index="4" value="41"/> <!-- FirstRowSecondTextWidth -->
+	<attr index="5" value="20"/> <!-- SecondRowStartPostition -->
+  </attributes>
+</object>
+
+<object name="NOfManyList">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="ScrollBarMode" value="0"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <settings layout="1">
+    <sett name="FontType" value="FontE_14R"/>
+  </settings>
+</object>
+
+<object name="OneOfManyList">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="ScrollBarMode" value="0"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <settings layout="1">
+    <sett name="FontType" value="FontE_14B"/>
+  </settings>
+</object>
+
+<object name="OnOffList">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="ScrollBarMode" value="0"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <settings layout="1">
+    <sett name="FontType" value="FontE_14B"/>
+  </settings>
+</object>
+
+<object name="Feedback">
+  <settings>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="9"/>
+  </settings>
+  <settings orientation="1">
+    <sett name="OverlayStyle" value="8"/>
+  </settings>
+  <settings orientation="1" layout="1">
+    <sett name="OverlayStyle" value="8"/>
+  </settings>
+  <attributes count="9">
+    <attr index="0" value="255"/>
+    <attr index="1" value="12"/>
+    <attr index="2" value="0"/>
+    <attr index="3" value="0"/>
+    <attr index="4" value="2"/>
+    <attr index="5" value="22"/>
+    <attr index="6" value="10"/>
+    <attr index="7" value="2"/>
+    <attr index="8" value="1"/>  <!-- Minimum number rows -->
+  </attributes>
+  <attributes count="9" layout="1">
+    <attr index="0" value="5"/>
+    <attr index="1" value="12"/>
+    <attr index="2" value="0"/>
+    <attr index="3" value="0"/>
+    <attr index="4" value="2"/>
+    <attr index="5" value="22"/>
+    <attr index="6" value="10"/>
+    <attr index="7" value="2"/>
+    <attr index="8" value="1"/>  <!-- Minimum number rows -->
+  </attributes>
+</object>
+
+<object name="Browser">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="ScrollBarMode" value="255"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+</object>
+
+<object name="StringInput">
+  <settings>
+    <sett name="FontType" value="FontE_14R"/>
+	<sett name="RowHeight" value="10"/>		<!-- should be less than actual rowheight -->
+    <sett name="TitleMode" value="255"/>
+    <sett name="OverlayStyle" value="5"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <attributes count="7">
+    <attr index="0" value="4"/> <!-- INTERNAL_FRAME_FONT_SIZE -->
+    <attr index="1" value="16"/> <!-- INTERNAL_FRAME_FONT_STYLE -->
+    <attr index="2" value="4"/> <!-- INTERNAL_FRAME_LARGE_FONT_SIZE -->
+    <attr index="3" value="16"/> <!-- INTERNAL_FRAME_LARGE_FONT_STYLE -->
+    <attr index="4" value="10"/> <!-- STRING_INPUT_INROW_SCROLL -->
+    <attr index="5" value="27"/> <!-- STRING_INPUT_RESERVESPACE_CHINESE -->
+    <attr index="6" value="1"/> <!-- INTERNAL_FRAME_LARGE_SHOW_TITLE -->
+  </attributes>
+  <attributes count="7" layout="1">
+    <attr index="0" value="4"/> <!-- INTERNAL_FRAME_FONT_SIZE -->
+    <attr index="1" value="16"/> <!-- INTERNAL_FRAME_FONT_STYLE -->
+    <attr index="2" value="0"/> <!-- INTERNAL_FRAME_LARGE_FONT_SIZE -->
+    <attr index="3" value="16"/> <!-- INTERNAL_FRAME_LARGE_FONT_STYLE -->
+    <attr index="4" value="10"/> <!-- STRING_INPUT_INROW_SCROLL -->
+    <attr index="5" value="27"/> <!-- STRING_INPUT_RESERVESPACE_CHINESE -->
+    <attr index="6" value="1"/> <!-- INTERNAL_FRAME_LARGE_SHOW_TITLE -->
+  </attributes>
+</object>
+
+<object name="StringInputInfo">
+  <settings>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="XPos" value="0"/>
+    <sett name="YPos" value="0"/>
+    <sett name="Width" value="176"/>
+    <sett name="Height" value="20"/>
+  </settings>
+  <attributes count="8">
+    <attr index="0" value="2500"/> <!-- STRING_INPUT_LANGUAGE_TOT -->
+    <attr index="1" value="19"/> <!-- STRING_INPUT_STATUS_ICON_WIDTH -->
+    <attr index="2" value="22"/> <!-- STRING_INPUT_STATUS_ICON_CHINESE_IM_WIDTH -->
+    <attr index="3" value="1"/> <!-- STRING_INPUT_STATUS_ICON_CHINESE_IM_POS -->
+    <attr index="4" value="20"/> <!-- STRING_INPUT_STATUS_COUNTER_WIDTH -->
+    <attr index="5" value="700"/> <!-- STRING_INPUT_STATUS_SCROLL_START -->
+    <attr index="6" value="200"/> <!-- STRING_INPUT_STATUS_SCROLLING -->
+    <attr index="7" value="600"/> <!-- STRING_INPUT_STATUS_SCROLL_STOP -->
+  </attributes>
+</object>
+
+<object name="PreEdit">
+  <settings>
+    <sett name="FontType" value="FontE_12R"/>
+    <sett name="RowHeight" value="16"/>
+    <sett name="TopOffset" value="2"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="0"/>
+    <sett name="Width" value="0"/>
+    <sett name="Height" value="0"/>
+    <sett name="YRelatively" value="2"/>
+  </settings>
+  <attributes count="2">
+    <attr index="0" value="FontE_12R"/>
+    <attr index="1" value="0"/>
+  </attributes>
+</object>
+
+<object name="PredLstInp">
+  <settings>
+    <sett name="TitleMode" value="1"/>
+    <sett name="ScrollBarMode" value="255"/>
+    <sett name="ShowFrame" value="1"/>
+    <sett name="OverlayStyle" value="8"/>
+    <sett name="XPos" value="255"/>
+    <sett name="YPos" value="255"/>
+    <sett name="Width" value="255"/>
+    <sett name="Height" value="255"/>
+    <sett name="YRelatively" value="2"/>
+  </settings>
+</object>
+
+<object name="PredLstInp2">
+  <settings>
+    <sett name="TitleMode" value="1"/>
+    <sett name="ScrollBarMode" value="255"/>
+    <sett name="ShowFrame" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="XPos" value="255"/>
+    <sett name="YPos" value="255"/>
+    <sett name="Width" value="255"/>
+    <sett name="Height" value="255"/>
+    <sett name="YRelatively" value="2"/>
+  </settings>
+</object>
+
+<object name="Form">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+</object>
+
+<object name="FormList">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="ScrollBarMode" value="0"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <settings layout="1">
+    <sett name="FontType" value="FontE_14B"/>
+  </settings>
+  <attributes count="3">
+    <attr index="0" value="FontE_14R"/>
+    <attr index="1" value="FontE_14R"/>
+    <attr index="2" value="FontE_14R"/>
+  </attributes>
+</object>
+
+<object name="ChinaEdit">
+  <settings>
+    <sett name="FontType" value="FontA_14B"/>
+    <sett name="RowHeight" value="21"/>
+    <sett name="TopOffset" value="1"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="120"/>
+    <sett name="Height" value="27"/> <!-- STRING_INPUT_RESERVESPACE_CHINESE -->
+    <sett name="YRelatively" value="0"/>
+  </settings>
+</object>
+
+<object name="Symbols">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="ScrollBarMode" value="255"/>
+    <sett name="ShowFrame" value="1"/>
+    <sett name="OverlayStyle" value="8"/>
+    <sett name="XPos" value="255"/>
+    <sett name="YPos" value="255"/>
+    <sett name="Width" value="255"/>
+    <sett name="Height" value="255"/>
+  </settings>
+  <attributes count="2">
+    <attr index="0" value="5"/>
+    <attr index="1" value="7"/>
+  </attributes>
+</object>
+
+<object name="Pictogram">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="ScrollBarMode" value="255"/>
+    <sett name="ShowFrame" value="1"/>
+    <sett name="OverlayStyle" value="8"/>
+    <sett name="XPos" value="255"/>
+    <sett name="YPos" value="255"/>
+    <sett name="Width" value="255"/>
+    <sett name="Height" value="255"/>
+  </settings>
+</object>
+
+<object name="DateInput">
+  <settings>
+    <sett name="FontType" value="FontE_14R"/>
+    <sett name="TitleMode" value="255"/>
+    <sett name="OverlayStyle" value="5"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <settings layout="1">
+    <sett name="FontType" value="255"/>
+  </settings>
+  <attributes count="2">
+    <attr index="0" value="FontE_18NB"/>
+    <attr index="1" value="FontE_14B"/>
+  </attributes>
+  <attributes count="2" layout="1">
+    <attr index="0" value="FontE_14B"/>
+    <attr index="1" value="FontE_14B"/>
+  </attributes>
+</object>
+
+<object name="TimeInput">
+  <settings>
+    <sett name="FontType" value="FontE_14R"/>
+    <sett name="TitleMode" value="255"/>
+    <sett name="OverlayStyle" value="5"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <settings layout="1">
+    <sett name="FontType" value="255"/>
+  </settings>
+  <attributes count="1">
+    <attr index="0" value="FontE_18NB"/>
+  </attributes>
+  <attributes count="1" layout="1">
+    <attr index="0" value="FontE_14B"/>
+  </attributes>
+</object>
+
+<object name="PercentInput">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="OverlayStyle" value="5"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <attributes count="3">
+    <attr index="0" value="1"/>
+    <attr index="1" value="25"/>
+	<attr index="2" value="0"/>
+  </attributes>
+</object> 
+
+<object name="Calculator">
+  <settings>
+    <sett name="FontType" value="FontE_18NB"/>
+    <sett name="RowHeight" value="20"/>
+    <sett name="TitleMode" value="255"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <attributes count="1">
+    <attr index="0" value="FontE_14B"/>
+  </attributes>
+</object>
+
+<object name="StatusIndication">
+  <settings>
+    <sett name="RowHeight" value="0"/>
+    <sett name="TopOffset" value="0"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="14"/>
+    <sett name="Height" value="128"/>
+  </settings>
+
+  <attributes count="29">
+    <attr index="0" value="1"/>
+    <attr index="1" value="0"/>
+    <attr index="2" value="1"/>
+    <attr index="3" value="0"/>
+    <attr index="4" value="0"/>
+    <attr index="5" value="1"/>
+    <!-- Main display text attr -->
+    <attr index="6" value="FontE_14B"/> <!-- Large font in stby -->
+    <attr index="7" value="FontE_14B"/> <!-- Small font in stby -->
+    <attr index="8" value="FontE_14B"/> <!-- Notes font -->
+    <attr index="9" value="FontE_14B"/> <!-- Time/date font -->
+    <attr index="10" value="19"/>  <!-- Opr y1 -->
+    <attr index="11" value="40"/>  <!-- Opr y2 -->
+    <attr index="12" value="43"/>  <!-- BSID y1 -->
+    <attr index="13" value="57"/>  <!-- BSID y2 -->
+    <attr index="14" value="43"/>  <!-- BSID2 y1 -->
+    <attr index="15" value="57"/>  <!-- BSID2 y2 -->
+    <attr index="16" value="65"/>  <!-- Zone y1 -->
+    <attr index="17" value="83"/>  <!-- Zone y2 -->
+    <attr index="18" value="83"/>  <!-- Zone2 y1 -->
+    <attr index="19" value="101"/> <!-- Zone2 y2 -->
+    <attr index="20" value="47"/>  <!-- Notes1 y1 -->
+    <attr index="21" value="65"/>  <!-- Notes2 y1 -->
+    <attr index="22" value="83"/>  <!-- Notes3 y1 -->
+    <attr index="23" value="101"/> <!-- Notes4 y1 -->
+    <attr index="24" value="4"/>   <!-- Notes x1 -->
+    <attr index="25" value="125"/> <!-- Notes x2 -->
+    <attr index="26" value="27"/>  <!-- Notes bttm-offs -->
+    <attr index="27" value="25"/>  <!-- Time/date bttm-offs  -->
+    <attr index="28" value="11"/>  <!-- Nbr texts in stby  -->
+  </attributes>
+  <attributes count="16" display="1">
+    <attr index="0" value="1"/>
+    <attr index="1" value="0"/>
+    <attr index="2" value="1"/>
+    <attr index="3" value="0"/>
+    <attr index="4" value="0"/>
+    <attr index="5" value="1"/>
+    <!-- 2nd display text attr -->
+    <attr index="6" value="FontE_12B"/> <!-- Time font 2nd -->
+    <attr index="7" value="FontE_10B"/> <!-- Operator font 2nd -->
+    <attr index="8" value="FontE_10B"/> <!-- Date font 2nd -->
+    <attr index="9" value="3"/> <!-- Nbr texts 2nd -->
+    <attr index="10" value="20"/> <!-- Text 1: y1 2nd -->
+    <attr index="11" value="36"/> <!-- Text 1: y2 2nd -->
+	<attr index="12" value="65"/> <!-- Text 2: y1 2nd -->
+    <attr index="13" value="81"/> <!-- Text 2: y2 2nd -->
+	<attr index="14" value="83"/> <!-- Text 3: y1 2nd -->
+    <attr index="15" value="99"/> <!-- Text 3: y2 2nd -->
+  </attributes>
+</object>
+
+<object name="CallStatus">
+  <settings>
+    <sett name="RowHeight" value="19"/>
+    <sett name="TopOffset" value="2"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="254"/>
+    <sett name="Height" value="37"/>
+    <sett name="YRelatively" value="2"/>
+  </settings>
+  <attributes count="5">
+    <attr index="0" value="0"/>
+    <attr index="1" value="30"/>
+    <attr index="2" value="2"/>
+    <attr index="3" value="40"/>
+    <attr index="4" value="2"/>
+  </attributes>
+</object>
+
+<object name="MainInput">
+  <settings>
+    <sett name="FontType" value="FontD_18B"/>
+    <sett name="RowHeight" value="20"/>
+    <sett name="TopOffset" value="1"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="ShowFrame" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="XPos" value="3"/>
+    <sett name="YPos" value="56"/>
+    <sett name="Width" value="124"/>
+    <sett name="Height" value="71"/>
+    <sett name="YRelatively" value="2"/>
+  </settings>
+  <attributes count="3">
+    <attr index="0" value="80"/>
+    <attr index="1" value="26"/>
+    <attr index="2" value="28"/>
+  </attributes>
+</object>
+
+<object name="MonthView">
+  <settings>
+    <sett name="FontType" value="FontE_12R"/>
+    <sett name="RowHeight" value="14"/>
+    <sett name="TopOffset" value="2"/>
+    <sett name="TitleFontType" value="FontE_14B"/>
+    <sett name="TitleHeight" value="20"/>
+    <sett name="TitleTopOffset" value="3"/>
+    <sett name="TitleMode" value="2"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <settings layout="1">
+    <sett name="TitleFontType" value="FontE_14B"/>
+    <sett name="TitleHeight" value="37"/>
+    <sett name="TitleTopOffset" value="5"/>
+  </settings>
+  <attributes count="10">
+    <attr index="0" value="1"/>         <!-- Show week -->
+    <attr index="1" value="4"/>         <!-- Title date format -->
+    <attr index="2" value="FontE_12B"/> <!-- Occ.font -->
+    <attr index="3" value="FontA_10B"/> <!-- China font -->
+    <attr index="4" value="2"/>         <!-- Title text align -->
+    <attr index="5" value="255"/>       <!-- Day nbr font -->
+    <attr index="6" value="14"/>        <!-- Day grid hight -->
+    <attr index="7" value="1"/>         <!-- Day nbr top offs -->
+    <attr index="8" value="0"/>         <!-- Icon right offset -->
+	<attr index="9" value="0"/>         <!-- Use Chinese Font in Title -->
+  </attributes>
+  <attributes count="10" layout="1">
+    <attr index="0" value="1"/>         <!-- Show week -->
+    <attr index="1" value="8"/>         <!-- Title date format -->
+    <attr index="2" value="FontE_12B"/> <!-- Occ.font -->
+    <attr index="3" value="FontA_10B"/> <!-- China font -->
+    <attr index="4" value="2"/>         <!-- Title text align -->
+    <attr index="5" value="255"/>       <!-- Day nbr font -->
+    <attr index="6" value="14"/>        <!-- Day grid hight -->
+    <attr index="7" value="1"/>         <!-- Day nbr top offs -->
+    <attr index="8" value="0"/>         <!-- Icon right offset -->
+	<attr index="9" value="0"/>         <!-- Use Chinese Font in Title -->
+  </attributes>
+</object>
+
+<object name="WeekView">
+  <settings>
+    <sett name="FontType" value="FontE_12R"/>
+    <sett name="RowHeight" value="16"/>
+    <sett name="TopOffset" value="2"/>
+    <sett name="TitleFontType" value="FontE_14B"/>
+    <sett name="TitleHeight" value="20"/>
+    <sett name="TitleTopOffset" value="3"/>
+    <sett name="TitleMode" value="2"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <settings layout="1">
+    <sett name="FontType" value="FontE_12R"/>
+    <sett name="RowHeight" value="16"/>
+    <sett name="TopOffset" value="2"/>
+    <sett name="TitleFontType" value="FontE_14B"/>
+    <sett name="TitleHeight" value="37"/>
+    <sett name="TitleTopOffset" value="5"/>
+    <sett name="ScrollBarMode" value="0"/>
+    <sett name="OverlayStyle" value="2"/>
+  </settings>
+  <attributes count="9">
+    <attr index="0" value="1"/>
+    <attr index="1" value="4"/>
+    <attr index="2" value="24"/>
+    <attr index="3" value="2"/>
+    <attr index="4" value="1"/>
+    <attr index="5" value="FontA_10B"/>
+    <attr index="6" value="2"/>
+	<attr index="7" value="0"/>         <!-- Use Chinese Font in Title -->
+	<attr index="8" value="0"/>         <!-- Icon right offset -->
+  </attributes>
+  <attributes count="9" layout="1">
+    <attr index="0" value="1"/>
+    <attr index="1" value="8"/>
+    <attr index="2" value="24"/>
+    <attr index="3" value="2"/>
+    <attr index="4" value="1"/>
+    <attr index="5" value="FontA_10B"/>
+    <attr index="6" value="2"/>	
+	<attr index="7" value="0"/>         <!-- Use Chinese Font in Title -->
+	<attr index="8" value="0"/>         <!-- Icon right offset -->
+  </attributes>
+</object>
+
+<object name="SleepMode">
+  <settings>
+	<sett name="FontType" value="FontD_29B"/>
+	<sett name="RowHeight" value="29"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="4"/>
+    <sett name="YPos" value="0"/>
+    <sett name="Height" value="160"/>
+  </settings>
+  <attributes count="1">
+    <attr index="0" value="FontE_18NB" /> 
+  </attributes>
+</object>
+
+<object name="ImageViewer">
+  <settings>
+    <sett name="TitleMode" value="1"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <attributes count="2">
+    <attr index="0" value="FontE_14R"/>
+    <attr index="1" value="1"/>
+  </attributes>
+</object>
+
+<object name="Palette">
+  <settings>
+    <sett name="TitleMode" value="255"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+</object>
+
+<object name="Keylock">
+  <settings>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="0"/>
+    <sett name="Height" value="0"/>
+    <sett name="YRelatively" value="2"/>
+  </settings>
+  <attributes count="1">
+    <attr index="0" value="26"/>
+  </attributes>
+</object>
+
+<object name="Keygrabber">
+  <settings>
+    <sett name="TitleMode" value="2"/>
+    <sett name="YPos" value="254"/>
+    <sett name="YRelatively" value="2"/>
+  </settings>
+</object>
+
+<object name="StopWatch">
+  <settings>
+    <sett name="FontType" value="FontE_14B"/>
+    <sett name="RowHeight" value="61"/>
+    <sett name="TopOffset" value="0"/>
+    <sett name="TitleMode" value="255"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+  <attributes count="8">
+    <attr index="0" value="50"/>
+    <attr index="1" value="2"/>
+    <attr index="2" value="FontE_14B"/>
+    <attr index="3" value="24"/>
+    <attr index="4" value="FontE_12R"/>
+    <attr index="5" value="22"/>
+    <attr index="6" value="6"/>
+    <attr index="7" value="65"/>
+  </attributes>
+</object>
+
+<object name="DockPanel">
+  <settings>
+    <sett name="TitleMode" value="1"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+</object>
+
+<object name="PictureEditor">
+  <settings>
+    <sett name="TitleMode" value="1"/>
+    <sett name="YPos" value="254"/>
+  </settings>
+</object>
+
+<object name="SoftKeys">
+  <settings>
+    <sett name="FontType" value="FontE_14R"/>
+    <sett name="RowHeight" value="18"/>
+    <sett name="TopOffset" value="2"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="142"/>
+    <sett name="Height" value="18"/>
+    <sett name="YRelatively" value="0"/>
+  </settings>
+  <settings orientation="1">
+    <sett name="FontType" value="FontE_14B"/>
+    <sett name="XPos" value="99"/>
+    <sett name="YPos" value="0"/>
+    <sett name="Width" value="61"/>
+    <sett name="Height" value="128"/>
+  </settings>
+  <settings orientation="1" layout="1">
+    <sett name="FontType" value="FontA_14B"/>
+    <sett name="XPos" value="99"/>
+    <sett name="YPos" value="0"/>
+    <sett name="Width" value="61"/>
+    <sett name="Height" value="128"/>
+  </settings>
+</object>
+
+<object name="MMSHeader">
+  <settings>
+    <sett name="FontType" value="FontE_14B"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="254"/>
+    <sett name="Height" value="20"/>
+  </settings>
+</object>
+
+<object name="MsgHeader">
+  <settings>
+    <sett name="FontType" value="FontE_14B"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="254"/>
+    <sett name="Height" value="20"/>
+  </settings>
+</object>
+
+<object name="LCHeader">
+  <settings>
+    <sett name="FontType" value="FontE_14B"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="254"/>
+    <sett name="Height" value="17"/>
+  </settings>
+</object>
+
+<object name="ProgressHeader">
+  <settings>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="254"/>
+    <sett name="Height" value="20"/>
+  </settings>
+</object>
+
+<object name="StandbyTicker">
+  <settings>
+    <sett name="FontType" value="FontE_14R"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="YPos" value="117"/>
+    <sett name="Height" value="25"/>
+  </settings>
+</object>
+
+<object name="StatusRow">
+  <!-- Main display status icons -->
+  <attributes count="10">
+    <attr index="0" value="1"/>   <!-- Icons y1 -->
+    <attr index="1" value="13"/>  <!-- Icons y2 -->
+    <attr index="2" value="1"/>   <!-- RSSI x1 -->
+    <attr index="3" value="23"/>  <!-- RSSI x2 -->
+    <attr index="4" value="99"/> <!-- Batt x1 -->
+    <attr index="5" value="127"/> <!-- Batt x2 -->
+    <attr index="6" value="3"/>   <!-- Number of status icons -->
+    <attr index="7" value="27"/>  <!-- Icon 1 x1 -->
+    <attr index="8" value="21"/>  <!-- Icons width -->
+    <attr index="9" value="3"/>   <!-- Icons betw. -->
+  </attributes>
+  <!-- 2nd display status icons -->
+  <attributes count="10" display="1">
+    <attr index="0" value="1"/>   <!-- Icons y1 -->
+    <attr index="1" value="15"/>  <!-- Icons y2 -->
+    <attr index="2" value="1"/>   <!-- RSSI x1 -->
+    <attr index="3" value="23"/>  <!-- RSSI x2 -->
+    <attr index="4" value="51"/> <!-- Batt x1 -->
+    <attr index="5" value="79"/> <!-- Batt x2 -->
+    <attr index="6" value="3"/>   <!-- Number of status icons -->
+    <attr index="7" value="27"/>  <!-- Icon 1 x1 -->
+    <attr index="8" value="21"/>  <!-- Icons width -->
+    <attr index="9" value="3"/>   <!-- Icons betw. -->
+  </attributes>
+</object>
+
+<object name="TabMenuBar">
+  <settings>
+    <sett name="FontType" value="FontE_14B"/>
+    <sett name="TitleHeight" value="0"/>
+    <sett name="TitleTopOffset" value="0"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="ScrollBarMode" value="0"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="Height" value="37"/>
+  </settings>
+  <attributes count="16">
+    <attr index="0" value="120"/> <!-- frameWidth                                PopupNoFrame -->
+    <attr index="1" value="37"/>  <!-- frameHeight -->
+    <attr index="2" value="4"/>   <!-- frameStartx -->
+    <attr index="3" value="22"/>  <!-- frameStarty -->
+    <attr index="4" value="4"/>   <!-- Max nbr of tabs -->
+    <attr index="5" value="17"/>  <!-- unselected tabheight -->
+    <attr index="6" value="20"/>  <!-- selected tabheight -->
+    <attr index="7" value="27"/>  <!-- unselected tabwidth -->
+    <attr index="8" value="5"/>  <!-- highlighted tab overlap on each side -->
+
+    <attr index="9"  value="128"/> <!-- defaultWidth                             Overlaystyle Normal -->
+    <attr index="10" value="37"/>  <!-- defaultHeight -->
+    <attr index="11" value="5"/>   <!-- Max nbr of tabs -->
+    <attr index="12" value="17"/>  <!-- unselected tabheight -->
+    <attr index="13" value="20"/>  <!-- selected tabheight -->
+    <attr index="14" value="25"/>  <!-- unselected tabwidth -->
+    <attr index="15" value="5"/>   <!-- highlighted tab overlap on each side -->
+  </attributes>
+  
+</object>
+
+<object name="Timeline">
+  <settings>
+    <sett name="FontType" value="FontE_12B"/>
+    <sett name="TitleMode" value="1"/>
+    <sett name="OverlayStyle" value="0"/>
+    <sett name="Height" value="38"/>
+  </settings>
+  <attributes count="19">
+    <attr index="0" value="2"/>     <!-- topOffset  -->
+    <attr index="1" value="35"/>    <!-- leftSideOffset -->
+    <attr index="2" value="4"/>     <!-- rightSideOffset -->
+    <attr index="3" value="2"/>     <!-- betweenOffset -->
+    <attr index="4" value="2"/>     <!-- imageTopOffset -->
+    <attr index="5" value="29"/>    <!-- item.width_medium -->
+    <attr index="6" value="29"/>    <!-- item.width_small -->
+    <attr index="7" value="34"/>    <!-- item.height -->
+    <attr index="8" value="21"/>    <!-- item.imageWidth -->
+    <attr index="9" value="16"/>    <!-- item.imageHeight -->
+    <attr index="10" value="4"/>    <!-- item.highlightWidthOffset -->
+    <attr index="11" value="14"/>   <!-- arrowIcon_yPos -->
+    <attr index="12" value="35"/>   <!-- arrowLeftIcon_xPos -->
+    <attr index="13" value="122"/>  <!-- arrowRightIcon_xPos -->
+    <attr index="14" value="2"/>    <!-- title_AlignTop_Text_TopOffset -->
+    <attr index="15" value="17"/>   <!-- title_AlignTop_Icon_TopOffset -->
+    <attr index="16" value="2"/>    <!-- title_AlignBottom_Icon_TopOffset -->
+    <attr index="17" value="22"/>   <!-- title_AlignBottom_Text_TopOffset -->
+    <attr index="18" value="4"/>    <!-- title_text_xPos -->
+  </attributes>
+</object>
+
+<object name="VolumeControl">
+  <settings>
+    <sett name="TitleMode"      value="1"/>
+    <sett name="OverlayStyle"   value="0"/>
+    <sett name="XPos"           value="0"/>
+    <sett name="YPos"           value="0"/>
+    <sett name="Height"         value="20"/>
+  </settings>
+  <settings orientation="1">
+    <sett name="Height"         value="0"/>
+  </settings>
+  <attributes count="5">
+    <attr index="0" value="4"/>
+    <attr index="1" value="1"/>
+    <attr index="2" value="3"/>
+    <attr index="3" value="4"/>
+    <attr index="4" value="0"/>
+  </attributes>
+</object>
+
+<object name="Chat">
+  <attributes count="2">
+    <attr index="0" value="0"/>     <!-- FullScreen  -->
+    <attr index="1" value="25"/>    <!-- MinInputFieldHeight -->
+  </attributes>
+</object>
+
+</layout>

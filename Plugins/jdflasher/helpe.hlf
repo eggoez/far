@@ -1,0 +1,61 @@
+.Language=English,English
+.PluginContents=just_da_flash plugin by den_po
+
+@Index
+$ #index#
+ ~about plugin~@aboutplugin@
+ ~connect dialog~@ConnectDialog@
+
+ ~links~@links@
+
+@aboutplugin
+$ #about plugin#
+ just da flash plugin by den_po
+
+ original idea/realisation by ~Darkmen~@links@
+
+ testers:
+    Arm@@r
+    BoOoZ
+    edulik
+    INFerno--
+    Jimrus
+    Joker XT
+    KreN
+    Maximys
+    VaLeRa
+    XQuader
+    Ветаха
+    Ф.Б.
+    ... and many people else =)
+
+ ~index~@index@
+
+@ConnectDialog
+$ #connect dialog#
+ now you should select a way to connect. choose connection options and go =)
+
+ remark about "#rsa#" checkbox: it's just another name of flashing a
+breakin-loader to get you full access to your phone.
+this process replaces your phone's firmware with a some code,
+so in the end to get a working phone, disconnect it by proper way.
+if ~plugin~@aboutplugin@ can't recover a phone's firmware automatically,
+you should flash main/rest manually.
+
+
+ ~index~@index@
+
+@links
+$ #links#
+
+ #my homepage#   ~http://justdanpo.cheb.ru~@http://justdanpo.cheb.ru@
+ #Darkmen#       ~http://sephone.nm.ru~@http://sephone.nm.ru@
+
+
+ ~index~@index@
+
+@progress
+$ #something is doing =)#
+
+@flashdialog
+$ #writing#

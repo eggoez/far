@@ -1,0 +1,1942 @@
+ FarFtp
+
+ Timestamp is 4b85b1fe (Thu Feb 25 00:10:54 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000284H .idata$5                CODE
+ 0001:00000284 00000004H .CRT$XCA                CODE
+ 0001:00000288 00000004H .CRT$XCZ                CODE
+ 0001:0000028c 00000004H .CRT$XIA                CODE
+ 0001:00000290 00000018H .CRT$XIC                CODE
+ 0001:000002a8 00000004H .CRT$XIZ                CODE
+ 0001:000002ac 00000004H .CRT$XPA                CODE
+ 0001:000002b0 00000004H .CRT$XPX                CODE
+ 0001:000002b4 00000004H .CRT$XPXA               CODE
+ 0001:000002b8 00000004H .CRT$XPZ                CODE
+ 0001:000002bc 00000004H .CRT$XTA                CODE
+ 0001:000002c0 00000004H .CRT$XTZ                CODE
+ 0001:000002c8 00002d58H .rdata                  CODE
+ 0001:00003020 00000010H .rdata$sxdata           CODE
+ 0001:00003030 00000004H .rtc$IAA                CODE
+ 0001:00003034 00000004H .rtc$IZZ                CODE
+ 0001:00003038 00000004H .rtc$TAA                CODE
+ 0001:0000303c 00000004H .rtc$TZZ                CODE
+ 0001:00003040 00027b82H .text                   CODE
+ 0001:0002abc2 00000052H .text$yd                CODE
+ 0001:0002ac18 00000544H .xdata$x                CODE
+ 0001:0002b15c 00000064H .idata$2                CODE
+ 0001:0002b1c0 00000014H .idata$3                CODE
+ 0001:0002b1d4 00000284H .idata$4                CODE
+ 0001:0002b458 00000956H .idata$6                CODE
+ 0001:0002bdb0 000001a7H .edata                  CODE
+ 0002:00000000 00002bacH .data                   DATA
+ 0002:00002bc0 00006f08H .bss                    DATA
+ 0003:00000000 00000058H .rsrc$01                DATA
+ 0003:00000060 00000370H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000004       ___safe_se_handler_count   00000004     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000000       __imp__RegOpenKeyA@12      10001000     advapi32:ADVAPI32.dll
+ 0001:00000004       __imp__RegOpenKeyExA@20    10001004     advapi32:ADVAPI32.dll
+ 0001:00000008       __imp__RegDeleteKeyA@8     10001008     advapi32:ADVAPI32.dll
+ 0001:0000000c       __imp__RegSetValueExA@24   1000100c     advapi32:ADVAPI32.dll
+ 0001:00000010       __imp__RegQueryValueExA@24 10001010     advapi32:ADVAPI32.dll
+ 0001:00000014       __imp__RegEnumKeyExA@32    10001014     advapi32:ADVAPI32.dll
+ 0001:00000018       __imp__RegCloseKey@4       10001018     advapi32:ADVAPI32.dll
+ 0001:0000001c       __imp__RegCreateKeyExA@36  1000101c     advapi32:ADVAPI32.dll
+ 0001:00000020       \177ADVAPI32_NULL_THUNK_DATA 10001020     advapi32:ADVAPI32.dll
+ 0001:00000024       __imp__FindClose@4         10001024     kernel32:KERNEL32.dll
+ 0001:00000028       __imp__FindFirstFileA@8    10001028     kernel32:KERNEL32.dll
+ 0001:0000002c       __imp__MultiByteToWideChar@24 1000102c     kernel32:KERNEL32.dll
+ 0001:00000030       __imp__WideCharToMultiByte@32 10001030     kernel32:KERNEL32.dll
+ 0001:00000034       __imp__Sleep@4             10001034     kernel32:KERNEL32.dll
+ 0001:00000038       __imp__CompareFileTime@8   10001038     kernel32:KERNEL32.dll
+ 0001:0000003c       __imp__CompareStringA@24   1000103c     kernel32:KERNEL32.dll
+ 0001:00000040       __imp__CloseHandle@4       10001040     kernel32:KERNEL32.dll
+ 0001:00000044       __imp__SetFileTime@16      10001044     kernel32:KERNEL32.dll
+ 0001:00000048       __imp__SetEndOfFile@4      10001048     kernel32:KERNEL32.dll
+ 0001:0000004c       __imp__WriteFile@20        1000104c     kernel32:KERNEL32.dll
+ 0001:00000050       __imp__SetFilePointer@16   10001050     kernel32:KERNEL32.dll
+ 0001:00000054       __imp__GetFileSize@8       10001054     kernel32:KERNEL32.dll
+ 0001:00000058       __imp__CreateFileA@28      10001058     kernel32:KERNEL32.dll
+ 0001:0000005c       __imp__SetFileAttributesA@8 1000105c     kernel32:KERNEL32.dll
+ 0001:00000060       __imp__GetFileAttributesA@4 10001060     kernel32:KERNEL32.dll
+ 0001:00000064       __imp__RemoveDirectoryA@4  10001064     kernel32:KERNEL32.dll
+ 0001:00000068       __imp__WritePrivateProfileStringA@16 10001068     kernel32:KERNEL32.dll
+ 0001:0000006c       __imp__GetPrivateProfileIntA@16 1000106c     kernel32:KERNEL32.dll
+ 0001:00000070       __imp__GetPrivateProfileStringA@24 10001070     kernel32:KERNEL32.dll
+ 0001:00000074       __imp__SetCurrentDirectoryA@4 10001074     kernel32:KERNEL32.dll
+ 0001:00000078       __imp__FindNextFileA@8     10001078     kernel32:KERNEL32.dll
+ 0001:0000007c       __imp__GetModuleFileNameA@12 1000107c     kernel32:KERNEL32.dll
+ 0001:00000080       __imp__GetModuleHandleA@4  10001080     kernel32:KERNEL32.dll
+ 0001:00000084       __imp__GetLocalTime@4      10001084     kernel32:KERNEL32.dll
+ 0001:00000088       __imp__CreateDirectoryA@8  10001088     kernel32:KERNEL32.dll
+ 0001:0000008c       __imp__GetFileType@4       1000108c     kernel32:KERNEL32.dll
+ 0001:00000090       __imp__GetFileTime@16      10001090     kernel32:KERNEL32.dll
+ 0001:00000094       __imp__FreeLibrary@4       10001094     kernel32:KERNEL32.dll
+ 0001:00000098       __imp__GetProcAddress@8    10001098     kernel32:KERNEL32.dll
+ 0001:0000009c       __imp__LoadLibraryA@4      1000109c     kernel32:KERNEL32.dll
+ 0001:000000a0       __imp__GetVersion@0        100010a0     kernel32:KERNEL32.dll
+ 0001:000000a4       __imp__GetVersionExA@4     100010a4     kernel32:KERNEL32.dll
+ 0001:000000a8       __imp__GetConsoleScreenBufferInfo@8 100010a8     kernel32:KERNEL32.dll
+ 0001:000000ac       __imp__GetStdHandle@4      100010ac     kernel32:KERNEL32.dll
+ 0001:000000b0       __imp__ReadFile@20         100010b0     kernel32:KERNEL32.dll
+ 0001:000000b4       __imp__SetConsoleTitleA@4  100010b4     kernel32:KERNEL32.dll
+ 0001:000000b8       __imp__TerminateProcess@8  100010b8     kernel32:KERNEL32.dll
+ 0001:000000bc       __imp__GetCurrentProcess@0 100010bc     kernel32:KERNEL32.dll
+ 0001:000000c0       __imp__ReadConsoleInputA@16 100010c0     kernel32:KERNEL32.dll
+ 0001:000000c4       __imp__PeekConsoleInputA@16 100010c4     kernel32:KERNEL32.dll
+ 0001:000000c8       __imp__HeapValidate@12     100010c8     kernel32:KERNEL32.dll
+ 0001:000000cc       __imp__HeapCreate@12       100010cc     kernel32:KERNEL32.dll
+ 0001:000000d0       __imp__HeapAlloc@12        100010d0     kernel32:KERNEL32.dll
+ 0001:000000d4       __imp__HeapReAlloc@16      100010d4     kernel32:KERNEL32.dll
+ 0001:000000d8       __imp__HeapFree@12         100010d8     kernel32:KERNEL32.dll
+ 0001:000000dc       __imp__HeapSize@12         100010dc     kernel32:KERNEL32.dll
+ 0001:000000e0       __imp__IsBadReadPtr@8      100010e0     kernel32:KERNEL32.dll
+ 0001:000000e4       __imp__GlobalFree@4        100010e4     kernel32:KERNEL32.dll
+ 0001:000000e8       __imp__GlobalLock@4        100010e8     kernel32:KERNEL32.dll
+ 0001:000000ec       __imp__GlobalUnlock@4      100010ec     kernel32:KERNEL32.dll
+ 0001:000000f0       __imp__GlobalAlloc@8       100010f0     kernel32:KERNEL32.dll
+ 0001:000000f4       __imp__FormatMessageA@28   100010f4     kernel32:KERNEL32.dll
+ 0001:000000f8       __imp__LocalFree@4         100010f8     kernel32:KERNEL32.dll
+ 0001:000000fc       __imp__WriteConsoleW@20    100010fc     kernel32:KERNEL32.dll
+ 0001:00000100       __imp__GetConsoleOutputCP@0 10001100     kernel32:KERNEL32.dll
+ 0001:00000104       __imp__WriteConsoleA@20    10001104     kernel32:KERNEL32.dll
+ 0001:00000108       __imp__SetStdHandle@8      10001108     kernel32:KERNEL32.dll
+ 0001:0000010c       __imp__VirtualAlloc@16     1000110c     kernel32:KERNEL32.dll
+ 0001:00000110       __imp__GetStringTypeW@16   10001110     kernel32:KERNEL32.dll
+ 0001:00000114       __imp__GetStringTypeA@20   10001114     kernel32:KERNEL32.dll
+ 0001:00000118       __imp__VirtualQuery@12     10001118     kernel32:KERNEL32.dll
+ 0001:0000011c       __imp__GetLastError@0      1000111c     kernel32:KERNEL32.dll
+ 0001:00000120       __imp__DeleteFileA@4       10001120     kernel32:KERNEL32.dll
+ 0001:00000124       __imp__SetLastError@4      10001124     kernel32:KERNEL32.dll
+ 0001:00000128       __imp__GetFullPathNameA@16 10001128     kernel32:KERNEL32.dll
+ 0001:0000012c       __imp__GetDiskFreeSpaceA@20 1000112c     kernel32:KERNEL32.dll
+ 0001:00000130       __imp__GetThreadLocale@0   10001130     kernel32:KERNEL32.dll
+ 0001:00000134       __imp__GetLocaleInfoA@16   10001134     kernel32:KERNEL32.dll
+ 0001:00000138       __imp__GetConsoleTitleA@8  10001138     kernel32:KERNEL32.dll
+ 0001:0000013c       __imp__FileTimeToSystemTime@8 1000113c     kernel32:KERNEL32.dll
+ 0001:00000140       __imp__InitializeCriticalSection@4 10001140     kernel32:KERNEL32.dll
+ 0001:00000144       __imp__GetCurrentProcessId@0 10001144     kernel32:KERNEL32.dll
+ 0001:00000148       __imp__GetTickCount@0      10001148     kernel32:KERNEL32.dll
+ 0001:0000014c       __imp__QueryPerformanceCounter@4 1000114c     kernel32:KERNEL32.dll
+ 0001:00000150       __imp__VirtualFree@12      10001150     kernel32:KERNEL32.dll
+ 0001:00000154       __imp__HeapDestroy@4       10001154     kernel32:KERNEL32.dll
+ 0001:00000158       __imp__GetEnvironmentStringsW@0 10001158     kernel32:KERNEL32.dll
+ 0001:0000015c       __imp__FreeEnvironmentStringsW@4 1000115c     kernel32:KERNEL32.dll
+ 0001:00000160       __imp__GetEnvironmentStrings@0 10001160     kernel32:KERNEL32.dll
+ 0001:00000164       __imp__FreeEnvironmentStringsA@4 10001164     kernel32:KERNEL32.dll
+ 0001:00000168       __imp__LCMapStringW@24     10001168     kernel32:KERNEL32.dll
+ 0001:0000016c       __imp__LCMapStringA@24     1000116c     kernel32:KERNEL32.dll
+ 0001:00000170       __imp__FlushFileBuffers@4  10001170     kernel32:KERNEL32.dll
+ 0001:00000174       __imp__GetConsoleMode@8    10001174     kernel32:KERNEL32.dll
+ 0001:00000178       __imp__GetConsoleCP@0      10001178     kernel32:KERNEL32.dll
+ 0001:0000017c       __imp__RtlUnwind@16        1000117c     kernel32:KERNEL32.dll
+ 0001:00000180       __imp__DeleteCriticalSection@4 10001180     kernel32:KERNEL32.dll
+ 0001:00000184       __imp__GetStartupInfoA@4   10001184     kernel32:KERNEL32.dll
+ 0001:00000188       __imp__SetHandleCount@4    10001188     kernel32:KERNEL32.dll
+ 0001:0000018c       __imp__LeaveCriticalSection@4 1000118c     kernel32:KERNEL32.dll
+ 0001:00000190       __imp__EnterCriticalSection@4 10001190     kernel32:KERNEL32.dll
+ 0001:00000194       __imp__IsDebuggerPresent@0 10001194     kernel32:KERNEL32.dll
+ 0001:00000198       __imp__SetUnhandledExceptionFilter@4 10001198     kernel32:KERNEL32.dll
+ 0001:0000019c       __imp__UnhandledExceptionFilter@4 1000119c     kernel32:KERNEL32.dll
+ 0001:000001a0       __imp__GetSystemTimeAsFileTime@4 100011a0     kernel32:KERNEL32.dll
+ 0001:000001a4       __imp__GetCurrentThreadId@0 100011a4     kernel32:KERNEL32.dll
+ 0001:000001a8       __imp__GetCommandLineA@0   100011a8     kernel32:KERNEL32.dll
+ 0001:000001ac       __imp__GetProcessHeap@0    100011ac     kernel32:KERNEL32.dll
+ 0001:000001b0       __imp__ExitProcess@4       100011b0     kernel32:KERNEL32.dll
+ 0001:000001b4       __imp__GetCPInfo@8         100011b4     kernel32:KERNEL32.dll
+ 0001:000001b8       __imp__InterlockedIncrement@4 100011b8     kernel32:KERNEL32.dll
+ 0001:000001bc       __imp__InterlockedDecrement@4 100011bc     kernel32:KERNEL32.dll
+ 0001:000001c0       __imp__GetACP@0            100011c0     kernel32:KERNEL32.dll
+ 0001:000001c4       __imp__GetOEMCP@0          100011c4     kernel32:KERNEL32.dll
+ 0001:000001c8       __imp__IsValidCodePage@4   100011c8     kernel32:KERNEL32.dll
+ 0001:000001cc       __imp__TlsGetValue@4       100011cc     kernel32:KERNEL32.dll
+ 0001:000001d0       __imp__TlsAlloc@0          100011d0     kernel32:KERNEL32.dll
+ 0001:000001d4       __imp__TlsSetValue@8       100011d4     kernel32:KERNEL32.dll
+ 0001:000001d8       __imp__TlsFree@4           100011d8     kernel32:KERNEL32.dll
+ 0001:000001dc       \177KERNEL32_NULL_THUNK_DATA 100011dc     kernel32:KERNEL32.dll
+ 0001:000001e0       __imp__CharToOemBuffA@12   100011e0     user32:USER32.dll
+ 0001:000001e4       __imp__OemToCharBuffA@12   100011e4     user32:USER32.dll
+ 0001:000001e8       __imp__MessageBeep@4       100011e8     user32:USER32.dll
+ 0001:000001ec       __imp__OemToCharA@8        100011ec     user32:USER32.dll
+ 0001:000001f0       __imp__CharToOemA@8        100011f0     user32:USER32.dll
+ 0001:000001f4       __imp__CharLowerA@4        100011f4     user32:USER32.dll
+ 0001:000001f8       __imp__MessageBoxA@16      100011f8     user32:USER32.dll
+ 0001:000001fc       __imp__CharUpperA@4        100011fc     user32:USER32.dll
+ 0001:00000200       __imp__CloseClipboard@0    10001200     user32:USER32.dll
+ 0001:00000204       __imp__SetClipboardData@8  10001204     user32:USER32.dll
+ 0001:00000208       __imp__EmptyClipboard@0    10001208     user32:USER32.dll
+ 0001:0000020c       __imp__OpenClipboard@4     1000120c     user32:USER32.dll
+ 0001:00000210       \177USER32_NULL_THUNK_DATA 10001210     user32:USER32.dll
+ 0001:00000214       __imp__timeGetTime@0       10001214     winmm:WINMM.dll
+ 0001:00000218       \177WINMM_NULL_THUNK_DATA  10001218     winmm:WINMM.dll
+ 0001:0000021c       __imp__WSAGetLastError@0   1000121c     wsock32:WSOCK32.dll
+ 0001:00000220       __imp__inet_ntoa@4         10001220     wsock32:WSOCK32.dll
+ 0001:00000224       __imp__closesocket@4       10001224     wsock32:WSOCK32.dll
+ 0001:00000228       __imp__listen@8            10001228     wsock32:WSOCK32.dll
+ 0001:0000022c       __imp__gethostbyname@4     1000122c     wsock32:WSOCK32.dll
+ 0001:00000230       __imp__getsockname@12      10001230     wsock32:WSOCK32.dll
+ 0001:00000234       __imp__ntohs@4             10001234     wsock32:WSOCK32.dll
+ 0001:00000238       __imp__setsockopt@20       10001238     wsock32:WSOCK32.dll
+ 0001:0000023c       __imp__ioctlsocket@12      1000123c     wsock32:WSOCK32.dll
+ 0001:00000240       __imp__bind@12             10001240     wsock32:WSOCK32.dll
+ 0001:00000244       __imp__socket@12           10001244     wsock32:WSOCK32.dll
+ 0001:00000248       __imp__getsockopt@20       10001248     wsock32:WSOCK32.dll
+ 0001:0000024c       __imp__getservbyname@8     1000124c     wsock32:WSOCK32.dll
+ 0001:00000250       __imp__htons@4             10001250     wsock32:WSOCK32.dll
+ 0001:00000254       __imp__WSAStartup@8        10001254     wsock32:WSOCK32.dll
+ 0001:00000258       __imp__select@20           10001258     wsock32:WSOCK32.dll
+ 0001:0000025c       __imp____WSAFDIsSet@8      1000125c     wsock32:WSOCK32.dll
+ 0001:00000260       __imp__connect@12          10001260     wsock32:WSOCK32.dll
+ 0001:00000264       __imp__recv@16             10001264     wsock32:WSOCK32.dll
+ 0001:00000268       __imp__send@16             10001268     wsock32:WSOCK32.dll
+ 0001:0000026c       __imp__WSACleanup@0        1000126c     wsock32:WSOCK32.dll
+ 0001:00000270       __imp__WSASetLastError@4   10001270     wsock32:WSOCK32.dll
+ 0001:00000274       __imp__shutdown@8          10001274     wsock32:WSOCK32.dll
+ 0001:00000278       __imp__accept@12           10001278     wsock32:WSOCK32.dll
+ 0001:0000027c       __imp__inet_addr@4         1000127c     wsock32:WSOCK32.dll
+ 0001:00000280       \177WSOCK32_NULL_THUNK_DATA 10001280     wsock32:WSOCK32.dll
+ 0001:00000284       ___xc_a                    10001284     LIBCMT:crt0init.obj
+ 0001:00000288       ___xc_z                    10001288     LIBCMT:crt0init.obj
+ 0001:0000028c       ___xi_a                    1000128c     LIBCMT:crt0init.obj
+ 0001:000002a8       ___xi_z                    100012a8     LIBCMT:crt0init.obj
+ 0001:000002ac       ___xp_a                    100012ac     LIBCMT:crt0init.obj
+ 0001:000002b8       ___xp_z                    100012b8     LIBCMT:crt0init.obj
+ 0001:000002bc       ___xt_a                    100012bc     LIBCMT:crt0init.obj
+ 0001:000002c0       ___xt_z                    100012c0     LIBCMT:crt0init.obj
+ 0001:000002c8       ??_C@_0BP@DKNGCKDO@?5?$CF02d?4?$CF02d?4?$CF04d?5?$CF02d?3?$CF02d?3?$CF02d?$AA@ 100012c8     ftp_AskOver.obj
+ 0001:000002e8       ??_C@_05FKFGNOOD@?$CF?920s?$AA@ 100012e8     ftp_AskOver.obj
+ 0001:000002f0       ??_C@_08DEBIFEBM@ListType?$AA@ 100012f0     ftp_Cfg.obj
+ 0001:000002fc       ??_C@_0L@PMLIPFML@RightBound?$AA@ 100012fc     ftp_Cfg.obj
+ 0001:00000308       ??_C@_04EBKMHHBE@Size?$AA@ 10001308     ftp_Cfg.obj
+ 0001:00000310       ??_C@_05JAOKFCIK@Quote?$AA@ 10001310     ftp_Cfg.obj
+ 0001:00000318       ??_C@_0BD@OGEFIPLF@AddPasswordAndUser?$AA@ 10001318     ftp_Cfg.obj
+ 0001:0000032c       ??_C@_09LCGDJDDA@AddPrefix?$AA@ 1000132c     ftp_Cfg.obj
+ 0001:00000338       ??_C@_0BB@MNENIJFC@CorrectedSymbols?$AA@ 10001338     ftp_Cfg.obj
+ 0001:0000034c       ??_C@_0P@NPONJECA@InvalidSymbols?$AA@ 1000134c     ftp_Cfg.obj
+ 0001:0000035c       ??_C@_0N@JLHEDNEF@AskLoginFail?$AA@ 1000135c     ftp_Cfg.obj
+ 0001:0000036c       ??_C@_0BD@PCDJKMGE@ShowSilentProgress?$AA@ 1000136c     ftp_Cfg.obj
+ 0001:00000380       ??_C@_07EHMOHBBC@UndupFF?$AA@ 10001380     ftp_Cfg.obj
+ 0001:00000388       ??_C@_05CJPMAGOD@FFDup?$AA@ 10001388     ftp_Cfg.obj
+ 0001:00000390       ??_C@_0L@LMOCGOKH@UseBackups?$AA@ 10001390     ftp_Cfg.obj
+ 0001:0000039c       ??_C@_0BA@MCAICKDB@TruncateLogFile?$AA@ 1000139c     ftp_Cfg.obj
+ 0001:000003ac       ??_C@_0BC@BGCFGBOD@DoNotExpandErrors?$AA@ 100013ac     ftp_Cfg.obj
+ 0001:000003c0       ??_C@_0N@JJDNMAKK@RetryTimeout?$AA@ 100013c0     ftp_Cfg.obj
+ 0001:000003d0       ??_C@_0M@MNGHPHKA@WaitCounter?$AA@ 100013d0     ftp_Cfg.obj
+ 0001:000003dc       ??_C@_0M@ONBIJAJF@PwdSecurity?$AA@ 100013dc     ftp_Cfg.obj
+ 0001:000003e8       ??_C@_0BB@LEKFCL@SetHiddenOnAbort?$AA@ 100013e8     ftp_Cfg.obj
+ 0001:000003fc       ??_C@_0BE@HDCHNBOF@QuoteClipboardNames?$AA@ 100013fc     ftp_Cfg.obj
+ 0001:00000410       ??_C@_09MGABEMLH@CloseDots?$AA@ 10001410     ftp_Cfg.obj
+ 0001:0000041c       ??_C@_0O@PODALMHE@AutoAnonymous?$AA@ 1000141c     ftp_Cfg.obj
+ 0001:0000042c       ??_C@_0M@HBAMKMDE@PassiveMode?$AA@ 1000142c     ftp_Cfg.obj
+ 0001:00000438       ??_C@_09FGKPPOEI@LogOutput?$AA@ 10001438     ftp_Cfg.obj
+ 0001:00000444       ??_C@_0L@CAKDACBP@CmdLogFile?$AA@ 10001444     ftp_Cfg.obj
+ 0001:00000450       ??_C@_0M@NGEGKPGC@CmdLogLimit?$AA@ 10001450     ftp_Cfg.obj
+ 0001:0000045c       ??_C@_08BIPJMPPB@Firewall?$AA@ 1000145c     ftp_Cfg.obj
+ 0001:00000468       ??_C@_0BA@GGDLHIJP@DefaultPassword?$AA@ 10001468     ftp_Cfg.obj
+ 0001:00000478       ??_C@_0BB@OCMIGFBJ@DescriptionNames?$AA@ 10001478     ftp_Cfg.obj
+ 0001:0000048c       ??_C@_0BF@JHEGPMEL@QueueRemoveCompleted?$AA@ 1000148c     ftp_Cfg.obj
+ 0001:000004a4       ??_C@_0BC@LGPLJNJA@QueueRestoreState?$AA@ 100014a4     ftp_Cfg.obj
+ 0001:000004b8       ??_C@_0L@OBLBKIIO@ProcessCmd?$AA@ 100014b8     ftp_Cfg.obj
+ 0001:000004c4       ??_C@_0L@PODLPHGB@ServerType?$AA@ 100014c4     ftp_Cfg.obj
+ 0001:000004d0       ??_C@_0N@JMPLJDEI@ProcessColor?$AA@ 100014d0     ftp_Cfg.obj
+ 0001:000004e0       ??_C@_0L@MKCGLEP@IOBuffSize?$AA@ 100014e0     ftp_Cfg.obj
+ 0001:000004ec       ??_C@_09DFMIEFMJ@CmdLength?$AA@ 100014ec     ftp_Cfg.obj
+ 0001:000004f8       ??_C@_07MFCFPBPI@CmdLine?$AA@ 100014f8     ftp_Cfg.obj
+ 0001:00000500       ??_C@_0L@HKLPGNHE@ExtCmdView?$AA@ 10001500     ftp_Cfg.obj
+ 0001:0000050c       ??_C@_0P@ENGPMKLO@DigitDelimiter?$AA@ 1000150c     ftp_Cfg.obj
+ 0001:0000051c       ??_C@_0N@JLECDMMK@DigitDelimit?$AA@ 1000151c     ftp_Cfg.obj
+ 0001:0000052c       ??_C@_08CFPJNGOA@WaitIdle?$AA@ 1000152c     ftp_Cfg.obj
+ 0001:00000538       ??_C@_08CDOEGIAE@AskAbort?$AA@ 10001538     ftp_Cfg.obj
+ 0001:00000544       ??_C@_0M@OOEKMHML@BeepTimeout?$AA@ 10001544     ftp_Cfg.obj
+ 0001:00000550       ??_C@_0L@HOPLOGCG@RetryCount?$AA@ 10001550     ftp_Cfg.obj
+ 0001:0000055c       ??_C@_0N@CMBJLDK@TimeoutRetry?$AA@ 1000155c     ftp_Cfg.obj
+ 0001:0000056c       ??_C@_0BA@KMEJPHHL@IdleStartPeriod?$AA@ 1000156c     ftp_Cfg.obj
+ 0001:0000057c       ??_C@_0P@NPIFJPBO@IdleShowPeriod?$AA@ 1000157c     ftp_Cfg.obj
+ 0001:0000058c       ??_C@_09IOKGKBMN@KeepAlive?$AA@ 1000158c     ftp_Cfg.obj
+ 0001:00000598       ??_C@_08LPDLMPIH@IdleMode?$AA@ 10001598     ftp_Cfg.obj
+ 0001:000005a4       ??_C@_09JMEDPKHB@IdleColor?$AA@ 100015a4     ftp_Cfg.obj
+ 0001:000005b0       ??_C@_08ICBONLFD@ShowIdle?$AA@ 100015b0     ftp_Cfg.obj
+ 0001:000005bc       ??_C@_0M@INPIJPCH@WaitTimeout?$AA@ 100015bc     ftp_Cfg.obj
+ 0001:000005c8       ??_C@_0O@ENGIMFCM@ResumeDefault?$AA@ 100015c8     ftp_Cfg.obj
+ 0001:000005d8       ??_C@_0BB@IKIFCJIN@ShowUploadDialog?$AA@ 100015d8     ftp_Cfg.obj
+ 0001:000005ec       ??_C@_0O@CBNJIOBO@UploadLowCase?$AA@ 100015ec     ftp_Cfg.obj
+ 0001:000005fc       ??_C@_0BD@NDAGFAPB@UpdateDescriptions?$AA@ 100015fc     ftp_Cfg.obj
+ 0001:00000610       ??_C@_0BB@MJFEDGEJ@ReadDescriptions?$AA@ 10001610     ftp_Cfg.obj
+ 0001:00000624       ??_C@_0BB@LOGILAB@PluginColumnMode?$AA@ 10001624     ftp_Cfg.obj
+ 0001:00000638       ??_C@_0BB@LFDAPFMN@AddToPluginsMenu?$AA@ 10001638     ftp_Cfg.obj
+ 0001:0000064c       ??_C@_0P@NPNAKFIO@DisksMenuDigit?$AA@ 1000164c     ftp_Cfg.obj
+ 0001:0000065c       ??_C@_0P@BJFHOIM@AddToDisksMenu?$AA@ 1000165c     ftp_Cfg.obj
+ 0001:0000066c       ??_C@_0N@EFFIKHGB@FTPExtGlobal?$AA@ 1000166c     ftp_Cfg.obj
+ 0001:0000067c       ??_C@_08OBLOBPOE@xcmdSTAT?$AA@ 1000167c     ftp_Cfg.obj
+ 0001:00000688       ??_C@_04KNIOFKKL@STAT?$AA@ 10001688     ftp_Cfg.obj
+ 0001:00000690       ??_C@_08GHPPCH@xcmdSIZE?$AA@ 10001690     ftp_Cfg.obj
+ 0001:0000069c       ??_C@_04EMFHLKGI@SIZE?$AA@ 1000169c     ftp_Cfg.obj
+ 0001:000006a4       ??_C@_08MHGLACH@xcmdSYST?$AA@ 100016a4     ftp_Cfg.obj
+ 0001:000006b0       ??_C@_04EAEGPFGI@SYST?$AA@ 100016b0     ftp_Cfg.obj
+ 0001:000006b8       ??_C@_08CEODIPHL@xcmdXCUP?$AA@ 100016b8     ftp_Cfg.obj
+ 0001:000006c4       ??_C@_04GINDMKDE@XCUP?$AA@ 100016c4     ftp_Cfg.obj
+ 0001:000006cc       ??_C@_08KOAEBBFB@xcmdCDUP?$AA@ 100016cc     ftp_Cfg.obj
+ 0001:000006d8       ??_C@_04OCDEFEBO@CDUP?$AA@ 100016d8     ftp_Cfg.obj
+ 0001:000006e0       ??_C@_08CNNBHKFJ@xcmdQUIT?$AA@ 100016e0     ftp_Cfg.obj
+ 0001:000006ec       ??_C@_04GBOBDPBG@QUIT?$AA@ 100016ec     ftp_Cfg.obj
+ 0001:000006f4       ??_C@_08HCJPNPNK@xcmdHELP?$AA@ 100016f4     ftp_Cfg.obj
+ 0001:00000700       ??_C@_04DOKPJKJF@HELP?$AA@ 10001700     ftp_Cfg.obj
+ 0001:00000708       ??_C@_08MAPGHHBL@xcmdIDLE?$AA@ 10001708     ftp_Cfg.obj
+ 0001:00000714       ??_C@_04IMMGDCFE@IDLE?$AA@ 10001714     ftp_Cfg.obj
+ 0001:0000071c       ??_C@_09KONAONL@xcmdUMASK?$AA@ 1000171c     ftp_Cfg.obj
+ 0001:00000728       ??_C@_05OMMCGCJP@UMASK?$AA@ 10001728     ftp_Cfg.obj
+ 0001:00000730       ??_C@_09MPPAJJEO@xcmdCHMOD?$AA@ 10001730     ftp_Cfg.obj
+ 0001:0000073c       ??_C@_05CJNPPFAK@CHMOD?$AA@ 1000173c     ftp_Cfg.obj
+ 0001:00000744       ??_C@_08KPJNCCN@xcmdSITE?$AA@ 10001744     ftp_Cfg.obj
+ 0001:00000750       ??_C@_04EGMJJHGC@SITE?$AA@ 10001750     ftp_Cfg.obj
+ 0001:00000758       ??_C@_08PANNJKBM@xcmdXRMD?$AA@ 10001758     ftp_Cfg.obj
+ 0001:00000764       ??_C@_04LMONNPFD@XRMD?$AA@ 10001764     ftp_Cfg.obj
+ 0001:0000076c       ??_C@_07KLNGCHJ@xcmdRMD?$AA@ 1000176c     ftp_Cfg.obj
+ 0001:00000774       ??_C@_03FDOIHDFI@RMD?$AA@  10001774     ftp_Cfg.obj
+ 0001:00000778       ??_C@_08PMCKKBGH@xcmdXMKD?$AA@ 10001778     ftp_Cfg.obj
+ 0001:00000784       ??_C@_04LABKOECI@XMKD?$AA@ 10001784     ftp_Cfg.obj
+ 0001:0000078c       ??_C@_07GEKFJAC@xcmdMKD?$AA@ 1000178c     ftp_Cfg.obj
+ 0001:00000794       ??_C@_03FPBPEICD@MKD?$AA@  10001794     ftp_Cfg.obj
+ 0001:00000798       ??_C@_08ELGFHEDB@xcmdXPWD?$AA@ 10001798     ftp_Cfg.obj
+ 0001:000007a4       ??_C@_04HFFDBHO@XPWD?$AA@  100017a4     ftp_Cfg.obj
+ 0001:000007ac       ??_C@_07LBAFIMFE@xcmdPWD?$AA@ 100017ac     ftp_Cfg.obj
+ 0001:000007b4       ??_C@_03OIFAJNHF@PWD?$AA@  100017b4     ftp_Cfg.obj
+ 0001:000007b8       ??_C@_08DFNEGAEO@xcmdACCT?$AA@ 100017b8     ftp_Cfg.obj
+ 0001:000007c4       ??_C@_04HJOECFAB@ACCT?$AA@ 100017c4     ftp_Cfg.obj
+ 0001:000007cc       ??_C@_08JBDKCDEA@xcmdPASS?$AA@ 100017cc     ftp_Cfg.obj
+ 0001:000007d8       ??_C@_04NNAKGGAP@PASS?$AA@ 100017d8     ftp_Cfg.obj
+ 0001:000007e0       ??_C@_08KCHKNNKH@xcmdUSER?$AA@ 100017e0     ftp_Cfg.obj
+ 0001:000007ec       ??_C@_04OOEKJIOI@USER?$AA@ 100017ec     ftp_Cfg.obj
+ 0001:000007f4       ??_C@_09FGHCPDEC@xcmdNLIST?$AA@ 100017f4     ftp_Cfg.obj
+ 0001:00000800       ??_C@_05LAFNJPAG@NLIST?$AA@ 10001800     ftp_Cfg.obj
+ 0001:00000808       ??_C@_08LONPOHOL@xcmdLIST?$AA@ 10001808     ftp_Cfg.obj
+ 0001:00000814       ??_C@_04PCOPKCKE@LIST?$AA@ 10001814     ftp_Cfg.obj
+ 0001:0000081c       ??_C@_08FAKBCLKO@xcmdRNTO?$AA@ 1000181c     ftp_Cfg.obj
+ 0001:00000828       ??_C@_04BMJBGOOB@RNTO?$AA@ 10001828     ftp_Cfg.obj
+ 0001:00000830       ??_C@_08LAGPDAKM@xcmdRNFR?$AA@ 10001830     ftp_Cfg.obj
+ 0001:0000083c       ??_C@_04PMFPHFOD@RNFR?$AA@ 1000183c     ftp_Cfg.obj
+ 0001:00000844       ??_C@_08IANKNEMP@xcmdDELE?$AA@ 10001844     ftp_Cfg.obj
+ 0001:00000850       ??_C@_04MMOKJBIA@DELE?$AA@ 10001850     ftp_Cfg.obj
+ 0001:00000858       ??_C@_08JMJIMEA@xcmdXCWD?$AA@ 10001858     ftp_Cfg.obj
+ 0001:00000864       ??_C@_04EFPJMJAP@XCWD?$AA@ 10001864     ftp_Cfg.obj
+ 0001:0000086c       ??_C@_07PDKJHECF@xcmdCWD?$AA@ 1000186c     ftp_Cfg.obj
+ 0001:00000874       ??_C@_03KKPMGFAE@CWD?$AA@  10001874     ftp_Cfg.obj
+ 0001:00000878       ??_C@_08MPNNPMLP@xcmdALLO?$AA@ 10001878     ftp_Cfg.obj
+ 0001:00000884       ??_C@_04IDONLJPA@ALLO?$AA@ 10001884     ftp_Cfg.obj
+ 0001:0000088c       ??_C@_08CLNJHBLA@xcmdREST?$AA@ 1000188c     ftp_Cfg.obj
+ 0001:00000898       ??_C@_04GHOJDEPP@REST?$AA@ 10001898     ftp_Cfg.obj
+ 0001:000008a0       ??_C@_08HIMMMALD@xcmdRETR?$AA@ 100018a0     ftp_Cfg.obj
+ 0001:000008ac       ??_C@_04DEPMIFPM@RETR?$AA@ 100018ac     ftp_Cfg.obj
+ 0001:000008b4       ??_C@_08OPJKKJBL@xcmdMDTM?$AA@ 100018b4     ftp_Cfg.obj
+ 0001:000008c0       ??_C@_04KDKKOMFE@MDTM?$AA@ 100018c0     ftp_Cfg.obj
+ 0001:000008c8       ??_C@_08DPGGKIID@xcmdPORT?$AA@ 100018c8     ftp_Cfg.obj
+ 0001:000008d4       ??_C@_04HDFGONMM@PORT?$AA@ 100018d4     ftp_Cfg.obj
+ 0001:000008dc       ??_C@_08OMENNHAF@xcmdPASV?$AA@ 100018dc     ftp_Cfg.obj
+ 0001:000008e8       ??_C@_04KAHNJCEK@PASV?$AA@ 100018e8     ftp_Cfg.obj
+ 0001:000008f0       ??_C@_08PCDLADKP@xcmdSTOU?$AA@ 100018f0     ftp_Cfg.obj
+ 0001:000008fc       ??_C@_04LOALEGOA@STOU?$AA@ 100018fc     ftp_Cfg.obj
+ 0001:00000904       ??_C@_08LNHKJFGI@xcmdSTOR?$AA@ 10001904     ftp_Cfg.obj
+ 0001:00000910       ??_C@_08DKMBKGAG@xcmdAPPE?$AA@ 10001910     ftp_Cfg.obj
+ 0001:0000091c       ??_C@_04HGPBODEJ@APPE?$AA@ 1000191c     ftp_Cfg.obj
+ 0001:00000924       ??_C@_07PIEDEKGL@xcmdPUT?$AA@ 10001924     ftp_Cfg.obj
+ 0001:0000092c       ??_C@_04PBEKNACH@STOR?$AA@ 1000192c     ftp_Cfg.obj
+ 0001:00000934       ??_C@_03HBAHNJNM@?6?$AN?$AI?$AA@ 10001934     ftp_Cfg.obj
+ 0001:00000938       ??_C@_0BB@PAMOFJEL@ServerDateFormat?$AA@ 10001938     ftp_Cfg.obj
+ 0001:0000094c       ??_C@_0BN@JLIJEPDG@?$CF?$CKs?5?$CF04d?$CF02d?$CF02d?$CF02d?$CF02d?$CF02d?$AA@ 1000194c     ftp_Cfg.obj
+ 0001:00000969       ??_C@_00CNPNBAHC@?$AA@     10001969     ftp_Cfg.obj
+ 0001:0000096c       ??_C@_06GMIIMBCM@?$CI?$CJ?$CB__?8?$AA@ 1000196c     ftp_Cfg.obj
+ 0001:00000974       ??_C@_06DFCCOJFF@?$DM?$DO?$HM?$DP?$CK?$CC?$AA@ 10001974     ftp_Cfg.obj
+ 0001:0000097c       ??_C@_0N@PNFKJJLG@ShowPassword?$AA@ 1000197c     ftp_Cfg.obj
+ 0001:0000098c       ??_C@_0BP@BDMJGMOK@00_index?4txt?00index?00index?4txt?$AA@ 1000198c     ftp_Cfg.obj
+ 0001:000009ac       ??_C@_09BCNAOPID@CharTable?$AA@ 100019ac     ftp_Cfg.obj
+ 0001:000009b8       ??_C@_03JIHJHPIE@Jan?$AA@  100019b8     ftp_Cfg.obj
+ 0001:000009bc       ??_C@_03HJBDCHOM@Feb?$AA@  100019bc     ftp_Cfg.obj
+ 0001:000009c0       ??_C@_03ODNJBKGA@Mar?$AA@  100019c0     ftp_Cfg.obj
+ 0001:000009c4       ??_C@_03LEOLGMJP@Apr?$AA@  100019c4     ftp_Cfg.obj
+ 0001:000009c8       ??_C@_03CNMDKL@May?$AA@    100019c8     ftp_Cfg.obj
+ 0001:000009cc       ??_C@_03IDFGHECI@Jun?$AA@  100019cc     ftp_Cfg.obj
+ 0001:000009d0       ??_C@_03LBGABGKK@Jul?$AA@  100019d0     ftp_Cfg.obj
+ 0001:000009d4       ??_C@_03IFJFEIGA@Aug?$AA@  100019d4     ftp_Cfg.obj
+ 0001:000009d8       ??_C@_03GGCAPAJC@Sep?$AA@  100019d8     ftp_Cfg.obj
+ 0001:000009dc       ??_C@_03BMAOKBAD@Oct?$AA@  100019dc     ftp_Cfg.obj
+ 0001:000009e0       ??_C@_03JPJOFNIA@Nov?$AA@  100019e0     ftp_Cfg.obj
+ 0001:000009e4       ??_C@_03MKABNOCG@Dec?$AA@  100019e4     ftp_Cfg.obj
+ 0001:000009e8       ??_C@_06LLCHJONG@Config?$AA@ 100019e8     ftp_Cfg.obj
+ 0001:000009f0       ??_C@_02DKCKIIND@?$CFs?$AA@ 100019f0     ftp_Cfg.obj
+ 0001:000009f4       ??_C@_02HAOIJKIC@?$CFc?$AA@ 100019f4     ftp_Cfg.obj
+ 0001:000009f8       ??_C@_02DPKJAMEF@?$CFd?$AA@ 100019f8     ftp_Cfg.obj
+ 0001:000009fc       ??_C@_03LBOPJCJH@?5x?5?$AA@ 100019fc     ftp_Cfg.obj
+ 0001:00000a00       ??_C@_03LFANNGIO@CD?5?$AA@ 10001a00     ftp_CmdLine.obj
+ 0001:00000a04       ??_C@_07KGKIJADF@HTTP?3?1?1?$AA@ 10001a04     ftp_CmdLine.obj
+ 0001:00000a0c       ??_C@_06EGJGEALN@ftp?3?$CFs?$AA@ 10001a0c     ftp_CmdLine.obj
+ 0001:00000a14       ??_C@_04GOLNGIJ@EXIT?$AA@  10001a14     ftp_CmdLine.obj
+ 0001:00000a1c       ??_C@_04JCEDBMNO@CWD?5?$AA@ 10001a1c     ftp_CmdLine.obj
+ 0001:00000a24       ??_C@_04KNOHKLCF@CMD?5?$AA@ 10001a24     ftp_CmdLine.obj
+ 0001:00000a2c       ??_C@_08KGOFMHEH@DIRFILE?5?$AA@ 10001a2c     ftp_CmdLine.obj
+ 0001:00000a38       ??_C@_07ODMBLHBE@TOHOSTS?$AA@ 10001a38     ftp_CmdLine.obj
+ 0001:00000a40       ??_C@_04ODBEMNDH@FTP?3?$AA@ 10001a40     ftp_CmdLine.obj
+ 0001:00000a48       ??_C@_02BPKCLFDG@QX?$AA@   10001a48     ftp_CmdLine.obj
+ 0001:00000a4c       ??_C@_01BNIGIBBF@Q?$AA@    10001a4c     ftp_CmdLine.obj
+ 0001:00000a50       ??_C@_05DNBCGLOL@XADD?5?$AA@ 10001a50     ftp_CmdLine.obj
+ 0001:00000a58       ??_C@_05BKBNDKCD@QADD?5?$AA@ 10001a58     ftp_CmdLine.obj
+ 0001:00000a60       ??_C@_0BD@FECINDPC@FTPCommandLineHelp?$AA@ 10001a60     ftp_CmdLine.obj
+ 0001:00000a74       ??_C@_01OGPIMHDM@?$DP?$AA@ 10001a74     ftp_CmdLine.obj
+ 0001:00000a78       ??_C@_08NGEINBHG@ftp?3?1?1?$CFs?$AA@ 10001a78     ftp_CmdLine.obj
+ 0001:00000a88       __real@408f400000000000    10001a88     ftp_cnDownload.obj
+ 0001:00000a90       __real@41f0000000000000    10001a90     ftp_cnDownload.obj
+ 0001:00000a98       ??_C@_08GGIICNCH@?$CFcABOR?$AN?6?$AA@ 10001a98     ftp_cnDownload.obj
+ 0001:00000aa4       ??_C@_04GJDJEMBE@?$CFc?$CFc?$AA@ 10001aa4     ftp_cnDownload.obj
+ 0001:00000aac       ??_7?$FTPPlugin@PAUNotifyInterface@@$01@@6B@ 10001aac     ftp_cnDownload.obj
+ 0001:00000ab0       ??_7FTPNotify@@6B@         10001ab0     ftp_cnDownload.obj
+ 0001:00000ab4       ??_C@_05PDPBPNGB@?$CFs?$CFs?5?$AA@ 10001ab4     ftp_cnDownload.obj
+ 0001:00000ac0       __real@3fe0000000000000    10001ac0     ftp_cnDownload.obj
+ 0001:00000ac8       __real@4008000000000000    10001ac8     ftp_cnDownload.obj
+ 0001:00000ad0       ??_C@_05DNIIFBMG@?$CFs?5?$CFs?$AA@ 10001ad0     ftp_cnDownload.obj
+ 0001:00000ad8       ??_C@_08JKBKEKGN@?$CFs?5?$CFI64u?$AA@ 10001ad8     ftp_cnDownload.obj
+ 0001:00000ae4       ??_C@_04PMOCAHAA@open?$AA@ 10001ae4     ftp_cnInit.obj
+ 0001:00000aec       ??_C@_01KJLJFBPL@8?$AA@    10001aec     ftp_cnInit.obj
+ 0001:00000af0       ??_C@_09BMFBKPHA@anonymous?$AA@ 10001af0     ftp_cnInit.obj
+ 0001:00000afc       ??_C@_04KOHNNHPH@?$CFs?50?$AA@ 10001afc     ftp_cnInit.obj
+ 0001:00000b04       ??_C@_0L@MJFOPKDI@?$FL?$CFs?5?9?$DO?5?$CFs?$FN?$AA@ 10001b04     ftp_cnInit.obj
+ 0001:00000b10       ??_C@_0BE@CGGKJFMN@?$CI?$CFu?0?$CFu?0?$CFu?0?$CFu?0?$CFu?0?$CFu?$CJ?$AA@ 10001b10     ftp_cnInit.obj
+ 0001:00000b24       ??_C@_0BF@KDEAGEIK@?$CFs?5?$CFd?0?$CFd?0?$CFd?0?$CFd?0?$CFd?0?$CFd?$AA@ 10001b24     ftp_cnInit.obj
+ 0001:00000b3c       ??_C@_03OFKLFAAJ@pwd?$AA@  10001b3c     ftp_cnUpload.obj
+ 0001:00000b40       ??_C@_01KDCPPGHE@r?$AA@    10001b40     ftp_cnUpload.obj
+ 0001:00000b44       ??_C@_05CHFEIFNB@umask?$AA@ 10001b44     ftp_Connect.obj
+ 0001:00000b4c       ??_C@_04CCHAHKJA@user?$AA@ 10001b4c     ftp_Connect.obj
+ 0001:00000b54       ??_C@_07DJLNMANP@sunique?$AA@ 10001b54     ftp_Connect.obj
+ 0001:00000b5c       ??_C@_06FHFOAHML@system?$AA@ 10001b5c     ftp_Connect.obj
+ 0001:00000b64       ??_C@_04IAGNFIBA@size?$AA@ 10001b64     ftp_Connect.obj
+ 0001:00000b6c       ??_C@_04IKPDHFBK@site?$AA@ 10001b6c     ftp_Connect.obj
+ 0001:00000b74       ??_C@_04MIIPNNEF@send?$AA@ 10001b74     ftp_Connect.obj
+ 0001:00000b7c       ??_C@_07PFBHMAEB@runique?$AA@ 10001b7c     ftp_Connect.obj
+ 0001:00000b84       ??_C@_05IHDOMKOF@rmdir?$AA@ 10001b84     ftp_Connect.obj
+ 0001:00000b8c       ??_C@_07LDHOHMPD@restart?$AA@ 10001b8c     ftp_Connect.obj
+ 0001:00000b94       ??_C@_05CFMALAOA@reset?$AA@ 10001b94     ftp_Connect.obj
+ 0001:00000b9c       ??_C@_06LMEAOBLB@rename?$AA@ 10001b9c     ftp_Connect.obj
+ 0001:00000ba4       ??_C@_05MDJPICJJ@rhelp?$AA@ 10001ba4     ftp_Connect.obj
+ 0001:00000bac       ??_C@_07CPLMNKKC@rstatus?$AA@ 10001bac     ftp_Connect.obj
+ 0001:00000bb4       ??_C@_05PKLLHACI@reget?$AA@ 10001bb4     ftp_Connect.obj
+ 0001:00000bbc       ??_C@_04IFMDBHHF@recv?$AA@ 10001bbc     ftp_Connect.obj
+ 0001:00000bc4       ??_C@_05JHEGFHLM@quote?$AA@ 10001bc4     ftp_Connect.obj
+ 0001:00000bcc       ??_C@_04KNNLNNGO@quit?$AA@ 10001bcc     ftp_Connect.obj
+ 0001:00000bd4       ??_C@_03KMONJGDG@put?$AA@  10001bd4     ftp_Connect.obj
+ 0001:00000bd8       ??_C@_08IGIOMHDM@sendport?$AA@ 10001bd8     ftp_Connect.obj
+ 0001:00000be4       ??_C@_05BFHPMDA@proxy?$AA@ 10001be4     ftp_Connect.obj
+ 0001:00000bec       ??_C@_05HLMLHIEI@nlist?$AA@ 10001bec     ftp_Connect.obj
+ 0001:00000bf4       ??_C@_05IIOMECNB@newer?$AA@ 10001bf4     ftp_Connect.obj
+ 0001:00000bfc       ??_C@_07CNFBNNKL@modtime?$AA@ 10001bfc     ftp_Connect.obj
+ 0001:00000c04       ??_C@_05PKPOIPAL@mkdir?$AA@ 10001c04     ftp_Connect.obj
+ 0001:00000c0c       ??_C@_02EFGBDOJM@ls?$AA@   10001c0c     ftp_Connect.obj
+ 0001:00000c10       ??_C@_05NGOMGBBD@image?$AA@ 10001c10     ftp_Connect.obj
+ 0001:00000c18       ??_C@_04EAPMNACM@idle?$AA@ 10001c18     ftp_Connect.obj
+ 0001:00000c20       ??_C@_03HNAFFKGA@get?$AA@  10001c20     ftp_Connect.obj
+ 0001:00000c24       ??_C@_0L@KKPFIJOL@disconnect?$AA@ 10001c24     ftp_Connect.obj
+ 0001:00000c30       ??_C@_03DAPAKLGM@dir?$AA@  10001c30     ftp_Connect.obj
+ 0001:00000c34       ??_C@_06FOBLBEIN@delete?$AA@ 10001c34     ftp_Connect.obj
+ 0001:00000c3c       ??_C@_05LBOHBHFK@close?$AA@ 10001c3c     ftp_Connect.obj
+ 0001:00000c44       ??_C@_05OCEJBCEE@chmod?$AA@ 10001c44     ftp_Connect.obj
+ 0001:00000c4c       ??_C@_04COAOLGGG@cdup?$AA@ 10001c4c     ftp_Connect.obj
+ 0001:00000c54       ??_C@_02ELLOPNDH@cd?$AA@   10001c54     ftp_Connect.obj
+ 0001:00000c58       ??_C@_03MDONDFG@bye?$AA@   10001c58     ftp_Connect.obj
+ 0001:00000c5c       ??_C@_06FNFBAEBE@binary?$AA@ 10001c5c     ftp_Connect.obj
+ 0001:00000c64       ??_C@_05OJENGABA@ascii?$AA@ 10001c64     ftp_Connect.obj
+ 0001:00000c6c       ??_C@_06PCICMFGG@append?$AA@ 10001c6c     ftp_Connect.obj
+ 0001:00000c74       ??_C@_07PMDLEBNF@account?$AA@ 10001c74     ftp_Connect.obj
+ 0001:00000c7c       ??_C@_02LIIHNNHG@?6?$AN?$AA@ 10001c7c     ftp_Connect.obj
+ 0001:00000c80       ??_C@_0M@GMNABIPB@?9?9LISTING?9?9?$AA@ 10001c80     ftp_Connect.obj
+ 0001:00000c8c       ??_C@_0CP@GNGCGIBO@?9?9LISTING?9?9?$CICurrent?5table?3?5?$CFd?5La@ 10001c8c     ftp_Connect.obj
+ 0001:00000cbc       ??_C@_0CE@DOCKAEPI@Not?5working?5decode?5table?5?$CFd?5used@ 10001cbc     ftp_Connect.obj
+ 0001:00000ce0       ??_C@_0BH@FHOMHFPP@Autodetected?5table?3?5?$CFd?$AA@ 10001ce0     ftp_Connect.obj
+ 0001:00000cf8       ??_C@_0EB@JODFEJLE@Decode?5table?5set?5to?5?$CFd?0?5but?5does@ 10001cf8     ftp_Connect.obj
+ 0001:00000d3c       ??_7?$FTPPlugin@PAUProgressInterface@@$0A@@@6B@ 10001d3c     ftp_Connect.obj
+ 0001:00000d40       ??_7FTPProgress@@6B@       10001d40     ftp_Connect.obj
+ 0001:00000d44       ??_C@_0BC@HOKJLIOD@Holder?9?$DOInterface?$AA@ 10001d44     ftp_Connect.obj
+ 0001:00000d58       ??_C@_06FHEGEOLH@Holder?$AA@ 10001d58     ftp_Connect.obj
+ 0001:00000d60       ??_C@_0CN@DKKKLOIL@Assertion?4?4?4?6Conditin?3?5?$CC?$CFs?$CC?6At?5f@ 10001d60     ftp_Connect.obj
+ 0001:00000d90       ??_C@_0CB@PBDIKAJE@c?3?2src?2plugins?2ftp?2ftp_Plugins?4h@ 10001d90     ftp_Connect.obj
+ 0001:00000db4       ??_C@_07LBAFLNFB@TYPE?5?$CFc?$AA@ 10001db4     ftp_ConnectCmds.obj
+ 0001:00000dbc       ??_C@_0L@NGNJGBEM@TYPE?5?$CFc?5?$CFs?$AA@ 10001dbc     ftp_ConnectCmds.obj
+ 0001:00000dc8       ??_C@_01NOFIACDB@w?$AA@    10001dc8     ftp_ConnectCmds.obj
+ 0001:00000dcc       ??_C@_01JOAMLHOP@?9?$AA@   10001dcc     ftp_ConnectCmds.obj
+ 0001:00000dd0       ??_C@_01CLKCMJKC@?5?$AA@   10001dd0     ftp_ConnectCmds.obj
+ 0001:00000dd4       ??_C@_0M@HKJEMFMD@?$CFs?5?$CFs?5?$CFs?5?$CFs?$AA@ 10001dd4     ftp_ConnectCmds.obj
+ 0001:00000de0       ??_C@_08EPEHIMMI@?$CFs?5?$CFs?5?$CFs?$AA@ 10001de0     ftp_ConnectCmds.obj
+ 0001:00000dec       ??_C@_03LMDBDBEG@ftp?$AA@  10001dec     ftp_ConnectCmds.obj
+ 0001:00000df0       ??_C@_03FPEIBLKH@tcp?$AA@  10001df0     ftp_ConnectCmds.obj
+ 0001:00000df4       ??_C@_02DPNLHKJD@a?$CL?$AA@ 10001df4     ftp_ConnectCmds.obj
+ 0001:00000df8       ??_C@_02CBLLGHLK@r?$CL?$AA@ 10001df8     ftp_ConnectCmds.obj
+ 0001:00000dfc       ??_C@_06CBJCAPLI@?$CFc?$CFc?$CFc?$AA@ 10001dfc     ftp_ConnectIO.obj
+ 0001:00000e04       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 10001e04     ftp_ConnectIO.obj
+ 0001:00000e08       ??_C@_06ILOPIGED@ABOR?$AN?6?$AA@ 10001e08     ftp_ConnectIO.obj
+ 0001:00000e10       ??_C@_01EPMOAMKG@$?$AA@    10001e10     ftp_ConnectMain.obj
+ 0001:00000e14       ??_C@_01DCLJPIOD@?$CB?$AA@ 10001e14     ftp_ConnectMain.obj
+ 0001:00000e18       __real@3fd3333333333333    10001e18     ftp_ConnectNB.obj
+ 0001:00000e20       ??_C@_0BE@INDGCAMD@?$CFs?5?$CI?$CF?41f?$CFs?$CJ?3?5?$CF2d?$CF?$CF?5?$AA@ 10001e20     ftp_ConnectNB.obj
+ 0001:00000e38       __real@c059000000000000    10001e38     ftp_ConnectNB.obj
+ 0001:00000e40       ??_C@_0L@KPMAFOB@?$CFs?5?$CI?$CFd?$CFs?$CJ?5?$AA@ 10001e40     ftp_ConnectNB.obj
+ 0001:00000e50       __real@3ff0000000000000    10001e50     ftp_ConnectNB.obj
+ 0001:00000e58       ??_C@_0BB@BPFNEJDP@?$CFd?5files?1folders?$AA@ 10001e58     ftp_DeleteFile.obj
+ 0001:00000e6c       ??_C@_0O@KGMJACPM@LastHostsMode?$AA@ 10001e6c     ftp_Event.obj
+ 0001:00000e7c       ??_C@_0L@PEDCMMOP@FarFtp?4dll?$AA@ 10001e7c     ftp_FAR.obj
+ 0001:00000e88       ??_C@_0CG@GBELMCIA@?$CB?$CCMore?5then?5two?5plugins?5in?5a?5tim@ 10001e88     ftp_FAR.obj
+ 0001:00000eb0       ??_C@_0M@DGHIBOED@ftp_FAR?4cpp?$AA@ 10001eb0     ftp_FAR.obj
+ 0001:00000ebc       ??_C@_0BB@HFCPJGPP@CloseQueryReject?$AA@ 10001ebc     ftp_FAR.obj
+ 0001:00000ed0       ??_C@_07NPAMIPII@FTP?3?5?$CFs?$AA@ 10001ed0     ftp_FAR.obj
+ 0001:00000ed8       ??_C@_0BC@PFPDILNA@FTP?3?5?$CF?9?$CKs?5?$CF?9?$CKs?5?$CFs?$AA@ 10001ed8     ftp_FAR.obj
+ 0001:00000eec       ??_C@_0BC@EELMGBFB@FTP?5plugin?5loaded?$AA@ 10001eec     ftp_FAR.obj
+ 0001:00000f00       ??_C@_03LBMKPMDK@FTP?$AA@  10001f00     ftp_FAR.obj
+ 0001:00000f04       ??_C@_0N@ICACJLIG@?$CC?$CFs?$CC?5to?5?$CC?$CFs?$CC?$AA@ 10001f04     ftp_FGet.obj
+ 0001:00000f14       ??_C@_04HDOCAJNK@?$CFs?$CFs?$AA@ 10001f14     ftp_FGet.obj
+ 0001:00000f1c       ??_C@_02DJGKEECL@?4?4?$AA@ 10001f1c     ftp_FGet.obj
+ 0001:00000f20       ??_C@_04LKKKALON@ftp?3?$AA@ 10001f20     ftp_FGet.obj
+ 0001:00000f28       ??_C@_02CFKBDFGI@?1?2?$AA@ 10001f28     ftp_FGet.obj
+ 0001:00000f2c       ??_C@_0L@BEFDNLDN@?$CF?$CKc?$CF10I64u?$AA@ 10001f2c     ftp_FileList.obj
+ 0001:00000f38       ??_C@_03EEBNCBOD@?5?$CFs?$AA@ 10001f38     ftp_FileList.obj
+ 0001:00000f3c       ??_C@_06EOIKHNJE@?6?$FL?$CFs?$FN?6?$AA@ 10001f3c     ftp_FileList.obj
+ 0001:00000f44       ??_C@_01EEMJAFIK@?6?$AA@   10001f44     ftp_FileList.obj
+ 0001:00000f48       ??_C@_07NAKMLIFF@?$CF10I64u?$AA@ 10001f48     ftp_FileList.obj
+ 0001:00000f50       ??_C@_05FIBHJBBH@?$DMDIR?$DO?$AA@ 10001f50     ftp_FileList.obj
+ 0001:00000f58       ??_C@_04CDPLFOEF@?$CFc?$CFs?$AA@ 10001f58     ftp_FileList.obj
+ 0001:00000f60       ??_C@_03DCFNIELN@?$CF?$CKc?$AA@ 10001f60     ftp_FileList.obj
+ 0001:00000f64       ??_C@_03OFAPEBGM@?$CFs?6?$AA@ 10001f64     ftp_FileList.obj
+ 0001:00000f68       ??_C@_0M@KJMLKKMF@BASE?3?5?$CC?$CFs?$CC?6?$AA@ 10001f68     ftp_FileList.obj
+ 0001:00000f74       ??_C@_08KJEDNCKC@?$CFs?$CFs?$CFs?$CFs?$AA@ 10001f74     ftp_FileList.obj
+ 0001:00000f80       ??_C@_06FNAPNHDD@ftp?3?1?1?$AA@ 10001f80     ftp_FileList.obj
+ 0001:00000f88       ??_C@_06KIBDCPPC@?$CFs?3?$CFs?$EA?$AA@ 10001f88     ftp_FileList.obj
+ 0001:00000f90       ??_C@_01MCMALHOG@a?$AA@    10001f90     ftp_FileList.obj
+ 0001:00000f94       ??_C@_0M@NBNCKLPF@ftplist?4lst?$AA@ 10001f94     ftp_FileList.obj
+ 0001:00000fa0       ??_C@_0N@NMPBMFKH@FTPFilesList?$AA@ 10001fa0     ftp_FileList.obj
+ 0001:00000fb0       ??_C@_01PKGAHCOL@?$CJ?$AA@ 10001fb0     ftp_FileList.obj
+ 0001:00000fb4       ??_C@_01KMDKNFGN@?1?$AA@   10001fb4     ftp_FileList.obj
+ 0001:00000fb8       ??_C@_01CELHOKLL@?$HN?$AA@ 10001fb8     ftp_FileList.obj
+ 0001:00000fbc       ??_C@_01HCONENDN@?$HL?$AA@ 10001fbc     ftp_FileList.obj
+ 0001:00000fc0       ??_C@_02GFKOMOKH@?5?$CI?$AA@ 10001fc0     ftp_FileList.obj
+ 0001:00000fc4       ??_C@_03HIJPJGOM@?$CF?$CKs?$AA@ 10001fc4     ftp_FileList.obj
+ 0001:00000fc8       ??_C@_03HMFOOINA@r?$CLb?$AA@ 10001fc8     ftp_FPut.obj
+ 0001:00000fcc       ??_C@_0O@HHOOPLMB@LastHostsPath?$AA@ 10001fcc     ftp_Ftp.obj
+ 0001:00000fdc       ??_C@_0BM@HEHJOIHG@Process?5queque?5is?5not?5empty?$AA@ 10001fdc     ftp_Ftp.obj
+ 0001:00000ff8       ??_C@_04HGGBINEM@?$CFs?$CFd?$AA@ 10001ff8     ftp_Ftp.obj
+ 0001:00001000       ??_C@_01NBENCBCI@?$CK?$AA@ 10002000     ftp_Ftp.obj
+ 0001:00001004       ??_C@_0BP@LNDODDNP@hConnect?5?$CG?$CG?5?$CCFtpSetRetryCount?$CC?$AA@ 10002004     ftp_FtpAPI.obj
+ 0001:00001024       ??_C@_0P@LMNFHFHL@ftp_FtpAPI?4cpp?$AA@ 10002024     ftp_FtpAPI.obj
+ 0001:00001034       ??_C@_0BP@HDCAMJPD@hConnect?5?$CG?$CG?5?$CCFtpGetRetryCount?$CC?$AA@ 10002034     ftp_FtpAPI.obj
+ 0001:00001054       ??_C@_0P@PNJADFFN@rmdir?5?$CC?$CFs?1?$CFs?1?$CC?$AA@ 10002054     ftp_FtpAPI.obj
+ 0001:00001064       ??_C@_0O@FLFCAKGH@rmdir?5?$AB?$CFs?1?$CFs?$AB?$AA@ 10002064     ftp_FtpAPI.obj
+ 0001:00001074       ??_C@_0M@EPOCINHP@rmdir?5?$AB?$CFs?1?$AB?$AA@ 10002074     ftp_FtpAPI.obj
+ 0001:00001080       ??_C@_0L@EBHPBEBJ@rmdir?5?$AB?$CFs?$AB?$AA@ 10002080     ftp_FtpAPI.obj
+ 0001:0000108c       ??_C@_01LFCBOECM@?4?$AA@   1000208c     ftp_FtpAPI.obj
+ 0001:00001090       ??_C@_0CB@EHINOFNK@hConnect?5?$CG?$CG?5?$CCFtpRemoveDirectory?$CC@ 10002090     ftp_FtpAPI.obj
+ 0001:000010b4       ??_C@_0O@DAOGANIL@ren?5?$AB?$CFs?$AB?5?$AB?$CFs?$AB?$AA@ 100020b4     ftp_FtpAPI.obj
+ 0001:000010c4       ??_C@_0BL@MGFPAOKC@Connect?5?$CG?$CG?5?$CCFtpRenameFile?$CC?$AA@ 100020c4     ftp_FtpAPI.obj
+ 0001:000010e0       ??_C@_08COOICHHF@del?5?$AB?$CFs?$AB?$AA@ 100020e0     ftp_FtpAPI.obj
+ 0001:000010ec       ??_C@_0BM@NDPCMENN@hConnect?5?$CG?$CG?5?$CCFtpDeleteFile?$CC?$AA@ 100020ec     ftp_FtpAPI.obj
+ 0001:00001108       ??_C@_0O@ILMAMILE@chmod?5?$CFo?5?$AB?$CFs?$AB?$AA@ 10002108     ftp_FtpAPI.obj
+ 0001:00001118       ??_C@_0BH@DGJKBKPI@hConnect?5?$CG?$CG?5?$CCFtpChmod?$CC?$AA@ 10002118     ftp_FtpAPI.obj
+ 0001:00001130       ??_C@_0N@MKBCDIJP@?$CFs?5?$AB?$CFs?$AB?5?$AB?$CFs?$AB?$AA@ 10002130     ftp_FtpAPI.obj
+ 0001:00001140       ??_C@_03PDOMKJON@bin?$AA@  10002140     ftp_FtpAPI.obj
+ 0001:00001144       ??_C@_0BI@DCPIELAC@Connect?5?$CG?$CG?5?$CCFtpGetFile?$CC?$AA@ 10002144     ftp_FtpAPI.obj
+ 0001:00001160       ??_C@_0FE@FLAACIJC@Can?5not?5find?5listing?5parser?4?5Ple@ 10002160     ftp_FtpAPI.obj
+ 0001:000011b8       ??_C@_0FB@PGOMGPGO@Error?5parsing?5files?5list?4?5Please@ 100021b8     ftp_FtpAPI.obj
+ 0001:0000120c       ??_7?$FTPPlugin@PAUDirListInterface@@$00@@6B@ 1000220c     ftp_FtpAPI.obj
+ 0001:00001210       ??_C@_09PHFJOEDF@size?5?$AB?$CFs?$AB?$AA@ 10002210     ftp_FtpAPI.obj
+ 0001:0000121c       ??_C@_0O@IDKAGKGB@put?5?$AB?$CFs?$AB?5?$AB?$CFs?$AB?$AA@ 1000221c     ftp_FtpAPI.obj
+ 0001:0000122c       ??_C@_04LKMLABDB@appe?$AA@ 1000222c     ftp_FtpAPI.obj
+ 0001:00001234       ??_C@_05GFOLEBJA@?$CFs?1?$CFs?$AA@ 10002234     ftp_FtpAPI.obj
+ 0001:0000123c       ??_C@_0BI@IGOCFFJB@Connect?5?$CG?$CG?5?$CCFtpPutFile?$CC?$AA@ 1000223c     ftp_FtpAPI.obj
+ 0001:00001254       ??_7FTPDirList@@6B@        10002254     ftp_FtpAPI.obj
+ 0001:00001258       ??_C@_03DICEBKHD@?7?$AI?5?$AA@ 10002258     ftp_FtpAPI.obj
+ 0001:0000125c       ??_C@_07NBCGADJA@Unknown?$AA@ 1000225c     ftp_FtpAPI.obj
+ 0001:00001264       ??_C@_07DJMIGIHO@Invalid?$AA@ 10002264     ftp_FtpAPI.obj
+ 0001:0000126c       ??_C@_0L@BBPCJIIE@Autodetect?$AA@ 1000226c     ftp_FtpAPI.obj
+ 0001:00001278       ??_C@_08CPKHBLEK@?$CFs?5?$CFc?5?$CFs?$AA@ 10002278     ftp_FtpAPI.obj
+ 0001:00001284       ??_C@_0BD@GNDNOPLB@ParserIGNORE?3?5?$FL?$CFs?$FN?$AA@ 10002284     ftp_FtpAPI.obj
+ 0001:00001298       ??_C@_0BK@PNKAKKPD@ParserDETECT?3?5?$CFs?9?$DO?$CFs?5?$FL?$CFs?$FN?$AA@ 10002298     ftp_FtpAPI.obj
+ 0001:000012b4       ??_C@_0BG@HBDDEANK@ParserFAIL?3?5?$CI?$CFs?$CJ?5?$FL?$CFs?$FN?$AA@ 100022b4     ftp_FtpAPI.obj
+ 0001:000012cc       ??_C@_0BI@IODEGDHG@ParserFAIL?3?5?$CFs?9?$DO?$CFs?5?$FL?$CFs?$FN?$AA@ 100022cc     ftp_FtpAPI.obj
+ 0001:000012e4       ??_C@_0L@KHFIKIBB@Directory?5?$AA@ 100022e4     ftp_FtpAPI.obj
+ 0001:000012f0       ??_C@_0BE@JGLAKDMM@?3?5Permission?5denied?$AA@ 100022f0     ftp_FtpAPI.obj
+ 0001:00001304       ??_C@_0BA@CABLGCKD@data?5connection?$AA@ 10002304     ftp_FtpAPI.obj
+ 0001:00001314       ??_C@_0BC@CFBMOBKO@transfer?5complete?$AA@ 10002314     ftp_FtpAPI.obj
+ 0001:00001328       ??_C@_0P@FFEOLOEO@bytes?5received?$AA@ 10002328     ftp_FtpAPI.obj
+ 0001:00001338       ??_C@_08FAINJMLF@DEVICE?3?$FL?$AA@ 10002338     ftp_FtpAPI.obj
+ 0001:00001344       ??_C@_09COOHLDLF@Total?5of?5?$AA@ 10002344     ftp_FtpAPI.obj
+ 0001:00001350       ??_C@_05NPGKOEPD@dir?5?$CK?$AA@ 10002350     ftp_FtpAPI.obj
+ 0001:00001358       ??_C@_08EOKGNFKJ@dir?5?$AB?$CFs?$AB?$AA@ 10002358     ftp_FtpAPI.obj
+ 0001:00001364       ??_C@_03EMIMMIHL@?$CK?4?$CK?$AA@ 10002364     ftp_FtpAPI.obj
+ 0001:00001368       ??_C@_0BP@JGBGJLAF@hConnect?5?$CG?$CG?5?$CCFtpFindFirstFile?$CC?$AA@ 10002368     ftp_FtpAPI.obj
+ 0001:00001388       ??_C@_0BO@OGMDFHAE@hConnect?5?$CG?$CG?5?$CCFtpFindNextFile?$CC?$AA@ 10002388     ftp_FtpAPI.obj
+ 0001:000013a8       ??_C@_07FJMMHLPK@cd?5?$AB?$CFs?$AB?$AA@ 100023a8     ftp_FtpAPI.obj
+ 0001:000013b0       ??_C@_0CF@MPGEOCCF@hConnect?5?$CG?$CG?5?$CCFtpSetCurrentDirect@ 100023b0     ftp_FtpAPI.obj
+ 0001:000013d8       ??_C@_0BD@FEBOBJJF@site?5directorymode?$AA@ 100023d8     ftp_FtpAPI.obj
+ 0001:000013ec       ??_C@_04IMHMBHBA@syst?$AA@ 100023ec     ftp_FtpAPI.obj
+ 0001:000013f4       ??_C@_0BL@MEHEHAC@Connect?5?$CG?$CG?5?$CCFtpSystemInfo?$CC?$AA@ 100023f4     ftp_FtpAPI.obj
+ 0001:00001410       ??_C@_01GBGANLPD@0?$AA@    10002410     ftp_FTPConnect.obj
+ 0001:00001414       ??_C@_01EOFPKCAF@?$EA?$AA@ 10002414     ftp_FTPConnect.obj
+ 0001:00001418       ??_C@_0DN@IBGCMMEK@?9?9?9?9?9?9?9?9?5CONNECTING?5?$CIplugin?3?5Feb@ 10002418     ftp_FTPConnect.obj
+ 0001:00001458       ??_C@_06CCHLOEOL@FTPCmd?$AA@ 10002458     ftp_FtpDlg.obj
+ 0001:00001460       ??_C@_06DICAPMAD@FTPPut?$AA@ 10002460     ftp_FtpDlg.obj
+ 0001:00001468       ??_C@_06OJMIDAFF@FTPGet?$AA@ 10002468     ftp_FtpDlg.obj
+ 0001:00001470       ??_C@_0P@OININMOM@FTPIncludeMask?$AA@ 10002470     ftp_FtpDlg.obj
+ 0001:00001480       ??_C@_0P@KLJBJPOF@FTPExcludeMask?$AA@ 10002480     ftp_FtpDlg.obj
+ 0001:00001490       ??_C@_0L@FAEDHJMP@FTPExtHost?$AA@ 10002490     ftp_FtpDlg.obj
+ 0001:0000149c       ??_C@_09JAKDBGLJ@FTPFolder?$AA@ 1000249c     ftp_FtpDlg.obj
+ 0001:000014a8       ??_C@_05PNDBGJAH@?4utf8?$AA@ 100024a8     ftp_FtpDlg.obj
+ 0001:000014b0       ??_C@_05DKLFIDKN@?4auto?$AA@ 100024b0     ftp_FtpDlg.obj
+ 0001:000014b8       ??_C@_04LEPBFPPL@?4dos?$AA@ 100024b8     ftp_FtpDlg.obj
+ 0001:000014c0       ??_C@_04NLMLHCE@?4win?$AA@ 100024c0     ftp_FtpDlg.obj
+ 0001:000014c8       ??_C@_05EGJIMALK@UTF?98?$AA@ 100024c8     ftp_FtpDlg.obj
+ 0001:000014d0       ??_C@_03CAJNCLOD@DOS?$AA@  100024d0     ftp_FtpDlg.obj
+ 0001:000014d4       ??_C@_07LDLFNPGN@Windows?$AA@ 100024d4     ftp_FtpDlg.obj
+ 0001:000014dc       ??_C@_0BM@JEHEONFM@R?5?5W?5?5X?5?5?5R?5?5W?5?5X?5?5?5R?5?5W?5?5X?$AA@ 100024dc     ftp_FtpDlg.obj
+ 0001:000014f8       ??_C@_0L@KLACGKEF@FTPConnect?$AA@ 100024f8     ftp_FtpDlg.obj
+ 0001:00001504       ??_C@_07HEFHHDNJ@FTPUser?$AA@ 10002504     ftp_FtpDlg.obj
+ 0001:0000150c       ??_C@_0M@GMNBMCDK@FTPSaveList?$AA@ 1000250c     ftp_FtpDlg.obj
+ 0001:00001518       ??_C@_0BA@JNPEJNN@SaveListHistory?$AA@ 10002518     ftp_FtpDlg.obj
+ 0001:00001528       ??_C@_07LIBJLAIJ@FTPHost?$AA@ 10002528     ftp_FtpDlg.obj
+ 0001:00001530       ??_C@_0L@PEAIEIHM@WarnOldFmt?$AA@ 10002530     ftp_FTPHost.obj
+ 0001:0000153c       ??_C@_01KHDNNMEB@?$AB?$AA@ 1000253c     ftp_FTPHost.obj
+ 0001:00001540       ??_C@_04NOJCDH@?$CF02x?$AA@ 10002540     ftp_FTPHost.obj
+ 0001:00001548       ??_C@_04ODCMNEMO@hex?3?$AA@ 10002548     ftp_FTPHost.obj
+ 0001:00001550       ??_C@_08DMBCELAK@LIST?5?9la?$AA@ 10002550     ftp_FTPHost.obj
+ 0001:0000155c       ??_C@_09CCNNHAKH@p?5?$CB?$DN?5this?$AA@ 1000255c     ftp_FTPHost.obj
+ 0001:00001568       ??_C@_01JBBJJEPG@p?$AA@    10002568     ftp_FTPHost.obj
+ 0001:0000156c       ??_C@_0BA@JCBCMKLO@ftp_FTPHost?4cpp?$AA@ 1000256c     ftp_FTPHost.obj
+ 0001:0000157c       ??_C@_0M@BBNINPML@ftp?3?1?1?$CFs?$EA?$CFs?$AA@ 1000257c     ftp_FTPHost.obj
+ 0001:00001588       ??_C@_0P@PKMKIDOA@ftp?3?1?1?$CFs?3?$CFs?$EA?$CFs?$AA@ 10002588     ftp_FTPHost.obj
+ 0001:00001598       ??_C@_04CFKGIICC@?4ftp?$AA@ 10002598     ftp_FTPHost.obj
+ 0001:000015a0       ??_C@_0O@NIIBOLNP@?3?1?2?4?$EA?$CC?8?$HM?$DO?$DM?$FO?$CK?$DP?$AA@ 100025a0     ftp_FTPHost.obj
+ 0001:000015b0       ??_C@_0M@KEHDCDNG@?3?1?2?$CC?8?$HM?$DO?$DM?$FO?$CK?$DP?$AA@ 100025b0     ftp_FTPHost.obj
+ 0001:000015bc       ??_C@_05JIDENDAK@Hosts?$AA@ 100025bc     ftp_FTPHost.obj
+ 0001:000015c4       ??_C@_06HHJDFOK@Folder?$AA@ 100025c4     ftp_FTPHost.obj
+ 0001:000015cc       ??_C@_08EJIMMOH@HostName?$AA@ 100025cc     ftp_FTPHost.obj
+ 0001:000015d8       ??_C@_07HOPNEECJ@?2Item?$CFd?$AA@ 100025d8     ftp_FTPHost.obj
+ 0001:000015e0       ??_C@_0M@OHKMKKDH@Description?$AA@ 100025e0     ftp_FTPHost.obj
+ 0001:000015ec       ??_C@_0P@DEEDAIN@UseStartSpaces?$AA@ 100025ec     ftp_FTPHost.obj
+ 0001:000015fc       ??_C@_08DFAFDOKH@SendAllo?$AA@ 100025fc     ftp_FTPHost.obj
+ 0001:00001608       ??_C@_0O@GIGNPKBG@DecodeCmdLine?$AA@ 10002608     ftp_FTPHost.obj
+ 0001:00001618       ??_C@_07EKLJGNOG@CodeCmd?$AA@ 10002618     ftp_FTPHost.obj
+ 0001:00001620       ??_C@_07BONDKECD@ListCMD?$AA@ 10002620     ftp_FTPHost.obj
+ 0001:00001628       ??_C@_07HCFNFKLO@ExtList?$AA@ 10002628     ftp_FTPHost.obj
+ 0001:00001630       ??_C@_09FPOAHDEI@AsciiMode?$AA@ 10002630     ftp_FTPHost.obj
+ 0001:0000163c       ??_C@_0M@HBPDMLOK@UseFirewall?$AA@ 1000263c     ftp_FTPHost.obj
+ 0001:00001648       ??_C@_08CAACBMO@AskLogin?$AA@ 10002648     ftp_FTPHost.obj
+ 0001:00001654       ??_C@_05LFBINIGO@Table?$AA@ 10002654     ftp_FTPHost.obj
+ 0001:0000165c       ??_C@_08FJIAHGMM@Password?$AA@ 1000265c     ftp_FTPHost.obj
+ 0001:00001668       ??_C@_04ODLBFFJE@User?$AA@ 10002668     ftp_FTPHost.obj
+ 0001:00001670       ??_C@_03LMFFEHOG@Url?$AA@  10002670     ftp_FTPHost.obj
+ 0001:00001674       ??_C@_06GKIDNDEL@FarFTP?$AA@ 10002674     ftp_FTPHost.obj
+ 0001:0000167c       ??_C@_07NGFJPNPN@Version?$AA@ 1000267c     ftp_FTPHost.obj
+ 0001:00001684       ??_C@_04NKGGGLHB@1?4?$CFd?$AA@ 10002684     ftp_FTPHost.obj
+ 0001:0000168c       ??_C@_07FGAOOBMN@http?3?1?1?$AA@ 1000268c     ftp_FTPHost.obj
+ 0001:00001694       ??_C@_06GIIGBPHC@?$CFs?$CFc?$CFs?$AA@ 10002694     ftp_fUtils.obj
+ 0001:0000169c       ??_C@_0O@NFDAMBDD@?$CFsb?5in?5?$CFu?3?5?$CFs?$AA@ 1000269c     ftp_fUtils.obj
+ 0001:000016ac       ??_C@_05NCAJEJLJ@?$DMunk?$DO?$AA@ 100026ac     ftp_GetOpenInfo.obj
+ 0001:000016b4       ??_C@_04GKKJEBLF@?$CFd?00?$AA@ 100026b4     ftp_GetOpenInfo.obj
+ 0001:000016bc       ??_C@_04KHKGNIIA@C0?0Z?$AA@ 100026bc     ftp_GetOpenInfo.obj
+ 0001:000016c4       ??_C@_02HBLNCMLH@?0Z?$AA@  100026c4     ftp_GetOpenInfo.obj
+ 0001:000016c8       ??_C@_03KLPDFHIN@?0C2?$AA@ 100026c8     ftp_GetOpenInfo.obj
+ 0001:000016cc       ??_C@_02OOKPKPJK@?00?$AA@  100026cc     ftp_GetOpenInfo.obj
+ 0001:000016d0       ??_C@_03LEIBKMN@?0?$CFd?$AA@ 100026d0     ftp_GetOpenInfo.obj
+ 0001:000016d4       ??_C@_03IANOAEEO@?0C1?$AA@ 100026d4     ftp_GetOpenInfo.obj
+ 0001:000016d8       ??_C@_02KNCECDIH@C0?$AA@   100026d8     ftp_GetOpenInfo.obj
+ 0001:000016dc       ??_C@_0CE@BEKELIGI@FTP?3?$CFs?$AB?$CFc?$CFc?$CFc?$CFc?$CFd?$AB?$CFs?$AB?$CFs?$AB?$CFs?$AB?$CFc?$CFd?$AB@ 100026dc     ftp_GetOpenInfo.obj
+ 0001:00001700       ??_C@_07DAGNFJPH@HOST?3?$CFs?$AA@ 10002700     ftp_GetOpenInfo.obj
+ 0001:00001708       ??_C@_05CIBBOAAC@?1?1?$CFs?1?$AA@ 10002708     ftp_GetOpenInfo.obj
+ 0001:00001710       ??_C@_08PECKBDPI@?1?1Hosts?1?$AA@ 10002710     ftp_GetOpenInfo.obj
+ 0001:0000171c       ??_C@_0P@HKDMOOLJ@?5FTP?3?5?$CFs?$EA?$CFs?$CFs?5?$AA@ 1000271c     ftp_GetOpenInfo.obj
+ 0001:0000172c       ??_C@_0BA@ONGPMLFC@?5FTP?3?5?$CFs?$EA?$CFs?1?$CFs?5?$AA@ 1000272c     ftp_GetOpenInfo.obj
+ 0001:0000173c       ??_C@_09DMOGFMDH@?5FTP?3?5?$CFs?5?$AA@ 1000273c     ftp_GetOpenInfo.obj
+ 0001:00001748       ??_C@_02DPEMFEPD@?3?2?$AA@ 10002748     ftp_HGet.obj
+ 0001:0000174c       ??_C@_04PMGDIHKD@?4?2?$CFs?$AA@ 1000274c     ftp_HPut.obj
+ 0001:00001754       ??_C@_06GBEGMGE@?$CFs?3?5?$CFd?$AA@ 10002754     ftp_JM.obj
+ 0001:0000175c       ??_C@_03PCAJHJNM@?$HM?$DM?9?$AA@ 1000275c     ftp_JM.obj
+ 0001:00001760       ??_C@_03IOACPBAJ@?$HM?9?$DO?$AA@ 10002760     ftp_JM.obj
+ 0001:00001764       ??_C@_02MINBJDHL@?$HM?5?$AA@ 10002764     ftp_JM.obj
+ 0001:00001768       ??_C@_05JCGIOAFA@?5?$CF04d?$AA@ 10002768     ftp_JM.obj
+ 0001:00001770       ??_C@_05DCCHEIGA@?5?9?9?9?9?$AA@ 10002770     ftp_JM.obj
+ 0001:00001778       ??_C@_0CC@CBDHINFA@?$CF4d?4?$CF02d?4?$CF02d?5?$CF02d?3?$CF02d?3?$CF02d?3?$CF04@ 10002778     ftp_JM.obj
+ 0001:0000179c       ??_C@_0O@FIECDOHF@PASS?5?$CKhidden?$CK?$AA@ 1000279c     ftp_JM.obj
+ 0001:000017ac       ??_C@_05FOGDDFF@PASS?5?$AA@ 100027ac     ftp_JM.obj
+ 0001:000017b4       ??_C@_0BA@DFJFIODJ@?$AN?6?9?9?9?5RAW?5?9?9?9?$AN?6?$AA@ 100027b4     ftp_JM.obj
+ 0001:000017c4       ??_C@_0O@GGNAIDOE@?9?9?9?5RAW?5?9?9?9?$AN?6?$AA@ 100027c4     ftp_JM.obj
+ 0001:000017d4       ??_C@_03JDANDILB@?$CFd?5?$AA@ 100027d4     ftp_JM.obj
+ 0001:000017d8       ??_C@_02CHHAKFFB@w?$CL?$AA@ 100027d8     ftp_JM.obj
+ 0001:000017dc       ??_C@_07HJIECGKO@?$DMABORT?$DO?$AA@ 100027dc     ftp_JM.obj
+ 0001:000017e4       ??_C@_04JOBIBMIG@ABOR?$AA@ 100027e4     ftp_JM.obj
+ 0001:000017ec       ??_C@_09DEIEPLIA@?$CF?$CKc?$CFs?$CI?$CJ?5?$HL?$AA@ 100027ec     ftp_JM.obj
+ 0001:000017f8       ??_C@_0M@IMBPNDMP@?$CF?$CKc?$CFs?$CI?$CFs?$CJ?5?$HL?$AA@ 100027f8     ftp_JM.obj
+ 0001:00001804       ??_C@_08FAILNNLL@?$CF?$CKc?$HN?$DM?$CFs?$DO?$AA@ 10002804     ftp_JM.obj
+ 0001:00001810       ??_C@_07CMIPDAGF@?$CFs?5?$CC?$CFs?$CC?$AA@ 10002810     ftp_JM.obj
+ 0001:00001818       ??_C@_0BE@PENNPDDA@?$CF02d?3?$CF02d?3?$CF02d?5?$CC?$CFs?$CC?$AA@ 10002818     ftp_JM.obj
+ 0001:0000182c       ??_C@_0BO@ENIPHG@num?5?$DM?5?$CIcmdSize?$CLNBUTTONSADDON?$CJ?$AA@ 1000282c     ftp_JM.obj
+ 0001:0000184c       ??_C@_0L@NAAPPOJO@ftp_JM?4cpp?$AA@ 1000284c     ftp_JM.obj
+ 0001:00001858       ??_C@_0L@NKCELCMD@?$CFs?5?$CC?$CFs?3?$CFs?$CC?$AA@ 10002858     ftp_JM.obj
+ 0001:00001864       ??_C@_0N@LOLNFEBK@?$CFs?5?$CC?$CFs?3?$CK?$EA?$CFs?$CC?$AA@ 10002864     ftp_JM.obj
+ 0001:00001874       ??_C@_03KBFIGFCM@?5?$AI?7?$AA@ 10002874     ftp_JM.obj
+ 0001:00001878       ??_C@_0L@BAHHBMBC@?$CFs?5?$CFs?5?$CFd?$CFs?$AA@ 10002878     ftp_JM.obj
+ 0001:00001884       ??_C@_0BB@ICHBCCAL@?$CC?$CFs?$CC?5?$CFs?5?$CF2d?$CFs?5?$CFs?$AA@ 10002884     ftp_JM.obj
+ 0001:00001898       ??_C@_0M@CACKMNAK@?$CFs?3?5?$CFs?5?$HL?$CFs?$HN?$AA@ 10002898     ftp_Key.obj
+ 0001:000018a4       ??_C@_0L@BGCGLAKE@FTPDir?4txt?$AA@ 100028a4     ftp_Key.obj
+ 0001:000018b0       ??_C@_08BFCHPKOE@FTPUtils?$AA@ 100028b0     ftp_Key.obj
+ 0001:000018bc       ??_C@_0BO@BCNKIGNA@?$CFs?5?$CCFeb?525?52010?$CC?500?310?342?5MSC?$AA@ 100028bc     ftp_Key.obj
+ 0001:000018dc       ??_C@_01KICIPPFI@?2?$AA@   100028dc     ftp_Key.obj
+ 0001:000018e0       ??_C@_0P@BAGNOLDO@mkdir?5?$AB?$CFs?1?$CFs?1?$AB?$AA@ 100028e0     ftp_MakeDir.obj
+ 0001:000018f0       ??_C@_0O@MLJBFNCA@mkdir?5?$AB?$CFs?1?$CFs?$AB?$AA@ 100028f0     ftp_MakeDir.obj
+ 0001:00001900       ??_C@_0M@NJNLDFLB@mkdir?5?$AB?$CFs?1?$AB?$AA@ 10002900     ftp_MakeDir.obj
+ 0001:0000190c       ??_C@_0L@HBGPFEFD@mkdir?5?$AB?$CFs?$AB?$AA@ 1000290c     ftp_MakeDir.obj
+ 0001:00001918       ??_C@_0CB@KIOKFNED@hConnect?5?$CG?$CG?5?$CCFtpCreateDirectory?$CC@ 10002918     ftp_MakeDir.obj
+ 0001:0000193c       ??_C@_0BA@OIPLMLEI@ftp_MakeDir?4cpp?$AA@ 1000293c     ftp_MakeDir.obj
+ 0001:00001958       __real@3f50000000000000    10002958     ftp_Mix.obj
+ 0001:00001960       __real@4090000000000000    10002960     ftp_Mix.obj
+ 0001:00001968       ??_C@_02NJPGOMH@?$CFf?$AA@ 10002968     ftp_Mix.obj
+ 0001:00001970       __real@3eb0000000000000    10002970     ftp_Mix.obj
+ 0001:00001978       __real@4130000000000000    10002978     ftp_Mix.obj
+ 0001:00001980       ??_C@_07HBPFMAGN@Volume?$HL?$AA@ 10002980     ftp_Mix.obj
+ 0001:00001988       ??_C@_04NGDHEGJG@UNC?2?$AA@ 10002988     ftp_Mix.obj
+ 0001:00001990       ??_C@_02DJIHJGBI@?$DP?2?$AA@ 10002990     ftp_Mix.obj
+ 0001:00001994       ??_C@_02HDBGODGB@?2?2?$AA@ 10002994     ftp_Mix.obj
+ 0001:00001998       ??_C@_0O@OOBHJLJP@ftpNotify?4fll?$AA@ 10002998     ftp_Plugin.obj
+ 0001:000019a8       ??_C@_0CE@PLKCHPFJ@Ftp?5plugin?5directory?5listing?5par@ 100029a8     ftp_Plugin.obj
+ 0001:000019cc       ??_C@_0P@LJJHLNPD@ftpDirList?4fll?$AA@ 100029cc     ftp_Plugin.obj
+ 0001:000019dc       ??_C@_0BL@MCAIHGLJ@Ftp?5plugin?5progress?5dialog?$AA@ 100029dc     ftp_Plugin.obj
+ 0001:000019f8       ??_C@_0BA@NAGGNGKO@ftpProgress?4fll?$AA@ 100029f8     ftp_Plugin.obj
+ 0001:00001a08       ??_7FTPPluginHolder@@6B@   10002a08     ftp_Plugin.obj
+ 0001:00001a10       ??_C@_0CC@CGACAKJJ@Number?5?$DM?5ARRAY_SIZE?$CIStdPlugins?$CJ?9@ 10002a10     ftp_Plugin.obj
+ 0001:00001a34       ??_C@_0P@JMDDEBHO@ftp_Plugin?4cpp?$AA@ 10002a34     ftp_Plugin.obj
+ 0001:00001a48       ??_C@_0FP@GPOOGFNK@Error?5loading?4?4?4?6FTP?5plugin?3?5?$CC?$CFs@ 10002a48     ftp_Plugin.obj
+ 0001:00001aa8       ??_C@_0BB@LDMPBGDL@can?5not?5be?5found?$AA@ 10002aa8     ftp_Plugin.obj
+ 0001:00001abc       ??_C@_0BI@BKPHONNG@is?5not?5valid?5FTP?5plugin?$AA@ 10002abc     ftp_Plugin.obj
+ 0001:00001ad4       ??_C@_0BC@FMLMMJHJ@FTPQueryInterface?$AA@ 10002ad4     ftp_Plugin.obj
+ 0001:00001ae8       ??_C@_05LDABJGAH@?2Lib?2?$AA@ 10002ae8     ftp_Plugin.obj
+ 0001:00001af0       ??_C@_05OADBOBJM@HOST?3?$AA@ 10002af0     ftp_Shortcut.obj
+ 0001:00001af8       ??_C@_0BA@CMEBIKEE@FTPProcessQueue?$AA@ 10002af8     ftp_Queque.obj
+ 0001:00001b08       ??_C@_06DJHOIPC@?$CFs?3?5?$CFs?$AA@ 10002b08     ftp_Queque.obj
+ 0001:00001b10       ??_C@_0BA@CEPNDPDO@FTPQueueAddItem?$AA@ 10002b10     ftp_Queque.obj
+ 0001:00001b20       ??_C@_08PGGPADNC@FTPQueue?$AA@ 10002b20     ftp_Queque.obj
+ 0001:00001b2c       ??_C@_09GOKJCCM@?$CFs?3?5?$CFd?5?$CFs?$AA@ 10002b2c     ftp_Queque.obj
+ 0001:00001b38       ??_C@_0BJ@DJGKMOBC@?$CFc?$CFc?5?$CF?920s?$CFc?$CF?920s?$CFc?$CF?920s?$AA@ 10002b38     ftp_Queque.obj
+ 0001:00001b54       ??_C@_02HHAEMJFE@?2?1?$AA@ 10002b54     ftp_Url.obj
+ 0001:00001b58       ??_C@_0BB@FEMLNNEO@FTPQueueItemEdit?$AA@ 10002b58     ftp_Url.obj
+ 0001:00001b6c       ??_C@_06IIKKICON@FTPUrl?$AA@ 10002b6c     ftp_Url.obj
+ 0001:00001b74       ??_C@_0M@GANIMLNE@FTPFileName?$AA@ 10002b74     ftp_Url.obj
+ 0001:00001b80       ??_C@_0BP@PGMBEFCC@FP_Info?5?$CG?$CG?5FP_Info?9?$DOStructSize?$AA@ 10002b80     FsdLib:fstd_Msg.obj
+ 0001:00001ba0       ??_C@_0BP@MBMLFOD@FStdLib?2FARStdLib?2fstd_Msg?4cpp?$AA@ 10002ba0     FsdLib:fstd_Msg.obj
+ 0001:00001bc0       ??_C@_0N@OGBDOBEH@Init?5?$CG?$CG?5Item?$AA@ 10002bc0     FsdLib:fstd_Dlg.obj
+ 0001:00001bd0       ??_C@_0BP@ICMFECOP@FStdLib?2FARStdLib?2fstd_Dlg?4cpp?$AA@ 10002bd0     FsdLib:fstd_Dlg.obj
+ 0001:00001bf0       ??_C@_09IDLNNEHF@ValueData?$AA@ 10002bf0     FsdLib:fstd_RegGB.obj
+ 0001:00001bfc       ??_C@_0CB@KLLIENHG@FStdLib?2FARStdLib?2fstd_RegGB?4cpp@ 10002bfc     FsdLib:fstd_RegGB.obj
+ 0001:00001c20       ??_C@_0BE@LHIFEIHD@?$CFs?$CI?$CF3d?50x?$CF02X?5?$CF03o?$CJ?$AA@ 10002c20     FsdLib:fstd_cDialog.obj
+ 0001:00001c34       ??_C@_0BC@DFKFLLDI@?$CI?$CF3d?50x?$CF02X?5?$CF03o?$CJ?$AA@ 10002c34     FsdLib:fstd_cDialog.obj
+ 0001:00001c48       ??_C@_05PDOBBJNA@Color?$AA@ 10002c48     FsdLib:fstd_cDialog.obj
+ 0001:00001c50       ??_C@_0M@CHMJKIEP@?$CGForeground?$AA@ 10002c50     FsdLib:fstd_cDialog.obj
+ 0001:00001c5c       ??_C@_0M@CHOIKPHO@?$CGBackground?$AA@ 10002c5c     FsdLib:fstd_cDialog.obj
+ 0001:00001c68       ??_C@_04KLKLMHDD@?$CGSet?$AA@ 10002c68     FsdLib:fstd_cDialog.obj
+ 0001:00001c70       ??_C@_07JLEKEEPN@?$CGCancel?$AA@ 10002c70     FsdLib:fstd_cDialog.obj
+ 0001:00001c78       ??_C@_0BO@FEMOANBB@Text?5Text?5Text?5Text?5Text?5Text?$AA@ 10002c78     FsdLib:fstd_cDialog.obj
+ 0001:00001c98       ??_C@_0BP@KIJOPLEK@FStdLib?2FARStdLib?2fstd_scr?4cpp?$AA@ 10002c98     FsdLib:fstd_scr.obj
+ 0001:00001cb8       ??_7String@@6B@            10002cb8     FsdLib:fstd_String.obj
+ 0001:00001cbc       ??_C@_03FBECBFDG@?$CFdb?$AA@ 10002cbc     FsdLib:fstd_Utils.obj
+ 0001:00001cc0       ??_C@_08PFGHMBBN@?$CF3?43lf?$CFc?$AA@ 10002cc0     FsdLib:fstd_Utils.obj
+ 0001:00001cd0       __real@412e848000000000    10002cd0     FsdLib:fstd_Utils.obj
+ 0001:00001cd8       ??_C@_03GAFCBEFF@?$CC?5?$CB?$AA@ 10002cd8     FsdLib:fstd_asrt.obj
+ 0001:00001cdc       ??_C@_0P@NGALCNDL@Assertion?5in?5?$CC?$AA@ 10002cdc     FsdLib:fstd_asrt.obj
+ 0001:00001cec       ??_C@_05BMGBEOOC@?$CFs?2?$CFs?$AA@ 10002cec     FsdLib:fstd_RegDla.obj
+ 0001:00001cf4       ??_C@_0CC@JLDOIMKA@FStdLib?2FARStdLib?2fstd_RegDla?4cp@ 10002cf4     FsdLib:fstd_RegDla.obj
+ 0001:00001d18       ??_C@_06GDENEHCP@CONIN$?$AA@ 10002d18     FsdLib:fstd_FUtils.obj
+ 0001:00001d20       ??_C@_0CB@NBOFKFLH@FStdLib?2FARStdLib?2fstd_RegOp?4cpp@ 10002d20     FsdLib:fstd_RegOp.obj
+ 0001:00001d44       ??_C@_0CB@KHPGDDKN@FStdLib?2FARStdLib?2fstd_RegDl?4cpp@ 10002d44     FsdLib:fstd_RegDl.obj
+ 0001:00001d68       ??_C@_02FNAGIBCP@?4?$CK?$AA@ 10002d68     FsdLib:fstd_Patt.obj
+ 0001:00001d6c       ??_C@_0O@NIPGCINC@Unknown?5error?$AA@ 10002d6c     FsdLib:fstd_err.obj
+ 0001:00001d7c       ??_C@_0CB@FLINGOMI@FStdLib?2FARStdLib?2fstd_RegCr?4cpp@ 10002d7c     FsdLib:fstd_RegCr.obj
+ 0001:00001da0       __FPinit                   10002da0     LIBCMT:fpinit.obj
+ 0001:00001da4       __FPmtinit                 10002da4     LIBCMT:fpinit.obj
+ 0001:00001da8       __FPmtterm                 10002da8     LIBCMT:fpinit.obj
+ 0001:00001dac       __pRawDllMain              10002dac     LIBCMT:dllcrt0.obj
+ 0001:00001dac       __pDefaultRawDllMain       10002dac     LIBCMT:dllcrt0.obj
+ 0001:00001db0       ??_C@_0P@MIGLKIOC@CorExitProcess?$AA@ 10002db0     LIBCMT:crt0dat.obj
+ 0001:00001dc0       ??_C@_0M@MBOPBNBK@mscoree?4dll?$AA@ 10002dc0     LIBCMT:crt0dat.obj
+ 0001:00001e50       ??_C@_07EPKMNAGK@?4mixcrt?$AA@ 10002e50     LIBCMT:tidtable.obj
+ 0001:00001e58       ??_C@_0O@NLDKAIKN@EncodePointer?$AA@ 10002e58     LIBCMT:tidtable.obj
+ 0001:00001e68       ??_C@_0N@NHGLKGEC@KERNEL32?4DLL?$AA@ 10002e68     LIBCMT:tidtable.obj
+ 0001:00001e78       ??_C@_0O@KBPMFGHI@DecodePointer?$AA@ 10002e78     LIBCMT:tidtable.obj
+ 0001:00001e88       ??_C@_07PEJMOBNF@FlsFree?$AA@ 10002e88     LIBCMT:tidtable.obj
+ 0001:00001e90       ??_C@_0M@JCPCPOEF@FlsSetValue?$AA@ 10002e90     LIBCMT:tidtable.obj
+ 0001:00001e9c       ??_C@_0M@GDNOONDI@FlsGetValue?$AA@ 10002e9c     LIBCMT:tidtable.obj
+ 0001:00001ea8       ??_C@_08KNHFBNJ@FlsAlloc?$AA@ 10002ea8     LIBCMT:tidtable.obj
+ 0001:00001eb4       ??_C@_05KLBDPFGC@e?$CL000?$AA@ 10002eb4     LIBCMT:cvt.obj
+ 0001:00001ec0       __real@4150017ec0000000    10002ec0     LIBCMT:testfdiv.obj
+ 0001:00001ec8       __real@4147ffff80000000    10002ec8     LIBCMT:testfdiv.obj
+ 0001:00001ed0       ??_C@_0BK@NHEOCAHP@IsProcessorFeaturePresent?$AA@ 10002ed0     LIBCMT:testfdiv.obj
+ 0001:00001eec       ??_C@_08CPNIBGIE@KERNEL32?$AA@ 10002eec     LIBCMT:testfdiv.obj
+ 0001:00001ef8       ??_C@_1O@CEDCILHN@?$AA?$CI?$AAn?$AAu?$AAl?$AAl?$AA?$CJ?$AA?$AA@ 10002ef8     LIBCMT:output.obj
+ 0001:00001f08       ??_C@_06OJHGLDPL@?$CInull?$CJ?$AA@ 10002f08     LIBCMT:output.obj
+ 0001:00001f10       ___lookuptable             10002f10     LIBCMT:output.obj
+ 0001:00001f90       ??_C@_13NOLLCAOD@?$AA?$AA?$AA?$AA@ 10002f90     LIBCMT:a_map.obj
+ 0001:00001f94       ??_C@_0P@GGKDKEEG@runtime?5error?5?$AA@ 10002f94     LIBCMT:crt0msg.obj
+ 0001:00001fa4       ??_C@_0O@MJNIPGOH@TLOSS?5error?$AN?6?$AA@ 10002fa4     LIBCMT:crt0msg.obj
+ 0001:00001fb4       ??_C@_0N@BONNPDHF@SING?5error?$AN?6?$AA@ 10002fb4     LIBCMT:crt0msg.obj
+ 0001:00001fc4       ??_C@_0P@MBDAJNE@DOMAIN?5error?$AN?6?$AA@ 10002fc4     LIBCMT:crt0msg.obj
+ 0001:00001fd8       ??_C@_0JL@DFDOOABL@R6034?$AN?6An?5application?5has?5made?5a@ 10002fd8     LIBCMT:crt0msg.obj
+ 0001:00002078       ??_C@_0PH@EPAFIJ@R6033?$AN?6?9?5Attempt?5to?5use?5MSIL?5cod@ 10003078     LIBCMT:crt0msg.obj
+ 0001:00002170       ??_C@_0DD@BKEEABMM@R6032?$AN?6?9?5not?5enough?5space?5for?5lo@ 10003170     LIBCMT:crt0msg.obj
+ 0001:000021a8       ??_C@_0GD@OFKILIED@R6031?$AN?6?9?5Attempt?5to?5initialize?5t@ 100031a8     LIBCMT:crt0msg.obj
+ 0001:0000220c       ??_C@_0BP@LPMHJOKI@R6030?$AN?6?9?5CRT?5not?5initialized?$AN?6?$AA@ 1000320c     LIBCMT:crt0msg.obj
+ 0001:0000222c       ??_C@_0CF@KJDAIALP@R6028?$AN?6?9?5unable?5to?5initialize?5he@ 1000322c     LIBCMT:crt0msg.obj
+ 0001:00002254       ??_C@_0DF@GAKBPDFP@R6027?$AN?6?9?5not?5enough?5space?5for?5lo@ 10003254     LIBCMT:crt0msg.obj
+ 0001:0000228c       ??_C@_0DF@IBLNNAIG@R6026?$AN?6?9?5not?5enough?5space?5for?5st@ 1000328c     LIBCMT:crt0msg.obj
+ 0001:000022c4       ??_C@_0CG@IOHKGFNJ@R6025?$AN?6?9?5pure?5virtual?5function?5c@ 100032c4     LIBCMT:crt0msg.obj
+ 0001:000022ec       ??_C@_0DF@JIJJFJDC@R6024?$AN?6?9?5not?5enough?5space?5for?5_o@ 100032ec     LIBCMT:crt0msg.obj
+ 0001:00002324       ??_C@_0CJ@EGEJHFME@R6019?$AN?6?9?5unable?5to?5open?5console?5@ 10003324     LIBCMT:crt0msg.obj
+ 0001:00002350       ??_C@_0CB@GNHNIELH@R6018?$AN?6?9?5unexpected?5heap?5error?$AN?6@ 10003350     LIBCMT:crt0msg.obj
+ 0001:00002374       ??_C@_0CN@FOLDKNG@R6017?$AN?6?9?5unexpected?5multithread?5@ 10003374     LIBCMT:crt0msg.obj
+ 0001:000023a4       ??_C@_0CM@FAHFJNHO@R6016?$AN?6?9?5not?5enough?5space?5for?5th@ 100033a4     LIBCMT:crt0msg.obj
+ 0001:000023d0       ??_C@_0JG@LBKMGKLD@?$AN?6This?5application?5has?5requested@ 100033d0     LIBCMT:crt0msg.obj
+ 0001:00002468       ??_C@_0CM@FLCNIPKK@R6009?$AN?6?9?5not?5enough?5space?5for?5en@ 10003468     LIBCMT:crt0msg.obj
+ 0001:00002494       ??_C@_0CK@KMMJOAPP@R6008?$AN?6?9?5not?5enough?5space?5for?5ar@ 10003494     LIBCMT:crt0msg.obj
+ 0001:000024c0       ??_C@_0CN@LEKKICBM@R6002?$AN?6?9?5floating?5point?5support?5@ 100034c0     LIBCMT:crt0msg.obj
+ 0001:000024f0       ??_C@_0CF@GOGNBNAK@Microsoft?5Visual?5C?$CL?$CL?5Runtime?5Lib@ 100034f0     LIBCMT:crt0msg.obj
+ 0001:00002518       ??_C@_02PHMGELLB@?6?6?$AA@ 10003518     LIBCMT:crt0msg.obj
+ 0001:0000251c       ??_C@_03KHICJKCI@?4?4?4?$AA@ 1000351c     LIBCMT:crt0msg.obj
+ 0001:00002520       ??_C@_0BH@DNAGHKFM@?$DMprogram?5name?5unknown?$DO?$AA@ 10003520     LIBCMT:crt0msg.obj
+ 0001:00002538       ??_C@_0BK@OFGJDLJJ@Runtime?5Error?$CB?6?6Program?3?5?$AA@ 10003538     LIBCMT:crt0msg.obj
+ 0001:00002554       ??_C@_0CG@PKBDLMEO@InitializeCriticalSectionAndSpin@ 10003554     LIBCMT:initcrit.obj
+ 0001:0000257c       ??_C@_0N@MDJJJHMB@kernel32?4dll?$AA@ 1000357c     LIBCMT:initcrit.obj
+ 0001:00002590       ___newctype                10003590     LIBCMT:ctype.obj
+ 0001:00002890       __wctype                   10003890     LIBCMT:ctype.obj
+ 0001:00002a98       ___newclmap                10003a98     LIBCMT:ctype.obj
+ 0001:00002c18       ___newcumap                10003c18     LIBCMT:ctype.obj
+ 0001:00002d98       ??_C@_08JCCMCCIL@HH?3mm?3ss?$AA@ 10003d98     LIBCMT:strftime.obj
+ 0001:00002da4       ??_C@_0BE@CKGJFCPC@dddd?0?5MMMM?5dd?0?5yyyy?$AA@ 10003da4     LIBCMT:strftime.obj
+ 0001:00002db8       ??_C@_08BPBNCDIB@MM?1dd?1yy?$AA@ 10003db8     LIBCMT:strftime.obj
+ 0001:00002dc4       ??_C@_02CJNFDJBF@PM?$AA@   10003dc4     LIBCMT:strftime.obj
+ 0001:00002dc8       ??_C@_02DEDBPAFC@AM?$AA@   10003dc8     LIBCMT:strftime.obj
+ 0001:00002dcc       ??_C@_08EDHMEBNP@December?$AA@ 10003dcc     LIBCMT:strftime.obj
+ 0001:00002dd8       ??_C@_08HCHEGEOA@November?$AA@ 10003dd8     LIBCMT:strftime.obj
+ 0001:00002de4       ??_C@_07JJNFCEND@October?$AA@ 10003de4     LIBCMT:strftime.obj
+ 0001:00002dec       ??_C@_09BHHEALKD@September?$AA@ 10003dec     LIBCMT:strftime.obj
+ 0001:00002df8       ??_C@_06LBBHFDDG@August?$AA@ 10003df8     LIBCMT:strftime.obj
+ 0001:00002e00       ??_C@_04MIEPOIFP@July?$AA@ 10003e00     LIBCMT:strftime.obj
+ 0001:00002e08       ??_C@_04CNLMGBGM@June?$AA@ 10003e08     LIBCMT:strftime.obj
+ 0001:00002e10       ??_C@_05DMJDNLEJ@April?$AA@ 10003e10     LIBCMT:strftime.obj
+ 0001:00002e18       ??_C@_05HPCKOFNC@March?$AA@ 10003e18     LIBCMT:strftime.obj
+ 0001:00002e20       ??_C@_08GNJGEPFN@February?$AA@ 10003e20     LIBCMT:strftime.obj
+ 0001:00002e2c       ??_C@_07CGJPFGJA@January?$AA@ 10003e2c     LIBCMT:strftime.obj
+ 0001:00002e34       ??_C@_08INBOOONO@Saturday?$AA@ 10003e34     LIBCMT:strftime.obj
+ 0001:00002e40       ??_C@_06JECMNKMI@Friday?$AA@ 10003e40     LIBCMT:strftime.obj
+ 0001:00002e48       ??_C@_08HACCIKIA@Thursday?$AA@ 10003e48     LIBCMT:strftime.obj
+ 0001:00002e54       ??_C@_09DLIGFAKA@Wednesday?$AA@ 10003e54     LIBCMT:strftime.obj
+ 0001:00002e60       ??_C@_07BAAGCFCM@Tuesday?$AA@ 10003e60     LIBCMT:strftime.obj
+ 0001:00002e68       ??_C@_06JLEDEDGH@Monday?$AA@ 10003e68     LIBCMT:strftime.obj
+ 0001:00002e70       ??_C@_06OOPIFAJ@Sunday?$AA@ 10003e70     LIBCMT:strftime.obj
+ 0001:00002e78       ??_C@_03FEFJNEK@Sat?$AA@   10003e78     LIBCMT:strftime.obj
+ 0001:00002e7c       ??_C@_03IDIOELNC@Fri?$AA@  10003e7c     LIBCMT:strftime.obj
+ 0001:00002e80       ??_C@_03IOFIKPDN@Thu?$AA@  10003e80     LIBCMT:strftime.obj
+ 0001:00002e84       ??_C@_03MHOMLAJA@Wed?$AA@  10003e84     LIBCMT:strftime.obj
+ 0001:00002e88       ??_C@_03NAGEINEP@Tue?$AA@  10003e88     LIBCMT:strftime.obj
+ 0001:00002e8c       ??_C@_03PDAGKDH@Mon?$AA@   10003e8c     LIBCMT:strftime.obj
+ 0001:00002e90       ??_C@_03KOEHGMDN@Sun?$AA@  10003e90     LIBCMT:strftime.obj
+ 0001:00002e98       ___lookuptable_s           10003e98     LIBCMT:outputs.obj
+ 0001:00002ef4       ??_C@_0BI@DFKBFLJE@GetProcessWindowStation?$AA@ 10003ef4     LIBCMT:crtmbox.obj
+ 0001:00002f0c       ??_C@_0BK@CIDNPOGP@GetUserObjectInformationA?$AA@ 10003f0c     LIBCMT:crtmbox.obj
+ 0001:00002f28       ??_C@_0BD@HHGDFDBJ@GetLastActivePopup?$AA@ 10003f28     LIBCMT:crtmbox.obj
+ 0001:00002f3c       ??_C@_0BA@HNOPNCHB@GetActiveWindow?$AA@ 10003f3c     LIBCMT:crtmbox.obj
+ 0001:00002f4c       ??_C@_0M@CHKKJDAI@MessageBoxA?$AA@ 10003f4c     LIBCMT:crtmbox.obj
+ 0001:00002f58       ??_C@_0L@NDEGIDAG@USER32?4DLL?$AA@ 10003f58     LIBCMT:crtmbox.obj
+ 0001:00002f6c       ___dnames                  10003f6c     LIBCMT:timeset.obj
+ 0001:00002f84       ___mnames                  10003f84     LIBCMT:timeset.obj
+ 0001:00002fac       ??_C@_06IMKFLFPG@1?$CDQNAN?$AA@ 10003fac     LIBCMT:x10fout.obj
+ 0001:00002fb4       ??_C@_05DNEBIAHO@1?$CDINF?$AA@ 10003fb4     LIBCMT:x10fout.obj
+ 0001:00002fbc       ??_C@_05PHHOCPM@1?$CDIND?$AA@ 10003fbc     LIBCMT:x10fout.obj
+ 0001:00002fc4       ??_C@_06PGGFOGJG@1?$CDSNAN?$AA@ 10003fc4     LIBCMT:x10fout.obj
+ 0001:00002fcc       ??_C@_07GPDNMNG@CONOUT$?$AA@ 10003fcc     LIBCMT:initcon.obj
+ 0001:00002fd8       __load_config_used         10003fd8     LIBCMT:loadcfg.obj
+ 0001:00003020       ___safe_se_handler_table   10004020     <linker-defined>
+ 0001:00003030       ___rtc_iaa                 10004030     LIBCMT:initsect.obj
+ 0001:00003034       ___rtc_izz                 10004034     LIBCMT:initsect.obj
+ 0001:00003038       ___rtc_taa                 10004038     LIBCMT:initsect.obj
+ 0001:0000303c       ___rtc_tzz                 1000403c     LIBCMT:initsect.obj
+ 0001:00003040       __chkstk                   10004040 f   chkstk.obj
+ 0001:00003040       __alloca_probe             10004040     chkstk.obj
+ 0001:0000306b       ?Focused@FP_Dialog@@QBEXH@Z 1000406b f i ftp_AskOver.obj
+ 0001:00003083       ?MkFileInfo@@YIXPADHPBDPAUFAR_FIND_DATA@@@Z 10004083 f   ftp_AskOver.obj
+ 0001:0000312e       ?idDlgProc@@YGJPAXHHJ@Z    1000412e f   ftp_AskOver.obj
+ 0001:000031f0       ?AskOverwrite@FTP@@AAE?AW4overCode@@HHPAUFAR_FIND_DATA@@0W42@@Z 100041f0 f   ftp_AskOver.obj
+ 0001:0000334e       ?FP_GetRegKey@@YGHPBDK@Z   1000434e f i ftp_Cfg.obj
+ 0001:00003360       ?FP_GetRegKey@@YGPADPBDPAD0K@Z 10004360 f i ftp_Cfg.obj
+ 0001:0000337a       ?TrimLen@@YIHPAD@Z         1000437a f   ftp_Cfg.obj
+ 0001:000033b8       ?WriteCfg@@YGXXZ           100043b8 f   ftp_Cfg.obj
+ 0001:0000382a       ?ExtendedConfig@@YIXXZ     1000482a f   ftp_Cfg.obj
+ 0001:0000395d       ?ReadCfg@@YGXXZ            1000495d f   ftp_Cfg.obj
+ 0001:000045cf       ?Config@@YGHXZ             100055cf f   ftp_Cfg.obj
+ 0001:00004ae5       ??0FTPUrl@@QAE@XZ          10005ae5 f i ftp_CmdLine.obj
+ 0001:00004b0d       ??1FTPUrl@@QAE@XZ          10005b0d f i ftp_CmdLine.obj
+ 0001:00004b32       ?ExecCmdLineHOST@FTP@@AAEHPBDH@Z 10005b32 f   ftp_CmdLine.obj
+ 0001:00004c0c       ?DoCommand@FTP@@AAEHPBDHK@Z 10005c0c f   ftp_CmdLine.obj
+ 0001:00004d43       ?ExecCmdLineFTP@FTP@@AAEHPBDH@Z 10005d43 f   ftp_CmdLine.obj
+ 0001:00004eeb       ?ExecCmdLineANY@FTP@@AAEHPBDH@Z 10005eeb f   ftp_CmdLine.obj
+ 0001:0000512d       ?ExecCmdLine@FTP@@AAEHPBDH@Z 1000612d f   ftp_CmdLine.obj
+ 0001:000052c4       ?ProcessCommandLine@FTP@@QAEHPAD@Z 100062c4 f   ftp_CmdLine.obj
+ 0001:000054d5       ?CMP_TIME@@YINKK@Z         100064d5 f i ftp_cnDownload.obj
+ 0001:00005575       ?SendAbort@Connection@@IAEHI@Z 10006575 f   ftp_cnDownload.obj
+ 0001:0000564c       ??0?$FTPPlugin@PAUNotifyInterface@@$01@@QAE@XZ 1000664c f i ftp_cnDownload.obj
+ 0001:00005665       ??_E?$FTPPlugin@PAUNotifyInterface@@$01@@UAEPAXI@Z 10006665 f i ftp_cnDownload.obj
+ 0001:00005665       ??_EFTPNotify@@UAEPAXI@Z   10006665 f i ftp_cnDownload.obj
+ 0001:00005665       ??_G?$FTPPlugin@PAUNotifyInterface@@$01@@UAEPAXI@Z 10006665 f i ftp_cnDownload.obj
+ 0001:00005665       ??_GFTPNotify@@UAEPAXI@Z   10006665 f i ftp_cnDownload.obj
+ 0001:00005686       ?recvrequestINT@Connection@@QAEXPAD00PBD@Z 10006686 f   ftp_cnDownload.obj
+ 0001:00005fa0       ?recvrequest@Connection@@QAEXPAD00PBD@Z 10006fa0 f   ftp_cnDownload.obj
+ 0001:00005fc1       ?Init@Connection@@QAEHPBD000@Z 10006fc1 f   ftp_cnInit.obj
+ 0001:00006066       ?hookup@Connection@@QAEHPADH@Z 10007066 f   ftp_cnInit.obj
+ 0001:000061ff       ?login@Connection@@QAEHXZ  100071ff f   ftp_cnInit.obj
+ 0001:000062a0       ?CheckResume@Connection@@QAEXXZ 100072a0 f   ftp_cnInit.obj
+ 0001:000062fa       ?dataconn@Connection@@QAEIXZ 100072fa f   ftp_cnInit.obj
+ 0001:00006384       ?initconn@Connection@@QAEHXZ 10007384 f   ftp_cnInit.obj
+ 0001:000066ac       ?sendrequestINT@Connection@@QAEXPAD00@Z 100076ac f   ftp_cnUpload.obj
+ 0001:00006dc9       ?sendrequest@Connection@@QAEXPAD00@Z 10007dc9 f   ftp_cnUpload.obj
+ 0001:00006de6       ?GetState@Connection@@QAEXPAUConnectionState@@@Z 10007de6 f   ftp_Connect.obj
+ 0001:00006e2b       ?SetState@Connection@@QAEXPAUConnectionState@@@Z 10007e2b f   ftp_Connect.obj
+ 0001:00006e73       ?InitData@Connection@@QAEXPAUFTPHost@@H@Z 10007e73 f   ftp_Connect.obj
+ 0001:00006eb2       ?AddOutput@Connection@@QAEXPAEH@Z 10007eb2 f   ftp_Connect.obj
+ 0001:00006efc       ?GetOutput@Connection@@QAEXAAVString@@@Z 10007efc f   ftp_Connect.obj
+ 0001:00007039       ?ResetOutput@Connection@@QAEXXZ 10008039 f   ftp_Connect.obj
+ 0001:00007063       ?CacheReset@Connection@@QAEXXZ 10008063 f   ftp_Connect.obj
+ 0001:00007097       ?CacheGet@Connection@@QAEHXZ 10008097 f   ftp_Connect.obj
+ 0001:00007180       ?CacheAdd@Connection@@QAEXXZ 10008180 f   ftp_Connect.obj
+ 0001:00007278       ?GetExitCode@Connection@@QAEHXZ 10008278 f   ftp_Connect.obj
+ 0001:000072be       ?encode_UTF8@@YIHPA_WHPADH@Z 100082be f   ftp_Connect.obj
+ 0001:0000737e       ?FromOEM@Connection@@QAEHPAEHH@Z 1000837e f   ftp_Connect.obj
+ 0001:00007476       ?decode_UTF8@@YIHPAEHPA_WH@Z 10008476 f   ftp_Connect.obj
+ 0001:00007586       ?ToOEM@Connection@@QAEHPAEH@Z 10008586 f   ftp_Connect.obj
+ 0001:00007704       ??0?$FTPPlugin@PAUProgressInterface@@$0A@@@QAE@XZ 10008704 f i ftp_Connect.obj
+ 0001:0000771c       ??_G?$FTPPlugin@PAUProgressInterface@@$0A@@@UAEPAXI@Z 1000871c f i ftp_Connect.obj
+ 0001:0000771c       ??_E?$FTPPlugin@PAUProgressInterface@@$0A@@@UAEPAXI@Z 1000871c f i ftp_Connect.obj
+ 0001:0000773d       ??0FTPProgress@@QAE@XZ     1000873d f i ftp_Connect.obj
+ 0001:00007753       ??1FTPProgress@@UAE@XZ     10008753 f i ftp_Connect.obj
+ 0001:0000777d       ??_EFTPProgress@@UAEPAXI@Z 1000877d f i ftp_Connect.obj
+ 0001:0000777d       ??_GFTPProgress@@UAEPAXI@Z 1000877d f i ftp_Connect.obj
+ 0001:00007799       ?FromOEM@Connection@@QAEHAAVString@@@Z 10008799 f i ftp_Connect.obj
+ 0001:000077d5       ?ToOEM@Connection@@QAEHAAVString@@@Z 100087d5 f i ftp_Connect.obj
+ 0001:000077f7       ??0Connection@@QAE@XZ      100087f7 f   ftp_Connect.obj
+ 0001:0000788e       ??1Connection@@QAE@XZ      1000888e f   ftp_Connect.obj
+ 0001:0000790f       ?SToOEM@Connection@@QAE?AVString@@PBD@Z 1000890f f   ftp_Connect.obj
+ 0001:00007932       ?ToOEMDup@Connection@@QAEPADPBDH@Z 10008932 f   ftp_Connect.obj
+ 0001:00007993       ?FromOEMDup@Connection@@QAEPADPBDH@Z 10008993 f   ftp_Connect.obj
+ 0001:000079f4       ?ExecCmdTab@Connection@@QAEXPAUcmd@@HQAPAD@Z 100089f4 f   ftp_Connect.obj
+ 0001:00007db4       ?settype@Connection@@QAEHW4ftTypes@@PBD@Z 10008db4 f   ftp_ConnectCmds.obj
+ 0001:00007e01       ?setascii@Connection@@QAEHXZ 10008e01 f   ftp_ConnectCmds.obj
+ 0001:00007e0b       ?setbinary@Connection@@QAEHXZ 10008e0b f   ftp_ConnectCmds.obj
+ 0001:00007e15       ?setebcdic@Connection@@QAEHXZ 10008e15 f   ftp_ConnectCmds.obj
+ 0001:00007e1f       ?put@Connection@@QAEXHQAPAD@Z 10008e1f f   ftp_ConnectCmds.obj
+ 0001:00007e8a       ?getit@Connection@@QAEHHQAPADHPBD@Z 10008e8a f   ftp_ConnectCmds.obj
+ 0001:00007f0f       ?setport@Connection@@QAEXXZ 10008f0f f   ftp_ConnectCmds.obj
+ 0001:00007f25       ?cd@Connection@@QAEXHQAPAD@Z 10008f25 f   ftp_ConnectCmds.obj
+ 0001:00007f75       ?deleteFile@Connection@@QAEXHQAPAD@Z 10008f75 f   ftp_ConnectCmds.obj
+ 0001:00007fa2       ?renamefile@Connection@@QAEXHQAPAD@Z 10008fa2 f   ftp_ConnectCmds.obj
+ 0001:00007fef       ?ls@Connection@@QAEXHQAPAD@Z 10008fef f   ftp_ConnectCmds.obj
+ 0001:0000809c       ?user@Connection@@QAEHHPAPAD@Z 1000909c f   ftp_ConnectCmds.obj
+ 0001:0000817b       ?pwd@Connection@@QAEXXZ    1000917b f   ftp_ConnectCmds.obj
+ 0001:000081ab       ?makedir@Connection@@QAEXHQAPAD@Z 100091ab f   ftp_ConnectCmds.obj
+ 0001:00008204       ?removedir@Connection@@QAEXHQAPAD@Z 10009204 f   ftp_ConnectCmds.obj
+ 0001:0000825d       ?quote@Connection@@QAEXHQAPAD@Z 1000925d f   ftp_ConnectCmds.obj
+ 0001:000082e9       ?site@Connection@@QAEXHQAPAD@Z 100092e9 f   ftp_ConnectCmds.obj
+ 0001:0000839d       ?do_chmod@Connection@@QAEXHQAPAD@Z 1000939d f   ftp_ConnectCmds.obj
+ 0001:000083d2       ?do_umask@Connection@@QAEXHQAPAD@Z 100093d2 f   ftp_ConnectCmds.obj
+ 0001:00008401       ?idle@Connection@@QAEXHQAPAD@Z 10009401 f   ftp_ConnectCmds.obj
+ 0001:00008430       ?disconnect@Connection@@QAEXXZ 10009430 f   ftp_ConnectCmds.obj
+ 0001:00008467       ?account@Connection@@QAEXHPAPAD@Z 10009467 f   ftp_ConnectCmds.obj
+ 0001:000084d9       ?doproxy@Connection@@QAEXHQAPAD@Z 100094d9 f   ftp_ConnectCmds.obj
+ 0001:0000858f       ?setsunique@Connection@@QAEXXZ 1000958f f   ftp_ConnectCmds.obj
+ 0001:000085a5       ?setrunique@Connection@@QAEXXZ 100095a5 f   ftp_ConnectCmds.obj
+ 0001:000085bb       ?cdup@Connection@@QAEXXZ   100095bb f   ftp_ConnectCmds.obj
+ 0001:000085eb       ?restart@Connection@@QAEXHQAPAD@Z 100095eb f   ftp_ConnectCmds.obj
+ 0001:00008613       ?syst@Connection@@QAEXXZ   10009613 f   ftp_ConnectCmds.obj
+ 0001:00008621       ?sizecmd@Connection@@QAEXHQAPAD@Z 10009621 f   ftp_ConnectCmds.obj
+ 0001:0000864e       ?modtime@Connection@@QAEXHQAPAD@Z 1000964e f   ftp_ConnectCmds.obj
+ 0001:000086b4       ?rmtstatus@Connection@@QAEXHQAPAD@Z 100096b4 f   ftp_ConnectCmds.obj
+ 0001:000086de       ?rmthelp@Connection@@QAEXHQAPAD@Z 100096de f   ftp_ConnectCmds.obj
+ 0001:00008708       ?setpeer@Connection@@QAEHHQAPAD@Z 10009708 f   ftp_ConnectCmds.obj
+ 0001:00008890       ?reget@Connection@@QAEXHQAPAD@Z 10009890 f   ftp_ConnectCmds.obj
+ 0001:000088a7       ?get@Connection@@QAEXHQAPAD@Z 100098a7 f   ftp_ConnectCmds.obj
+ 0001:000088d2       ?newer@Connection@@QAEXHQAPAD@Z 100098d2 f   ftp_ConnectCmds.obj
+ 0001:000088e9       ?quit@Connection@@QAEXXZ   100098e9 f   ftp_ConnectCmds.obj
+ 0001:00008917       ?SetType@Connection@@QAEHH@Z 10009917 f   ftp_ConnectIO.obj
+ 0001:00008944       ?AbortAllRequest@Connection@@QAEXH@Z 10009944 f   ftp_ConnectIO.obj
+ 0001:0000897a       ?empty@Connection@@QAEHPAUfd_set@@H@Z 1000997a f   ftp_ConnectIO.obj
+ 0001:0000899e       ?getreply@Connection@@QAEHHK@Z 1000999e f   ftp_ConnectIO.obj
+ 0001:00008c0c       ?pswitch@Connection@@QAEXH@Z 10009c0c f   ftp_ConnectIO.obj
+ 0001:00008d47       ?reset@Connection@@QAEXXZ  10009d47 f   ftp_ConnectIO.obj
+ 0001:00008da5       ?command@Connection@@QAAHPBDZZ 10009da5 f   ftp_ConnectIO.obj
+ 0001:00008e42       ?proxtrans@Connection@@QAEXPAD00@Z 10009e42 f   ftp_ConnectIO.obj
+ 0001:000091c7       ?lostpeer@Connection@@QAEXXZ 1000a1c7 f   ftp_ConnectMain.obj
+ 0001:0000921d       ?getcmd@Connection@@QAEPAUcmd@@PAD@Z 1000a21d f   ftp_ConnectMain.obj
+ 0001:00009293       ?slurpstring@Connection@@QAEPBDXZ 1000a293 f   ftp_ConnectMain.obj
+ 0001:000093c7       ?makeargv@Connection@@QAEXXZ 1000a3c7 f   ftp_ConnectMain.obj
+ 0001:00009427       ?ProcessCommand@Connection@@QAEHPBD@Z 1000a427 f   ftp_ConnectMain.obj
+ 0001:000094e2       ?nb_waitstate@Connection@@QAEHPAIHK@Z 1000a4e2 f   ftp_ConnectNB.obj
+ 0001:000098d2       ?nb_connect@Connection@@QAEHPAIPAUsockaddr@@H@Z 1000a8d2 f   ftp_ConnectNB.obj
+ 0001:00009911       ?nb_recv@Connection@@QAEHPAIPAXHHK@Z 1000a911 f   ftp_ConnectNB.obj
+ 0001:0000994c       ?nb_send@Connection@@QAEHPAIPBXHH@Z 1000a94c f   ftp_ConnectNB.obj
+ 0001:0000999d       ?fgetcSocket@Connection@@QAEHIK@Z 1000a99d f   ftp_ConnectSock.obj
+ 0001:000099e1       ?fputsSocket@Connection@@QAEHPBDI@Z 1000a9e1 f   ftp_ConnectSock.obj
+ 0001:00009a77       ?fprintfSocket@Connection@@QAAHIPBDZZ 1000aa77 f   ftp_ConnectSock.obj
+ 0001:00009ab2       ?FPIL_ADDEXIST@@YIHPBUPluginPanelItem@@@Z 1000aab2 f i ftp_DeleteFile.obj
+ 0001:00009ac6       ?FPIL_ADDDATA@@YIPAXPBUPluginPanelItem@@@Z 1000aac6 f i ftp_DeleteFile.obj
+ 0001:00009ade       ?Convert@FTPHost@@SIPAU1@PBUPluginPanelItem@@@Z 1000aade f i ftp_DeleteFile.obj
+ 0001:00009afb       ?idDeleteCB@@YIHPAUPluginPanelItem@@PAX@Z 1000aafb f   ftp_DeleteFile.obj
+ 0001:00009c73       ?DeleteFilesINT@FTP@@AAEHPAUPluginPanelItem@@HH@Z 1000ac73 f   ftp_DeleteFile.obj
+ 0001:00009d83       ?DeleteFiles@FTP@@QAEHPAUPluginPanelItem@@HH@Z 1000ad83 f   ftp_DeleteFile.obj
+ 0001:00009e2c       ??1EnumHost@@QAE@XZ        1000ae2c f   ftp_EnumHost.obj
+ 0001:00009e3a       ?Assign@EnumHost@@QAEHPAD@Z 1000ae3a f   ftp_EnumHost.obj
+ 0001:00009e75       ?GetNextHost@EnumHost@@QAEHPAUFTPHost@@@Z 1000ae75 f   ftp_EnumHost.obj
+ 0001:00009f00       ??0EnumHost@@QAE@PAD@Z     1000af00 f   ftp_EnumHost.obj
+ 0001:00009f12       ?ProcessEvent@FTP@@QAEHHPAX@Z 1000af12 f   ftp_Event.obj
+ 0001:0000a1b2       ?FTPMode@FTP@@QAEHXZ       1000b1b2 f i ftp_FAR.obj
+ 0001:0000a1ca       ?_Alloc@@YGPAXK@Z          1000b1ca f   ftp_FAR.obj
+ 0001:0000a1cf       ?_Realloc@@YGPAXPAXK@Z     1000b1cf f   ftp_FAR.obj
+ 0001:0000a1d4       ?_Del@@YGXPAX@Z            1000b1d4 f   ftp_FAR.obj
+ 0001:0000a1d9       ?_PtrSize@@YGKPAX@Z        1000b1d9 f   ftp_FAR.obj
+ 0001:0000a1de       ?_HeapCheck@@YGHXZ         1000b1de f   ftp_FAR.obj
+ 0001:0000a1e3       ?FP_GetPluginName@@YGPBDXZ 1000b1e3 f   ftp_FAR.obj
+ 0001:0000a1e9       ?FP_PluginStartup@@YGHK@Z  1000b1e9 f   ftp_FAR.obj
+ 0001:0000a1ef       ?OtherPlugin@@YGPAVFTP@@PAV1@@Z 1000b1ef f   ftp_FAR.obj
+ 0001:0000a217       ?PluginPanelNumber@@YGHPAVFTP@@@Z 1000b217 f   ftp_FAR.obj
+ 0001:0000a23e       ?PluginUsed@@YGHXZ         1000b23e f   ftp_FAR.obj
+ 0001:0000a24a       ?AddPlugin@@YIXPAVFTP@@@Z  1000b24a f   ftp_FAR.obj
+ 0001:0000a293       _ExitFAR@0                 1000b293 f   ftp_FAR.obj
+ 0001:0000a298       _Configure@4               1000b298 f   ftp_FAR.obj
+ 0001:0000a2b5       _GetFindData@16            1000b2b5 f   ftp_FAR.obj
+ 0001:0000a2f9       _FreeFindData@12           1000b2f9 f   ftp_FAR.obj
+ 0001:0000a323       _GetOpenPluginInfo@8       1000b323 f   ftp_FAR.obj
+ 0001:0000a34a       _SetDirectory@12           1000b34a f   ftp_FAR.obj
+ 0001:0000a38b       _GetFiles@24               1000b38b f   ftp_FAR.obj
+ 0001:0000a400       _PutFiles@20               1000b400 f   ftp_FAR.obj
+ 0001:0000a447       _DeleteFiles@16            1000b447 f   ftp_FAR.obj
+ 0001:0000a48b       _MakeDirectory@12          1000b48b f   ftp_FAR.obj
+ 0001:0000a4f7       _ProcessKey@12             1000b4f7 f   ftp_FAR.obj
+ 0001:0000a523       _ProcessEvent@12           1000b523 f   ftp_FAR.obj
+ 0001:0000a556       _Compare@16                1000b556 f   ftp_FAR.obj
+ 0001:0000a6af       ??3@YAXPAX@Z               1000b6af f   ftp_FAR.obj
+ 0001:0000a6b9       ??2@YAPAXI@Z               1000b6b9 f   ftp_FAR.obj
+ 0001:0000a6de       ?RemovePlugin@@YIXPAVFTP@@@Z 1000b6de f   ftp_FAR.obj
+ 0001:0000a7c4       _GetPluginInfo@4           1000b7c4 f   ftp_FAR.obj
+ 0001:0000a98d       _OpenPlugin@8              1000b98d f   ftp_FAR.obj
+ 0001:0000aa40       _ClosePlugin@4             1000ba40 f   ftp_FAR.obj
+ 0001:0000aa52       ?CloseUp@@YAXXZ            1000ba52 f   ftp_FAR.obj
+ 0001:0000aad2       _SetStartupInfo@4          1000bad2 f   ftp_FAR.obj
+ 0001:0000ab4c       ??0FP_SizeItemList@@QAE@H@Z 1000bb4c f i ftp_FGet.obj
+ 0001:0000ab6c       ?SetupFileTimeNDescription@@YIXHPAUConnection@@PBDPAU_FILETIME@@@Z 1000bb6c f   ftp_FGet.obj
+ 0001:0000ac1c       ?_FtpGetFile@FTP@@AAEHPBD0HH@Z 1000bc1c f   ftp_FGet.obj
+ 0001:0000ad32       ?GetFilesInterface@FTP@@AAEHPAUPluginPanelItem@@HHAAVString@@H@Z 1000bd32 f   ftp_FGet.obj
+ 0001:0000b472       ?GetFiles@FTP@@QAEHPAUPluginPanelItem@@HHAAVString@@H@Z 1000c472 f   ftp_FGet.obj
+ 0001:0000b4e9       ?Item@FP_ItemList@@QAEPAUPluginPanelItem@@H@Z 1000c4e9 f i ftp_FileList.obj
+ 0001:0000b505       ?GetOtherPath@@YIPBDPAD@Z  1000c505 f   ftp_FileList.obj
+ 0001:0000b591       ?SayOutError@@YIXPBDH@Z    1000c591 f   ftp_FileList.obj
+ 0001:0000b5bb       ?SaveList@FTP@@AAEXPAUFP_SizeItemList@@@Z 1000c5bb f   ftp_FileList.obj
+ 0001:0000baa1       ?ShowFilesList@FTP@@AAEHPAUFP_SizeItemList@@@Z 1000caa1 f   ftp_FileList.obj
+ 0001:0000c101       ?SetupFileTimeNDescription@@YIXHPAUConnection@@PBD@Z 1000d101 f   ftp_FPut.obj
+ 0001:0000c196       ?_FtpPutFile@FTP@@AAEHPBD0HH@Z 1000d196 f   ftp_FPut.obj
+ 0001:0000c287       ?PutFilesINT@FTP@@AAEHPAUPluginPanelItem@@HHH@Z 1000d287 f   ftp_FPut.obj
+ 0001:0000c8e9       ?PutFiles@FTP@@QAEHPAUPluginPanelItem@@HHH@Z 1000d8e9 f   ftp_FPut.obj
+ 0001:0000c938       ??0FTP@@QAE@XZ             1000d938 f   ftp_Ftp.obj
+ 0001:0000c9f9       ?Call@FTP@@QAEXXZ          1000d9f9 f   ftp_Ftp.obj
+ 0001:0000ca14       ?End@FTP@@QAEXH@Z          1000da14 f   ftp_Ftp.obj
+ 0001:0000ca45       ?CloseQuery@FTP@@QAEPBDXZ  1000da45 f   ftp_Ftp.obj
+ 0001:0000ca55       ?FreeFindData@FTP@@QAEXPAUPluginPanelItem@@H@Z 1000da55 f   ftp_Ftp.obj
+ 0001:0000ca65       ?SetBackupMode@FTP@@QAEXXZ 1000da65 f   ftp_Ftp.obj
+ 0001:0000ca96       ?SetActiveMode@FTP@@QAEXXZ 1000da96 f   ftp_Ftp.obj
+ 0001:0000caa8       ?isBackup@FTP@@QAEHXZ      1000daa8 f   ftp_Ftp.obj
+ 0001:0000cac9       ?DeleteFromBackup@FTP@@QAEXXZ 1000dac9 f   ftp_Ftp.obj
+ 0001:0000cb0f       ?AddToBackup@FTP@@QAEXXZ   1000db0f f   ftp_Ftp.obj
+ 0001:0000cb34       ??1FTP@@QAE@XZ             1000db34 f   ftp_Ftp.obj
+ 0001:0000cb98       ?GetFindData@FTP@@QAEHPAPAUPluginPanelItem@@PAHH@Z 1000db98 f   ftp_Ftp.obj
+ 0001:0000d058       ?FtpKeepAlive@@YIHPAUConnection@@@Z 1000e058 f   ftp_FtpAPI.obj
+ 0001:0000d093       ?FtpIsResume@@YIHPAUConnection@@@Z 1000e093 f   ftp_FtpAPI.obj
+ 0001:0000d0a1       ?FtpCmdLineAlive@@YIHPAUConnection@@@Z 1000e0a1 f   ftp_FtpAPI.obj
+ 0001:0000d0ba       ?FtpSetRetryCount@@YIXPAUConnection@@H@Z 1000e0ba f   ftp_FtpAPI.obj
+ 0001:0000d0e6       ?FtpSetBreakable@@YIHPAUConnection@@H@Z 1000e0e6 f   ftp_FtpAPI.obj
+ 0001:0000d0fd       ?FtpGetRetryCount@@YIHPAUConnection@@@Z 1000e0fd f   ftp_FtpAPI.obj
+ 0001:0000d125       ?FtpConnectMessage@@YIHPAUConnection@@HPBDHHH@Z 1000e125 f   ftp_FtpAPI.obj
+ 0001:0000d146       ?FtpCmdBlock@@YIHPAUConnection@@H@Z 1000e146 f   ftp_FtpAPI.obj
+ 0001:0000d16f       ?FtpRemoveDirectory@@YIHPAUConnection@@PBD@Z 1000e16f f   ftp_FtpAPI.obj
+ 0001:0000d2c9       ?FtpRenameFile@@YIHPAUConnection@@PBD1@Z 1000e2c9 f   ftp_FtpAPI.obj
+ 0001:0000d335       ?FtpDeleteFile@@YIHPAUConnection@@PBD@Z 1000e335 f   ftp_FtpAPI.obj
+ 0001:0000d39c       ?FtpChmod@@YIHPAUConnection@@PBDK@Z 1000e39c f   ftp_FtpAPI.obj
+ 0001:0000d408       ?FtpGetFile@@YIHPAUConnection@@PBD1HH@Z 1000e408 f   ftp_FtpAPI.obj
+ 0001:0000d563       ?BadFormat@@YIXPAUConnection@@PBDH@Z 1000e563 f   ftp_FtpAPI.obj
+ 0001:0000d593       ??0?$FTPPlugin@PAUDirListInterface@@$00@@QAE@XZ 1000e593 f i ftp_FtpAPI.obj
+ 0001:0000d5ac       ??_GFTPDirList@@UAEPAXI@Z  1000e5ac f i ftp_FtpAPI.obj
+ 0001:0000d5ac       ??_E?$FTPPlugin@PAUDirListInterface@@$00@@UAEPAXI@Z 1000e5ac f i ftp_FtpAPI.obj
+ 0001:0000d5ac       ??_EFTPDirList@@UAEPAXI@Z  1000e5ac f i ftp_FtpAPI.obj
+ 0001:0000d5ac       ??_G?$FTPPlugin@PAUDirListInterface@@$00@@UAEPAXI@Z 1000e5ac f i ftp_FtpAPI.obj
+ 0001:0000d5cd       ??$AtoI@_J@@YI_JPBD_J@Z    1000e5cd f i ftp_FtpAPI.obj
+ 0001:0000d670       ?FtpFileSize@@YI_JPAUConnection@@PBD@Z 1000e670 f   ftp_FtpAPI.obj
+ 0001:0000d6ef       ?FtpPutFile@@YIHPAUConnection@@PBD1HH@Z 1000e6ef f   ftp_FtpAPI.obj
+ 0001:0000d89f       ?FtpGetFtpDirectory@@YIHPAUConnection@@@Z 1000e89f f   ftp_FtpAPI.obj
+ 0001:0000db09       ?Parser2Str@@YIPBDGPAUFTPDirList@@@Z 1000eb09 f   ftp_FtpAPI.obj
+ 0001:0000db80       ?SelectServerType@FTP@@AAEGG@Z 1000eb80 f   ftp_FtpAPI.obj
+ 0001:0000dca8       ?ParseDirLine@@YIHPAUConnection@@HPAUFTPFileInfo@@@Z 1000eca8 f   ftp_FtpAPI.obj
+ 0001:0000dfd9       ?FtpFindFirstFile@@YIHPAUConnection@@PBDPAUFTPFileInfo@@PAH@Z 1000efd9 f   ftp_FtpAPI.obj
+ 0001:0000e181       ?FtpFindNextFile@@YIHPAUConnection@@PAUFTPFileInfo@@@Z 1000f181 f   ftp_FtpAPI.obj
+ 0001:0000e1b5       ?FtpGetCurrentDirectory@@YIHPAUConnection@@AAVString@@@Z 1000f1b5 f   ftp_FtpAPI.obj
+ 0001:0000e202       ?FtpSetCurrentDirectory@@YIHPAUConnection@@PBD@Z 1000f202 f   ftp_FtpAPI.obj
+ 0001:0000e29f       ?FtpSystemInfo@@YIHPAUConnection@@PADH@Z 1000f29f f   ftp_FtpAPI.obj
+ 0001:0000e45b       ?Block@FTPCmdBlock@@QAEXH@Z 1000f45b f   ftp_FTPBlock.obj
+ 0001:0000e485       ?Reset@FTPCmdBlock@@QAEXXZ 1000f485 f   ftp_FTPBlock.obj
+ 0001:0000e494       ??0FTPCmdBlock@@QAE@PAVFTP@@H@Z 1000f494 f   ftp_FTPBlock.obj
+ 0001:0000e4b0       ??1FTPCmdBlock@@QAE@XZ     1000f4b0 f   ftp_FTPBlock.obj
+ 0001:0000e4b5       ?DoFtpConnect@FTP@@AAEHH@Z 1000f4b5 f   ftp_FTPConnect.obj
+ 0001:0000e786       ?Connect@FTP@@AAEHXZ       1000f786 f   ftp_FTPConnect.obj
+ 0001:0000e93c       ?FullConnect@FTP@@AAEHXZ   1000f93c f   ftp_FTPConnect.obj
+ 0001:0000e9bc       ?CopyAskDialog@FTP@@AAEHHHPAUFTPCopyInfo@@@Z 1000f9bc f   ftp_FtpDlg.obj
+ 0001:0000ecfc       ?QueryExHostOptions@@YIXPAVFTP@@PAUFTPHost@@@Z 1000fcfc f   ftp_FtpDlg.obj
+ 0001:0000edc3       ?EditDirectory@FTP@@AAEHAAVString@@PADH@Z 1000fdc3 f   ftp_FtpDlg.obj
+ 0001:0000eea7       ?TableNameToValue@FTP@@AAEHPAD@Z 1000fea7 f   ftp_FtpDlg.obj
+ 0001:0000ef52       ?SelectTable@FTP@@AAEXXZ   1000ff52 f   ftp_FtpDlg.obj
+ 0001:0000f0c4       ?SelectFileTable@FTP@@AAEXPAD@Z 100100c4 f   ftp_FtpDlg.obj
+ 0001:0000f299       ?SetAttributes@FTP@@AAEXXZ 10010299 f   ftp_FtpDlg.obj
+ 0001:0000f3ed       ?GetLoginData@@YGHPAD0H@Z  100103ed f   ftp_FtpDlg.obj
+ 0001:0000f52c       ?AskSaveList@@YGHPAUSaveListInfo@@@Z 1001052c f   ftp_FtpDlg.obj
+ 0001:0000f6b0       ?GetHost@FTP@@AAEHHPAUFTPHost@@H@Z 100106b0 f   ftp_FtpDlg.obj
+ 0001:0000f9e3       ?SaveURL@FTP@@AAEXXZ       100109e3 f   ftp_FtpDlg.obj
+ 0001:0000fa86       ?WarnOldFormat@@YIHPAUFTPHost@@@Z 10010a86 f   ftp_FTPHost.obj
+ 0001:0000faaa       ?PasswordToHex@@YIXPAD0@Z  10010aaa f   ftp_FTPHost.obj
+ 0001:0000fb00       ?HexToNum@@YIED@Z          10010b00 f   ftp_FTPHost.obj
+ 0001:0000fb18       ?HexToPassword_OLD@@YIHPAD0@Z 10010b18 f   ftp_FTPHost.obj
+ 0001:0000fb69       ?HexToPassword_2740@@YIHPAD0@Z 10010b69 f   ftp_FTPHost.obj
+ 0001:0000fbde       ?HexToPassword_CUR@@YIHPAD0@Z 10010bde f i ftp_FTPHost.obj
+ 0001:0000fbe3       ?Init@FTPHost@@QAEXXZ      10010be3 f   ftp_FTPHost.obj
+ 0001:0000fc59       ?Assign@FTPHost@@QAEXPAU1@@Z 10010c59 f   ftp_FTPHost.obj
+ 0001:0000fca5       ?CmpConnected@FTPHost@@QAEHPAU1@@Z 10010ca5 f   ftp_FTPHost.obj
+ 0001:0000fd08       ?MkUrl@FTPHost@@QAEXAAVString@@PBD1H@Z 10010d08 f   ftp_FTPHost.obj
+ 0001:0000fe20       ?MkINIFile@FTPHost@@QAEPADPADPBD1@Z 10010e20 f   ftp_FTPHost.obj
+ 0001:0000ff30       ?MkHost@FTPHost@@SIPBDPBD0@Z 10010f30 f   ftp_FTPHost.obj
+ 0001:0000ffc6       ?CheckHost@FTPHost@@SIHPBD0@Z 10010fc6 f   ftp_FTPHost.obj
+ 0001:0000ffd2       ?CheckHostFolder@FTPHost@@SIHPBD0@Z 10010fd2 f   ftp_FTPHost.obj
+ 0001:0000fffe       ?FindLastBefore@@YIPADPADDD@Z 10010ffe f   ftp_FTPHost.obj
+ 0001:00010045       ?AddPath@@YIXPADPBD@Z      10011045 f   ftp_FTPHost.obj
+ 0001:00010084       ?MakeFreeKey@FTPHost@@QAEXPBD@Z 10011084 f   ftp_FTPHost.obj
+ 0001:00010166       ?Write@FTPHost@@QAEHPBD@Z  10011166 f   ftp_FTPHost.obj
+ 0001:000103be       ?WriteINI@FTPHost@@QAEHPBD@Z 100113be f   ftp_FTPHost.obj
+ 0001:0001070a       ?SetHostName@FTPHost@@QAEHPBD00@Z 1001170a f   ftp_FTPHost.obj
+ 0001:0001088d       ?Read@FTPHost@@QAEHPBD@Z   1001188d f   ftp_FTPHost.obj
+ 0001:00010b49       ?ReadINI@FTPHost@@QAEHPBD@Z 10011b49 f   ftp_FTPHost.obj
+ 0001:00010e23       ?MakeCryptPassword@@YIXPBDQAE@Z 10011e23 f   ftp_fUtils.obj
+ 0001:00010e9c       ?DecryptPassword@@YIXQAEPAD@Z 10011e9c f   ftp_fUtils.obj
+ 0001:00010edb       ?LongBeepEnd@FTP@@QAEXH@Z  10011edb f   ftp_fUtils.obj
+ 0001:00010f0e       ?LongBeepCreate@FTP@@QAEXXZ 10011f0e f   ftp_fUtils.obj
+ 0001:00010f3a       ?SaveUsedDirNFile@FTP@@AAEXXZ 10011f3a f   ftp_fUtils.obj
+ 0001:00010fe8       ?GetCurPath@FTP@@QAEXPADH@Z 10011fe8 f   ftp_fUtils.obj
+ 0001:00011045       ?GetCurPath@FTP@@QAEXAAVString@@@Z 10012045 f   ftp_fUtils.obj
+ 0001:0001107a       ?FTP_FixPaths@FTP@@AAEXPBDPAUPluginPanelItem@@HH@Z 1001207a f   ftp_fUtils.obj
+ 0001:0001116e       ?FTP_SetDirectory@FTP@@AAEHPBDH@Z 1001216e f   ftp_fUtils.obj
+ 0001:00011195       ?FTP_FreeFindData@FTP@@AAEXPAUPluginPanelItem@@HH@Z 10012195 f   ftp_fUtils.obj
+ 0001:000111c2       ?Invalidate@FTP@@QAEXXZ    100121c2 f   ftp_fUtils.obj
+ 0001:000111e7       ?Reread@FTP@@AAEHXZ        100121e7 f   ftp_fUtils.obj
+ 0001:000112e5       ?CopyNamesToClipboard@FTP@@AAEXXZ 100122e5 f   ftp_fUtils.obj
+ 0001:0001145f       ?FTP_GetFindData@FTP@@AAEHPAPAUPluginPanelItem@@PAHH@Z 1001245f f   ftp_fUtils.obj
+ 0001:00011574       ?ExpandListINT@FTP@@AAEHPAUPluginPanelItem@@HPAUFP_SizeItemList@@HP6IH0PAX@Z2@Z 10012574 f   ftp_fUtils.obj
+ 0001:0001190e       ?BackToHosts@FTP@@AAEXXZ   1001290e f   ftp_fUtils.obj
+ 0001:00011981       ?ExpandList@FTP@@AAEHPAUPluginPanelItem@@HPAUFP_SizeItemList@@HP6IH0PAX@Z2@Z 10012981 f   ftp_fUtils.obj
+ 0001:00011ad0       ?SetTitles@@YIXQAPADPBDH@Z 10012ad0 f   ftp_GetOpenInfo.obj
+ 0001:00011b36       ?GetOpenPluginInfo@FTP@@QAEXPAUOpenPluginInfo@@@Z 10012b36 f   ftp_GetOpenInfo.obj
+ 0001:00012443       ?GetHostFiles@FTP@@AAEHPAUPluginPanelItem@@HHAAVString@@H@Z 10013443 f   ftp_HGet.obj
+ 0001:000128f2       ?SayNotReadedTerminates@@YIHPBDAAH@Z 100138f2 f   ftp_HPut.obj
+ 0001:0001294f       ?PutHostsFiles@FTP@@AAEHPAUPluginPanelItem@@HHH@Z 1001394f f   ftp_HPut.obj
+ 0001:00012bff       ?FixFileNameChars@@YGPADPADH@Z 10013bff f   ftp_JM.obj
+ 0001:00012c82       ?GetSocketErrorSTR@@YGPBDH@Z 10013c82 f   ftp_JM.obj
+ 0001:00012cea       ?PDigit@@YGPADPAD_JH@Z     10013cea f   ftp_JM.obj
+ 0001:00012d7d       ?FDigit@@YGPADPAD_JH@Z     10013d7d f   ftp_JM.obj
+ 0001:00012e91       ?AskYesNoMessage@@YGHPBD@Z 10013e91 f   ftp_JM.obj
+ 0001:00012eaf       ?AskYesNo@@YGHPBD@Z        10013eaf f   ftp_JM.obj
+ 0001:00012ec0       ?SayMsg@@YGXPBD@Z          10013ec0 f   ftp_JM.obj
+ 0001:00012eef       ?IsCmdLogFile@@YGHXZ       10013eef f   ftp_JM.obj
+ 0001:00012efb       ?GetCmdLogFile@@YGPBDXZ    10013efb f   ftp_JM.obj
+ 0001:00012f6d       ?LogCmd@@YGXPBDW4CMDOutputDir@@K@Z 10013f6d f   ftp_JM.obj
+ 0001:000132cb       ?CloseIOBuff@Connection@@IAEXXZ 100142cb f   ftp_JM.obj
+ 0001:000132de       ?CloseCmdBuff@Connection@@IAEXXZ 100142de f   ftp_JM.obj
+ 0001:00013363       ?InternalError@Connection@@IAEXXZ 10014363 f   ftp_JM.obj
+ 0001:00013391       ?ResetCmdBuff@Connection@@IAEXXZ 10014391 f   ftp_JM.obj
+ 0001:000133a6       ?SetCmdLine@Connection@@IAEXPADPBDHH@Z 100143a6 f   ftp_JM.obj
+ 0001:000134b4       ?OperateHidden@@YGXPBDH@Z  100144b4 f   ftp_JM.obj
+ 0001:000134e9       ??0FARINProc@@QAA@PBD0ZZ   100144e9 f   ftp_JM.obj
+ 0001:00013586       ??1FARINProc@@QAE@XZ       10014586 f   ftp_JM.obj
+ 0001:000135e1       ?Say@FARINProc@@SAXPBDZZ   100145e1 f   ftp_JM.obj
+ 0001:0001364e       ?FixFileNameChars@@YGPADAAVString@@H@Z 1001464e f   ftp_JM.obj
+ 0001:00013662       ?InitIOBuff@Connection@@QAEXXZ 10014662 f   ftp_JM.obj
+ 0001:0001367f       ?InitCmdBuff@Connection@@QAEXXZ 1001467f f   ftp_JM.obj
+ 0001:00013769       ?ConnectMessage@Connection@@QAEHHPBDHHH@Z 10014769 f   ftp_JM.obj
+ 0001:00013d0c       ?AddCmdLine@Connection@@QAEXPBD@Z 10014d0c f   ftp_JM.obj
+ 0001:00013eb8       ?ConnectMessageTimeout@Connection@@QAEHHPBDH@Z 10014eb8 f   ftp_JM.obj
+ 0001:00014082       ?InsertHostsCmd@@YIHPAXH@Z 10015082 f   ftp_Key.obj
+ 0001:00014154       ?Item@?$FP_MenuTyped@UFMenuItemEx@@@@QAEPAUFMenuItemEx@@H@Z 10015154 f i ftp_Key.obj
+ 0001:00014170       ?Realloc@?$FP_MenuTyped@UFMenuItemEx@@@@AAEHH@Z 10015170 f i ftp_Key.obj
+ 0001:000141af       ?Add@?$FP_MenuTyped@UFMenuItemEx@@@@QAEPAUFMenuItemEx@@PBU2@H@Z 100151af f i ftp_Key.obj
+ 0001:000141f0       ?Execute@?$FP_MenuTyped@UFMenuItemEx@@@@QAEHPBDK00PBHPAH@Z 100151f0 f i ftp_Key.obj
+ 0001:00014241       ??0?$FP_MenuTyped@UFMenuItemEx@@@@QAE@QAPBDHHD@Z 10015241 f i ftp_Key.obj
+ 0001:000142cb       ?ProcessKey@FTP@@QAEHHI@Z  100152cb f   ftp_Key.obj
+ 0001:00014e47       ?SToOEM@Connection@@QAE?AVString@@ABV2@@Z 10015e47 f i ftp_MakeDir.obj
+ 0001:00014e67       ?FTPCreateDirectory@FTP@@AAEHPBDH@Z 10015e67 f   ftp_MakeDir.obj
+ 0001:0001503d       ?MakeDirectory@FTP@@QAEHAAVString@@H@Z 1001603d f   ftp_MakeDir.obj
+ 0001:000151c3       ??0FTPCopyInfo@@QAE@XZ     100161c3 f   ftp_Mix.obj
+ 0001:000151f4       ?AddWait@@YIX_J@Z          100161f4 f   ftp_Mix.obj
+ 0001:00015235       ?IsAbsolutePath@@YGHPBD@Z  10016235 f   ftp_Mix.obj
+ 0001:0001525f       ?QuoteStr@@YGXPAD@Z        1001625f f   ftp_Mix.obj
+ 0001:000152d0       ?QuoteStr@@YGXAAVString@@@Z 100162d0 f   ftp_Mix.obj
+ 0001:0001535a       ?Size2Str@@YGXPADK@Z       1001635a f   ftp_Mix.obj
+ 0001:00015410       ?Str2Size@@YGKPAD@Z        10016410 f   ftp_Mix.obj
+ 0001:0001547a       ?StrSlashCount@@YGHPBD@Z   1001647a f   ftp_Mix.obj
+ 0001:0001549b       ?FRealFile@@YGHPBDPAUFAR_FIND_DATA@@@Z 1001649b f   ftp_Mix.obj
+ 0001:00015528       ?DoCreateDirectory@@YGHPAD@Z 10016528 f   ftp_Mix.obj
+ 0001:000156ca       ?Fsize@@YG_JPBD@Z          100166ca f   ftp_Mix.obj
+ 0001:0001571d       ?Fsize@@YG_JPAX@Z          1001671d f   ftp_Mix.obj
+ 0001:00015749       ?Fmove@@YGHPAX_J@Z         10016749 f   ftp_Mix.obj
+ 0001:00015784       ?Fclose@@YGXPAX@Z          10016784 f   ftp_Mix.obj
+ 0001:0001579f       ?Ftrunc@@YGHPAXK@Z         1001679f f   ftp_Mix.obj
+ 0001:000157ce       ?Fopen@@YGPAXPBD0K@Z       100167ce f   ftp_Mix.obj
+ 0001:00015878       ?Fwrite@@YGHPAXPBXH@Z      10016878 f   ftp_Mix.obj
+ 0001:000158a0       ?Fread@@YGHPAX0H@Z         100168a0 f   ftp_Mix.obj
+ 0001:000158c8       ?FMessage@@YGHIPBDPAPBDHH@Z 100168c8 f   ftp_Mix.obj
+ 0001:00015917       ?FDialog@@YGHHHPBDPAUFarDialogItem@@H@Z 10016917 f   ftp_Mix.obj
+ 0001:0001596b       ?FDialogEx@@YGHHHPBDPAUFarDialogItem@@HKP6GJPAXHHJ@ZJ@Z 1001696b f   ftp_Mix.obj
+ 0001:000159d8       ?AddEndSlash@@YGXAAVString@@D@Z 100169d8 f   ftp_Mix.obj
+ 0001:00015a27       ?AddEndSlash@@YGXPADDI@Z   10016a27 f   ftp_Mix.obj
+ 0001:00015a74       ?DelEndSlash@@YGXAAVString@@D@Z 10016a74 f   ftp_Mix.obj
+ 0001:00015a9b       ?DelEndSlash@@YGXPADD@Z    10016a9b f   ftp_Mix.obj
+ 0001:00015abe       ?PointToName@@YGPADPAD@Z   10016abe f   ftp_Mix.obj
+ 0001:00015ae2       ?CheckForEsc@@YGHHH@Z      10016ae2 f   ftp_Mix.obj
+ 0001:00015b34       ?LocalLower@@YGXPAD@Z      10016b34 f   ftp_Mix.obj
+ 0001:00015b54       ?FixFTPSlash@@YGXPAD@Z     10016b54 f   ftp_Mix.obj
+ 0001:00015b6f       ?FixLocalSlash@@YGXPAD@Z   10016b6f f   ftp_Mix.obj
+ 0001:00015b8a       ?DMessage@@YIXPBDHHH@Z     10016b8a f   ftp_Mix.obj
+ 0001:00015c2d       ?IdleMessage@@YGXPBDH@Z    10016c2d f   ftp_Mix.obj
+ 0001:00015d00       ?FixFTPSlash@@YGXAAVString@@@Z 10016d00 f   ftp_Mix.obj
+ 0001:00015d0f       ?FixLocalSlash@@YGXAAVString@@@Z 10016d0f f   ftp_Mix.obj
+ 0001:00015d1e       ?idProcStart@@YAPAXPBD0ZZ  10016d1e f   ftp_Plugin.obj
+ 0001:00015d6a       ?idGetOpt@@YGPAUOptionsPlugin@@XZ 10016d6a f   ftp_Plugin.obj
+ 0001:00015d70       ?idFtpCmdBlock@@YGHH@Z     10016d70 f   ftp_Plugin.obj
+ 0001:00015d96       ?idFtpGetRetryCount@@YGHXZ 10016d96 f   ftp_Plugin.obj
+ 0001:00015db3       ?idGetHostOpt@@YGPAUFTPHostPlugin@@XZ 10016db3 f   ftp_Plugin.obj
+ 0001:00015dcf       ?FreePlugins@@YIXXZ        10016dcf f   ftp_Plugin.obj
+ 0001:00015e1b       ?GetPluginHolder@@YIPAUFTPPluginHolder@@G@Z 10016e1b f   ftp_Plugin.obj
+ 0001:00015e4f       ?PluginAvailable@@YIHG@Z   10016e4f f   ftp_Plugin.obj
+ 0001:00015e67       ?Assign@FTPPluginHolder@@UAEHPAUHINSTANCE__@@PAUFTPPluginInterface@@@Z 10016e67 f   ftp_Plugin.obj
+ 0001:00015e7b       ?Destroy@FTPPluginHolder@@UAEXXZ 10016e7b f   ftp_Plugin.obj
+ 0001:00015e96       ?Interface@?$FTPPlugin@PAUNotifyInterface@@$01@@QAEPAUNotifyInterface@@XZ 10016e96 f i ftp_Plugin.obj
+ 0001:00015e96       ?Interface@?$FTPPlugin@PAUDirListInterface@@$00@@QAEPAUDirListInterface@@XZ 10016e96 f i ftp_Plugin.obj
+ 0001:00015e96       ?Interface@?$FTPPlugin@PAUProgressInterface@@$0A@@@QAEPAUProgressInterface@@XZ 10016e96 f i ftp_Connect.obj
+ 0001:00015ee0       ?DetectStringType@FTPDirList@@QAEGQAUFTPServerInfo@@PADH@Z 10016ee0 f   ftp_Plugin.obj
+ 0001:00015ee0       ?Notify@FTPNotify@@QAEXQAUFTNNotify@@@Z 10016ee0 f   ftp_Plugin.obj
+ 0001:00015ee8       ?GetNumberOfSupportedTypes@FTPDirList@@QAEGXZ 10016ee8 f   ftp_Plugin.obj
+ 0001:00015ef0       ?GetType@FTPDirList@@QAEPAUFTPType@@G@Z 10016ef0 f   ftp_Plugin.obj
+ 0001:00015ef8       ?DetectDirStringType@FTPDirList@@QAEGQAUFTPServerInfo@@PBD@Z 10016ef8 f   ftp_Plugin.obj
+ 0001:00015f00       ?idProcEnd@@YGXPAX@Z       10016f00 f   ftp_Plugin.obj
+ 0001:00015f1b       ?CreateFTPInterface@@YIXXZ 10016f1b f   ftp_Plugin.obj
+ 0001:000160e8       ?StdCreator@@YIPAUFTPPluginHolder@@PAUHINSTANCE__@@PAUFTPPluginInterface@@@Z 100170e8 f   ftp_Plugin.obj
+ 0001:00016124       ?InitPlugins@@YIHXZ        10017124 f   ftp_Plugin.obj
+ 0001:00016335       ?Resume@FTPProgress@@QAEX_J@Z 10017335 f   ftp_Plugin.obj
+ 0001:00016362       ?Callback@FTPProgress@@QAEHH@Z 10017362 f   ftp_Plugin.obj
+ 0001:0001638b       ?Init@FTPProgress@@QAEXPAXHHPAUFP_SizeItemList@@@Z 1001738b f   ftp_Plugin.obj
+ 0001:000163c0       ?Skip@FTPProgress@@QAEXXZ  100173c0 f   ftp_Plugin.obj
+ 0001:000163e3       ?Waiting@FTPProgress@@QAEX_J@Z 100173e3 f   ftp_Plugin.obj
+ 0001:00016410       ?SetConnection@FTPProgress@@QAEXPAX@Z 10017410 f   ftp_Plugin.obj
+ 0001:00016439       ?InitFile@FTPProgress@@QAEX_JPBD1@Z 10017439 f   ftp_Plugin.obj
+ 0001:0001646e       ?InitFile@FTPProgress@@QAEXPAUFAR_FIND_DATA@@PBD1@Z 1001746e f   ftp_Plugin.obj
+ 0001:0001646e       ?InitFile@FTPProgress@@QAEXPAUPluginPanelItem@@PBD1@Z 1001746e f   ftp_Plugin.obj
+ 0001:0001649e       ?CheckDotsBack@FTP@@AAEHABVString@@0@Z 1001749e f   ftp_SetDir.obj
+ 0001:00016515       ?SetDirectoryStepped@FTP@@AAEHPBDH@Z 10017515 f   ftp_SetDir.obj
+ 0001:00016678       ?SetDirectory@FTP@@QAEHPBDH@Z 10017678 f   ftp_SetDir.obj
+ 0001:00016956       ?SetDirectoryFAR@FTP@@QAEHPBDH@Z 10017956 f   ftp_SetDir.obj
+ 0001:0001697a       ?ProcessShortcutLine@FTP@@QAEHPAD@Z 1001797a f   ftp_Shortcut.obj
+ 0001:00016c0b       ?scClose@@YGXAAIH@Z        10017c0b f   ftp_sock.obj
+ 0001:00016c93       ?scValid@@YGHI@Z           10017c93 f   ftp_sock.obj
+ 0001:00016ca0       ?scCreate@@YGIF@Z          10017ca0 f   ftp_sock.obj
+ 0001:00016d5a       ?scAccept@@YGIPAIPAUsockaddr@@PAH@Z 10017d5a f   ftp_sock.obj
+ 0001:00016d77       ?AskDeleteQueue@@YIHXZ     10017d77 f   ftp_Queque.obj
+ 0001:00016db3       ?WarnExecuteQueue@FTP@@QAEHPAUQueueExecOptions@@@Z 10017db3 f   ftp_Queque.obj
+ 0001:00016e51       ?SetupQOpt@FTP@@QAEXPAUQueueExecOptions@@@Z 10017e51 f   ftp_Queque.obj
+ 0001:00016e69       ??4FTPUrl@@QAEAAU0@ABU0@@Z 10017e69 f i ftp_Queque.obj
+ 0001:00016ee8       ?AddToQueque@FTP@@QAEXPAUFAR_FIND_DATA@@PBDH@Z 10017ee8 f   ftp_Queque.obj
+ 0001:000170e6       ?ListToQueque@FTP@@QAEXPAUFP_SizeItemList@@PAUFTPCopyInfo@@@Z 100180e6 f   ftp_Queque.obj
+ 0001:0001712c       ?ExecuteQueueINT@FTP@@QAEXPAUQueueExecOptions@@@Z 1001812c f   ftp_Queque.obj
+ 0001:000177b3       ?Free@?$FP_MenuTyped@UFMenuItemEx@@@@QAEXXZ 100187b3 f i ftp_Key.obj
+ 0001:000177b3       ?Free@?$FP_MenuTyped@UFMenuItem@@@@QAEXXZ 100187b3 f i ftp_Queque.obj
+ 0001:000177d0       ?Realloc@?$FP_MenuTyped@UFMenuItem@@@@AAEHH@Z 100187d0 f i ftp_Queque.obj
+ 0001:0001780f       ?Add@?$FP_MenuTyped@UFMenuItem@@@@QAEPAUFMenuItem@@PBU2@H@Z 1001880f f i ftp_Queque.obj
+ 0001:00017850       ?InsertCurrentToQueue@FTP@@AAEPBDXZ 10018850 f   ftp_Queque.obj
+ 0001:000179dd       ?InsertAnotherToQueue@FTP@@AAEPBDXZ 100189dd f   ftp_Queque.obj
+ 0001:00017b71       ?AddToQueque@FTP@@QAEXPAUFTPUrl@@H@Z 10018b71 f   ftp_Queque.obj
+ 0001:00017be4       ?ExecuteQueue@FTP@@QAEXPAUQueueExecOptions@@@Z 10018be4 f   ftp_Queque.obj
+ 0001:00017caa       ?Execute@?$FP_MenuTyped@UFMenuItem@@@@QAEHPBDK00PBHPAH@Z 10018caa f i ftp_Queque.obj
+ 0001:00017cf7       ?ClearQueue@FTP@@QAEXXZ    10018cf7 f   ftp_Queque.obj
+ 0001:00017d39       ??0?$FP_MenuTyped@UFMenuItem@@@@QAE@QAPBDHHD@Z 10018d39 f i ftp_Queque.obj
+ 0001:00017dc3       ?InsertToQueue@FTP@@AAEXXZ 10018dc3 f   ftp_Queque.obj
+ 0001:00017eae       ?QuequeMenu@FTP@@QAEXXZ    10018eae f   ftp_Queque.obj
+ 0001:00018177       ?ShowHostError@@YIXPAUFTPUrl@@@Z 10019177 f   ftp_Url.obj
+ 0001:00018183       ?UrlInit@FTP@@QAEXPAUFTPUrl@@@Z 10019183 f   ftp_Url.obj
+ 0001:000181c5       ?UrlItem@FTP@@QAEPAUFTPUrl@@HPAPAU2@@Z 100191c5 f   ftp_Url.obj
+ 0001:00018206       ?PreFill@@YIHPAUFTPUrl@@@Z 10019206 f   ftp_Url.obj
+ 0001:0001833b       ?EditUrlItem@FTP@@QAEHPAUFTPUrl@@@Z 1001933b f   ftp_Url.obj
+ 0001:00018472       ?DeleteUrlItem@FTP@@QAEXPAUFTPUrl@@0@Z 10019472 f   ftp_Url.obj
+ 0001:000185de       ?FP_SetStartupInfo@@YGXPBUPluginStartupInfo@@PBD@Z 100195de f   FsdLib:fstd_plg.obj
+ 0001:000186df       _DllMain@12                100196df f   FsdLib:fstd_plg.obj
+ 0001:0001871d       ?StrCat@@YGPADPADPBDH@Z    1001971d f   FsdLib:fstd_exSCAT.obj
+ 0001:00018785       ?VSprintf@@YGHPADPBD0@Z    10019785 f   FsdLib:fstd_stdlibSP.obj
+ 0001:0001879c       ?VSNprintf@@YGHPADIPBD0@Z  1001979c f   FsdLib:fstd_stdlibSP.obj
+ 0001:000187ce       ?Sprintf@@YAHPADPBDZZ      100197ce f   FsdLib:fstd_stdlibSP.obj
+ 0001:000187e1       ?SNprintf@@YAHPADIPBDZZ    100197e1 f   FsdLib:fstd_stdlibSP.obj
+ 0001:0001880f       ??0FP_Dialog@@QAE@PAX@Z    1001980f f   FsdLib:fstd_Dialog.obj
+ 0001:0001881e       ?FP_PeriodCreate@@YGPAXK@Z 1001981e f   FsdLib:fstd_per.obj
+ 0001:0001883e       ?FP_PeriodDestroy@@YGXAAPAX@Z 1001983e f   FsdLib:fstd_per.obj
+ 0001:00018852       ?FP_PeriodEnd@@YGHPAX@Z    10019852 f   FsdLib:fstd_per.obj
+ 0001:00018891       ?FP_PeriodReset@@YGXPAX@Z  10019891 f   FsdLib:fstd_per.obj
+ 0001:000188a6       ?StrCpy@@YGPADPADPBDH@Z    100198a6 f   FsdLib:fstd_exSCPY.obj
+ 0001:000188f7       ?FP_InitDialogItem@@YGXPBUFP_DialogItem@@PAUFarDialogItem@@@Z 100198f7 f   FsdLib:fstd_Dlg.obj
+ 0001:00018a18       ?FP_InitDialogItems@@YGXPBUFP_DialogItem@@PAUFarDialogItem@@@Z 10019a18 f   FsdLib:fstd_Dlg.obj
+ 0001:00018a76       ?FP_GetRegKey@@YGHPBD0K@Z  10019a76 f   FsdLib:fstd_RegGI.obj
+ 0001:00018ac7       ?FP_GetRegKey@@YGPAEPBD0PAEPBEK@Z 10019ac7 f   FsdLib:fstd_RegGB.obj
+ 0001:00018b54       ?FP_GetRegKey@@YGPADPBD0PAD0K@Z 10019b54 f   FsdLib:fstd_RegGB.obj
+ 0001:00018be1       ?FP_SetRegKey@@YGHPBD0K@Z  10019be1 f   FsdLib:fstd_RegSI.obj
+ 0001:00018c1c       ?FP_SetRegKey@@YGHPBD00@Z  10019c1c f   FsdLib:fstd_RegSC.obj
+ 0001:00018c61       ?FP_SetRegKey@@YGHPBD0PBEK@Z 10019c61 f   FsdLib:fstd_RegSB.obj
+ 0001:00018c9d       ?StrChr@@YGPADPBDD@Z       10019c9d f   FsdLib:fstd_stdlibST.obj
+ 0001:00018cb1       ?StrChr@@YGPADPBD0@Z       10019cb1 f   FsdLib:fstd_stdlibST.obj
+ 0001:00018ce3       ?StrRChr@@YGPADPBDD@Z      10019ce3 f   FsdLib:fstd_stdlibST.obj
+ 0001:00018cf7       ?strLen@@YGHPBD@Z          10019cf7 f   FsdLib:fstd_stdlibST.obj
+ 0001:00018d12       ?StrDup@@YGPADPBD@Z        10019d12 f   FsdLib:fstd_stdlibST.obj
+ 0001:00018d44       ?FP_ConWidth@@YGHXZ        10019d44 f   FsdLib:fstd_Con.obj
+ 0001:00018d69       ?FP_ConHeight@@YGHXZ       10019d69 f   FsdLib:fstd_Con.obj
+ 0001:00018e84       ?FP_GetColorDialog@@YGHHPAUFLngColorDialog@@PBD@Z 10019e84 f   FsdLib:fstd_cDialog.obj
+ 0001:000190bf       ?StrCmp@@YGHPBD0HH@Z       1001a0bf f   FsdLib:fstd_exSCMP.obj
+ 0001:000191a6       ?isSaved@FP_Screen@@SGHXZ  1001a1a6 f   FsdLib:fstd_scr.obj
+ 0001:000191ac       ?Save@FP_Screen@@SGXXZ     1001a1ac f   FsdLib:fstd_scr.obj
+ 0001:00019214       ?RestoreWithoutNotes@FP_Screen@@SGXXZ 1001a214 f   FsdLib:fstd_scr.obj
+ 0001:00019242       ?Restore@FP_Screen@@SGXXZ  1001a242 f   FsdLib:fstd_scr.obj
+ 0001:000192b6       ?FullRestore@FP_Screen@@SGXXZ 1001a2b6 f   FsdLib:fstd_scr.obj
+ 0001:000192c7       ??1String@@UAE@XZ          1001a2c7 f   FsdLib:fstd_String.obj
+ 0001:000192e3       ??_EString@@UAEPAXI@Z      1001a2e3 f i FsdLib:fstd_String.obj
+ 0001:000192e3       ??_GString@@UAEPAXI@Z      1001a2e3 f i FsdLib:fstd_String.obj
+ 0001:000192ff       ?Chr@String@@QBEHPBDH@Z    1001a2ff f   FsdLib:fstd_String.obj
+ 0001:00019332       ?Chr@String@@QBEHDH@Z      1001a332 f   FsdLib:fstd_String.obj
+ 0001:00019346       ??AString@@QBEDH@Z         1001a346 f   FsdLib:fstd_String.obj
+ 0001:00019364       ?SetLength@String@@QAEXH@Z 1001a364 f   FsdLib:fstd_String.obj
+ 0001:0001937e       ?Cmp@String@@QBEHPBDHH@Z   1001a37e f   FsdLib:fstd_String.obj
+ 0001:000193ea       ?BeginSet@String@@AAEXI@Z  1001a3ea f   FsdLib:fstd_String.obj
+ 0001:00019410       ?Alloc@String@@QAEPBDH@Z   1001a410 f   FsdLib:fstd_String.obj
+ 0001:0001943c       ?Add@String@@QAEAAV1@ABV1@@Z 1001a43c f   FsdLib:fstd_String.obj
+ 0001:00019476       ?Add@String@@QAEAAV1@PBD@Z 1001a476 f   FsdLib:fstd_String.obj
+ 0001:000194b6       ?Add@String@@QAEAAV1@D@Z   1001a4b6 f   FsdLib:fstd_String.obj
+ 0001:000194f5       ?vcat@String@@QAEXPBDPAD@Z 1001a4f5 f   FsdLib:fstd_String.obj
+ 0001:0001954c       ?Del@String@@QAEXHH@Z      1001a54c f   FsdLib:fstd_String.obj
+ 0001:00019594       ?RChr@String@@QBEHDH@Z     1001a594 f   FsdLib:fstd_String.obj
+ 0001:000195d4       ??8String@@QBEHABV0@@Z     1001a5d4 f   FsdLib:fstd_String.obj
+ 0001:000195fb       ??0String@@QAE@XZ          1001a5fb f   FsdLib:fstd_String.obj
+ 0001:0001960f       ??0String@@QAE@PBD@Z       1001a60f f   FsdLib:fstd_String.obj
+ 0001:00019662       ?vprintf@String@@QAEHPBDPAD@Z 1001a662 f   FsdLib:fstd_String.obj
+ 0001:00019699       ?Alloc@String@@QAEPBDPBDH@Z 1001a699 f   FsdLib:fstd_String.obj
+ 0001:000196fd       ?cat@String@@QAAXPBDZZ     1001a6fd f   FsdLib:fstd_String.obj
+ 0001:00019710       ??4String@@QAEAAV0@ABV0@@Z 1001a710 f   FsdLib:fstd_String.obj
+ 0001:00019727       ??4String@@QAEAAV0@PBD@Z   1001a727 f   FsdLib:fstd_String.obj
+ 0001:0001973b       ?Set@String@@QAEPBDPBDHH@Z 1001a73b f   FsdLib:fstd_String.obj
+ 0001:00019794       ?printf@String@@QAAHPBDZZ  1001a794 f   FsdLib:fstd_String.obj
+ 0001:000197ca       ?MessageV@@YGPBDPBDPAD@Z   1001a7ca f   FsdLib:fstd_mesg.obj
+ 0001:0001980c       ?Message@@YAPBDPBDZZ       1001a80c f   FsdLib:fstd_mesg.obj
+ 0001:0001981b       ?FCps@@YGPBDPADN@Z         1001a81b f   FsdLib:fstd_Utils.obj
+ 0001:000198cb       ?MemSet@@YGPAXPAXEI@Z      1001a8cb f   FsdLib:fstd_stdlibME.obj
+ 0001:000198f0       ?MemMove@@YGPAXPAXPBXI@Z   1001a8f0 f   FsdLib:fstd_stdlibME.obj
+ 0001:00019919       ?MemCpy@@YGPAXPAXPBXI@Z    1001a919 f   FsdLib:fstd_stdlibME.obj
+ 0001:00019942       ?__WinAbort@@YAXPBDZZ      1001a942 f   FsdLib:fstd_asrt.obj
+ 0001:000199fd       ?FP_DeleteRegKeyAll@@YGHPAUHKEY__@@PBD@Z 1001a9fd f   FsdLib:fstd_RegDla.obj
+ 0001:00019abd       ?FP_DeleteRegKeyAll@@YGHPBD@Z 1001aabd f   FsdLib:fstd_RegDla.obj
+ 0001:00019b2d       ?Text@SaveConsoleTitle@@SIXPBD@Z 1001ab2d f   FsdLib:fstd_FUtils.obj
+ 0001:00019b63       ?CheckForKeyPressed@@YGHPAGH@Z 1001ab63 f   FsdLib:fstd_FUtils.obj
+ 0001:00019c05       ?FP_OpenRegKey@@YGPAUHKEY__@@PBD@Z 1001ac05 f   FsdLib:fstd_RegOp.obj
+ 0001:00019ca5       ?__HeapCheck_H@@YGHXZ      1001aca5 f   FsdLib:fstd_memh.obj
+ 0001:00019cf7       ?__Alloc_H@@YGPAXK@Z       1001acf7 f   FsdLib:fstd_memh.obj
+ 0001:00019d22       ?__Realloc_H@@YGPAXPAXK@Z  1001ad22 f   FsdLib:fstd_memh.obj
+ 0001:00019d64       ?__Del_H@@YGXPAX@Z         1001ad64 f   FsdLib:fstd_memh.obj
+ 0001:00019d96       ?__PtrSize_H@@YGKPAX@Z     1001ad96 f   FsdLib:fstd_memh.obj
+ 0001:00019dcc       ?AtExit@@YGP6AXXZP6AXXZ@Z  1001adcc f   FsdLib:fstd_exit.obj
+ 0001:00019dde       ?CallAtExit@@YGXXZ         1001adde f   FsdLib:fstd_exit.obj
+ 0001:00019df1       ?FPIL_ADDSIZE@@YIKPBUPluginPanelItem@@@Z 1001adf1 f i FsdLib:fstd_ilist.obj
+ 0001:00019e09       ??0FP_ItemList@@QAE@H@Z    1001ae09 f   FsdLib:fstd_ilist.obj
+ 0001:00019e1f       ?Realloc@FP_ItemList@@AAEHH@Z 1001ae1f f   FsdLib:fstd_ilist.obj
+ 0001:00019e65       ?Copy@FP_ItemList@@SIXPAUPluginPanelItem@@PBU2@H@Z 1001ae65 f   FsdLib:fstd_ilist.obj
+ 0001:00019fbf       ?Free@FP_ItemList@@SIXPAUPluginPanelItem@@H@Z 1001afbf f   FsdLib:fstd_ilist.obj
+ 0001:0001a08f       ?Add@FP_ItemList@@QAEPAUPluginPanelItem@@PBU2@H@Z 1001b08f f   FsdLib:fstd_ilist.obj
+ 0001:0001a0c9       ?Free@FP_ItemList@@QAEXXZ  1001b0c9 f   FsdLib:fstd_ilist.obj
+ 0001:0001a0e9       ?ToUpper@@YGDD@Z           1001b0e9 f   FsdLib:fstd_stdlibCS.obj
+ 0001:0001a0fd       ?ToLower@@YGDD@Z           1001b0fd f   FsdLib:fstd_stdlibCS.obj
+ 0001:0001a111       ?FP_CheckRegKey@@YGHPBD@Z  1001b111 f   FsdLib:fstd_RegCh.obj
+ 0001:0001a133       ?FP_DeleteRegKeyFull@@YGHPBD@Z 1001b133 f   FsdLib:fstd_RegDl.obj
+ 0001:0001a157       ?FP_DeleteRegKey@@YGHPBD@Z 1001b157 f   FsdLib:fstd_RegDl.obj
+ 0001:0001a1c2       ?FP_CopyToClipboard@@YGHPAXK@Z 1001b1c2 f   FsdLib:fstd_ClpS.obj
+ 0001:0001a2f8       ?FP_InPattern@@YGHPBD0@Z   1001b2f8 f   FsdLib:fstd_Patt.obj
+ 0001:0001a3a6       ?Assign@FMenuItem@@QAEXPBD_ND@Z 1001b3a6 f   FsdLib:fstd_menu.obj
+ 0001:0001a3fa       ?Assign@FMenuItem@@QAEXXZ  1001b3fa f   FsdLib:fstd_menu.obj
+ 0001:0001a419       ?Assign@FMenuItemEx@@QAEXPBD_ND@Z 1001b419 f   FsdLib:fstd_menu.obj
+ 0001:0001a47c       ?Assign@FMenuItemEx@@QAEXXZ 1001b47c f   FsdLib:fstd_menu.obj
+ 0001:0001a497       ?FP_Message@@YGHIPBDPAPBDHHPAH@Z 1001b497 f   FsdLib:fstd_FMsg.obj
+ 0001:0001a5ad       ?__WINError@@YAPBDXZ       1001b5ad f   FsdLib:fstd_err.obj
+ 0001:0001a62c       ?FP_CreateRegKey@@YGPAUHKEY__@@PBD@Z 1001b62c f   FsdLib:fstd_RegCr.obj
+ 0001:0001a6fb       ?StrPosChr@@YGHPBDDH@Z     1001b6fb f   FsdLib:fstd_exSPCH.obj
+ 0001:0001a734       _ioctlsocket@12            1001b734 f   wsock32:WSOCK32.dll
+ 0001:0001a73a       _setsockopt@20             1001b73a f   wsock32:WSOCK32.dll
+ 0001:0001a740       _ntohs@4                   1001b740 f   wsock32:WSOCK32.dll
+ 0001:0001a746       _getsockname@12            1001b746 f   wsock32:WSOCK32.dll
+ 0001:0001a74c       _gethostbyname@4           1001b74c f   wsock32:WSOCK32.dll
+ 0001:0001a752       _inet_addr@4               1001b752 f   wsock32:WSOCK32.dll
+ 0001:0001a758       _closesocket@4             1001b758 f   wsock32:WSOCK32.dll
+ 0001:0001a75e       _inet_ntoa@4               1001b75e f   wsock32:WSOCK32.dll
+ 0001:0001a764       _WSAGetLastError@0         1001b764 f   wsock32:WSOCK32.dll
+ 0001:0001a76a       _listen@8                  1001b76a f   wsock32:WSOCK32.dll
+ 0001:0001a770       _bind@12                   1001b770 f   wsock32:WSOCK32.dll
+ 0001:0001a776       _socket@12                 1001b776 f   wsock32:WSOCK32.dll
+ 0001:0001a77c       _getsockopt@20             1001b77c f   wsock32:WSOCK32.dll
+ 0001:0001a782       _getservbyname@8           1001b782 f   wsock32:WSOCK32.dll
+ 0001:0001a788       _htons@4                   1001b788 f   wsock32:WSOCK32.dll
+ 0001:0001a78e       _WSAStartup@8              1001b78e f   wsock32:WSOCK32.dll
+ 0001:0001a794       _select@20                 1001b794 f   wsock32:WSOCK32.dll
+ 0001:0001a79a       ___WSAFDIsSet@8            1001b79a f   wsock32:WSOCK32.dll
+ 0001:0001a7a0       _connect@12                1001b7a0 f   wsock32:WSOCK32.dll
+ 0001:0001a7a6       _recv@16                   1001b7a6 f   wsock32:WSOCK32.dll
+ 0001:0001a7ac       _send@16                   1001b7ac f   wsock32:WSOCK32.dll
+ 0001:0001a7b2       _WSACleanup@0              1001b7b2 f   wsock32:WSOCK32.dll
+ 0001:0001a7b8       _WSASetLastError@4         1001b7b8 f   wsock32:WSOCK32.dll
+ 0001:0001a7be       _shutdown@8                1001b7be f   wsock32:WSOCK32.dll
+ 0001:0001a7c4       _accept@12                 1001b7c4 f   wsock32:WSOCK32.dll
+ 0001:0001a7d0       _strpbrk                   1001b7d0 f   LIBCMT:strpbrk.obj
+ 0001:0001a810       ??0_LocaleUpdate@@QAE@PAUlocaleinfo_struct@@@Z 1001b810 f i LIBCMT:_ctype.obj
+ 0001:0001a892       __isdigit_l                1001b892 f i LIBCMT:_ctype.obj
+ 0001:0001a8e1       _isdigit                   1001b8e1 f i LIBCMT:_ctype.obj
+ 0001:0001a90a       __isxdigit_l               1001b90a f i LIBCMT:_ctype.obj
+ 0001:0001a95e       _isxdigit                  1001b95e f i LIBCMT:_ctype.obj
+ 0001:0001a989       __isspace_l                1001b989 f i LIBCMT:_ctype.obj
+ 0001:0001a9d8       _isspace                   1001b9d8 f i LIBCMT:_ctype.obj
+ 0001:0001aa01       _atol                      1001ba01 f   LIBCMT:atox.obj
+ 0001:0001aa12       _atoi                      1001ba12 f   LIBCMT:atox.obj
+ 0001:0001aa30       _strchr                    1001ba30 f   LIBCMT:strchr.obj
+ 0001:0001aa36       ___from_strstr_to_strchr   1001ba36     LIBCMT:strchr.obj
+ 0001:0001aaf0       _strrchr                   1001baf0 f   LIBCMT:strrchr.obj
+ 0001:0001ab1d       __cfltcvt_init             1001bb1d f   LIBCMT:fpinit.obj
+ 0001:0001ab7d       __fpmath                   1001bb7d f   LIBCMT:fpinit.obj
+ 0001:0001aba0       _memmove                   1001bba0 f   LIBCMT:memmove.obj
+ 0001:0001af10       __allrem                   1001bf10 f   LIBCMT:llrem.obj
+ 0001:0001b02a       _sscanf                    1001c02a f   LIBCMT:sscanf.obj
+ 0001:0001b050       _memset                    1001c050 f   LIBCMT:memset.obj
+ 0001:0001b183       ___onexitinit              1001c183 f   LIBCMT:onexit.obj
+ 0001:0001b1b2       __onexit                   1001c1b2 f   LIBCMT:onexit.obj
+ 0001:0001b1ee       _atexit                    1001c1ee f   LIBCMT:onexit.obj
+ 0001:0001b200       __ftol2_sse                1001c200 f   LIBCMT:ftol2.obj
+ 0001:0001b209       __ftol2_pentium4           1001c209 f   LIBCMT:ftol2.obj
+ 0001:0001b21c       __ftol2_sse_excpt          1001c21c f   LIBCMT:ftol2.obj
+ 0001:0001b236       __ftol2                    1001c236 f   LIBCMT:ftol2.obj
+ 0001:0001b2ab       __fclose_nolock            1001c2ab f   LIBCMT:fclose.obj
+ 0001:0001b31d       _fclose                    1001c31d f   LIBCMT:fclose.obj
+ 0001:0001b399       _fprintf                   1001c399 f   LIBCMT:fprintf.obj
+ 0001:0001b4e8       __fsopen                   1001c4e8 f   LIBCMT:fopen.obj
+ 0001:0001b5ac       _fopen                     1001c5ac f   LIBCMT:fopen.obj
+ 0001:0001b5bf       __fwrite_nolock            1001c5bf f   LIBCMT:fwrite.obj
+ 0001:0001b71e       _fwrite                    1001c71e f   LIBCMT:fwrite.obj
+ 0001:0001b7a0       __fseek_nolock             1001c7a0 f   LIBCMT:fseek.obj
+ 0001:0001b827       _fseek                     1001c827 f   LIBCMT:fseek.obj
+ 0001:0001b8ac       __flush                    1001c8ac f   LIBCMT:fflush.obj
+ 0001:0001b90e       __fflush_nolock            1001c90e f   LIBCMT:fflush.obj
+ 0001:0001ba2a       _fflush                    1001ca2a f   LIBCMT:fflush.obj
+ 0001:0001ba7d       __flushall                 1001ca7d f   LIBCMT:fflush.obj
+ 0001:0001ba86       __fread_nolock_s           1001ca86 f   LIBCMT:fread.obj
+ 0001:0001bc8c       _fread_s                   1001cc8c f   LIBCMT:fread.obj
+ 0001:0001bd22       _fread                     1001cd22 f   LIBCMT:fread.obj
+ 0001:0001bd3d       _remove                    1001cd3d f   LIBCMT:unlink.obj
+ 0001:0001bd70       _strstr                    1001cd70 f   LIBCMT:strstr.obj
+ 0001:0001be00       __allmul                   1001ce00 f   LIBCMT:llmul.obj
+ 0001:0001be34       _strncmp                   1001ce34 f   LIBCMT:strncmp.obj
+ 0001:0001bef2       _clock                     1001cef2 f   LIBCMT:clock.obj
+ 0001:0001bf35       ___inittime                1001cf35 f   LIBCMT:clock.obj
+ 0001:0001bf70       __alldvrm                  1001cf70 f   LIBCMT:lldvrm.obj
+ 0001:0001c04f       __creat                    1001d04f f   LIBCMT:creat.obj
+ 0001:0001c07e       __time64                   1001d07e f   LIBCMT:time64.obj
+ 0001:0001c0ba       __atof_l                   1001d0ba f   LIBCMT:atof.obj
+ 0001:0001c163       _atof                      1001d163 f   LIBCMT:atof.obj
+ 0001:0001c171       __toupper_l                1001d171 f   LIBCMT:toupper.obj
+ 0001:0001c289       _toupper                   1001d289 f   LIBCMT:toupper.obj
+ 0001:0001c2b0       _strncpy                   1001d2b0 f   LIBCMT:strncpy.obj
+ 0001:0001c3d4       __CRT_INIT@12              1001d3d4 f   LIBCMT:dllcrt0.obj
+ 0001:0001c6a3       __DllMainCRTStartup@12     1001d6a3 f   LIBCMT:dllcrt0.obj
+ 0001:0001c6d0       _strncat                   1001d6d0 f   LIBCMT:strncat.obj
+ 0001:0001c805       __vsprintf_l               1001d805 f   LIBCMT:vsprintf.obj
+ 0001:0001c881       _vsprintf                  1001d881 f   LIBCMT:vsprintf.obj
+ 0001:0001c898       __vsnprintf_l              1001d898 f   LIBCMT:vsnprint.obj
+ 0001:0001c949       __vsnprintf                1001d949 f   LIBCMT:vsnprint.obj
+ 0001:0001c970       _memcpy                    1001d970 f   LIBCMT:memcpy.obj
+ 0001:0001ccd5       __amsg_exit                1001dcd5 f   LIBCMT:crt0dat.obj
+ 0001:0001ccf9       ___crtCorExitProcess       1001dcf9 f   LIBCMT:crt0dat.obj
+ 0001:0001cd1f       ___crtExitProcess          1001dd1f f   LIBCMT:crt0dat.obj
+ 0001:0001cd34       __lockexit                 1001dd34 f   LIBCMT:crt0dat.obj
+ 0001:0001cd3d       __unlockexit               1001dd3d f   LIBCMT:crt0dat.obj
+ 0001:0001cd5e       __initterm_e               1001dd5e f   LIBCMT:crt0dat.obj
+ 0001:0001cd7e       __get_osplatform           1001dd7e f   LIBCMT:crt0dat.obj
+ 0001:0001cdb5       __get_winmajor             1001ddb5 f   LIBCMT:crt0dat.obj
+ 0001:0001cdf1       __cinit                    1001ddf1 f   LIBCMT:crt0dat.obj
+ 0001:0001cf65       _exit                      1001df65 f   LIBCMT:crt0dat.obj
+ 0001:0001cf76       __exit                     1001df76 f   LIBCMT:crt0dat.obj
+ 0001:0001cf87       __cexit                    1001df87 f   LIBCMT:crt0dat.obj
+ 0001:0001cf96       __init_pointers            1001df96 f   LIBCMT:crt0dat.obj
+ 0001:0001cfe2       _sprintf                   1001dfe2 f   LIBCMT:sprintf.obj
+ 0001:0001d060       __SEH_prolog               1001e060 f   LIBCMT:sehprolg.obj
+ 0001:0001d09b       __SEH_epilog               1001e09b f   LIBCMT:sehprolg.obj
+ 0001:0001d0b4       __except_handler3          1001e0b4 f   LIBCMT:exsup3.obj
+ 0001:0001d1b2       __seh_longjmp_unwind@4     1001e1b2 f   LIBCMT:exsup3.obj
+ 0001:0001d3db       ___updatetmbcinfo          1001e3db f   LIBCMT:mbctype.obj
+ 0001:0001d4f9       __setmbcp_nolock           1001e4f9 f   LIBCMT:mbctype.obj
+ 0001:0001d6d2       __setmbcp                  1001e6d2 f   LIBCMT:mbctype.obj
+ 0001:0001d86c       ___initmbctable            1001e86c f   LIBCMT:mbctype.obj
+ 0001:0001d88a       ___freetlocinfo            1001e88a f   LIBCMT:setlocal.obj
+ 0001:0001d9ca       ___addlocaleref            1001e9ca f   LIBCMT:setlocal.obj
+ 0001:0001da50       ___removelocaleref         1001ea50 f   LIBCMT:setlocal.obj
+ 0001:0001db1a       ___updatetlocinfo          1001eb1a f   LIBCMT:setlocal.obj
+ 0001:0001dbfc       __encode_pointer           1001ebfc f   LIBCMT:tidtable.obj
+ 0001:0001dc6a       __encoded_null             1001ec6a f   LIBCMT:tidtable.obj
+ 0001:0001dc73       __decode_pointer           1001ec73 f   LIBCMT:tidtable.obj
+ 0001:0001dce1       ___crtTlsAlloc@4           1001ece1 f   LIBCMT:tidtable.obj
+ 0001:0001dcea       ___set_flsgetvalue         1001ecea f   LIBCMT:tidtable.obj
+ 0001:0001dd1c       __mtterm                   1001ed1c f   LIBCMT:tidtable.obj
+ 0001:0001dd59       __initptd                  1001ed59 f   LIBCMT:tidtable.obj
+ 0001:0001de18       __getptd_noexit            1001ee18 f   LIBCMT:tidtable.obj
+ 0001:0001de8f       __getptd                   1001ee8f f   LIBCMT:tidtable.obj
+ 0001:0001dea7       __freefls@4                1001eea7 f   LIBCMT:tidtable.obj
+ 0001:0001dfc8       __freeptd                  1001efc8 f   LIBCMT:tidtable.obj
+ 0001:0001e031       __mtinit                   1001f031 f   LIBCMT:tidtable.obj
+ 0001:0001e1b5       __isctype_l                1001f1b5 f   LIBCMT:isctype.obj
+ 0001:0001e496       _strtol                    1001f496 f   LIBCMT:strtol.obj
+ 0001:0001e4bf       __forcdecpt_l              1001f4bf f   LIBCMT:cvt.obj
+ 0001:0001e530       __cropzeros_l              1001f530 f   LIBCMT:cvt.obj
+ 0001:0001e5b0       __positive                 1001f5b0 f   LIBCMT:cvt.obj
+ 0001:0001e5c6       __fassign_l                1001f5c6 f   LIBCMT:cvt.obj
+ 0001:0001e606       __fassign                  1001f606 f   LIBCMT:cvt.obj
+ 0001:0001e63a       __forcdecpt                1001f63a f   LIBCMT:cvt.obj
+ 0001:0001e648       __cropzeros                1001f648 f   LIBCMT:cvt.obj
+ 0001:0001e7c3       __cftoe_l                  1001f7c3 f   LIBCMT:cvt.obj
+ 0001:0001e891       __cftoe                    1001f891 f   LIBCMT:cvt.obj
+ 0001:0001e8af       __cftoa_l                  1001f8af f   LIBCMT:cvt.obj
+ 0001:0001ed15       __cftof_l                  1001fd15 f   LIBCMT:cvt.obj
+ 0001:0001edce       __cftog_l                  1001fdce f   LIBCMT:cvt.obj
+ 0001:0001eec6       __cfltcvt_l                1001fec6 f   LIBCMT:cvt.obj
+ 0001:0001ef4c       __cfltcvt                  1001ff4c f   LIBCMT:cvt.obj
+ 0001:0001ef6d       __initp_misc_cfltcvt_tab   1001ff6d f   LIBCMT:cmiscdat.obj
+ 0001:0001ef8c       __setdefaultprecision      1001ff8c f   LIBCMT:fp8.obj
+ 0001:0001efb5       __ms_p5_test_fdiv          1001ffb5 f   LIBCMT:testfdiv.obj
+ 0001:0001eff1       __ms_p5_mp_test_fdiv       1001fff1 f   LIBCMT:testfdiv.obj
+ 0001:0001f0a1       __VEC_memcpy               100200a1 f   LIBCMT:p4_memcpy.obj
+ 0001:0001f184       __sse2_mathfcns_init       10020184 f   LIBCMT:mathfcns.obj
+ 0001:0001f198       __initp_misc_invarg        10020198 f   LIBCMT:invarg.obj
+ 0001:0001f1a2       __invoke_watson            100201a2 f   LIBCMT:invarg.obj
+ 0001:0001f29e       __invalid_parameter        1002029e f   LIBCMT:invarg.obj
+ 0001:0001f2c2       __get_errno_from_oserr     100202c2 f   LIBCMT:dosmap.obj
+ 0001:0001f2fd       __errno                    100202fd f   LIBCMT:dosmap.obj
+ 0001:0001f310       ___doserrno                10020310 f   LIBCMT:dosmap.obj
+ 0001:0001f323       __dosmaperr                10020323 f   LIBCMT:dosmap.obj
+ 0001:0001f350       _strlen                    10020350 f   LIBCMT:strlen.obj
+ 0001:0001f46a       __input_l                  1002046a f   LIBCMT:input.obj
+ 0001:0002010e       __VEC_memzero              1002110e f   LIBCMT:p4_memset.obj
+ 0001:0002019d       __malloc_crt               1002119d f   LIBCMT:crtheap.obj
+ 0001:000201dd       __calloc_crt               100211dd f   LIBCMT:crtheap.obj
+ 0001:00020225       __realloc_crt              10021225 f   LIBCMT:crtheap.obj
+ 0001:00020270       __recalloc_crt             10021270 f   LIBCMT:crtheap.obj
+ 0001:000202c0       __msize                    100212c0 f   LIBCMT:msize.obj
+ 0001:00020364       __SEH_prolog4              10021364 f   LIBCMT:sehprolg4.obj
+ 0001:000203a9       __SEH_epilog4              100213a9 f   LIBCMT:sehprolg4.obj
+ 0001:000203c0       __except_handler4          100213c0 f   LIBCMT:chandler4.obj
+ 0001:00020556       _free                      10021556 f   LIBCMT:free.obj
+ 0001:000205e4       __close_nolock             100215e4 f   LIBCMT:close.obj
+ 0001:00020678       __close                    10021678 f   LIBCMT:close.obj
+ 0001:00020678       _close                     10021678 f   LIBCMT:close.obj
+ 0001:00020745       __fileno                   10021745 f   LIBCMT:fileno.obj
+ 0001:00020772       __freebuf                  10021772 f   LIBCMT:_freebuf.obj
+ 0001:0002079e       ___iob_func                1002179e f   LIBCMT:_file.obj
+ 0001:000207a4       ___initstdio               100217a4 f   LIBCMT:_file.obj
+ 0001:00020855       ___endstdio                10021855 f   LIBCMT:_file.obj
+ 0001:00020875       __lock_file                10021875 f   LIBCMT:_file.obj
+ 0001:000208b1       __lock_file2               100218b1 f   LIBCMT:_file.obj
+ 0001:000208df       __unlock_file              100218df f   LIBCMT:_file.obj
+ 0001:00020915       __unlock_file2             10021915 f   LIBCMT:_file.obj
+ 0001:0002093f       __stbuf                    1002193f f   LIBCMT:_sftbuf.obj
+ 0001:000209d5       __ftbuf                    100219d5 f   LIBCMT:_sftbuf.obj
+ 0001:00020aa5       __output_l                 10021aa5 f   LIBCMT:output.obj
+ 0001:00021439       __ioinit                   10022439 f   LIBCMT:ioinit.obj
+ 0001:00021679       __ioterm                   10022679 f   LIBCMT:ioinit.obj
+ 0001:000216c5       __openfile                 100226c5 f   LIBCMT:_open.obj
+ 0001:00021965       __getstream                10022965 f   LIBCMT:stream.obj
+ 0001:00021a98       __local_unwind4            10022a98 f   LIBCMT:exsup4.obj
+ 0001:00021b6e       __seh_longjmp_unwind4@4    10022b6e f   LIBCMT:exsup4.obj
+ 0001:00021b8a       @_EH4_CallFilterFunc@8     10022b8a f   LIBCMT:exsup4.obj
+ 0001:00021ba1       @_EH4_TransferToHandler@8  10022ba1 f   LIBCMT:exsup4.obj
+ 0001:00021bba       @_EH4_GlobalUnwind@4       10022bba f   LIBCMT:exsup4.obj
+ 0001:00021bd4       @_EH4_LocalUnwind@16       10022bd4 f   LIBCMT:exsup4.obj
+ 0001:00021beb       __flsbuf                   10022beb f   LIBCMT:_flsbuf.obj
+ 0001:00021d4b       __write_nolock             10022d4b f   LIBCMT:write.obj
+ 0001:00022311       _write                     10023311 f   LIBCMT:write.obj
+ 0001:00022311       __write                    10023311 f   LIBCMT:write.obj
+ 0001:000223ed       __lseek_nolock             100233ed f   LIBCMT:lseek.obj
+ 0001:0002245f       __lseek                    1002345f f   LIBCMT:lseek.obj
+ 0001:0002253b       __ftell_nolock             1002353b f   LIBCMT:ftell.obj
+ 0001:000226d3       __commit                   100236d3 f   LIBCMT:commit.obj
+ 0001:000227b4       __mtinitlocks              100237b4 f   LIBCMT:mlock.obj
+ 0001:000227fd       __mtdeletelocks            100237fd f   LIBCMT:mlock.obj
+ 0001:00022852       __unlock                   10023852 f   LIBCMT:mlock.obj
+ 0001:00022867       __mtinitlocknum            10023867 f   LIBCMT:mlock.obj
+ 0001:0002292a       __lock                     1002392a f   LIBCMT:mlock.obj
+ 0001:0002295b       __filbuf                   1002395b f   LIBCMT:_filbuf.obj
+ 0001:00022a7b       __read_nolock              10023a7b f   LIBCMT:read.obj
+ 0001:0002303c       __read                     1002403c f   LIBCMT:read.obj
+ 0001:00023139       _memcpy_s                  10024139 f   LIBCMT:memcpy_s.obj
+ 0001:000231c0       __aulldiv                  100241c0 f   LIBCMT:ulldiv.obj
+ 0001:00023981       __sopen_helper             10024981 f   LIBCMT:open.obj
+ 0001:00023a4d       __sopen_s                  10024a4d f   LIBCMT:open.obj
+ 0001:00023a6b       __fltin2                   10024a6b f   LIBCMT:cfin.obj
+ 0001:00023b10       ___strgtold12_l            10024b10 f   LIBCMT:strgtold.obj
+ 0001:000241d0       __freea                    100251d0 f i LIBCMT:a_map.obj
+ 0001:0002458d       ___crtLCMapStringA         1002558d f   LIBCMT:a_map.obj
+ 0001:000245d0       __isleadbyte_l             100255d0 f i LIBCMT:_wctype.obj
+ 0001:00024606       _isleadbyte                10025606 f i LIBCMT:_wctype.obj
+ 0001:00024614       __setenvp                  10025614 f   LIBCMT:stdenvp.obj
+ 0001:00024887       __setargv                  10025887 f   LIBCMT:stdargv.obj
+ 0001:00024940       ___crtGetEnvironmentStringsA 10025940 f   LIBCMT:a_env.obj
+ 0001:00024a75       __RTC_Initialize           10025a75 f   LIBCMT:initsect.obj
+ 0001:00024a99       __RTC_Terminate            10025a99 f   LIBCMT:initsect.obj
+ 0001:00024abd       ___heap_select             10025abd f   LIBCMT:heapinit.obj
+ 0001:00024b18       __heap_init                10025b18 f   LIBCMT:heapinit.obj
+ 0001:00024b72       __heap_term                10025b72 f   LIBCMT:heapinit.obj
+ 0001:00024be6       __fpclear                  10025be6 f   LIBCMT:fpinit.obj
+ 0001:00024be6       __initp_misc_winxfltr      10025be6 f   LIBCMT:winxfltr.obj
+ 0001:00024be7       __XcptFilter               10025be7 f   LIBCMT:winxfltr.obj
+ 0001:00024d45       ___CppXcptFilter           10025d45 f   LIBCMT:winxfltr.obj
+ 0001:00024d60       ___security_init_cookie    10025d60 f   LIBCMT:gs_support.obj
+ 0001:00024df4       __NMSG_WRITE               10025df4 f   LIBCMT:crt0msg.obj
+ 0001:00024f94       __FF_MSGBANNER             10025f94 f   LIBCMT:crt0msg.obj
+ 0001:00024fd0       __ValidateImageBase        10025fd0 f   LIBCMT:pesect.obj
+ 0001:00025000       __FindPESection            10026000 f   LIBCMT:pesect.obj
+ 0001:00025050       __IsNonwritableInCurrentImage 10026050 f   LIBCMT:pesect.obj
+ 0001:0002510b       ?terminate@@YAXXZ          1002610b f   LIBCMT:hooks.obj
+ 0001:00025144       __initp_eh_hooks           10026144 f   LIBCMT:hooks.obj
+ 0001:00025155       __initp_misc_winsig        10026155 f   LIBCMT:winsig.obj
+ 0001:000251a2       ___get_sigabrt             100261a2 f   LIBCMT:winsig.obj
+ 0001:000251af       _raise                     100261af f   LIBCMT:winsig.obj
+ 0001:0002535f       __initp_misc_rand_s        1002635f f   LIBCMT:rand_s.obj
+ 0001:00025369       __initp_misc_purevirt      10026369 f   LIBCMT:inithelp.obj
+ 0001:00025373       __initp_misc_initcrit      10026373 f   LIBCMT:initcrit.obj
+ 0001:0002538d       ___crtInitCritSecAndSpinCount 1002638d f   LIBCMT:initcrit.obj
+ 0001:00025452       __initp_heap_handler       10026452 f   LIBCMT:handler.obj
+ 0001:0002545c       __callnewh                 1002645c f   LIBCMT:handler.obj
+ 0001:0002547e       _CallDestructExceptionObject 1002647e f   LIBCMT:calldtor.obj
+ 0001:000254b4       __global_unwind2           100264b4 f   LIBCMT:exsup.obj
+ 0001:00025519       __local_unwind2            10026519 f   LIBCMT:exsup.obj
+ 0001:0002559d       __abnormal_termination     1002659d f   LIBCMT:exsup.obj
+ 0001:000255c0       __NLG_Notify1              100265c0 f   LIBCMT:exsup.obj
+ 0001:000255c9       __NLG_Notify               100265c9 f   LIBCMT:exsup.obj
+ 0001:000255e0       __NLG_Dispatch2            100265e0     LIBCMT:exsup.obj
+ 0001:000255e0       __NLG_Dispatch             100265e0     LIBCMT:exsup.obj
+ 0001:000255e8       __NLG_Call                 100265e8 f   LIBCMT:exsup.obj
+ 0001:000255ea       __NLG_Return2              100265ea     LIBCMT:exsup.obj
+ 0001:000256b0       __ValidateEH3RN            100266b0 f   LIBCMT:eh3valid.obj
+ 0001:00025c0a       ___crtGetStringTypeA       10026c0a f   LIBCMT:a_str.obj
+ 0001:00025c4a       @__security_check_cookie@4 10026c4a f   LIBCMT:secchk.obj
+ 0001:00025c59       ___free_lc_time            10026c59 f   LIBCMT:inittime.obj
+ 0001:00025de9       ___free_lconv_num          10026de9 f   LIBCMT:initnum.obj
+ 0001:00025e29       ___free_lconv_mon          10026e29 f   LIBCMT:initmon.obj
+ 0001:00025eb2       _strcat_s                  10026eb2 f   LIBCMT:strcat_s.obj
+ 0001:00025f30       _strcspn                   10026f30 f   LIBCMT:strcspn.obj
+ 0001:00025f76       _strncpy_s                 10026f76 f   LIBCMT:strncpy_s.obj
+ 0001:00026029       _strcpy_s                  10027029 f   LIBCMT:strcpy_s.obj
+ 0001:00026090       _strcmp                    10027090 f   LIBCMT:strcmp.obj
+ 0001:00026120       __aulldvrm                 10027120 f   LIBCMT:ulldvrm.obj
+ 0001:000261b5       __tolower_l                100271b5 f   LIBCMT:tolower.obj
+ 0001:000262cc       _tolower                   100272cc f   LIBCMT:tolower.obj
+ 0001:000262f3       __atodbl_l                 100272f3 f   LIBCMT:atodbl.obj
+ 0001:00026399       __atoflt_l                 10027399 f   LIBCMT:atodbl.obj
+ 0001:0002643f       __fptostr                  1002743f f   LIBCMT:_fptostr.obj
+ 0001:000264fc       ___dtold                   100274fc f   LIBCMT:cfout.obj
+ 0001:000265b7       __fltout2                  100275b7 f   LIBCMT:cfout.obj
+ 0001:00026650       __aullshr                  10027650 f   LIBCMT:ullshr.obj
+ 0001:0002666f       __fptrap                   1002766f f   LIBCMT:crt0fp.obj
+ 0001:00026678       __controlfp_s              10027678 f   LIBCMT:contrlfp.obj
+ 0001:00026732       __get_sse2_info            10027732 f   LIBCMT:cpu_disp.obj
+ 0001:00026792       ___sse2_available_init     10027792 f   LIBCMT:cpu_disp.obj
+ 0001:0002679f       __crt_debugger_hook        1002779f f   LIBCMT:dbghook.obj
+ 0001:000267a7       __ungetc_nolock            100277a7 f   LIBCMT:ungetc.obj
+ 0001:000268c5       __mbtowc_l                 100278c5 f   LIBCMT:mbtowc.obj
+ 0001:000269d8       _mbtowc                    100279d8 f   LIBCMT:mbtowc.obj
+ 0001:000269ef       _V6_HeapAlloc              100279ef f   LIBCMT:malloc.obj
+ 0001:00026a3e       _malloc                    10027a3e f   LIBCMT:malloc.obj
+ 0001:00026b01       __calloc_impl              10027b01 f   LIBCMT:calloc.obj
+ 0001:00026c1f       _realloc                   10027c1f f   LIBCMT:realloc.obj
+ 0001:00026e3a       __recalloc                 10027e3a f   LIBCMT:realloc.obj
+ 0001:00026eb3       ___sbh_heap_init           10027eb3 f   LIBCMT:sbheap.obj
+ 0001:00026efb       ___sbh_find_block          10027efb f   LIBCMT:sbheap.obj
+ 0001:00026f26       ___sbh_free_block          10027f26 f   LIBCMT:sbheap.obj
+ 0001:0002723a       ___sbh_alloc_new_region    1002823a f   LIBCMT:sbheap.obj
+ 0001:000272ea       ___sbh_alloc_new_group     100282ea f   LIBCMT:sbheap.obj
+ 0001:000273f0       ___sbh_resize_block        100283f0 f   LIBCMT:sbheap.obj
+ 0001:000276cf       ___sbh_alloc_block         100286cf f   LIBCMT:sbheap.obj
+ 0001:000279b2       __set_osfhnd               100289b2 f   LIBCMT:osfinfo.obj
+ 0001:00027a2f       __free_osfhnd              10028a2f f   LIBCMT:osfinfo.obj
+ 0001:00027ab0       __get_osfhandle            10028ab0 f   LIBCMT:osfinfo.obj
+ 0001:00027b21       ___lock_fhandle            10028b21 f   LIBCMT:osfinfo.obj
+ 0001:00027bc1       __unlock_fhandle           10028bc1 f   LIBCMT:osfinfo.obj
+ 0001:00027be3       __alloc_osfhnd             10028be3 f   LIBCMT:osfinfo.obj
+ 0001:00027d82       __fcloseall                10028d82 f   LIBCMT:closeall.obj
+ 0001:00027e21       __isatty                   10028e21 f   LIBCMT:isatty.obj
+ 0001:00027e7f       __get_printf_count_output  10028e7f f   LIBCMT:printf.obj
+ 0001:00027e95       __wctomb_s_l               10028e95 f   LIBCMT:wctomb.obj
+ 0001:00027ff4       _wctomb_s                  10028ff4 f   LIBCMT:wctomb.obj
+ 0001:0002800f       __mbsicmp_l                1002900f f   LIBCMT:mbsicmp.obj
+ 0001:00028229       __mbsicmp                  10029229 f   LIBCMT:mbsicmp.obj
+ 0001:0002823c       __mbsnbcmp_l               1002923c f   LIBCMT:mbsnbcmp.obj
+ 0001:000283a5       __mbsnbcmp                 100293a5 f   LIBCMT:mbsnbcmp.obj
+ 0001:000283bc       __lseeki64_nolock          100293bc f   LIBCMT:lseeki64.obj
+ 0001:0002843f       __lseeki64                 1002943f f   LIBCMT:lseeki64.obj
+ 0001:00028558       __getbuf                   10029558 f   LIBCMT:_getbuf.obj
+ 0001:0002859c       __putwch_nolock            1002959c f   LIBCMT:putwch.obj
+ 0001:0002865e       __chsize_nolock            1002965e f   LIBCMT:chsize.obj
+ 0001:00028812       __setmode_nolock           10029812 f   LIBCMT:setmode.obj
+ 0001:000288ce       __get_fmode                100298ce f   LIBCMT:setmode.obj
+ 0001:00028902       __ld12tod                  10029902 f   LIBCMT:intrncvt.obj
+ 0001:00028e44       __ld12tof                  10029e44 f   LIBCMT:intrncvt.obj
+ 0001:00029386       ___mtold12                 1002a386 f   LIBCMT:mantold.obj
+ 0001:00029552       ___ansicp                  1002a552 f   LIBCMT:convrtcp.obj
+ 0001:00029599       ___convertcp               1002a599 f   LIBCMT:convrtcp.obj
+ 0001:00029750       __alloca_probe_16          1002a750 f   LIBCMT:alloca16.obj
+ 0001:00029766       __alloca_probe_8           1002a766     LIBCMT:alloca16.obj
+ 0001:000297cd       __ismbblead                1002a7cd f   LIBCMT:ismbbyte.obj
+ 0001:000297e0       ___crtMessageBoxA          1002a7e0 f   LIBCMT:crtmbox.obj
+ 0001:0002999d       __set_error_mode           1002a99d f   LIBCMT:errmode.obj
+ 0001:000299e3       _abort                     1002a9e3 f   LIBCMT:abort.obj
+ 0001:00029ad6       ___report_gsfailure        1002aad6 f   LIBCMT:gs_report.obj
+ 0001:00029bda       ___ascii_stricmp           1002abda f   LIBCMT:stricmp.obj
+ 0001:00029c0f       __stricmp_l                1002ac0f f   LIBCMT:stricmp.obj
+ 0001:00029ce2       __stricmp                  1002ace2 f   LIBCMT:stricmp.obj
+ 0001:00029ce2       _stricmp                   1002ace2 f   LIBCMT:stricmp.obj
+ 0001:00029d32       _$I10_OUTPUT               1002ad32 f   LIBCMT:x10fout.obj
+ 0001:0002a726       __control87                1002b726 f i LIBCMT:ieee87.obj
+ 0001:0002aa29       ___initconout              1002ba29 f   LIBCMT:initcon.obj
+ 0001:0002aa48       ___termcon                 1002ba48 f   LIBCMT:initcon.obj
+ 0001:0002aa80       ___ascii_strnicmp          1002ba80 f   LIBCMT:_strnicm.obj
+ 0001:0002aae1       ___set_fpsr_sse2           1002bae1 f   LIBCMT:fpctrl.obj
+ 0001:0002ab54       _RtlUnwind@16              1002bb54 f   kernel32:KERNEL32.dll
+ 0001:0002ab9a       __itoa                     1002bb9a f   LIBCMT:xtoa.obj
+ 0001:0002ab9a       _itoa                      1002bb9a f   LIBCMT:xtoa.obj
+ 0001:0002b15c       __IMPORT_DESCRIPTOR_KERNEL32 1002c15c     kernel32:KERNEL32.dll
+ 0001:0002b170       __IMPORT_DESCRIPTOR_USER32 1002c170     user32:USER32.dll
+ 0001:0002b184       __IMPORT_DESCRIPTOR_ADVAPI32 1002c184     advapi32:ADVAPI32.dll
+ 0001:0002b198       __IMPORT_DESCRIPTOR_WSOCK32 1002c198     wsock32:WSOCK32.dll
+ 0001:0002b1ac       __IMPORT_DESCRIPTOR_WINMM  1002c1ac     winmm:WINMM.dll
+ 0001:0002b1c0       __NULL_IMPORT_DESCRIPTOR   1002c1c0     kernel32:KERNEL32.dll
+ 0002:00000688       ?cmdtabdata@@3PAUcmd@@A    1002d688     ftp_Connect.obj
+ 0002:000012f8       ?StdPlugins@@3PAUFTPPluginsInfo@@A 1002e2f8     ftp_Plugin.obj
+ 0002:00001520       ?FP_GetMsgINT@@3P6GPBDH@ZA 1002e520     FsdLib:fstd_Msg.obj
+ 0002:00001524       ?FP_GetMsgSTR@@3P6GPBDPBD@ZA 1002e524     FsdLib:fstd_Msg.obj
+ 0002:00001840       __fltused                  1002e840     LIBCMT:fpinit.obj
+ 0002:00001844       __ldused                   1002e844     LIBCMT:fpinit.obj
+ 0002:00001850       __aexit_rtn                1002e850     LIBCMT:crt0dat.obj
+ 0002:00001858       ___initialmbcinfo          1002e858     LIBCMT:mbctype.obj
+ 0002:00001a78       __mbctype                  1002ea78     LIBCMT:mbctype.obj
+ 0002:00001b80       __mbcasemap                1002eb80     LIBCMT:mbctype.obj
+ 0002:00001c80       ___ptmbcinfo               1002ec80     LIBCMT:mbctype.obj
+ 0002:00001d7c       ___globallocalestatus      1002ed7c     LIBCMT:glstatus.obj
+ 0002:00001d80       ___clocalestr              1002ed80     LIBCMT:nlsdata2.obj
+ 0002:00001d88       ___initiallocinfo          1002ed88     LIBCMT:nlsdata2.obj
+ 0002:00001e60       ___ptlocinfo               1002ee60     LIBCMT:nlsdata2.obj
+ 0002:00001e64       ___lc_clike                1002ee64     LIBCMT:nlsdata2.obj
+ 0002:00001e68       ___initiallocalestructinfo 1002ee68     LIBCMT:nlsdata2.obj
+ 0002:00001e70       ___flsindex                1002ee70     LIBCMT:tidtable.obj
+ 0002:00001e74       ___getvalueindex           1002ee74     LIBCMT:tidtable.obj
+ 0002:00001e78       __cfltcvt_tab              1002ee78     LIBCMT:cmiscdat.obj
+ 0002:00002010       __iob                      1002f010     LIBCMT:_file.obj
+ 0002:00002290       ___nullstring              1002f290     LIBCMT:output.obj
+ 0002:00002294       ___wnullstring             1002f294     LIBCMT:output.obj
+ 0002:00002298       ___badioinfo               1002f298     LIBCMT:ioinit.obj
+ 0002:000022d0       ___security_cookie         1002f2d0     LIBCMT:gs_cookie.obj
+ 0002:000022d4       ___security_cookie_complement 1002f2d4     LIBCMT:gs_cookie.obj
+ 0002:000023f8       __lookuptrailbytes         1002f3f8     LIBCMT:read.obj
+ 0002:00002500       __amblksiz                 1002f500     LIBCMT:heapinit.obj
+ 0002:00002508       __XcptActTab               1002f508     LIBCMT:winxfltr.obj
+ 0002:00002580       __First_FPE_Indx           1002f580     LIBCMT:winxfltr.obj
+ 0002:00002584       __Num_FPE                  1002f584     LIBCMT:winxfltr.obj
+ 0002:00002588       __XcptActTabSize           1002f588     LIBCMT:winxfltr.obj
+ 0002:0000258c       __XcptActTabCount          1002f58c     LIBCMT:winxfltr.obj
+ 0002:00002648       __NLG_Destination          1002f648     LIBCMT:exsup.obj
+ 0002:00002658       __pctype                   1002f658     LIBCMT:ctype.obj
+ 0002:0000265c       __pwctype                  1002f65c     LIBCMT:ctype.obj
+ 0002:00002660       ___lc_time_c               1002f660     LIBCMT:strftime.obj
+ 0002:00002718       ___lc_time_curr            1002f718     LIBCMT:strftime.obj
+ 0002:0000271c       ___lconv_static_decimal    1002f71c     LIBCMT:lconv.obj
+ 0002:00002720       ___lconv_c                 1002f720     LIBCMT:lconv.obj
+ 0002:00002750       ___lconv                   1002f750     LIBCMT:lconv.obj
+ 0002:00002754       ___mb_cur_max              1002f754     LIBCMT:nlsdata1.obj
+ 0002:00002758       ___decimal_point           1002f758     LIBCMT:nlsdata1.obj
+ 0002:0000275c       ___decimal_point_length    1002f75c     LIBCMT:nlsdata1.obj
+ 0002:00002798       __pow10pos                 1002f798     LIBCMT:constpow.obj
+ 0002:000028f8       __pow10neg                 1002f8f8     LIBCMT:constpow.obj
+ 0002:00002a60       ___abort_behavior          1002fa60     LIBCMT:abort.obj
+ 0002:00002a68       __timezone                 1002fa68     LIBCMT:timeset.obj
+ 0002:00002a6c       __daylight                 1002fa6c     LIBCMT:timeset.obj
+ 0002:00002a70       __dstbias                  1002fa70     LIBCMT:timeset.obj
+ 0002:00002af8       __tzname                   1002faf8     LIBCMT:timeset.obj
+ 0002:00002b18       __coninpfh                 1002fb18     LIBCMT:initcon.obj
+ 0002:00002b1c       __confh                    1002fb1c     LIBCMT:initcon.obj
+ 0002:00002b20       __lpdays                   1002fb20     LIBCMT:days.obj
+ 0002:00002b54       __days                     1002fb54     LIBCMT:days.obj
+ 0002:00002c18       ?DiskMenuNumbers@@3PAHA    1002fc18     ftp_FAR.obj
+ 0002:00002c44       ?DiskMenuStrings@@3PAPBDA  1002fc44     ftp_FAR.obj
+ 0002:00002c70       ?DialogEditBuffer@@3PADA   1002fc70     ftp_FAR.obj
+ 0002:00004bb0       ?ExitProc@@3P6AXXZA        10031bb0     ftp_FAR.obj
+ 0002:00004bb8       ?DiskStrings@@3PAY0BAF@DA  10031bb8     ftp_FAR.obj
+ 0002:000056f0       ?Opt@@3UOptions@@A         100326f0     ftp_FAR.obj
+ 0002:00006340       ?FTPPanels@@3PAPAVFTP@@A   10033340     ftp_FAR.obj
+ 0002:0000634c       ?LastUsedPlugin@@3PAVFTP@@A 1003334c     ftp_FAR.obj
+ 0002:00006350       ?SocketStartup@@3HA        10033350     ftp_FAR.obj
+ 0002:00006354       ?SocketInitializeError@@3HA 10033354     ftp_FAR.obj
+ 0002:00006570       ?Backups@FTP@@2PAPAV1@A    10033570     ftp_Ftp.obj
+ 0002:00006598       ?BackupCount@FTP@@2HA      10033598     ftp_Ftp.obj
+ 0002:00007544       ?Counter@FARINProc@@0HA    10034544     ftp_JM.obj
+ 0002:00007948       ?FP_WinVerDW@@3KA          10034948     FsdLib:fstd_plg.obj
+ 0002:0000794c       ?FP_Info@@3PAUPluginStartupInfo@@A 1003494c     FsdLib:fstd_plg.obj
+ 0002:00007950       ?FP_FSF@@3PAUFarStandardFunctions@@A 10034950     FsdLib:fstd_plg.obj
+ 0002:00007954       ?FP_PluginRootKey@@3PADA   10034954     FsdLib:fstd_plg.obj
+ 0002:00007958       ?FP_PluginStartPath@@3PADA 10034958     FsdLib:fstd_plg.obj
+ 0002:0000795c       ?FP_WinVer@@3PAU_OSVERSIONINFOA@@A 1003495c     FsdLib:fstd_plg.obj
+ 0002:00007960       ?FP_HModule@@3PAUHINSTANCE__@@A 10034960     FsdLib:fstd_plg.obj
+ 0002:00007964       ?FP_LastOpMode@@3HA        10034964     FsdLib:fstd_plg.obj
+ 0002:00007d9c       ___fastflag                10034d9c     LIBCMT:fpinit.obj
+ 0002:00007da0       __adjust_fdiv              10034da0     LIBCMT:fpinit.obj
+ 0002:00007da4       __fmode                    10034da4     LIBCMT:txtmode.obj
+ 0002:00007db4       __aenvptr                  10034db4     LIBCMT:dllcrt0.obj
+ 0002:00007db8       __wenvptr                  10034db8     LIBCMT:dllcrt0.obj
+ 0002:00007dbc       ___error_mode              10034dbc     LIBCMT:dllcrt0.obj
+ 0002:00007dc0       ___app_type                10034dc0     LIBCMT:dllcrt0.obj
+ 0002:00007dc4       __umaskval                 10034dc4     LIBCMT:crt0dat.obj
+ 0002:00007dc8       __osplatform               10034dc8     LIBCMT:crt0dat.obj
+ 0002:00007dcc       __osver                    10034dcc     LIBCMT:crt0dat.obj
+ 0002:00007dd0       __winver                   10034dd0     LIBCMT:crt0dat.obj
+ 0002:00007dd4       __winmajor                 10034dd4     LIBCMT:crt0dat.obj
+ 0002:00007dd8       __winminor                 10034dd8     LIBCMT:crt0dat.obj
+ 0002:00007ddc       ___argc                    10034ddc     LIBCMT:crt0dat.obj
+ 0002:00007de0       ___argv                    10034de0     LIBCMT:crt0dat.obj
+ 0002:00007de4       ___wargv                   10034de4     LIBCMT:crt0dat.obj
+ 0002:00007de8       __environ                  10034de8     LIBCMT:crt0dat.obj
+ 0002:00007dec       ___initenv                 10034dec     LIBCMT:crt0dat.obj
+ 0002:00007df0       __wenviron                 10034df0     LIBCMT:crt0dat.obj
+ 0002:00007df4       ___winitenv                10034df4     LIBCMT:crt0dat.obj
+ 0002:00007df8       __pgmptr                   10034df8     LIBCMT:crt0dat.obj
+ 0002:00007dfc       __wpgmptr                  10034dfc     LIBCMT:crt0dat.obj
+ 0002:00007e00       __exitflag                 10034e00     LIBCMT:crt0dat.obj
+ 0002:00007e04       __C_Termination_Done       10034e04     LIBCMT:crt0dat.obj
+ 0002:00007e08       __C_Exit_Done              10034e08     LIBCMT:crt0dat.obj
+ 0002:00007e10       ___mbulinfo                10034e10     LIBCMT:mbctype.obj
+ 0002:00007e1c       ___mbcodepage              10034e1c     LIBCMT:mbctype.obj
+ 0002:00007e20       ___ismbcodepage            10034e20     LIBCMT:mbctype.obj
+ 0002:00007e24       ___mblcid                  10034e24     LIBCMT:mbctype.obj
+ 0002:00007e28       ___locale_changed          10034e28     LIBCMT:setlocal.obj
+ 0002:00007e2c       ___lc_handle               10034e2c     LIBCMT:nlsdata2.obj
+ 0002:00007e44       ___lc_codepage             10034e44     LIBCMT:nlsdata2.obj
+ 0002:00007e48       ___lc_collate_cp           10034e48     LIBCMT:nlsdata2.obj
+ 0002:00007e4c       _gpFlsAlloc                10034e4c     LIBCMT:tidtable.obj
+ 0002:00007e50       _gpFlsGetValue             10034e50     LIBCMT:tidtable.obj
+ 0002:00007e54       _gpFlsSetValue             10034e54     LIBCMT:tidtable.obj
+ 0002:00007e58       _gpFlsFree                 10034e58     LIBCMT:tidtable.obj
+ 0002:00007e5c       ___pInvalidArgHandler      10034e5c     LIBCMT:invarg.obj
+ 0002:00007e60       __maxwait                  10034e60     LIBCMT:crtheap.obj
+ 0002:00007e64       __cflush                   10034e64     LIBCMT:_file.obj
+ 0002:00007e68       __stdbuf                   10034e68     LIBCMT:_sftbuf.obj
+ 0002:000080d4       __crtheap                  100350d4     LIBCMT:heapinit.obj
+ 0002:000083ec       ?__pInconsistency@@3P6AXXZA 100353ec     LIBCMT:hooks.obj
+ 0002:00008410       ___pPurecall               10035410     LIBCMT:inithelp.obj
+ 0002:00008418       ?_pnhHeap@@3P6AHI@ZA       10035418     LIBCMT:handler.obj
+ 0002:00008548       ___lconv_static_null       10035548     LIBCMT:lconv.obj
+ 0002:0000854c       __outputformat             1003554c     LIBCMT:outputformat.obj
+ 0002:00008550       ___sbh_pHeaderDefer        10035550     LIBCMT:sbheap.obj
+ 0002:00008558       __commode                  10035558     LIBCMT:ncommode.obj
+ 0002:00008950       __newmode                  10035950     LIBCMT:_newmode.obj
+ 0002:00008954       ___sbh_cntHeaderList       10035954     <common>
+ 0002:00008958       ___sbh_pHeaderList         10035958     <common>
+ 0002:0000895c       ___sbh_threshold           1003595c     <common>
+ 0002:00008960       ___sbh_pHeaderScan         10035960     <common>
+ 0002:00008964       ___sbh_sizeHeaderList      10035964     <common>
+ 0002:00008968       ___sbh_indGroupDefer       10035968     <common>
+ 0002:0000896c       __debugger_hook_dummy      1003596c     <common>
+ 0002:00008970       ___active_heap             10035970     <common>
+ 0002:00008974       __nhandle                  10035974     <common>
+ 0002:00008980       ___pioinfo                 10035980     <common>
+ 0002:00008a80       ___piob                    10035a80     <common>
+ 0002:00008aa0       __bufin                    10035aa0     <common>
+ 0002:00009aa0       __nstream                  10036aa0     <common>
+ 0002:00009aa4       __pDestructExceptionObject 10036aa4     <common>
+ 0002:00009aa8       ___use_sse2_mathfcns       10036aa8     <common>
+ 0002:00009aac       ___sse2_available          10036aac     <common>
+ 0002:00009ab0       ___env_initialized         10036ab0     <common>
+ 0002:00009ab4       ___onexitend               10036ab4     <common>
+ 0002:00009ab8       ___onexitbegin             10036ab8     <common>
+ 0002:00009abc       ___mbctype_initialized     10036abc     <common>
+ 0002:00009ac0       ___dyn_tls_init_callback   10036ac0     <common>
+ 0002:00009ac4       __acmdln                   10036ac4     <common>
+
+ entry point at        0001:0001c6a3
+
+ Static symbols
+
+ 0001:00005500       ?get_cluster_size@@YIIPBD@Z 10006500 f   ftp_cnDownload.obj
+ 0001:000184c9       ?_FP_GetMsgINT@@YGPBDH@Z   100194c9 f   FsdLib:fstd_Msg.obj
+ 0001:0001851b       ?_FP_GetMsgSTR@@YGPBDPBD@Z 1001951b f   FsdLib:fstd_Msg.obj
+ 0001:0001857b       ?idAtExit@@YAXXZ           1001957b f   FsdLib:fstd_plg.obj
+ 0001:00018d8e       ?CDLG_WndProc@@YGJPAXHHJ@Z 10019d8e f   FsdLib:fstd_cDialog.obj
+ 0001:000197a7       ?MSG_DelBuff@@YAXXZ        1001a7a7 f   FsdLib:fstd_mesg.obj
+ 0001:0001afc2       _vscan_fn                  1001bfc2 f   LIBCMT:sscanf.obj
+ 0001:0001b0ca       __onexit_nolock            1001c0ca f   LIBCMT:onexit.obj
+ 0001:0001b950       _flsall                    1001c950 f   LIBCMT:fflush.obj
+ 0001:0001c5ad       ___DllMainCRTStartup       1001d5ad f   LIBCMT:dllcrt0.obj
+ 0001:0001cd46       __initterm                 1001dd46 f   LIBCMT:crt0dat.obj
+ 0001:0001ce83       _doexit                    1001de83 f   LIBCMT:crt0dat.obj
+ 0001:0001d1cd       ?CPtoLCID@@YAHH@Z          1001e1cd f   LIBCMT:mbctype.obj
+ 0001:0001d1fc       ?setSBCS@@YAXPAUthreadmbcinfostruct@@@Z 1001e1fc f   LIBCMT:mbctype.obj
+ 0001:0001d251       ?setSBUpLow@@YAXPAUthreadmbcinfostruct@@@Z 1001e251 f   LIBCMT:mbctype.obj
+ 0001:0001d47f       ?getSystemCP@@YAHH@Z       1001e47f f   LIBCMT:mbctype.obj
+ 0001:0001dadc       __updatetlocinfoEx_nolock  1001eadc f   LIBCMT:setlocal.obj
+ 0001:0001db90       __use_encode_pointer       1001eb90 f   LIBCMT:tidtable.obj
+ 0001:0001e26b       ?strtoxl@@YAKPAUlocaleinfo_struct@@PBDPAPBDHH@Z 1001f26b f   LIBCMT:strtol.obj
+ 0001:0001e61d       __shift                    1001f61d f   LIBCMT:cvt.obj
+ 0001:0001e656       __cftoe2_l                 1001f656 f   LIBCMT:cvt.obj
+ 0001:0001ec20       __cftof2_l                 1001fc20 f   LIBCMT:cvt.obj
+ 0001:0001f01a       _fastcopy_I                1002001a f   LIBCMT:p4_memcpy.obj
+ 0001:0001f3db       ___check_float_string      100203db f   LIBCMT:input.obj
+ 0001:0001f42f       __inc                      1002042f f   LIBCMT:input.obj
+ 0001:0001f445       __whiteout                 10020445 f   LIBCMT:input.obj
+ 0001:000200b7       _fastzero_I                100210b7 f   LIBCMT:p4_memset.obj
+ 0001:00020a04       _write_char                10021a04 f   LIBCMT:output.obj
+ 0001:00020a37       _write_multi_char          10021a37 f   LIBCMT:output.obj
+ 0001:00020a5b       _write_string              10021a5b f   LIBCMT:output.obj
+ 0001:00021b28       __unwind_handler4          10022b28 f   LIBCMT:exsup4.obj
+ 0001:00023228       __tsopen_nolock            10024228 f   LIBCMT:open.obj
+ 0001:000241eb       ?__crtLCMapStringA_stat@@YAHPAUlocaleinfo_struct@@KKPBDHPADHHH@Z 100251eb f   LIBCMT:a_map.obj
+ 0001:000246ef       _parse_cmdline             100256ef f   LIBCMT:stdargv.obj
+ 0001:0002516e       _siglookup                 1002616e f   LIBCMT:winsig.obj
+ 0001:0002537d       ___crtInitCritSecNoSpinCount@8 1002637d f   LIBCMT:initcrit.obj
+ 0001:000254d4       __unwind_handler           100264d4 f   LIBCMT:exsup.obj
+ 0001:000255f0       _ValidateScopeTableHandlers 100265f0 f   LIBCMT:eh3valid.obj
+ 0001:00025a52       ?__crtGetStringTypeA_stat@@YAHPAUlocaleinfo_struct@@KPBDHPAGHHH@Z 10026a52 f   LIBCMT:a_str.obj
+ 0001:000266e2       _has_osfxsr_set            100276e2 f   LIBCMT:cpu_disp.obj
+ 0001:0002977c       ?x_ismbbtype_l@@YAHPAUlocaleinfo_struct@@IHH@Z 1002a77c f   LIBCMT:ismbbyte.obj
+ 0001:0002a5f8       __hw_cw                    1002b5f8 f   LIBCMT:ieee87.obj
+ 0001:0002a686       ___hw_cw_sse2              1002b686 f   LIBCMT:ieee87.obj
+ 0001:0002ab5a       _xtoa@16                   1002bb5a f   LIBCMT:xtoa.obj
+ 0001:0002abc2       ??__Fnm@?1??ToOEMDup@Connection@@QAEPADPBDH@Z@YAXXZ 1002bbc2 f   ftp_Connect.obj
+ 0001:0002abdc       ??__Fnm@?1??FromOEMDup@Connection@@QAEPADPBDH@Z@YAXXZ 1002bbdc f   ftp_Connect.obj
+ 0001:0002abf6       ??__FShortcutData@?CD@??GetOpenPluginInfo@FTP@@QAEXPAUOpenPluginInfo@@@Z@YAXXZ 1002bbf6 f   ftp_GetOpenInfo.obj
+ 0001:0002ac00       ??__FFormat@?L@??GetOpenPluginInfo@FTP@@QAEXPAUOpenPluginInfo@@@Z@YAXXZ 1002bc00 f   ftp_GetOpenInfo.obj
+ 0001:0002ac0a       ??__FcurDir@?4??GetOpenPluginInfo@FTP@@QAEXPAUOpenPluginInfo@@@Z@YAXXZ 1002bc0a f   ftp_GetOpenInfo.obj

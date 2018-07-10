@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="w900">
+  <cid num="49" color="red">
+    <oflash>
+      <ldr>050810 0923 PRODUCTION_ID_LOADER R2B.2000_0_BLUE</ldr>
+      <ldr>060119 1209 SEMC_FLASHLOADER R2B.2000_49_RED</ldr>
+      <activateloader/>
+    </oflash>
+    <bflash break="2010_49" writeboot="200A_r2b.boot" ose="W900.ose">
+      <qhtry>2000_header_r2b</qhtry>
+      <run/>
+      <ldr>2000_f_r2b</ldr>
+      <activateloader/>
+    </bflash>
+    <ofs>
+      <ldr>050810 0923 PRODUCTION_ID_LOADER R2B.2000_0_BLUE</ldr>
+      <ldr>070418 1406 SEMC_CS_LOADER_1_P4K.2000_49_RED</ldr>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+
+</device>
